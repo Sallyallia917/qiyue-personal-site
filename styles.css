@@ -237,3 +237,16 @@ footer{font-family:"Noto Serif SC",serif;letter-spacing:.04em;font-size:10px;pad
 .resume-closing a{color:#5c4a76;border-bottom:1px solid #c2b5cf}
 .resume-bottom-note{margin-top:24px;color:#867e89;font:400 10px/1.8 "Noto Serif SC",serif}
 @media(max-width:700px){.proof-strip{grid-template-columns:1fr}.proof-strip article,.proof-strip article+article{padding:12px 0;border-left:0;border-top:1px solid #d7cfdd}.proof-strip article:first-child{border-top:0}.job-focus-head{align-items:flex-start;flex-direction:column;gap:8px}.job-focus-head>a{margin-left:0}.resume-page{padding:30px 20px 50px}.resume-section{grid-template-columns:1fr;gap:15px}.resume-skills{grid-template-columns:1fr}.resume-topline{gap:15px}.resume-hero{padding-top:28px}}
+
+
+/* V1.0 求职转化与可维护性补充 */
+.hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:16px}
+.hero-actions a{display:inline-flex;align-items:center;gap:12px;font:500 11px "Noto Serif SC",serif;transition:background .18s ease,color .18s ease,border-color .18s ease}
+.primary-action{padding:10px 14px;background:#51436c;color:#fff;border:1px solid #51436c}
+.primary-action:hover{background:#403452;border-color:#403452}
+.secondary-action{padding:9px 0;border-bottom:1px solid #c9bfce;color:#5d4d75}
+.secondary-action:hover{color:#352847;border-color:#7b668f}
+a:focus-visible{outline:2px solid #7b668f;outline-offset:4px}
+.resume-project h3 a{color:#4d4264;border-bottom:1px solid #d4c9dd}
+.resume-project h3 a:hover{color:#2f2540;border-color:#85729a}
+@media(max-width:700px){.hero-actions{gap:14px}.hero-actions a{font-size:11px}.primary-action{padding:10px 12px}}
