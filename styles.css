@@ -250,3 +250,15 @@ a:focus-visible{outline:2px solid #7b668f;outline-offset:4px}
 .resume-project h3 a{color:#4d4264;border-bottom:1px solid #d4c9dd}
 .resume-project h3 a:hover{color:#2f2540;border-color:#85729a}
 @media(max-width:700px){.hero-actions{gap:14px}.hero-actions a{font-size:11px}.primary-action{padding:10px 12px}}
+
+
+/* V1.1 — product positioning and evidence-led portfolio */
+.hero .eyebrow{letter-spacing:.08em}
+.hero .hero-grid h1{max-width:10em}
+.hero .hero-side .lead{max-width:15em}
+.job-focus-note,.work-main p,.resume-summary,.case-summary{max-width:760px}
+.capability-grid article p{max-width:38em}
+.case-copy h2{max-width:25em}
+@media(max-width:700px){
+ .hero .hero-grid h1,.hero .hero-side .lead,.job-focus-note,.work-main p,.resume-summary,.case-summary,.case-copy h2{max-width:100%}
+}
