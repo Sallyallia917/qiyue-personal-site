@@ -262,3 +262,26 @@ a:focus-visible{outline:2px solid #7b668f;outline-offset:4px}
 @media(max-width:700px){
  .hero .hero-grid h1,.hero .hero-side .lead,.job-focus-note,.work-main p,.resume-summary,.case-summary,.case-copy h2{max-width:100%}
 }
+
+
+/* V1.2 — portfolio narrative: structure, detail, harmony */
+.signature-method{padding-top:24px;padding-bottom:72px}
+.signature-method .section-head{margin-bottom:0}
+.method-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--line)}
+.method-grid article{padding:27px 28px 25px 0;min-height:245px}
+.method-grid article+article{border-left:1px solid var(--line);padding-left:28px}
+.method-index{font:400 9px var(--mono);letter-spacing:.1em;color:#82758f}
+.method-grid h2{margin-top:26px;font:500 23px/1.4 "Noto Serif SC",serif;letter-spacing:-.025em;color:#38323f}
+.method-grid p{max-width:32em;margin-top:12px;font:400 12px/2 "Noto Serif SC",serif;color:#706d73}
+.method-grid small{display:block;margin-top:20px;padding-top:11px;border-top:1px solid #e0dcd4;font:400 9px/1.8 "Noto Serif SC",serif;letter-spacing:.02em;color:#827b86}
+.method-note{max-width:850px;margin-top:19px;font:400 11px/2 "Noto Serif SC",serif;color:#817a84}
+.portfolio-intro{max-width:700px;margin:18px 0 5px;font:400 12px/1.9 "Noto Serif SC",serif;color:#77717a}
+@media(max-width:800px){
+ .signature-method{padding-top:15px;padding-bottom:42px}
+ .method-grid{grid-template-columns:1fr}
+ .method-grid article{min-height:0;padding:22px 0}
+ .method-grid article+article{border-left:0;border-top:1px solid var(--line);padding-left:0}
+ .method-grid h2{margin-top:13px;font-size:21px}
+ .method-grid small{margin-top:13px}
+ .portfolio-intro{margin-top:13px}
+}
