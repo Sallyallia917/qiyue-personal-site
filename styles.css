@@ -304,3 +304,167 @@ a:focus-visible{outline:2px solid #7b668f;outline-offset:4px}
  .hero-grid{grid-template-columns:1.25fr .75fr;gap:70px}
  .job-focus{margin-top:26px}
 }
+
+
+/* V2.0 — Brittany Chiang-inspired editorial portfolio layout */
+.portfolio-v2{--pc-bg:#0b1929;--pc-panel:#102238;--pc-ink:#dce7f4;--pc-muted:#91a4bb;--pc-accent:#79e2c4;--pc-line:rgba(145,164,187,.17);background:var(--pc-bg);color:var(--pc-ink);font-family:Inter,"Noto Serif SC",sans-serif}
+.portfolio-v2 a{color:inherit}
+.portfolio-shell{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:390px minmax(0,760px);gap:70px;padding:0 72px}
+.portfolio-sidebar{position:sticky;top:0;height:100vh;min-height:720px;padding:86px 0 38px;display:flex;flex-direction:column}
+.portfolio-brand{font:500 12px "DM Mono",monospace;letter-spacing:.1em;color:var(--pc-ink);text-decoration:none!important}
+.portfolio-brand span{color:var(--pc-muted)}
+.sidebar-intro{margin-top:65px}
+.sidebar-kicker,.section-overline,.skill-number,.project-index,.project-type,.philosophy-mark,.interest-code,.education-label,.experience-date,.experience-kind,.footer-kicker{font:500 10px "DM Mono",monospace;letter-spacing:.08em}
+.sidebar-kicker{color:var(--pc-accent)}
+.sidebar-intro h1{margin-top:20px;font:600 39px/1.2 "Noto Serif SC",serif;letter-spacing:-.035em}
+.sidebar-intro h1 span{display:block;margin-top:8px;font:400 12px "DM Mono",monospace;letter-spacing:.04em;color:var(--pc-muted)}
+.sidebar-intro h2{margin-top:24px;font:500 21px/1.65 "Noto Serif SC",serif;color:var(--pc-ink)}
+.sidebar-intro h2 em{font-style:normal;color:var(--pc-accent)}
+.sidebar-intro>p:not(.sidebar-kicker){max-width:320px;margin-top:17px;font-size:13px;line-height:1.9;color:#bdcada}
+.sidebar-intro .sidebar-detail{font-size:12px!important;color:var(--pc-muted)!important}
+.portfolio-nav{display:grid;gap:0;margin-top:44px;max-width:290px}
+.portfolio-nav a{display:flex;align-items:center;gap:13px;padding:10px 0;color:#8ea1b7;font:500 10px "DM Mono",monospace;letter-spacing:.035em;transition:color .18s ease;text-decoration:none!important}
+.portfolio-nav a span{display:block;width:25px;height:1px;background:#52657a;transition:width .18s ease,background .18s ease}
+.portfolio-nav a:hover,.portfolio-nav a:focus-visible{color:var(--pc-accent)}
+.portfolio-nav a:hover span,.portfolio-nav a:focus-visible span{width:42px;background:var(--pc-accent)}
+.sidebar-bottom{margin-top:auto}
+.sidebar-links{display:flex;gap:20px;flex-wrap:wrap}
+.sidebar-links a{font:500 10px "DM Mono",monospace;color:#a7b6c8;text-decoration:none!important}
+.sidebar-links a span{color:var(--pc-accent)}
+.sidebar-links a:hover{color:var(--pc-accent)}
+.sidebar-bottom>p{margin-top:19px;color:#667c94;font:400 9px "DM Mono",monospace;letter-spacing:.08em}
+.portfolio-main{min-width:0;padding-top:92px}
+.portfolio-section{padding:0 0 86px;scroll-margin-top:36px}
+.section-overline{display:flex;justify-content:space-between;align-items:baseline;gap:18px;color:var(--pc-accent);padding-bottom:14px;border-bottom:1px solid var(--pc-line)}
+.section-overline span+span{color:#7489a1;font-size:9px;text-align:right}
+.section-title{margin-top:31px;font:500 clamp(28px,3.2vw,39px)/1.65 "Noto Serif SC",serif;letter-spacing:-.035em}
+.section-title em,.philosophy-section .section-heading em{font-style:normal;color:var(--pc-accent)}
+.intro-copy{margin-top:26px;max-width:690px}
+.intro-copy p{font-size:13px;line-height:2.05;color:#aebdd0;margin-top:15px}
+.intro-copy p:first-child{margin-top:0}
+.intro-copy strong{font-weight:600;color:#e0e9f3}
+.intro-proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:30px;border-top:1px solid var(--pc-line);border-bottom:1px solid var(--pc-line)}
+.intro-proof>div{padding:17px 12px 17px 0;min-width:0}
+.intro-proof>div+div{padding-left:15px;border-left:1px solid var(--pc-line)}
+.intro-proof span,.intro-proof small{display:block;color:#7f93aa;font:400 9px/1.8 "Noto Serif SC",serif}
+.intro-proof strong{display:block;margin:8px 0 5px;font:500 12px/1.6 "Noto Serif SC",serif;color:#dce7f4}
+.inline-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-top:23px}
+.inline-links a,.footer-actions a{font:500 10px "DM Mono",monospace;color:var(--pc-accent);text-decoration:none!important}
+.inline-links>a:not(.solid-link){border-bottom:1px solid rgba(121,226,196,.38);padding-bottom:4px}
+.solid-link{display:inline-flex;padding:11px 14px;border:1px solid rgba(121,226,196,.55);border-radius:3px;background:rgba(121,226,196,.07)}
+.solid-link:hover{background:rgba(121,226,196,.14)}
+.section-heading{font:500 27px/1.5 "Noto Serif SC",serif;letter-spacing:-.025em;margin-top:22px}
+.section-lead{margin-top:12px;font:400 12px/2 "Noto Serif SC",serif;color:var(--pc-muted);max-width:680px}
+.skill-list{margin-top:25px;border-top:1px solid var(--pc-line)}
+.skill-row{display:grid;grid-template-columns:35px minmax(0,1fr);gap:14px;padding:23px 0;border-bottom:1px solid var(--pc-line)}
+.skill-number{color:var(--pc-accent);padding-top:4px}
+.skill-row h3{font:500 16px/1.6 "Noto Serif SC",serif;color:#e0e9f3}
+.skill-row p{margin-top:7px;font-size:12px;line-height:1.95;color:#a0b1c5}
+.skill-tags,.project-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.skill-tags span,.project-tags span{font:400 9px "DM Mono",monospace;color:#8fa4ba;padding:5px 8px;border:1px solid rgba(145,164,187,.2);border-radius:2px}
+.scope-note{margin-top:17px;padding-left:12px;border-left:2px solid rgba(121,226,196,.45);font-size:10px;line-height:1.9;color:#758ba2}
+.project-list{margin-top:26px;display:grid;gap:13px}
+.project-card{padding:22px 22px 17px;border:1px solid transparent;border-radius:4px;background:rgba(16,34,56,.63);transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.project-card:hover{transform:translateY(-2px);border-color:rgba(121,226,196,.25);background:#11263d}
+.project-card-muted{background:rgba(16,34,56,.32)}
+.project-card-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.project-type{color:#8196ad;font-size:9px}
+.project-index{color:var(--pc-accent)}
+.project-card h3{margin-top:14px;font:500 19px/1.5 "Noto Serif SC",serif}
+.project-card h3 a{text-decoration:none!important;color:#e1eaf4}
+.project-card h3 a span{display:inline-block;color:var(--pc-accent);font:400 14px "DM Mono",monospace;transition:transform .18s ease}
+.project-card h3 a:hover{color:var(--pc-accent)}
+.project-card h3 a:hover span{transform:translate(3px,-3px)}
+.project-problem{margin-top:12px;font-size:12px;line-height:1.9;color:#c1cedc}
+.project-problem b{font-weight:600;color:var(--pc-accent)}
+.project-card>p:not(.project-problem){margin-top:7px;font-size:12px;line-height:1.95;color:#91a5bb}
+.project-foot{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:17px;padding-top:12px;border-top:1px solid var(--pc-line);font-size:9px;line-height:1.8;color:#7389a0}
+.project-foot a{color:#9fe8d2;text-decoration:none!important;white-space:nowrap}
+.project-foot a:hover{color:#d5fff2}
+.philosophy-section{padding-top:3px}
+.philosophy-section .section-heading{font-size:clamp(27px,3.4vw,39px);line-height:1.65}
+.philosophy-section .section-lead{margin-top:17px}
+.philosophy-list{margin-top:24px;border-top:1px solid var(--pc-line)}
+.philosophy-list article{display:grid;grid-template-columns:120px minmax(0,1fr);gap:20px;padding:22px 0;border-bottom:1px solid var(--pc-line)}
+.philosophy-mark{color:var(--pc-accent);font-size:9px;line-height:1.8}
+.philosophy-list h3{font:500 14px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.philosophy-list p{margin-top:7px;font-size:12px;line-height:2;color:#9aadc1}
+.philosophy-list small{display:block;margin-top:10px;color:#7489a1;font:400 9px "DM Mono",monospace}
+.philosophy-quote{margin-top:25px;padding:19px 20px;border-left:2px solid var(--pc-accent);background:rgba(121,226,196,.055);font:400 14px/2 "Noto Serif SC",serif;color:#c4d4e3}
+.interest-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:25px}
+.interest-grid article{padding:17px 14px;border:1px solid var(--pc-line);border-radius:3px}
+.interest-code{color:var(--pc-accent);font-size:8px;line-height:1.8}
+.interest-grid h3{margin-top:15px;font:500 13px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.interest-grid p{margin-top:8px;font-size:11px;line-height:1.95;color:#93a8bd}
+.interest-links{display:grid;gap:0;margin-top:18px;border-top:1px solid var(--pc-line)}
+.interest-links>a,.interest-links>div{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid var(--pc-line);font:500 11px "Noto Serif SC",serif;color:#c7d5e3;text-decoration:none!important}
+.interest-links span{font:400 9px/1.8 "Noto Serif SC",serif;color:#7f93aa;text-align:right}
+.experience-list{margin-top:24px;border-top:1px solid var(--pc-line)}
+.experience-list article{display:grid;grid-template-columns:140px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid var(--pc-line)}
+.experience-date{font-size:9px;line-height:1.9;color:var(--pc-accent)}
+.experience-list h3{font:500 14px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.experience-list p{margin-top:6px;font-size:12px;line-height:1.95;color:#9aadc1}
+.experience-kind{display:inline-block;margin-top:9px;color:#7389a0;font-size:8px}
+.education-block{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+.education-block>div{padding:15px;border:1px solid var(--pc-line)}
+.education-label{color:var(--pc-accent);font-size:8px}
+.education-block h3{margin-top:11px;font:500 13px/1.7 "Noto Serif SC",serif}
+.education-block p{margin-top:4px;font-size:11px;color:#8fa3b8}
+.portfolio-footer{padding:28px 0 30px;border-top:1px solid rgba(145,164,187,.25)}
+.footer-kicker{color:var(--pc-accent);font-size:9px}
+.portfolio-footer h2{margin-top:16px;font:500 25px/1.5 "Noto Serif SC",serif}
+.portfolio-footer>p:not(.footer-kicker){margin-top:8px;font-size:12px;line-height:1.9;color:#91a4bb}
+.footer-actions{display:flex;gap:20px;flex-wrap:wrap;margin-top:18px}
+.portfolio-footer>small{display:block;margin-top:25px;color:#647a91;font:400 9px "DM Mono",monospace;letter-spacing:.06em}
+.portfolio-v2 ::selection{background:rgba(121,226,196,.25);color:#f0fff9}
+.portfolio-v2 a:focus-visible{outline:2px solid var(--pc-accent);outline-offset:4px}
+@media(max-width:1100px){
+ .portfolio-shell{grid-template-columns:310px minmax(0,1fr);gap:45px;padding:0 42px}
+ .portfolio-sidebar{padding-top:65px}
+ .sidebar-intro{margin-top:50px}
+ .sidebar-intro h1{font-size:34px}
+ .portfolio-main{padding-top:70px}
+ .portfolio-nav{margin-top:34px}
+ .interest-grid{grid-template-columns:1fr}
+ .interest-grid article{padding:16px}
+}
+@media(max-width:760px){
+ .portfolio-shell{display:block;padding:0 22px}
+ .portfolio-sidebar{position:relative;height:auto;min-height:0;padding:28px 0 24px;border-bottom:1px solid var(--pc-line)}
+ .portfolio-brand{font-size:11px}
+ .sidebar-intro{margin-top:35px}
+ .sidebar-intro h1{font-size:32px}
+ .sidebar-intro h2{margin-top:18px;font-size:19px}
+ .sidebar-intro>p:not(.sidebar-kicker){max-width:none}
+ .portfolio-nav{display:flex;flex-wrap:wrap;gap:8px 17px;max-width:none;margin-top:23px}
+ .portfolio-nav a{padding:3px 0;font-size:9px}
+ .portfolio-nav a span{display:none}
+ .sidebar-bottom{margin-top:23px}
+ .sidebar-links{gap:16px}
+ .sidebar-bottom>p{margin-top:12px}
+ .portfolio-main{padding-top:38px}
+ .portfolio-section{padding-bottom:55px;scroll-margin-top:20px}
+ .section-overline{font-size:9px}
+ .section-overline span+span{font-size:8px}
+ .section-title{font-size:26px;line-height:1.65}
+ .intro-copy p{font-size:12px}
+ .intro-proof{grid-template-columns:1fr}
+ .intro-proof>div,.intro-proof>div+div{padding:12px 0;border-left:0}
+ .intro-proof>div+div{border-top:1px solid var(--pc-line)}
+ .intro-proof strong{margin:4px 0}
+ .section-heading{font-size:24px}
+ .skill-row{grid-template-columns:25px minmax(0,1fr);gap:10px;padding:19px 0}
+ .skill-row h3{font-size:14px}
+ .project-card{padding:17px 15px 14px}
+ .project-card h3{font-size:17px}
+ .project-foot{align-items:flex-start;flex-direction:column}
+ .philosophy-section .section-heading{font-size:26px}
+ .philosophy-list article{grid-template-columns:1fr;gap:8px;padding:18px 0}
+ .interest-grid{grid-template-columns:1fr}
+ .interest-links>a,.interest-links>div{align-items:flex-start;flex-direction:column;gap:4px}
+ .interest-links span{text-align:left}
+ .experience-list article{grid-template-columns:1fr;gap:6px;padding:17px 0}
+ .education-block{grid-template-columns:1fr}
+ .portfolio-footer h2{font-size:22px}
+}
+@media(prefers-reduced-motion:reduce){.portfolio-v2 *{scroll-behavior:auto!important;transition:none!important}}
