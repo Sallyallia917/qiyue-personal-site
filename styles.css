@@ -468,3 +468,98 @@ a:focus-visible{outline:2px solid #7b668f;outline-offset:4px}
  .portfolio-footer h2{font-size:22px}
 }
 @media(prefers-reduced-motion:reduce){.portfolio-v2 *{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* V2.1 — shared subpage shell, case studies and resume */
+.portfolio-subpage .portfolio-main{padding-top:68px;padding-bottom:30px}
+.portfolio-subpage .portfolio-section{scroll-margin-top:28px}
+.portfolio-subpage .case-page-v2{min-width:0}
+.portfolio-subpage .case-hero{background:transparent!important;border:0!important;padding:0 0 34px!important;margin:0 0 32px!important}
+.portfolio-subpage .case-hero .back,.portfolio-subpage .resume-topline>a{display:inline-block;color:var(--pc-accent)!important;font:400 10px "DM Mono",monospace;text-decoration:none!important;margin-bottom:26px}
+.portfolio-subpage .case-hero-grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:30px;align-items:start}
+.portfolio-subpage .case-no{font:500 10px "DM Mono",monospace;letter-spacing:.08em;color:var(--pc-accent)!important}
+.portfolio-subpage .case-hero h1{margin-top:17px;font:500 clamp(27px,3.2vw,37px)/1.55 "Noto Serif SC",serif;color:var(--pc-ink)!important;letter-spacing:-.03em}
+.portfolio-subpage .case-hero h1 em{font-style:normal;color:var(--pc-accent)!important}
+.portfolio-subpage .case-summary{font-size:13px!important;line-height:2!important;color:#aebdd0!important}
+.portfolio-subpage .case-meta{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:22px;border-top:1px solid var(--pc-line);border-left:1px solid var(--pc-line)}
+.portfolio-subpage .case-meta>div{padding:11px 12px;border-right:1px solid var(--pc-line);border-bottom:1px solid var(--pc-line)}
+.portfolio-subpage .case-meta span{display:block;color:#7f93aa!important;font:400 9px "DM Mono",monospace}
+.portfolio-subpage .case-meta strong{display:block;margin-top:7px;color:#d5e0eb!important;font:500 11px/1.7 "Noto Serif SC",serif}
+.portfolio-subpage .case-body{max-width:none!important;margin:0!important;padding:0!important}
+.portfolio-subpage .case-section{display:grid;grid-template-columns:130px minmax(0,1fr);gap:22px;padding:24px 0!important;border-top:1px solid var(--pc-line)!important;margin:0!important}
+.portfolio-subpage .case-label{font:500 9px/1.9 "DM Mono",monospace!important;color:var(--pc-accent)!important;letter-spacing:.04em}
+.portfolio-subpage .case-copy h2{font:500 16px/1.8 "Noto Serif SC",serif!important;color:#dce7f4!important;margin:0 0 12px!important}
+.portfolio-subpage .case-copy p,.portfolio-subpage .case-copy li{font-size:12px!important;line-height:2!important;color:#9aadc1!important}
+.portfolio-subpage .case-list{padding-left:18px!important;margin:10px 0 0!important}
+.portfolio-subpage .case-list li{padding-left:2px;margin:7px 0}
+.portfolio-subpage .case-copy strong,.portfolio-subpage .case-copy b{color:#dce7f4!important}
+.portfolio-subpage .takeaway{margin-top:17px;padding:15px 17px!important;background:rgba(121,226,196,.055)!important;border-left:2px solid var(--pc-accent)!important;border-radius:0!important}
+.portfolio-subpage .takeaway b{font:500 10px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .takeaway p{margin-top:7px!important}
+.portfolio-subpage .evidence{margin:24px 0 0!important;padding:21px!important;background:rgba(16,34,56,.6)!important;border:1px solid var(--pc-line)!important;border-radius:4px!important}
+.portfolio-subpage .evidence-head{display:flex;justify-content:space-between;gap:18px;align-items:baseline;padding-bottom:15px;border-bottom:1px solid var(--pc-line)}
+.portfolio-subpage .evidence-kicker{font:500 10px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .evidence-note,.portfolio-subpage .evidence-caption{font-size:10px!important;line-height:1.9!important;color:#758ba2!important}
+.portfolio-subpage .flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin-top:18px}
+.portfolio-subpage .flow-step{padding:11px 9px!important;background:#0b1929!important;border:1px solid var(--pc-line)!important;border-radius:3px!important;min-width:0}
+.portfolio-subpage .flow-step small{font:400 8px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .flow-step strong{display:block;margin-top:7px;font:500 10px/1.7 "Noto Serif SC",serif;color:#dce7f4!important}
+.portfolio-subpage .flow-step span{display:block;margin-top:5px;font-size:9px;line-height:1.7;color:#7f93aa!important}
+.portfolio-subpage .arch{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.portfolio-subpage .arch-box{padding:12px!important;background:#0b1929!important;border:1px solid var(--pc-line)!important;border-radius:3px!important}
+.portfolio-subpage .arch-box small{display:block;font:400 8px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .arch-box strong{display:block;margin-top:7px;font:500 10px/1.7 "Noto Serif SC",serif;color:#dce7f4!important}
+.portfolio-subpage .metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:17px}
+.portfolio-subpage .metric{padding:14px;background:#0b1929!important;border:1px solid var(--pc-line)!important}
+.portfolio-subpage .metric b{display:block;color:var(--pc-accent)!important;font:500 23px "DM Mono",monospace}
+.portfolio-subpage .metric span{display:block;margin-top:7px;font-size:10px;line-height:1.7;color:#91a5bb!important}
+.portfolio-subpage .case-footer{display:flex;justify-content:space-between;gap:18px;margin:30px 0 0!important;padding:18px 0!important;border-top:1px solid var(--pc-line)!important;border-bottom:1px solid var(--pc-line)!important}
+.portfolio-subpage .next-case{display:grid;gap:7px}
+.portfolio-subpage .next-case span{font:400 9px "DM Mono",monospace;color:#7489a1!important}
+.portfolio-subpage .next-case a{font:500 12px "Noto Serif SC",serif;color:var(--pc-accent)!important;text-decoration:none!important}
+.portfolio-subpage>footer,.portfolio-subpage .subpage-footer{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-top:28px;padding:18px 0!important;border-top:1px solid var(--pc-line)!important;color:#7389a0!important;font:400 9px "DM Mono",monospace!important}
+.portfolio-subpage footer a{color:var(--pc-accent)!important;text-decoration:none!important}
+.portfolio-subpage .resume-page{max-width:none!important;width:100%;margin:0!important;padding:0!important;background:transparent!important;color:var(--pc-ink)!important}
+.portfolio-subpage .resume-topline{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:30px;color:#7489a1;font:400 9px "DM Mono",monospace}
+.portfolio-subpage .resume-topline>a{margin:0}
+.portfolio-subpage .resume-hero{padding:0 0 30px!important;border-bottom:1px solid var(--pc-line)!important;background:transparent!important}
+.portfolio-subpage .resume-hero .section-label{font:500 10px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .resume-hero h1{margin-top:18px;font:500 clamp(27px,3.4vw,37px)/1.5 "Noto Serif SC",serif!important;color:var(--pc-ink)!important}
+.portfolio-subpage .resume-hero h1 em{font-style:normal;color:var(--pc-accent)!important}
+.portfolio-subpage .resume-hero>p{margin-top:9px;font-size:12px;line-height:1.9;color:#aebdd0!important}
+.portfolio-subpage .resume-hero .resume-summary{margin-top:22px;max-width:680px;font-size:13px;line-height:2;color:#b7c5d5!important}
+.portfolio-subpage .resume-contact{margin-top:18px;font:400 10px/1.9 "DM Mono",monospace;color:#8095aa!important}
+.portfolio-subpage .resume-section{padding:28px 0!important;border-bottom:1px solid var(--pc-line)!important}
+.portfolio-subpage .resume-section-title{display:flex;align-items:center;gap:14px;margin-bottom:19px}
+.portfolio-subpage .resume-section-title>span{font:500 10px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .resume-section-title h2{font:500 20px "Noto Serif SC",serif;color:#dce7f4!important}
+.portfolio-subpage .resume-skills{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.portfolio-subpage .resume-skills article,.portfolio-subpage .resume-project{padding:16px!important;border:1px solid var(--pc-line)!important;background:rgba(16,34,56,.45)!important;border-radius:3px}
+.portfolio-subpage .resume-skills h3,.portfolio-subpage .resume-entry h3,.portfolio-subpage .resume-project h3{font:500 13px/1.7 "Noto Serif SC",serif;color:#dce7f4!important}
+.portfolio-subpage .resume-skills p,.portfolio-subpage .resume-entry li,.portfolio-subpage .resume-project p,.portfolio-subpage .resume-education p,.portfolio-subpage .resume-closing{margin-top:7px;font-size:11px;line-height:1.95;color:#9aadc1!important}
+.portfolio-subpage .resume-entry{padding:17px 0;border-bottom:1px solid var(--pc-line)}
+.portfolio-subpage .resume-entry-head,.portfolio-subpage .resume-project-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.portfolio-subpage .resume-entry-head>span,.portfolio-subpage .resume-tag{font:400 9px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .resume-entry ul{padding-left:18px;margin-top:10px}
+.portfolio-subpage .resume-entry li{margin:5px 0}
+.portfolio-subpage .resume-project{margin-top:10px}
+.portfolio-subpage .resume-project h3 a{color:var(--pc-accent)!important;text-decoration:none!important}
+.portfolio-subpage .resume-project p b,.portfolio-subpage .resume-education strong{color:#dce7f4!important}
+.portfolio-subpage .resume-education{padding:14px 0}
+.portfolio-subpage .resume-closing a{color:var(--pc-accent)!important}
+.portfolio-subpage .resume-bottom-note{margin-top:20px;padding:13px;border-left:2px solid var(--pc-accent);background:rgba(121,226,196,.05);font-size:10px;line-height:1.9;color:#7f93aa}
+@media(max-width:760px){
+ .portfolio-subpage .portfolio-main{padding-top:34px}
+ .portfolio-subpage .case-hero-grid{grid-template-columns:1fr;gap:19px}
+ .portfolio-subpage .case-hero h1{font-size:29px}
+ .portfolio-subpage .case-section{grid-template-columns:1fr;gap:8px;padding:20px 0!important}
+ .portfolio-subpage .flow{grid-template-columns:1fr 1fr}
+ .portfolio-subpage .arch{grid-template-columns:1fr 1fr}
+ .portfolio-subpage .metric-grid{grid-template-columns:1fr}
+ .portfolio-subpage .evidence{padding:15px!important}
+ .portfolio-subpage .evidence-head{display:block}
+ .portfolio-subpage .evidence-note{margin-top:8px}
+ .portfolio-subpage .resume-skills{grid-template-columns:1fr}
+ .portfolio-subpage .resume-entry-head,.portfolio-subpage .resume-project-head{align-items:flex-start;flex-direction:column;gap:5px}
+ .portfolio-subpage>footer,.portfolio-subpage .subpage-footer{align-items:flex-start;flex-direction:column}
+}
