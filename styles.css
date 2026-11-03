@@ -622,3 +622,68 @@ a:focus-visible{outline:2px solid #7b668f;outline-offset:4px}
     border-bottom:1px solid var(--pc-line);
   }
 }
+
+
+/* Resume layout refinement v2: balanced experience and project grids */
+@media(min-width:761px){
+  .portfolio-subpage .resume-experience-section{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:0 14px;
+  }
+  .portfolio-subpage .resume-experience-section>.resume-section-title{
+    grid-column:1/-1;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry{
+    min-width:0;
+    margin:0;
+    padding:17px 16px;
+    border:1px solid var(--pc-line);
+    border-radius:3px;
+    background:rgba(16,34,56,.22);
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-enterprise{
+    grid-column:1/-1;
+    margin-top:12px;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-waterdrop,
+  .portfolio-subpage .resume-experience-section .resume-entry-consumer{
+    margin-top:0;
+  }
+  .portfolio-subpage .resume-projects-section{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-template-areas:
+      "scrm research"
+      "ees cafe";
+    gap:12px;
+  }
+  .portfolio-subpage .resume-projects-section>.resume-section-title{
+    grid-column:1/-1;
+  }
+  .portfolio-subpage .resume-project-scrm{grid-area:scrm}
+  .portfolio-subpage .resume-project-research{grid-area:research}
+  .portfolio-subpage .resume-project-ees{grid-area:ees}
+  .portfolio-subpage .resume-project-cafe{grid-area:cafe}
+  .portfolio-subpage .resume-projects-section .resume-project{
+    margin:0;
+    min-width:0;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+  }
+  .portfolio-subpage .resume-projects-section .resume-project-head{
+    align-items:flex-start;
+    flex-wrap:wrap;
+  }
+}
+@media(max-width:760px){
+  .portfolio-subpage .resume-experience-section,
+  .portfolio-subpage .resume-projects-section{
+    display:block;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry,
+  .portfolio-subpage .resume-projects-section .resume-project{
+    margin-top:12px;
+  }
+}
