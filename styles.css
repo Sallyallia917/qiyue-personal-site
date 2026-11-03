@@ -688,13 +688,61 @@ a:focus-visible{outline:2px solid #7b668f;outline-offset:4px}
   }
 }
 
-/* Resume information architecture: role column + contribution column */
-@media(min-width:701px){.portfolio-subpage .resume-experience-section{display:block!important}.portfolio-subpage .resume-experience-section>.resume-section-title{margin-bottom:16px}.resume-experience-table{display:flex;flex-direction:column}.resume-experience-row{display:grid;grid-template-columns:minmax(155px,25%) minmax(0,1fr);gap:24px;padding:18px 0;border-top:1px solid var(--pc-line)}.resume-experience-role{padding-right:12px}.resume-experience-content{min-width:0}.resume-experience-content ul{margin:0;padding-left:17px}.resume-experience-content li{margin:4px 0}.portfolio-subpage .resume-projects-section{display:block!important}.resume-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.resume-project-grid .resume-project{margin:0!important;min-width:0;height:100%}.resume-project-grid:has(>.resume-project:last-child:nth-child(odd)){grid-template-columns:1fr}.resume-project-grid .resume-project h3{margin-bottom:8px}}
-@media(max-width:700px){.resume-experience-row{display:grid;grid-template-columns:1fr;gap:9px;padding:16px 0;border-top:1px solid var(--pc-line)}.resume-experience-role{display:grid;grid-template-columns:1fr auto;gap:3px 12px}.resume-experience-role .resume-date{grid-column:1/-1}.resume-experience-role h3{margin:0}.resume-experience-content ul{margin:0;padding-left:17px}.resume-experience-content li{margin:4px 0}.resume-project-grid{display:grid;grid-template-columns:1fr;gap:10px}.resume-project-grid .resume-project{margin:0!important}}
-.resume-experience-role h3{font:500 15px/1.6 "Noto Serif SC",serif;color:#e0e9f3}.resume-experience-role p{margin-top:3px;font-size:11px;line-height:1.8;color:#a0b1c5}.resume-date,.resume-employment-type{font:400 9px "DM Mono",monospace;color:var(--pc-accent)}.resume-employment-type{display:inline-block;margin-top:10px;opacity:.85}.resume-core-tags{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px}.resume-core-tags b{font-size:10px;font-weight:500;color:#dce7f4;margin-right:3px}.resume-core-tags span{padding:3px 7px;border:1px solid rgba(121,226,196,.28);border-radius:2px;color:#79e2c4;font-size:9px}.resume-more-link{margin-top:14px;text-align:right}.resume-more-link a{font:400 10px "DM Mono",monospace;color:var(--pc-accent);text-decoration:none;border-bottom:1px solid rgba(121,226,196,.35);padding-bottom:3px}
-.portfolio-footer{padding:18px 0!important}.portfolio-footer h2{margin-top:6px!important;font-size:19px!important}.portfolio-footer>p:not(.footer-kicker){display:none}.portfolio-footer>small{margin-top:14px!important}.portfolio-footer .footer-actions{margin-top:12px!important;gap:18px!important}.portfolio-footer .footer-actions a{font-size:10px!important}
-.portfolio-main .section-title,.portfolio-main .section-heading{color:#e0e9f3}.portfolio-main .skill-row h3,.portfolio-main .project-card h3,.portfolio-main .experience-list h3{color:#e0e9f3}.portfolio-main strong,.portfolio-main b{color:#dce7f4}.portfolio-main .skill-tags span,.portfolio-main .project-tags span{border-color:rgba(121,226,196,.25);color:#79e2c4}
-.intro-copy p,.section-lead,.philosophy-list p,.interest-grid p,.experience-list p{color:#a0b1c5}
-.philosophy-list article{padding:15px 0}.philosophy-list article+article{border-top:1px solid rgba(145,164,187,.16)}
-.interest-grid{gap:12px}.interest-grid article{padding:14px 0;border-top:1px solid rgba(145,164,187,.18)}
-.experience-list article{padding:14px 0}.education-block{margin-top:18px}
+
+/* Resume consistency pass — scoped, single source of layout rules */
+.portfolio-subpage .resume-page{width:100%;max-width:960px;margin:0 auto;padding:45px 38px 75px;box-sizing:border-box;min-width:0;overflow-wrap:anywhere}
+.portfolio-subpage .resume-page *{box-sizing:border-box;min-width:0}
+.portfolio-subpage .resume-section{display:block!important;margin:0;padding:27px 0;border-bottom:1px solid var(--pc-line)}
+.portfolio-subpage .resume-section-title{display:flex;align-items:baseline;gap:12px;margin:0 0 16px}
+.portfolio-subpage .resume-section-title>span{font:400 10px "DM Mono",monospace;color:var(--pc-accent)}
+.portfolio-subpage .resume-section-title h2{font:500 20px/1.5 "Noto Serif SC",serif;color:#dce7f4;margin:0}
+.portfolio-subpage .resume-hero{padding:38px 0 30px;border-bottom:1px solid var(--pc-line)}
+.portfolio-subpage .resume-hero h1{font:500 clamp(30px,4vw,44px)/1.35 "Noto Serif SC",serif;letter-spacing:-.02em;margin:18px 0 0;color:#e0e9f3;overflow-wrap:anywhere}
+.portfolio-subpage .resume-hero h1 em{font-style:normal;color:var(--pc-accent)}
+.portfolio-subpage .resume-hero>p:first-of-type{margin:13px 0 0;font:500 14px/1.8 "Noto Serif SC",serif;color:#dce7f4}
+.portfolio-subpage .resume-summary{max-width:760px;margin:15px 0 0;font:400 12px/1.95 "Noto Serif SC",serif;color:#a0b1c5}
+.portfolio-subpage .resume-contact{margin-top:13px;font:400 10px/1.8 "DM Mono",monospace;color:var(--pc-accent)}
+.portfolio-subpage .resume-skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.portfolio-subpage .resume-skills article{padding:13px 14px!important;border:1px solid var(--pc-line)!important;border-radius:3px;background:rgba(16,34,56,.35)!important}
+.portfolio-subpage .resume-skills h3,.portfolio-subpage .resume-entry h3,.portfolio-subpage .resume-project h3{margin:0 0 7px;font:500 13px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.portfolio-subpage .resume-skills p,.portfolio-subpage .resume-project p,.portfolio-subpage .resume-closing{margin:0;font:400 11px/1.9 "Noto Serif SC",serif;color:#9aadc1}
+.portfolio-subpage .resume-experience-list{display:flex;flex-direction:column;gap:0}
+.portfolio-subpage .resume-experience-section .resume-entry{display:block!important;margin:0!important;padding:17px 0!important;border:0!important;border-top:1px solid var(--pc-line)!important;border-radius:0!important;background:transparent!important}
+.portfolio-subpage .resume-entry-layout{display:grid;grid-template-columns:minmax(145px,24%) minmax(0,1fr);column-gap:24px;align-items:start}
+.portfolio-subpage .resume-entry-meta{padding:2px 8px 0 0}
+.portfolio-subpage .resume-entry-meta h3{margin:0 0 4px;font:500 15px/1.65 "Noto Serif SC",serif;color:#e0e9f3}
+.portfolio-subpage .resume-entry-meta p{margin:0;font:400 11px/1.8 "Noto Serif SC",serif;color:#a0b1c5}
+.portfolio-subpage .resume-entry-date{display:block;margin-top:8px;font:400 9px/1.6 "DM Mono",monospace;color:var(--pc-accent)}
+.portfolio-subpage .resume-entry-content{min-width:0}
+.portfolio-subpage .resume-entry-content ul{margin:0;padding-left:17px;color:#9aadc1;font:400 11px/1.9 "Noto Serif SC",serif}
+.portfolio-subpage .resume-entry-content li{margin:0 0 5px;font:inherit;line-height:inherit}
+.portfolio-subpage .resume-entry-content li b{font-weight:500;color:#dce7f4}
+.portfolio-subpage .resume-core-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.portfolio-subpage .resume-core-tags span{display:inline-block;padding:3px 7px;border:1px solid rgba(121,226,196,.25);border-radius:2px;color:#79e2c4;font:400 9px/1.5 "Noto Serif SC",serif}
+.portfolio-subpage .resume-evidence-note{margin:9px 0 0;font:400 10px/1.8 "Noto Serif SC",serif;color:#8196ad}
+.portfolio-subpage .resume-detail-link{display:inline-block;margin-top:9px;font:400 10px/1.7 "DM Mono",monospace;color:var(--pc-accent);text-decoration:none;border-bottom:1px solid rgba(121,226,196,.3);padding-bottom:2px}
+.portfolio-subpage .resume-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.portfolio-subpage .resume-project-grid>.resume-project{display:flex;flex-direction:column;margin:0!important;padding:15px!important;border:1px solid var(--pc-line)!important;border-radius:3px;background:rgba(16,34,56,.35)!important;min-width:0;height:100%}
+.portfolio-subpage .resume-project-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap;margin-bottom:7px}
+.portfolio-subpage .resume-project h3{margin:0;font:500 13px/1.7 "Noto Serif SC",serif}
+.portfolio-subpage .resume-project h3 a{color:var(--pc-accent);text-decoration:none}
+.portfolio-subpage .resume-project p{margin:5px 0 0;font:400 11px/1.9 "Noto Serif SC",serif;color:#9aadc1}
+.portfolio-subpage .resume-project p b{font-weight:500;color:#dce7f4}
+.portfolio-subpage .resume-tag{padding:3px 7px;border:1px solid rgba(121,226,196,.25);color:var(--pc-accent);font:400 9px/1.5 "DM Mono",monospace;white-space:normal}
+.portfolio-subpage .resume-education{padding:0}
+.portfolio-subpage .resume-education p{margin:5px 0;font:400 11px/1.9 "Noto Serif SC",serif;color:#9aadc1}
+.portfolio-subpage .resume-education strong{font-weight:500;color:#dce7f4}
+.portfolio-subpage .resume-bottom-note{margin-top:18px;padding:12px;border-left:2px solid var(--pc-accent);background:rgba(121,226,196,.05);font:400 10px/1.8 "Noto Serif SC",serif;color:#8196ad}
+.portfolio-subpage .subpage-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 38px}
+.portfolio-subpage .subpage-footer span{font:400 10px/1.7 "Noto Serif SC",serif;color:#8196ad}
+.portfolio-subpage .subpage-footer a{color:var(--pc-accent);text-decoration:none}
+@media(max-width:760px){
+ .portfolio-subpage .resume-page{padding:30px 20px 48px}
+ .portfolio-subpage .resume-skills,.portfolio-subpage .resume-project-grid{grid-template-columns:1fr}
+ .portfolio-subpage .resume-entry-layout{grid-template-columns:1fr;row-gap:9px}
+ .portfolio-subpage .resume-entry-meta{padding:0}
+ .portfolio-subpage .resume-entry-date{margin-top:3px}
+ .portfolio-subpage .resume-project-head{align-items:flex-start}
+ .portfolio-subpage .subpage-footer{align-items:flex-start;flex-direction:column;padding:15px 20px}
+}
+@media(min-width:761px){.portfolio-subpage .resume-project-grid>.resume-project:last-child:nth-child(odd){grid-column:1/-1}}
