@@ -622,3 +622,45 @@ a:focus-visible{outline:2px solid #7b668f;outline-offset:4px}
  .portfolio-subpage .subpage-footer{align-items:flex-start;flex-direction:column;padding:15px 20px}
 }
 @media(min-width:761px){.portfolio-subpage .resume-project-grid>.resume-project:last-child:nth-child(odd){grid-column:1/-1}}
+
+/* Resume projects: one full-width project per row */
+.portfolio-subpage .resume-projects-section .resume-project-grid{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:stretch!important;
+  gap:14px!important;
+  width:100%;
+}
+.portfolio-subpage .resume-projects-section .resume-project-grid>.resume-project{
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  height:auto!important;
+  margin:0!important;
+  padding:17px 19px!important;
+  box-sizing:border-box!important;
+  overflow-wrap:anywhere;
+}
+.portfolio-subpage .resume-projects-section .resume-project-head{
+  display:flex!important;
+  align-items:flex-start!important;
+  justify-content:space-between!important;
+  gap:10px!important;
+  flex-wrap:wrap!important;
+  margin:0 0 8px!important;
+}
+.portfolio-subpage .resume-projects-section .resume-project p{
+  display:block!important;
+  position:static!important;
+  width:auto!important;
+  height:auto!important;
+  margin:5px 0 0!important;
+  overflow:visible!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+}
+@media(max-width:760px){
+  .portfolio-subpage .resume-projects-section .resume-project-grid{gap:10px!important}
+  .portfolio-subpage .resume-projects-section .resume-project-grid>.resume-project{padding:14px!important}
+}
