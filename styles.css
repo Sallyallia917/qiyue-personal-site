@@ -563,3 +563,62 @@ a:focus-visible{outline:2px solid #7b668f;outline-offset:4px}
  .portfolio-subpage .resume-entry-head,.portfolio-subpage .resume-project-head{align-items:flex-start;flex-direction:column;gap:5px}
  .portfolio-subpage>footer,.portfolio-subpage .subpage-footer{align-items:flex-start;flex-direction:column}
 }
+
+
+/* Resume layout refinement — balanced content groups */
+.portfolio-subpage .resume-experience-section{
+  display:block;
+}
+.portfolio-subpage .resume-experience-section .resume-experience-grid{
+  display:grid;
+}
+.portfolio-subpage .resume-experience-section .resume-entry{
+  min-width:0;
+}
+.portfolio-subpage .resume-experience-section .resume-entry:nth-of-type(3){
+  grid-area:enterprise;
+}
+.portfolio-subpage .resume-experience-section .resume-entry:nth-of-type(2){
+  grid-area:waterdrop;
+}
+.portfolio-subpage .resume-experience-section .resume-entry:nth-of-type(4){
+  grid-area:consumer;
+}
+.portfolio-subpage .resume-projects-section{
+  display:block;
+}
+.portfolio-subpage .resume-projects-section .resume-project{
+  min-width:0;
+  margin:0;
+  height:100%;
+}
+.portfolio-subpage .resume-projects-section .resume-project:nth-of-type(2){grid-area:ees}
+.portfolio-subpage .resume-projects-section .resume-project:nth-of-type(3){grid-area:cafe}
+.portfolio-subpage .resume-projects-section .resume-project:nth-of-type(4){grid-area:scrm}
+.portfolio-subpage .resume-projects-section .resume-project:nth-of-type(5){grid-area:research}
+@media(min-width:761px){
+  .portfolio-subpage .resume-experience-section .resume-entry:nth-of-type(2),
+  .portfolio-subpage .resume-experience-section .resume-entry:nth-of-type(3),
+  .portfolio-subpage .resume-experience-section .resume-entry:nth-of-type(4){
+    padding:17px 18px;
+    border:1px solid var(--pc-line);
+    border-radius:3px;
+    background:rgba(16,34,56,.22);
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry:nth-of-type(3){
+    grid-column:1/-1;
+  }
+  .portfolio-subpage .resume-projects-section .resume-project{
+    display:flex;
+    flex-direction:column;
+  }
+  .portfolio-subpage .resume-projects-section .resume-project-head{
+    align-items:baseline;
+  }
+}
+@media(max-width:760px){
+  .portfolio-subpage .resume-experience-section .resume-entry{
+    padding:17px 0;
+    border-bottom:1px solid var(--pc-line);
+  }
+}
