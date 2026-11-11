@@ -904,3 +904,157 @@ footer span:nth-child(n+2){display:none!important}
 .portfolio-subpage .resume-tag{border-color:rgba(98,80,216,.25)!important}
 .portfolio-subpage .resume-entry-content ul{color:#586487!important}
 .portfolio-subpage .resume-evidence-note{color:#7782a7!important}
+
+
+/* V2.3 — stronger text contrast and clearer content hierarchy */
+.portfolio-v2{
+  --pc-bg:#eaf2ff;
+  --pc-panel:#fbfcff;
+  --pc-ink:#101638;
+  --pc-muted:#465579;
+  --pc-accent:#5140c8;
+  --pc-line:rgba(49,64,130,.24);
+  color:#101638;
+  background:
+    radial-gradient(ellipse at 78% 8%,rgba(174,157,255,.42),transparent 34%),
+    radial-gradient(ellipse at 18% 24%,rgba(137,202,255,.43),transparent 38%),
+    linear-gradient(135deg,#eaf3ff 0%,#e5edff 48%,#eee9ff 100%);
+}
+.portfolio-v2 .portfolio-sidebar{
+  background:linear-gradient(155deg,rgba(195,218,255,.96) 0%,rgba(218,211,255,.94) 56%,rgba(201,229,255,.96) 100%);
+  border-right-color:rgba(55,66,143,.22);
+}
+.portfolio-v2 .portfolio-brand,.portfolio-v2 .sidebar-intro h1,
+.portfolio-v2 .sidebar-intro h2,.portfolio-v2 .section-title,
+.portfolio-v2 .section-heading,.portfolio-v2 .skill-row h3,
+.portfolio-v2 .project-card h3 a,.portfolio-v2 .philosophy-list h3,
+.portfolio-v2 .interest-grid h3,.portfolio-v2 .experience-list h3,
+.portfolio-v2 .education-block h3,.portfolio-v2 .portfolio-footer h2{
+  color:#101638!important;
+}
+.portfolio-v2 .intro-copy p,.portfolio-v2 .skill-row p,
+.portfolio-v2 .project-problem,.portfolio-v2 .project-card>p:not(.project-problem),
+.portfolio-v2 .philosophy-list p,.portfolio-v2 .interest-grid p,
+.portfolio-v2 .experience-list p,.portfolio-v2 .section-lead,
+.portfolio-v2 .portfolio-footer>p:not(.footer-kicker),
+.portfolio-v2 .sidebar-intro>p:not(.sidebar-kicker),
+.portfolio-v2 .portfolio-nav a,.portfolio-v2 .sidebar-links a{
+  color:#344366!important;
+}
+.portfolio-v2 .sidebar-detail,.portfolio-v2 .project-type,
+.portfolio-v2 .project-foot,.portfolio-v2 .intro-proof small,
+.portfolio-v2 .philosophy-list small,.portfolio-v2 .experience-kind,
+.portfolio-v2 .education-block p,.portfolio-v2 .portfolio-footer>small,
+.portfolio-v2 .sidebar-bottom>p{
+  color:#526184!important;
+}
+.portfolio-v2 .section-overline,.portfolio-v2 .skill-number,
+.portfolio-v2 .project-index,.portfolio-v2 .philosophy-mark,
+.portfolio-v2 .interest-code,.portfolio-v2 .education-label,
+.portfolio-v2 .experience-date,.portfolio-v2 .footer-kicker,
+.portfolio-v2 .section-title em,.portfolio-v2 .section-heading em,
+.portfolio-v2 .project-card h3 a span,.portfolio-v2 .project-foot a,
+.portfolio-v2 .sidebar-links a span{
+  color:#4938bd!important;
+}
+.portfolio-v2 .intro-proof{
+  background:linear-gradient(110deg,rgba(255,255,255,.86),rgba(231,229,255,.78))!important;
+  border:1px solid rgba(80,68,177,.22)!important;
+  box-shadow:0 12px 34px rgba(60,72,145,.09);
+  border-radius:18px;
+}
+.portfolio-v2 .intro-proof>div+div{border-left-color:rgba(72,75,151,.22)!important}
+.portfolio-v2 .intro-proof span{color:#5140c8!important}
+.portfolio-v2 .intro-proof strong{color:#171844!important}
+.portfolio-v2 .project-card,.portfolio-v2 .project-card-muted{
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(244,247,255,.94))!important;
+  border:1px solid rgba(63,78,153,.23)!important;
+  box-shadow:0 10px 30px rgba(49,67,139,.085)!important;
+}
+.portfolio-v2 .project-card:hover{
+  background:#fff!important;border-color:rgba(81,64,200,.52)!important;
+  box-shadow:0 16px 36px rgba(67,62,166,.14)!important;
+}
+.portfolio-v2 .skill-tags span,.portfolio-v2 .project-tags span{
+  color:#403b91!important;background:rgba(220,222,255,.55)!important;
+  border-color:rgba(79,68,180,.28)!important;
+}
+.portfolio-v2 .scope-note{
+  color:#465579!important;background:rgba(224,230,255,.46);
+  border-left-color:#5140c8!important;
+}
+.portfolio-v2 .philosophy-quote{
+  color:#28265f!important;background:linear-gradient(100deg,rgba(207,199,255,.42),rgba(203,228,255,.42))!important;
+  border-left-color:#5140c8!important;
+}
+.portfolio-v2 .interest-grid article,.portfolio-v2 .education-block>div{
+  background:rgba(255,255,255,.72)!important;border-color:rgba(63,78,153,.2)!important;
+}
+.portfolio-subpage .case-hero h1,.portfolio-subpage .case-copy h2,
+.portfolio-subpage .case-copy strong,.portfolio-subpage .case-copy b,
+.portfolio-subpage .case-meta strong,.portfolio-subpage .resume-hero h1,
+.portfolio-subpage .resume-section-title h2,.portfolio-subpage .resume-skills h3,
+.portfolio-subpage .resume-entry h3,.portfolio-subpage .resume-project h3,
+.portfolio-subpage .resume-education strong{
+  color:#101638!important;
+}
+.portfolio-subpage .case-summary,.portfolio-subpage .case-copy p,
+.portfolio-subpage .case-copy li,.portfolio-subpage .resume-hero>p,
+.portfolio-subpage .resume-hero .resume-summary,.portfolio-subpage .resume-skills p,
+.portfolio-subpage .resume-entry li,.portfolio-subpage .resume-project p,
+.portfolio-subpage .resume-education p{
+  color:#344366!important;
+}
+.portfolio-subpage .case-meta span,.portfolio-subpage .evidence-note,
+.portfolio-subpage .evidence-caption,.portfolio-subpage .resume-evidence-note,
+.portfolio-subpage .resume-bottom-note,.portfolio-subpage .subpage-footer span{
+  color:#526184!important;
+}
+.portfolio-subpage .case-label,.portfolio-subpage .case-no,
+.portfolio-subpage .resume-hero h1 em,.portfolio-subpage .resume-section-title>span,
+.portfolio-subpage .resume-contact,.portfolio-subpage .resume-entry-head>span,
+.portfolio-subpage .resume-tag,.portfolio-subpage .resume-project h3 a,
+.portfolio-subpage .resume-detail-link,.portfolio-subpage .case-hero h1 em{
+  color:#4938bd!important;
+}
+.portfolio-subpage .case-section{border-color:rgba(49,64,130,.23)!important}
+.portfolio-subpage .evidence,.portfolio-subpage .resume-skills article,
+.portfolio-subpage .resume-project,.portfolio-subpage .resume-project-grid>.resume-project{
+  background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(242,246,255,.96))!important;
+  border-color:rgba(63,78,153,.23)!important;
+  box-shadow:0 10px 28px rgba(49,67,139,.075)!important;
+}
+.portfolio-subpage .metric{
+  background:linear-gradient(145deg,#f4f5ff,#e5eaff)!important;
+  border:1px solid rgba(81,64,200,.25)!important;
+}
+.portfolio-subpage .metric b{color:#4032ae!important}
+.portfolio-subpage .metric span{color:#3e4c70!important}
+.portfolio-subpage .takeaway,.portfolio-subpage .resume-bottom-note{
+  background:linear-gradient(105deg,rgba(205,197,255,.48),rgba(194,224,255,.48))!important;
+  border-left-color:#5140c8!important;
+}
+.portfolio-subpage .architecture-layer-final{
+  background:linear-gradient(105deg,rgba(210,202,255,.58),rgba(205,231,255,.58))!important;
+  border-color:rgba(81,64,200,.42)!important;
+}
+.portfolio-subpage .star-card,.portfolio-subpage .roadmap-card,
+.portfolio-subpage .architecture-layer,.portfolio-subpage .architecture-node,
+.portfolio-subpage .flow-step,.portfolio-subpage .arch-box{
+  background:rgba(250,252,255,.96)!important;
+  border-color:rgba(63,78,153,.22)!important;
+}
+.portfolio-subpage .star-card h3,.portfolio-subpage .roadmap-card h3,
+.portfolio-subpage .architecture-layer strong,.portfolio-subpage .architecture-node b,
+.portfolio-subpage .flow-step strong,.portfolio-subpage .arch-box strong{
+  color:#171844!important;
+}
+.portfolio-subpage .star-card p,.portfolio-subpage .roadmap-card p,
+.portfolio-subpage .architecture-layer small,.portfolio-subpage .architecture-node small,
+.portfolio-subpage .flow-step span,.portfolio-subpage .flow-step small{
+  color:#405075!important;
+}
+.portfolio-subpage .case-footer a,.portfolio-subpage .next-case a,
+.portfolio-subpage .subpage-footer a,.portfolio-subpage .takeaway b{
+  color:#4938bd!important;
+}
