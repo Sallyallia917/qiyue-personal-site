@@ -1114,3 +1114,35 @@ footer span:nth-child(n+2){display:none!important}
 @media(max-width:760px){
  .portfolio-subpage .resume-education-heading,.portfolio-v2 .education-heading{align-items:flex-start;flex-direction:column;gap:2px}
 }
+
+
+/* V2.4 — restrained line icons for portfolio navigation and content groups */
+.portfolio-icon{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:30px;height:30px;border:1px solid rgba(121,226,196,.25);border-radius:8px;color:#8edfc9;background:rgba(121,226,196,.07)}
+.portfolio-icon svg{display:block;width:16px;height:16px}
+.project-card-top{display:flex;align-items:center;gap:10px}
+.project-card-top .project-type{margin-right:auto}
+.project-card-top .project-index{margin-left:auto}
+.experience-list article{align-items:start}
+.experience-list article>.portfolio-icon{margin-top:1px}
+.experience-list article{grid-template-columns:30px 120px minmax(0,1fr)}
+.experience-list article>.experience-date{grid-column:2}
+.experience-list article>div:not(.experience-date){grid-column:3}
+.education-block>div{position:relative;padding:16px 16px 15px 58px;background:rgba(121,226,196,.025);transition:border-color .2s ease,background .2s ease,transform .2s ease}
+.education-block>div:hover{border-color:rgba(121,226,196,.42);background:rgba(121,226,196,.07);transform:translateY(-2px)}
+.education-block>div>.portfolio-icon{position:absolute;left:15px;top:17px;width:32px;height:32px}
+.education-block .education-label{display:block}
+.resume-section-title{align-items:center}
+.resume-section-title .portfolio-icon{width:25px;height:25px;border-radius:7px;margin-right:1px}
+.resume-project-head{align-items:center}
+.resume-project-head .portfolio-icon{width:26px;height:26px;border-radius:7px}
+.resume-entry-meta{position:relative;padding-left:38px}
+.resume-entry-meta>.portfolio-icon{position:absolute;left:0;top:0;width:27px;height:27px}
+.resume-education-cards>div{position:relative;padding-left:55px}
+.resume-education-cards>div>.portfolio-icon{position:absolute;left:14px;top:16px;width:29px;height:29px}
+@media(max-width:800px){
+ .experience-list article{grid-template-columns:25px minmax(0,1fr);gap:8px 12px}
+ .experience-list article>.portfolio-icon{grid-column:1;grid-row:1}
+ .experience-list article>.experience-date{grid-column:2;grid-row:1}
+ .experience-list article>div:not(.experience-date){grid-column:2;grid-row:2}
+}
+@media(prefers-reduced-motion:reduce){.education-block>div{transition:none}}
