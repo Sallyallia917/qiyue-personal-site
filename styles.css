@@ -1466,3 +1466,223 @@ footer span:nth-child(n+2){display:none!important}
 }
 
 /* V3.0 — resume layout restored; homepage section icons retained */
+
+
+/* V3.1 — clean, isolated resume layout layer. All rules scoped to resume page. */
+.portfolio-subpage .resume-page{
+  width:100%!important;max-width:960px!important;margin:0 auto!important;
+  padding:34px 38px 64px!important;min-width:0!important;
+  color:#202744!important;overflow-wrap:anywhere;
+}
+.portfolio-subpage .resume-page *{box-sizing:border-box;min-width:0}
+.portfolio-subpage .resume-topline{
+  display:flex!important;justify-content:space-between!important;align-items:center!important;
+  gap:16px!important;margin:0 0 22px!important;padding:0 0 12px!important;
+  border-bottom:1px solid rgba(74,83,139,.18)!important;
+  color:#5b6382!important;font-size:11px!important;
+}
+.portfolio-subpage .resume-topline a{color:#4938bd!important;font-weight:600!important}
+.portfolio-subpage .resume-hero{
+  padding:12px 0 28px!important;border-bottom:1px solid rgba(74,83,139,.2)!important;
+  background:transparent!important;
+}
+.portfolio-subpage .resume-hero .section-label{
+  color:#5140c8!important;font:600 10px "DM Mono",monospace!important;letter-spacing:.12em;
+}
+.portfolio-subpage .resume-hero h1{
+  margin:13px 0 0!important;color:#171b3c!important;
+  font:600 clamp(29px,3.6vw,42px)/1.35 "Noto Serif SC",serif!important;letter-spacing:-.02em;
+}
+.portfolio-subpage .resume-hero h1 em{color:#5140c8!important;font-style:normal}
+.portfolio-subpage .resume-hero>p:first-of-type{
+  margin:10px 0 0!important;color:#302d65!important;font-size:14px!important;font-weight:650!important;
+}
+.portfolio-subpage .resume-hero .resume-summary{
+  max-width:760px!important;margin:17px 0 0!important;color:#3d4868!important;
+  font-size:13px!important;line-height:2!important;
+}
+.portfolio-subpage .resume-contact{
+  display:inline-block!important;margin-top:15px!important;padding:7px 11px!important;
+  border:1px solid rgba(81,64,200,.18)!important;border-radius:6px!important;
+  background:rgba(229,231,255,.58)!important;color:#352b91!important;
+  font-size:11px!important;font-weight:650!important;
+}
+.portfolio-subpage .resume-section{
+  display:block!important;margin:0!important;padding:27px 0!important;
+  border-bottom:1px solid rgba(74,83,139,.18)!important;
+}
+.portfolio-subpage .resume-section-title{
+  display:flex!important;align-items:center!important;justify-content:flex-start!important;
+  gap:11px!important;margin:0 0 16px!important;text-align:left!important;
+}
+.portfolio-subpage .resume-section-title>.resume-section-number{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  width:26px!important;height:26px!important;flex:0 0 26px!important;
+  border-radius:7px!important;background:rgba(225,229,255,.72)!important;
+  color:#5140c8!important;font:600 10px "DM Mono",monospace!important;
+}
+.portfolio-subpage .resume-section-title>.resume-heading-icon{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  width:28px!important;height:28px!important;flex:0 0 28px!important;
+  border-radius:8px!important;border:1px solid rgba(81,64,200,.16)!important;
+  background:linear-gradient(135deg,#e7edff,#eee8ff)!important;color:#5140c8!important;
+}
+.portfolio-subpage .resume-heading-icon svg{width:16px!important;height:16px!important;display:block}
+.portfolio-subpage .resume-section-title h2{
+  margin:0!important;color:#171b3c!important;font:650 19px/1.45 "Noto Serif SC",serif!important;
+  text-align:left!important;
+}
+.portfolio-subpage .resume-skills{
+  display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:12px!important;
+}
+.portfolio-subpage .resume-skills article{
+  display:block!important;margin:0!important;padding:15px 16px!important;
+  border:1px solid rgba(74,83,139,.18)!important;border-left:3px solid rgba(81,64,200,.52)!important;
+  border-radius:9px!important;background:linear-gradient(145deg,#fff,#f2f5ff)!important;
+  box-shadow:0 5px 18px rgba(49,67,139,.045)!important;
+}
+.portfolio-subpage .resume-skills h3{
+  margin:0 0 7px!important;color:#201d59!important;font:700 14px/1.6 "Noto Serif SC",serif!important;
+  background:linear-gradient(transparent 65%,rgba(179,170,255,.35) 65%)!important;
+}
+.portfolio-subpage .resume-skills p{
+  margin:0!important;color:#3d4868!important;font:400 12px/1.85 "Noto Serif SC",serif!important;
+}
+.portfolio-subpage .resume-skills .resume-evidence-note{margin-top:7px!important;color:#67708a!important;font-size:10px!important}
+.portfolio-subpage .resume-project-grid{
+  display:flex!important;flex-direction:column!important;align-items:stretch!important;
+  gap:12px!important;width:100%!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project{
+  display:block!important;position:relative!important;width:100%!important;max-width:none!important;
+  height:auto!important;margin:0!important;padding:16px 19px!important;overflow:visible!important;
+  border:1px solid rgba(74,83,139,.19)!important;border-radius:9px!important;
+  background:linear-gradient(145deg,#fff,#f3f6ff)!important;
+  box-shadow:0 6px 20px rgba(49,67,139,.055)!important;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project:before{content:none!important}
+.portfolio-subpage .resume-project-grid>.resume-project:hover{
+  transform:translateY(-2px)!important;border-color:rgba(81,64,200,.42)!important;
+  background:#fff!important;box-shadow:0 12px 26px rgba(67,62,166,.1)!important;
+}
+.portfolio-subpage .resume-project-head{
+  display:flex!important;align-items:center!important;justify-content:flex-start!important;
+  flex-direction:row!important;flex-wrap:wrap!important;gap:9px 14px!important;margin:0 0 8px!important;
+  text-align:left!important;
+}
+.portfolio-subpage .resume-project-head>.portfolio-icon{display:none!important}
+.portfolio-subpage .resume-project-head h3{
+  display:block!important;flex:0 1 auto!important;margin:0!important;text-align:left!important;
+  color:#171b3c!important;font:700 15px/1.6 "Noto Serif SC",serif!important;
+}
+.portfolio-subpage .resume-project-head h3 a{
+  color:#28236e!important;text-align:left!important;text-decoration:none!important;
+  text-decoration-color:rgba(81,64,200,.3)!important;text-underline-offset:4px;
+}
+.portfolio-subpage .resume-project-head h3 a:hover{color:#5140c8!important;text-decoration:underline!important}
+.portfolio-subpage .resume-project-head .resume-tag{
+  display:inline-block!important;margin:0 0 0 auto!important;padding:4px 8px!important;
+  border:1px solid rgba(81,64,200,.17)!important;border-radius:5px!important;
+  background:rgba(229,231,255,.62)!important;color:#40349d!important;
+  font:600 10px/1.5 Inter,sans-serif!important;
+}
+.portfolio-subpage .resume-project p{
+  display:block!important;position:static!important;width:auto!important;height:auto!important;
+  margin:5px 0 0!important;overflow:visible!important;white-space:normal!important;
+  color:#3d4868!important;font:400 12px/1.85 "Noto Serif SC",serif!important;overflow-wrap:anywhere!important;
+}
+.portfolio-subpage .resume-project p b{
+  display:inline!important;margin:0 3px 0 0!important;padding:1px 5px!important;
+  border:0!important;border-radius:3px!important;background:rgba(221,222,255,.62)!important;
+  color:#40349d!important;font-weight:700!important;
+}
+.portfolio-subpage .resume-experience-list{
+  display:flex!important;flex-direction:column!important;gap:12px!important;
+}
+.portfolio-subpage .resume-entry{
+  display:block!important;margin:0!important;padding:17px 19px!important;
+  border:1px solid rgba(74,83,139,.19)!important;border-radius:9px!important;
+  background:linear-gradient(145deg,#fff,#f3f6ff)!important;
+  box-shadow:0 6px 20px rgba(49,67,139,.045)!important;
+}
+.portfolio-subpage .resume-entry-layout{
+  display:grid!important;grid-template-columns:minmax(190px,230px) minmax(0,1fr)!important;
+  gap:22px!important;align-items:start!important;
+}
+.portfolio-subpage .resume-entry-meta{
+  display:flex!important;flex-direction:column!important;align-items:flex-start!important;
+  gap:5px!important;margin:0!important;padding:0!important;
+}
+.portfolio-subpage .resume-entry-meta>.portfolio-icon{display:none!important}
+.portfolio-subpage .resume-entry-meta h3{
+  display:block!important;margin:0!important;color:#171b3c!important;
+  font:700 16px/1.55 "Noto Serif SC",serif!important;
+}
+.portfolio-subpage .resume-entry-meta>p{
+  margin:0!important;color:#46516f!important;font:600 11px/1.7 "Noto Serif SC",serif!important;
+}
+.portfolio-subpage .resume-entry-date{
+  display:inline-block!important;margin-top:4px!important;padding:4px 8px!important;
+  border:1px solid rgba(81,64,200,.16)!important;border-radius:5px!important;
+  background:rgba(229,231,255,.62)!important;color:#40349d!important;
+  font:650 10px/1.5 Inter,sans-serif!important;
+}
+.portfolio-subpage .resume-entry-content{min-width:0!important}
+.portfolio-subpage .resume-entry-content ul{
+  margin:0!important;padding:0 0 0 17px!important;color:#3d4868!important;
+  font:400 12px/1.9 "Noto Serif SC",serif!important;
+}
+.portfolio-subpage .resume-entry-content li{margin:0 0 5px!important;color:#3d4868!important}
+.portfolio-subpage .resume-entry-content li b{
+  color:#40349d!important;font-weight:700!important;
+  background:linear-gradient(transparent 62%,rgba(179,170,255,.32) 62%)!important;
+}
+.portfolio-subpage .resume-core-tags{
+  display:flex!important;flex-wrap:wrap!important;gap:6px!important;margin-top:10px!important;
+}
+.portfolio-subpage .resume-core-tags span{
+  display:inline-block!important;padding:4px 8px!important;border-radius:5px!important;
+  border:1px solid rgba(81,64,200,.16)!important;background:rgba(229,231,255,.62)!important;
+  color:#40349d!important;font:600 10px/1.4 Inter,sans-serif!important;
+}
+.portfolio-subpage .resume-evidence-note{
+  margin:8px 0 0!important;color:#68718a!important;font-size:10px!important;line-height:1.7!important;
+}
+.portfolio-subpage .resume-detail-link{display:inline-block!important;margin-top:8px!important;color:#40349d!important;font-size:11px!important;font-weight:650!important}
+.portfolio-subpage .resume-education-cards{
+  display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:12px!important;margin-top:0!important;
+}
+.portfolio-subpage .resume-education-cards>div{
+  position:static!important;display:block!important;margin:0!important;padding:16px 17px!important;
+  border:1px solid rgba(74,83,139,.19)!important;border-radius:9px!important;
+  background:linear-gradient(145deg,#fff,#f3f6ff)!important;
+  box-shadow:0 6px 20px rgba(49,67,139,.045)!important;
+}
+.portfolio-subpage .resume-education-cards>div>.portfolio-icon{display:none!important}
+.portfolio-subpage .resume-education-cards .education-label{
+  display:block!important;margin:0 0 8px!important;color:#5140c8!important;
+  font:600 9px "DM Mono",monospace!important;letter-spacing:.1em;
+}
+.portfolio-subpage .resume-education-heading{
+  display:flex!important;justify-content:space-between!important;align-items:baseline!important;
+  flex-wrap:wrap!important;gap:6px 12px!important;
+}
+.portfolio-subpage .resume-education-heading h3{margin:0!important;color:#171b3c!important;font:700 14px/1.6 "Noto Serif SC",serif!important}
+.portfolio-subpage .resume-education-heading time{color:#40349d!important;font:650 10px/1.5 Inter,sans-serif!important}
+.portfolio-subpage .resume-education-cards p{margin:7px 0 0!important;color:#46516f!important;font-size:11px!important;line-height:1.7!important}
+@media(max-width:760px){
+ .portfolio-subpage .resume-page{padding:25px 18px 42px!important}
+ .portfolio-subpage .resume-skills{grid-template-columns:1fr!important}
+ .portfolio-subpage .resume-entry-layout{grid-template-columns:1fr!important;gap:10px!important}
+ .portfolio-subpage .resume-entry-meta{padding:0!important}
+ .portfolio-subpage .resume-project-grid>.resume-project{padding:14px!important}
+ .portfolio-subpage .resume-education-cards{grid-template-columns:1fr!important}
+ .portfolio-subpage .resume-project-head .resume-tag{margin-left:0!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .portfolio-subpage .resume-project-grid>.resume-project{transition:none!important}
+ .portfolio-subpage .resume-project-grid>.resume-project:hover{transform:none!important}
+}
