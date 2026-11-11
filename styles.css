@@ -1430,3 +1430,18 @@ footer span:nth-child(n+2){display:none!important}
   border-color:rgba(81,64,200,.18)!important;
 }
 @media(prefers-reduced-motion:reduce){.portfolio-icon{transition:none}}
+
+
+/* V2.8 — keep icons at section level; remove decorative icons from individual cards */
+.portfolio-v2 .project-card-top>.portfolio-icon,
+.portfolio-v2 .experience-list article>.portfolio-icon,
+.portfolio-v2 .education-block>div>.portfolio-icon,
+.portfolio-subpage .resume-project-head>.portfolio-icon,
+.portfolio-subpage .resume-entry-meta>.portfolio-icon,
+.portfolio-subpage .resume-education-cards>div>.portfolio-icon{
+  display:none!important;
+}
+/* Preserve section-heading icons as the sole visual markers */
+.portfolio-subpage .resume-section-title>.portfolio-icon{
+  display:inline-flex!important;
+}
