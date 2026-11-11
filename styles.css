@@ -1460,15 +1460,9 @@ footer span:nth-child(n+2){display:none!important}
   vertical-align:middle;
 }
 .section-heading-icon svg{width:16px!important;height:16px!important}
-.portfolio-subpage .resume-project-head>.portfolio-icon,
-.portfolio-subpage .resume-entry-meta>.portfolio-icon,
-.portfolio-subpage .resume-education-cards>div>.portfolio-icon{
-  display:none!important;
-}
-.portfolio-subpage .resume-project-head{gap:0!important}
-.portfolio-subpage .resume-entry-meta{padding-left:0!important}
-.portfolio-subpage .resume-education-cards>div{padding-left:16px!important}
 @media(max-width:760px){
  .section-heading{gap:9px!important}
  .section-heading-icon{width:27px!important;height:27px!important}
 }
+
+/* V3.0 — resume layout restored; homepage section icons retained */
