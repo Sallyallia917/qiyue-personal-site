@@ -664,3 +664,53 @@ a:focus-visible{outline:2px solid #7b668f;outline-offset:4px}
   .portfolio-subpage .resume-projects-section .resume-project-grid{gap:10px!important}
   .portfolio-subpage .resume-projects-section .resume-project-grid>.resume-project{padding:14px!important}
 }
+
+/* Case studies: stronger hierarchy, larger reading type, STAR and architecture blocks */
+.portfolio-subpage .case-summary{font-size:14px!important;line-height:2.05!important}
+.portfolio-subpage .case-section{padding:28px 0!important}
+.portfolio-subpage .case-label{font-size:10px!important;line-height:1.9!important}
+.portfolio-subpage .case-copy h2{font-size:19px!important;line-height:1.75!important;margin-bottom:15px!important}
+.portfolio-subpage .case-copy p,.portfolio-subpage .case-copy li{font-size:13px!important;line-height:2.05!important}
+.portfolio-subpage .case-copy li{margin:8px 0!important}
+.portfolio-subpage .case-copy strong,.portfolio-subpage .case-copy b{font-weight:600!important}
+.portfolio-subpage .case-meta strong{font-size:12px!important}
+.portfolio-subpage .flow-step strong{font-size:12px!important}
+.portfolio-subpage .flow-step span{font-size:10px!important}
+.portfolio-subpage .evidence-caption{font-size:11px!important;line-height:1.95!important}
+.star-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.star-card{padding:16px 17px;border:1px solid var(--pc-line);background:rgba(16,34,56,.38);min-width:0}
+.star-card>span,.roadmap-card>span{display:block;font:500 9px/1.7 "DM Mono",monospace;color:var(--pc-accent);letter-spacing:.06em;margin-bottom:7px}
+.star-card h3,.roadmap-card h3{margin:0 0 8px;font:500 15px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.star-card p,.roadmap-card p{margin:0!important;font:400 12px/2 "Noto Serif SC",serif!important;color:#9aadc1!important}
+.architecture-stack{display:flex;flex-direction:column;gap:0;margin:18px 0}
+.architecture-layer{display:grid;grid-template-columns:170px minmax(0,1fr);gap:16px;align-items:center;padding:14px 16px;border:1px solid var(--pc-line);background:rgba(16,34,56,.38)}
+.architecture-layer>span{font:500 9px/1.7 "DM Mono",monospace;color:var(--pc-accent);letter-spacing:.04em}
+.architecture-layer strong{display:block;font:500 14px/1.7 "Noto Serif SC",serif;color:#e0e9f3}
+.architecture-layer small,.architecture-node small{display:block;margin-top:3px;font:400 11px/1.8 "Noto Serif SC",serif;color:#8ea3ba}
+.architecture-arrow{text-align:center;color:var(--pc-accent);font:500 14px/1.7 "DM Mono",monospace;padding:3px}
+.architecture-split{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.architecture-node{padding:13px 14px;border:1px solid var(--pc-line);background:#0b1929;min-width:0}
+.architecture-node b{display:block;font:500 12px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.architecture-layer-final{border-color:rgba(121,226,196,.35);background:rgba(121,226,196,.055)}
+.version-timeline{display:flex;flex-direction:column;margin-top:17px;border-top:1px solid var(--pc-line)}
+.version-item{display:grid;grid-template-columns:112px minmax(0,1fr);gap:17px;padding:15px 0;border-bottom:1px solid var(--pc-line)}
+.version-id{font:500 10px/1.8 "DM Mono",monospace;color:#8ea3ba}
+.version-item h3{margin:0 0 5px;font:500 14px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.version-item p{margin:0!important;font:400 12px/1.95 "Noto Serif SC",serif!important;color:#9aadc1!important}
+.version-item small{display:block;margin-top:7px;font:400 10px/1.8 "Noto Serif SC",serif;color:#8196ad}
+.version-current{background:rgba(121,226,196,.045)}
+.version-current .version-id,.version-current small{color:var(--pc-accent)}
+.version-planned{opacity:.82}
+.roadmap-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}
+.roadmap-card{padding:15px 15px;border:1px solid var(--pc-line);background:rgba(16,34,56,.32);min-width:0}
+.roadmap-card h3{font-size:13px}
+.roadmap-card p{font-size:11px!important}
+@media(max-width:760px){
+ .star-grid{grid-template-columns:1fr}
+ .architecture-layer{grid-template-columns:1fr;gap:5px}
+ .architecture-split,.roadmap-grid{grid-template-columns:1fr}
+ .version-item{grid-template-columns:82px minmax(0,1fr);gap:10px}
+ .star-card{padding:14px}
+ .portfolio-subpage .case-copy h2{font-size:18px!important}
+ .portfolio-subpage .case-copy p,.portfolio-subpage .case-copy li{font-size:12px!important}
+}
