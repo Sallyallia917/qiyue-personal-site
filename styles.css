@@ -733,3 +733,166 @@ footer span:nth-child(n+2){display:none!important}
  .portfolio-footer.subpage-footer{align-items:flex-start!important;flex-direction:column!important;gap:5px!important}
  footer{padding-left:20px!important;padding-right:20px!important}
 }
+
+
+/* V2.2 — Ice blue / mist lavender / indigo global palette
+   Color-only theme layer. Layout, content and interaction behavior remain unchanged. */
+.portfolio-v2{
+  --pc-bg:#edf4ff;
+  --pc-panel:#f8faff;
+  --pc-ink:#17183f;
+  --pc-muted:#59668b;
+  --pc-accent:#6250d8;
+  --pc-line:rgba(67,82,157,.19);
+  background:
+    radial-gradient(ellipse at 76% 7%,rgba(189,178,255,.42),transparent 34%),
+    radial-gradient(ellipse at 22% 30%,rgba(170,218,255,.48),transparent 38%),
+    linear-gradient(135deg,#edf5ff 0%,#e7efff 48%,#f1edff 100%);
+  color:var(--pc-ink);
+}
+.portfolio-v2 .portfolio-sidebar{
+  background:linear-gradient(155deg,rgba(211,229,255,.88) 0%,rgba(231,226,255,.82) 58%,rgba(222,240,255,.86) 100%);
+  border-right:1px solid rgba(82,91,174,.14);
+  padding-left:26px;padding-right:26px;
+}
+.portfolio-v2 .portfolio-brand{color:#17183f}
+.portfolio-v2 .portfolio-brand span{color:#625b9c}
+.portfolio-v2 .sidebar-kicker,.portfolio-v2 .section-overline,
+.portfolio-v2 .skill-number,.portfolio-v2 .project-index,
+.portfolio-v2 .philosophy-mark,.portfolio-v2 .interest-code,
+.portfolio-v2 .education-label,.portfolio-v2 .experience-date,
+.portfolio-v2 .footer-kicker{color:#6250d8}
+.portfolio-v2 .sidebar-intro h1,.portfolio-v2 .sidebar-intro h2{color:#17183f}
+.portfolio-v2 .sidebar-intro h1 span{color:#657098}
+.portfolio-v2 .sidebar-intro h2 em{color:#6250d8}
+.portfolio-v2 .sidebar-intro>p:not(.sidebar-kicker){color:#4f5b83}
+.portfolio-v2 .sidebar-intro .sidebar-detail{color:#657098!important}
+.portfolio-v2 .portfolio-nav a{color:#4e587f}
+.portfolio-v2 .portfolio-nav a span{background:#9aa8d0}
+.portfolio-v2 .portfolio-nav a:hover,.portfolio-v2 .portfolio-nav a:focus-visible,
+.portfolio-v2 .sidebar-links a:hover{color:#5140c5}
+.portfolio-v2 .portfolio-nav a:hover span,.portfolio-v2 .portfolio-nav a:focus-visible span{background:#6250d8}
+.portfolio-v2 .sidebar-links a{color:#4e587f}
+.portfolio-v2 .sidebar-links a span{color:#6250d8}
+.portfolio-v2 .sidebar-bottom>p{color:#7883a8}
+.portfolio-v2 .section-overline span+span{color:#7b83a7}
+.portfolio-v2 .section-title,.portfolio-v2 .section-heading,
+.portfolio-v2 .skill-row h3,.portfolio-v2 .project-card h3 a,
+.portfolio-v2 .philosophy-list h3,.portfolio-v2 .interest-grid h3,
+.portfolio-v2 .experience-list h3,.portfolio-v2 .education-block h3,
+.portfolio-v2 .portfolio-footer h2{color:#1b1c48}
+.portfolio-v2 .section-title em,.portfolio-v2 .section-heading em,
+.portfolio-v2 .philosophy-section .section-heading em{color:#6250d8}
+.portfolio-v2 .intro-copy p,.portfolio-v2 .skill-row p,
+.portfolio-v2 .project-problem,.portfolio-v2 .project-card>p:not(.project-problem),
+.portfolio-v2 .philosophy-list p,.portfolio-v2 .interest-grid p,
+.portfolio-v2 .experience-list p,.portfolio-v2 .section-lead,
+.portfolio-v2 .portfolio-footer>p:not(.footer-kicker){color:#596487}
+.portfolio-v2 .intro-copy strong,.portfolio-v2 .project-problem b{color:#28265f}
+.portfolio-v2 .intro-proof span,.portfolio-v2 .intro-proof small,
+.portfolio-v2 .project-type,.portfolio-v2 .project-foot,
+.portfolio-v2 .philosophy-list small,.portfolio-v2 .interest-links span,
+.portfolio-v2 .experience-kind,.portfolio-v2 .education-block p,
+.portfolio-v2 .portfolio-footer>small{color:#7883a8}
+.portfolio-v2 .intro-proof strong,.portfolio-v2 .interest-links>a,
+.portfolio-v2 .interest-links>div{color:#292858}
+.portfolio-v2 .skill-tags span,.portfolio-v2 .project-tags span{
+  color:#5e5c91;border-color:rgba(91,91,169,.23);background:rgba(255,255,255,.38)
+}
+.portfolio-v2 .scope-note{color:#657098;border-left-color:rgba(98,80,216,.5)}
+.portfolio-v2 .project-card,.portfolio-v2 .project-card-muted{
+  background:rgba(250,252,255,.78);border-color:rgba(83,98,175,.17);
+  box-shadow:0 8px 28px rgba(72,91,157,.055)
+}
+.portfolio-v2 .project-card:hover{background:#fff;border-color:rgba(98,80,216,.35)}
+.portfolio-v2 .project-card h3 a span,.portfolio-v2 .project-foot a{color:#6250d8}
+.portfolio-v2 .project-foot{border-top-color:var(--pc-line)}
+.portfolio-v2 .philosophy-quote{
+  color:#3c3b70;background:rgba(199,190,255,.22);border-left-color:#6250d8
+}
+.portfolio-v2 .interest-grid article,.portfolio-v2 .education-block>div{
+  background:rgba(255,255,255,.48);border-color:var(--pc-line)
+}
+.portfolio-v2 .portfolio-footer{border-top-color:var(--pc-line)}
+.portfolio-v2 .portfolio-v2 ::selection{background:rgba(98,80,216,.2);color:#17183f}
+.portfolio-v2 ::selection{background:rgba(98,80,216,.2);color:#17183f}
+.portfolio-v2 a:focus-visible{outline-color:#6250d8}
+
+/* Shared project detail pages */
+.portfolio-subpage .case-hero .back,.portfolio-subpage .resume-topline>a,
+.portfolio-subpage .case-no,.portfolio-subpage .case-label,
+.portfolio-subpage .case-hero h1 em{color:#6250d8!important}
+.portfolio-subpage .case-hero h1,.portfolio-subpage .case-copy h2,
+.portfolio-subpage .case-copy strong,.portfolio-subpage .case-copy b,
+.portfolio-subpage .case-meta strong{color:#20204d!important}
+.portfolio-subpage .case-summary,.portfolio-subpage .case-copy p,
+.portfolio-subpage .case-copy li{color:#586487!important}
+.portfolio-subpage .case-meta span,.portfolio-subpage .next-case span,
+.portfolio-subpage .evidence-note,.portfolio-subpage .evidence-caption{color:#7782a7!important}
+.portfolio-subpage .case-section,.portfolio-subpage .case-meta,
+.portfolio-subpage .case-footer,.portfolio-subpage .version-timeline{border-color:var(--pc-line)!important}
+.portfolio-subpage .takeaway{
+  background:rgba(205,197,255,.25)!important;border-left-color:#6250d8!important
+}
+.portfolio-subpage .takeaway b,.portfolio-subpage .case-footer>a,
+.portfolio-subpage .next-case a,.portfolio-subpage footer a{color:#6250d8!important}
+.portfolio-subpage .takeaway p{color:#4e5680!important}
+.portfolio-subpage .evidence{
+  background:rgba(255,255,255,.55)!important;border-color:var(--pc-line)!important;
+  box-shadow:0 8px 28px rgba(72,91,157,.045)
+}
+.portfolio-subpage .flow-step,.portfolio-subpage .arch-box,
+.portfolio-subpage .metric,.star-card,.roadmap-card,
+.architecture-layer,.architecture-node{
+  background:rgba(248,250,255,.88)!important;border-color:var(--pc-line)!important
+}
+.portfolio-subpage .flow-step strong,.portfolio-subpage .arch-box strong,
+.star-card h3,.roadmap-card h3,.architecture-layer strong,
+.architecture-node b,.version-item h3{color:#242451!important}
+.portfolio-subpage .flow-step span,.portfolio-subpage .metric span,
+.star-card p,.roadmap-card p,.architecture-layer small,
+.architecture-node small,.version-item p{color:#5f6a91!important}
+.portfolio-subpage .flow-step small,.portfolio-subpage .arch-box small,
+.portfolio-subpage .metric b,.star-card>span,.roadmap-card>span,
+.architecture-layer>span,.architecture-arrow,.version-id,
+.version-current .version-id,.version-current small{color:#6250d8!important}
+.portfolio-subpage .metric-grid{border-color:var(--pc-line)}
+.portfolio-subpage .version-current{background:rgba(202,194,255,.2)}
+.portfolio-subpage .architecture-layer-final{border-color:rgba(98,80,216,.35)!important;background:rgba(205,197,255,.22)!important}
+
+/* Resume page */
+.portfolio-subpage .resume-hero h1,.portfolio-subpage .resume-section-title h2,
+.portfolio-subpage .resume-skills h3,.portfolio-subpage .resume-entry h3,
+.portfolio-subpage .resume-project h3,.portfolio-subpage .resume-education strong{color:#20204d!important}
+.portfolio-subpage .resume-hero>p,.portfolio-subpage .resume-hero .resume-summary,
+.portfolio-subpage .resume-skills p,.portfolio-subpage .resume-entry li,
+.portfolio-subpage .resume-project p,.portfolio-subpage .resume-education p,
+.portfolio-subpage .resume-closing{color:#586487!important}
+.portfolio-subpage .resume-hero h1 em,.portfolio-subpage .resume-hero .section-label,
+.portfolio-subpage .resume-section-title>span,.portfolio-subpage .resume-contact,
+.portfolio-subpage .resume-entry-head>span,.portfolio-subpage .resume-tag,
+.portfolio-subpage .resume-project h3 a,.portfolio-subpage .resume-closing a,
+.portfolio-subpage .resume-detail-link{color:#6250d8!important}
+.portfolio-subpage .resume-skills article,.portfolio-subpage .resume-project,
+.portfolio-subpage .resume-project-grid>.resume-project{
+  background:rgba(250,252,255,.82)!important;border-color:var(--pc-line)!important;
+  box-shadow:0 6px 20px rgba(72,91,157,.04)
+}
+.portfolio-subpage .resume-core-tags span,.portfolio-subpage .resume-tag{
+  border-color:rgba(98,80,216,.25)!important
+}
+.portfolio-subpage .resume-evidence-note,.portfolio-subpage .resume-bottom-note,
+.portfolio-subpage .subpage-footer span{color:#7782a7!important}
+.portfolio-subpage .resume-bottom-note{
+  background:rgba(205,197,255,.2)!important;border-left-color:#6250d8!important
+}
+.portfolio-subpage .subpage-footer{border-color:var(--pc-line)!important}
+.portfolio-subpage .subpage-footer a{color:#6250d8!important}
+
+/* Footer and global reading surfaces */
+.portfolio-v2 footer,.portfolio-v2 body>footer,
+.portfolio-v2 .case-footer,.portfolio-v2 .portfolio-footer{border-color:var(--pc-line)!important}
+.portfolio-v2 footer{color:#7782a7!important}
+@media(max-width:800px){
+  .portfolio-v2 .portfolio-sidebar{border-right:0;border-bottom:1px solid var(--pc-line)}
+}
