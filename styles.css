@@ -896,3 +896,11 @@ footer span:nth-child(n+2){display:none!important}
 @media(max-width:800px){
   .portfolio-v2 .portfolio-sidebar{border-right:0;border-bottom:1px solid var(--pc-line)}
 }
+
+
+/* Final contrast corrections for legacy component accents */
+.portfolio-subpage .resume-core-tags span{color:#5144bd!important;border-color:rgba(98,80,216,.28)!important}
+.portfolio-subpage .resume-detail-link{border-bottom-color:rgba(98,80,216,.32)!important}
+.portfolio-subpage .resume-tag{border-color:rgba(98,80,216,.25)!important}
+.portfolio-subpage .resume-entry-content ul{color:#586487!important}
+.portfolio-subpage .resume-evidence-note{color:#7782a7!important}
