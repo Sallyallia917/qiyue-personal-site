@@ -1058,3 +1058,59 @@ footer span:nth-child(n+2){display:none!important}
 .portfolio-subpage .subpage-footer a,.portfolio-subpage .takeaway b{
   color:#4938bd!important;
 }
+
+
+/* Resume polish: clear labels, homepage-matched hover, education card alignment */
+.portfolio-subpage .resume-project p b{
+  color:#4938bd!important;
+  font-weight:700!important;
+  background:rgba(225,222,255,.58);
+  border-radius:3px;
+  padding:1px 4px;
+}
+.portfolio-subpage .resume-project-grid>.resume-project{
+  transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(244,247,255,.94))!important;
+  border:1px solid rgba(63,78,153,.23)!important;
+  box-shadow:0 10px 30px rgba(49,67,139,.085)!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project:hover{
+  transform:translateY(-2px);
+  background:#fff!important;
+  border-color:rgba(81,64,200,.52)!important;
+  box-shadow:0 16px 36px rgba(67,62,166,.14)!important;
+}
+.portfolio-subpage .resume-project h3 a{color:#4938bd!important}
+.portfolio-subpage .resume-project h3 a:hover{color:#30239e!important}
+.portfolio-subpage .resume-education-cards{margin-top:18px}
+.portfolio-subpage .resume-education-cards>div{
+  padding:17px 16px!important;
+  border:1px solid rgba(63,78,153,.23)!important;
+  border-radius:4px;
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(244,247,255,.94))!important;
+  box-shadow:0 8px 24px rgba(49,67,139,.065);
+}
+.portfolio-subpage .resume-education-heading,.portfolio-v2 .education-heading{
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;
+  margin-top:10px;
+}
+.portfolio-subpage .resume-education-heading h3,.portfolio-v2 .education-heading h3{margin:0!important}
+.portfolio-subpage .resume-education-heading time,.portfolio-v2 .education-heading time{
+  color:#526184;font:500 10px/1.7 "DM Mono",monospace;white-space:nowrap;
+}
+.portfolio-subpage .resume-education-cards p{margin-top:7px!important;color:#344366!important}
+.portfolio-v2 .education-block>div{
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(244,247,255,.94))!important;
+  border:1px solid rgba(63,78,153,.23)!important;
+  border-radius:4px;
+  box-shadow:0 8px 24px rgba(49,67,139,.065);
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+}
+.portfolio-v2 .education-block>div:hover{
+  transform:translateY(-2px);border-color:rgba(81,64,200,.48)!important;
+  box-shadow:0 14px 30px rgba(67,62,166,.12);
+}
+.portfolio-v2 .education-heading h3{margin-top:0!important}
+@media(max-width:760px){
+ .portfolio-subpage .resume-education-heading,.portfolio-v2 .education-heading{align-items:flex-start;flex-direction:column;gap:2px}
+}
