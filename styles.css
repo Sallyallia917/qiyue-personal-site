@@ -1824,3 +1824,49 @@ body.portfolio-v2 > footer.portfolio-footer .footer-actions a:hover{
     gap:14px!important;
   }
 }
+
+
+/* Homepage experience cards: role/title left, subdued date aligned right. */
+.portfolio-v2 .experience-list article{
+  display:block!important;
+  padding:18px 18px!important;
+}
+.portfolio-v2 .experience-list .experience-main{
+  display:flex!important;
+  flex-direction:row!important;
+  justify-content:space-between!important;
+  align-items:baseline!important;
+  gap:16px!important;
+  width:100%!important;
+  min-width:0!important;
+}
+.portfolio-v2 .experience-list .experience-main h3{
+  display:block!important;
+  flex:1 1 auto!important;
+  min-width:0!important;
+  margin:0!important;
+}
+.portfolio-v2 .experience-list .experience-main .experience-date{
+  flex:0 0 auto!important;
+  margin:0!important;
+  color:#929bb1!important;
+  font-family:"DM Mono",monospace!important;
+  font-size:9px!important;
+  font-weight:400!important;
+  line-height:1.6!important;
+  letter-spacing:.035em!important;
+  text-align:right!important;
+  white-space:nowrap!important;
+}
+.portfolio-v2 .experience-list .experience-content{
+  margin-top:7px!important;
+}
+@media(max-width:560px){
+  .portfolio-v2 .experience-list .experience-main{
+    align-items:flex-start!important;
+    gap:8px!important;
+  }
+  .portfolio-v2 .experience-list .experience-main .experience-date{
+    font-size:8px!important;
+  }
+}
