@@ -2037,3 +2037,87 @@ body.portfolio-v2 > footer.portfolio-footer .footer-actions a:hover{
 @media(max-width:520px){
   .portfolio-v2.portfolio-subpage .resume-page>section{margin-bottom:20px!important}
 }
+
+
+/* Verified homepage-only correction: skill indices and the six proof tiles. */
+body.portfolio-v2 #skills .skill-list > .skill-row{
+  position:relative!important;
+  display:block!important;
+  box-sizing:border-box!important;
+  padding:20px 58px 19px 24px!important;
+}
+body.portfolio-v2 #skills .skill-list > .skill-row > .skill-number{
+  position:absolute!important;
+  display:block!important;
+  top:18px!important;
+  right:18px!important;
+  left:auto!important;
+  bottom:auto!important;
+  width:auto!important;
+  height:auto!important;
+  margin:0!important;
+  padding:0!important;
+  transform:none!important;
+  color:#8996b1!important;
+  font-family:"DM Mono",monospace!important;
+  font-size:10px!important;
+  font-weight:400!important;
+  line-height:1.5!important;
+  letter-spacing:.06em!important;
+  text-align:right!important;
+  z-index:2!important;
+}
+body.portfolio-v2 #skills .skill-list > .skill-row > div:last-child{
+  width:100%!important;
+  min-width:0!important;
+}
+body.portfolio-v2 #about > .intro-proof,
+body.portfolio-v2 #skills > .quality-proof{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  width:100%!important;
+  max-width:840px!important;
+  margin:22px auto 0!important;
+  box-sizing:border-box!important;
+}
+body.portfolio-v2 #about > .intro-proof > div,
+body.portfolio-v2 #skills > .quality-proof > div{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  align-items:center!important;
+  box-sizing:border-box!important;
+  min-width:0!important;
+  min-height:112px!important;
+  padding:16px 14px!important;
+  text-align:center!important;
+}
+body.portfolio-v2 #about > .intro-proof > div > *,
+body.portfolio-v2 #skills > .quality-proof > div > *{
+  display:block!important;
+  width:100%!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+  overflow-wrap:anywhere!important;
+}
+body.portfolio-v2 #about > .intro-proof > div + div,
+body.portfolio-v2 #skills > .quality-proof > div + div{
+  border-left:1px solid rgba(72,75,151,.22)!important;
+}
+@media(max-width:760px){
+  body.portfolio-v2 #about > .intro-proof,
+  body.portfolio-v2 #skills > .quality-proof{
+    grid-template-columns:1fr!important;
+    max-width:560px!important;
+  }
+  body.portfolio-v2 #about > .intro-proof > div,
+  body.portfolio-v2 #skills > .quality-proof > div{
+    min-height:88px!important;
+  }
+  body.portfolio-v2 #about > .intro-proof > div + div,
+  body.portfolio-v2 #skills > .quality-proof > div + div{
+    border-left:0!important;
+    border-top:1px solid rgba(72,75,151,.22)!important;
+  }
+}
