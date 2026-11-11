@@ -1146,3 +1146,177 @@ footer span:nth-child(n+2){display:none!important}
  .experience-list article>div:not(.experience-date){grid-column:2;grid-row:2}
 }
 @media(prefers-reduced-motion:reduce){.education-block>div{transition:none}}
+
+
+/* V2.5 — highlight AI Product Manager role-fit capabilities without changing copy or layout */
+.portfolio-v2 .skill-row{
+  position:relative;
+  padding:20px 22px 19px 24px;
+  margin:0 0 12px;
+  border:1px solid rgba(74,78,169,.17);
+  border-left:3px solid rgba(81,64,200,.48);
+  border-radius:12px;
+  background:linear-gradient(105deg,rgba(255,255,255,.78),rgba(235,239,255,.54));
+  box-shadow:0 6px 20px rgba(54,68,139,.045);
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease;
+}
+.portfolio-v2 .skill-row:hover{
+  transform:translateY(-2px);
+  border-color:rgba(81,64,200,.36);
+  border-left-color:#5140c8;
+  background:linear-gradient(105deg,#fff,rgba(229,230,255,.78));
+  box-shadow:0 12px 26px rgba(54,68,139,.09);
+}
+.portfolio-v2 .skill-row h3{
+  display:inline;
+  color:#171844!important;
+  font-weight:750;
+  background:linear-gradient(transparent 61%,rgba(179,170,255,.42) 61%);
+  padding:0 3px 2px 0;
+  box-decoration-break:clone;
+}
+.portfolio-v2 .skill-row p{margin-top:10px;color:#344366!important}
+.portfolio-v2 .skill-tags{margin-top:12px}
+.portfolio-v2 .skill-tags span{
+  color:#302b88!important;
+  background:linear-gradient(135deg,rgba(221,222,255,.9),rgba(222,239,255,.88))!important;
+  border:1px solid rgba(81,64,200,.24)!important;
+  font-weight:600;
+}
+.portfolio-v2 .project-card{
+  position:relative;
+  overflow:hidden;
+}
+.portfolio-v2 .project-card:before{
+  content:"";
+  position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,#5140c8,#8abce9);
+  opacity:.72;
+}
+.portfolio-v2 .project-card h3 a{
+  font-weight:750;
+  text-decoration-color:rgba(81,64,200,.28);
+  text-decoration-thickness:1px;
+  text-underline-offset:4px;
+}
+.portfolio-v2 .project-problem{
+  background:rgba(225,229,255,.52);
+  border-left:2px solid rgba(81,64,200,.56);
+  border-radius:0 7px 7px 0;
+  padding:9px 12px;
+  color:#26345f!important;
+}
+.portfolio-v2 .project-problem b{
+  color:#382aa7!important;
+  font-weight:750;
+  background:rgba(196,190,255,.5);
+  border-radius:4px;padding:2px 5px;margin-right:4px;
+}
+.portfolio-v2 .project-tags span{
+  color:#302b88!important;
+  background:rgba(220,224,255,.78)!important;
+  border-color:rgba(81,64,200,.27)!important;
+  font-weight:600;
+}
+.portfolio-v2 .project-foot>span{
+  color:#3f4c72!important;font-weight:600;
+}
+.portfolio-v2 .experience-list article{
+  position:relative;
+  padding:16px 18px;
+  margin-bottom:10px;
+  border:1px solid rgba(74,78,169,.17);
+  border-radius:10px;
+  background:rgba(255,255,255,.63);
+}
+.portfolio-v2 .experience-list h3{
+  display:inline-block;
+  color:#171844!important;
+  font-weight:750;
+  background:linear-gradient(transparent 66%,rgba(179,170,255,.38) 66%);
+}
+.portfolio-v2 .experience-kind{
+  display:inline-block;
+  margin-top:8px;
+  padding:4px 9px;
+  border:1px solid rgba(81,64,200,.2);
+  border-radius:5px;
+  background:rgba(224,225,255,.7);
+  color:#382f9c!important;
+  font-weight:650;
+}
+.portfolio-v2 .experience-date{
+  color:#4032ae!important;
+  font-weight:700;
+}
+.portfolio-subpage .resume-skills article{
+  position:relative;
+  border-left:3px solid rgba(81,64,200,.52)!important;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease!important;
+}
+.portfolio-subpage .resume-skills article:hover{
+  transform:translateY(-2px);
+  border-left-color:#5140c8!important;
+  box-shadow:0 12px 26px rgba(54,68,139,.1)!important;
+}
+.portfolio-subpage .resume-skills h3{
+  display:inline;
+  color:#171844!important;
+  font-weight:750;
+  background:linear-gradient(transparent 62%,rgba(179,170,255,.42) 62%);
+  padding-right:3px;
+}
+.portfolio-subpage .resume-skills p{color:#344366!important}
+.portfolio-subpage .resume-project{
+  position:relative;
+  overflow:hidden;
+}
+.portfolio-subpage .resume-project:before{
+  content:"";
+  position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,#5140c8,#8abce9);
+  opacity:.72;
+}
+.portfolio-subpage .resume-project p b{
+  display:inline-block;
+  color:#382aa7!important;
+  font-weight:750!important;
+  background:rgba(216,213,255,.72)!important;
+  border:1px solid rgba(81,64,200,.13);
+  border-radius:4px;
+  padding:2px 6px;
+  margin-right:3px;
+}
+.portfolio-subpage .resume-project .resume-tag{
+  color:#302b88!important;
+  background:rgba(220,224,255,.78)!important;
+  border:1px solid rgba(81,64,200,.24)!important;
+  font-weight:650;
+}
+.portfolio-subpage .resume-core-tags span{
+  color:#302b88!important;
+  background:linear-gradient(135deg,rgba(221,222,255,.9),rgba(222,239,255,.88))!important;
+  border:1px solid rgba(81,64,200,.25)!important;
+  font-weight:650;
+}
+.portfolio-subpage .resume-entry-meta h3{
+  color:#171844!important;
+  font-weight:750;
+}
+.portfolio-subpage .resume-entry-content li b{
+  color:#382aa7!important;
+  background:linear-gradient(transparent 60%,rgba(179,170,255,.38) 60%);
+  padding:0 2px;
+}
+.portfolio-subpage .resume-entry-date{
+  color:#4032ae!important;font-weight:700;
+}
+@media(max-width:760px){
+ .portfolio-v2 .skill-row{padding:17px 15px}
+ .portfolio-v2 .experience-list article{padding:14px}
+}
+@media(prefers-reduced-motion:reduce){
+ .portfolio-v2 .skill-row,.portfolio-v2 .experience-list article,
+ .portfolio-subpage .resume-skills article{transition:none!important}
+ .portfolio-v2 .skill-row:hover,.portfolio-subpage .resume-skills article:hover{transform:none}
+}
