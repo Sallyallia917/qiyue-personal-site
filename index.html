@@ -86,15 +86,15 @@
           <div class="project-card-top"><span class="project-type">独立应用原型 · 酒旅服务</span><span class="project-index">02</span></div>
           <h3><a href="ees-agent.html">EES 民宿客服知识助手 <span>↗</span></a></h3>
           <p class="project-problem"><b>核心问题</b> 住客问题涉及通用服务知识、订单专属信息、动态房态与安全风险，AI 如何判断哪些能答、哪些必须核实或转人工？</p>
-          <p>基于 Python、Streamlit 与模拟门店知识库实现 RAG MVP1，设计证据不足、实时房态、订单专属房型查询和安全问题的分流规则；MVP1.1 聚焦区分有订单与无订单咨询，避免用通用 FAQ 推断个人订单信息。</p>
-          <div class="project-tags"><span>RAG</span><span>意图边界</span><span>规则兜底</span><span>测试集</span></div>
-          <div class="project-foot"><span>实践重点：业务边界、可追溯回答与安全退出</span><a href="ees-agent.html">查看案例细节 ↗</a></div>
+          <p>从 RAG 知识问答演进至 MVP 1.9 对话式服务 Agent：完成混合意图路由、身份与订单只读、多订单上下文管理、SQLite 工单持久化及 MECE 分类；覆盖订单问题、住宿服务、投诉体验与票据申请。</p>
+          <div class="project-tags"><span>RAG / Hybrid Routing</span><span>Context Manager</span><span>Booking Service</span><span>Ticket Workflow</span></div>
+          <div class="project-foot"><span>当前：MVP 1.9 原型 · 未接真实 PMS / OTA / CRM</span><a href="ees-agent.html">查看案例细节 ↗</a></div>
         </article>
         <article class="project-card">
           <div class="project-card-top"><span class="project-type">独立应用原型 · 营销决策</span><span class="project-index">03</span></div>
           <h3><a href="cafe-engine.html">Coffee Growth Engine <span>↗</span></a></h3>
           <p class="project-problem"><b>核心问题</b> 如何把消费者研究转成可以执行、可以测试的会员触达与营销决策？</p>
-          <p>将会员分群、商品推荐、预算与毛利约束设计为确定性规则，LLM 仅负责后续营销表达。已建立离线质量评测，8 个合成案例全部通过预期规则判定；该结果验证评测器与规则样例，不代表真实营销效果。</p>
+          <p>将会员分群、商品推荐、预算与毛利约束设计为确定性规则，DeepSeek 仅负责基于合规上下文生成营销方案。离线评测 8 个合成案例全部按预期识别通过 / 失败，验证评测器行为，不代表真实营销效果。</p>
           <div class="project-tags"><span>业务建模</span><span>规则 / LLM 分层</span><span>营销决策</span><span>离线评测</span></div>
           <div class="project-foot"><span>实践重点：将商业约束转化为可检查的系统行为</span><a href="cafe-engine.html">查看案例细节 ↗</a></div>
         </article>
