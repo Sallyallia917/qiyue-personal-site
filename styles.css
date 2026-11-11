@@ -1754,3 +1754,73 @@ footer span:nth-child(n+2){display:none!important}
 .portfolio-subpage .decision-record-section .case-table th:nth-child(1){width:22%}
 .portfolio-subpage .decision-record-section .case-table th:nth-child(2){width:28%}
 .portfolio-subpage .decision-record-section .case-table th:nth-child(3){width:50%}
+
+
+/* Shared footer system — identical alignment and typography on every page. */
+body.portfolio-v2 > footer.portfolio-footer{
+  box-sizing:border-box!important;
+  display:flex!important;
+  flex-direction:row!important;
+  justify-content:space-between!important;
+  align-items:center!important;
+  flex-wrap:wrap!important;
+  gap:12px 24px!important;
+  width:100%!important;
+  max-width:1240px!important;
+  margin:28px auto 0!important;
+  padding:18px 38px 24px!important;
+  border:0!important;
+  border-top:1px solid rgba(145,164,187,.25)!important;
+  color:#526184!important;
+  font-family:"Noto Serif SC",serif!important;
+  font-size:10px!important;
+  line-height:1.7!important;
+  letter-spacing:.04em!important;
+}
+body.portfolio-v2 > footer.portfolio-footer .footer-brand{
+  display:block!important;
+  order:0!important;
+  margin:0!important;
+  color:#526184!important;
+  font:400 10px/1.7 "Noto Serif SC",serif!important;
+  letter-spacing:.04em!important;
+  white-space:nowrap!important;
+}
+body.portfolio-v2 > footer.portfolio-footer .footer-actions{
+  display:flex!important;
+  order:1!important;
+  justify-content:flex-end!important;
+  align-items:center!important;
+  flex-direction:row!important;
+  flex-wrap:wrap!important;
+  gap:20px!important;
+  margin:0 0 0 auto!important;
+  padding:0!important;
+  border:0!important;
+}
+body.portfolio-v2 > footer.portfolio-footer .footer-actions a{
+  display:inline-block!important;
+  margin:0!important;
+  color:#4938bd!important;
+  font:500 10px/1.7 "DM Mono",monospace!important;
+  letter-spacing:.04em!important;
+  text-decoration:none!important;
+  white-space:nowrap!important;
+}
+body.portfolio-v2 > footer.portfolio-footer .footer-actions a:hover{
+  color:#6250d8!important;
+  text-decoration:underline!important;
+  text-underline-offset:4px!important;
+}
+@media(max-width:800px){
+  body.portfolio-v2 > footer.portfolio-footer{
+    flex-direction:row!important;
+    align-items:center!important;
+    gap:10px 16px!important;
+    padding:16px 20px 22px!important;
+  }
+  body.portfolio-v2 > footer.portfolio-footer .footer-actions{
+    margin-left:auto!important;
+    gap:14px!important;
+  }
+}
