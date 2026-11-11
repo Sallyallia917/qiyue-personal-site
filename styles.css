@@ -1320,3 +1320,86 @@ footer span:nth-child(n+2){display:none!important}
  .portfolio-subpage .resume-skills article{transition:none!important}
  .portfolio-v2 .skill-row:hover,.portfolio-subpage .resume-skills article:hover{transform:none}
 }
+
+
+/* V2.6 — resume alignment, icon spacing and experience contrast */
+.portfolio-subpage .resume-project-head{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:12px!important;
+  text-align:left!important;
+}
+.portfolio-subpage .resume-project-head>.portfolio-icon{
+  position:static!important;
+  flex:0 0 28px!important;
+  margin:0!important;
+}
+.portfolio-subpage .resume-project-head h3{
+  flex:0 1 auto!important;
+  min-width:0!important;
+  margin:0!important;
+  text-align:left!important;
+}
+.portfolio-subpage .resume-project-head h3 a{
+  display:inline-block!important;
+  text-align:left!important;
+}
+.portfolio-subpage .resume-project-head .resume-tag{
+  margin-left:auto!important;
+  flex:0 0 auto!important;
+}
+.portfolio-subpage .resume-entry-layout{
+  display:grid!important;
+  grid-template-columns:minmax(190px,230px) minmax(0,1fr)!important;
+  gap:24px!important;
+  align-items:start!important;
+}
+.portfolio-subpage .resume-entry-meta{
+  position:relative!important;
+  min-width:0!important;
+  padding:0 0 0 42px!important;
+}
+.portfolio-subpage .resume-entry-meta>.portfolio-icon{
+  position:absolute!important;
+  left:0!important;
+  top:2px!important;
+  width:29px!important;height:29px!important;
+}
+.portfolio-subpage .resume-entry-meta h3{
+  display:block!important;
+  margin:0 0 7px!important;
+  color:#101638!important;
+  font-size:17px!important;
+  line-height:1.5!important;
+  font-weight:750!important;
+  overflow-wrap:anywhere;
+}
+.portfolio-subpage .resume-entry-meta>p{
+  margin:0 0 8px!important;
+  color:#26365e!important;
+  font-weight:600!important;
+  line-height:1.7!important;
+}
+.portfolio-subpage .resume-entry-date{
+  display:inline-block!important;
+  color:#30239e!important;
+  background:rgba(221,222,255,.72)!important;
+  border:1px solid rgba(81,64,200,.22)!important;
+  border-radius:5px!important;
+  padding:4px 8px!important;
+  font-weight:700!important;
+  line-height:1.5!important;
+}
+.portfolio-subpage .resume-entry-content{
+  min-width:0!important;
+}
+.portfolio-subpage .resume-entry-content li{
+  color:#263653!important;
+}
+@media(max-width:760px){
+ .portfolio-subpage .resume-entry-layout{grid-template-columns:1fr!important;gap:14px!important}
+ .portfolio-subpage .resume-entry-meta{padding-left:40px!important}
+ .portfolio-subpage .resume-project-head{flex-wrap:wrap!important}
+ .portfolio-subpage .resume-project-head .resume-tag{margin-left:40px!important}
+}
