@@ -1711,3 +1711,46 @@ footer span:nth-child(n+2){display:none!important}
    grid-column:1!important;grid-row:auto!important;
  }
 }
+
+
+/* EES 02A — match decision table typography to the surrounding case modules. */
+.portfolio-subpage .decision-record-section .table-wrap{
+  width:100%!important;
+  max-width:100%!important;
+  overflow-x:auto!important;
+  -webkit-overflow-scrolling:touch;
+}
+.portfolio-subpage .decision-record-section .case-table{
+  width:100%!important;
+  min-width:680px;
+  margin:0!important;
+  border-collapse:collapse!important;
+  table-layout:fixed!important;
+  font-family:"Noto Serif SC",serif!important;
+  font-size:13px!important;
+  line-height:2.05!important;
+}
+.portfolio-subpage .decision-record-section .case-table th,
+.portfolio-subpage .decision-record-section .case-table td{
+  padding:11px 12px!important;
+  border-bottom:1px solid rgba(74,83,139,.18)!important;
+  text-align:left!important;
+  vertical-align:top!important;
+  font-family:"Noto Serif SC",serif!important;
+  font-size:13px!important;
+  font-weight:400!important;
+  line-height:2.05!important;
+  color:#344366!important;
+  overflow-wrap:anywhere!important;
+}
+.portfolio-subpage .decision-record-section .case-table th{
+  font-weight:600!important;
+  color:#20204d!important;
+  background:rgba(229,231,255,.42)!important;
+}
+.portfolio-subpage .decision-record-section .case-table td:nth-child(1){width:22%}
+.portfolio-subpage .decision-record-section .case-table td:nth-child(2){width:28%}
+.portfolio-subpage .decision-record-section .case-table td:nth-child(3){width:50%}
+.portfolio-subpage .decision-record-section .case-table th:nth-child(1){width:22%}
+.portfolio-subpage .decision-record-section .case-table th:nth-child(2){width:28%}
+.portfolio-subpage .decision-record-section .case-table th:nth-child(3){width:50%}
