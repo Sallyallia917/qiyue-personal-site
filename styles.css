@@ -2427,3 +2427,40 @@ body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:hov
   opacity:.39!important;
   transform:scale(1.01);
 }
+
+
+/* 2026-11-12 — Resume artwork refinement: clearer resting linework, text-safe composition */
+.portfolio-subpage .resume-skills article::after,
+.portfolio-subpage .resume-project-grid>.resume-project::after,
+.portfolio-subpage .resume-entry::after,
+.portfolio-subpage .resume-education-cards>div::after{
+  opacity:.41!important;
+  background-position:right center!important;
+  background-repeat:no-repeat!important;
+  mix-blend-mode:multiply!important;
+  transition:opacity .2s ease,transform .25s ease!important;
+}
+.portfolio-subpage .resume-skills article::after{width:43%!important}
+.portfolio-subpage .resume-project-grid>.resume-project::after{width:49%!important}
+.portfolio-subpage .resume-entry::after{width:42%!important}
+.portfolio-subpage .resume-education-cards>div::after{width:45%!important}
+.portfolio-subpage .resume-skills article:hover::after,
+.portfolio-subpage .resume-project-grid>.resume-project:hover::after,
+.portfolio-subpage .resume-entry:hover::after,
+.portfolio-subpage .resume-education-cards>div:hover::after{
+  opacity:.47!important;
+  transform:scale(1.012);
+}
+@media(max-width:760px){
+  .portfolio-subpage .resume-skills article::after,
+  .portfolio-subpage .resume-project-grid>.resume-project::after,
+  .portfolio-subpage .resume-entry::after,
+  .portfolio-subpage .resume-education-cards>div::after{
+    width:36%!important;
+    opacity:.29!important;
+  }
+  .portfolio-subpage .resume-skills article:hover::after,
+  .portfolio-subpage .resume-project-grid>.resume-project:hover::after,
+  .portfolio-subpage .resume-entry:hover::after,
+  .portfolio-subpage .resume-education-cards>div:hover::after{opacity:.34!important}
+}
