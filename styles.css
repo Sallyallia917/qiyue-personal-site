@@ -2408,3 +2408,22 @@ body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:hov
  .portfolio-subpage .resume-entry:hover,
  .portfolio-subpage .resume-education-cards>div:hover{transform:none!important}
 }
+
+
+/* Align resume project hover feedback with homepage project cards; avoid pseudo-layer flashing. */
+.portfolio-subpage .resume-project-grid>.resume-project{
+  transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project::after{
+  transition:opacity .18s ease,transform .18s ease!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project:hover{
+  transform:translateY(-2px)!important;
+  background:#fff!important;
+  border-color:rgba(81,64,200,.52)!important;
+  box-shadow:0 16px 36px rgba(67,62,166,.14)!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project:hover::after{
+  opacity:.39!important;
+  transform:scale(1.01);
+}
