@@ -2313,3 +2313,98 @@ body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:hov
     opacity:.21!important;
   }
 }
+
+
+/* 2026-11-12 — Resume card artwork: consistent light editorial layers */
+.portfolio-subpage .resume-skills article,
+.portfolio-subpage .resume-project-grid>.resume-project,
+.portfolio-subpage .resume-entry,
+.portfolio-subpage .resume-education-cards>div{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  border-radius:9px!important;
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease,background-color .2s ease!important;
+}
+.portfolio-subpage .resume-skills article::after,
+.portfolio-subpage .resume-project-grid>.resume-project::after,
+.portfolio-subpage .resume-entry::after,
+.portfolio-subpage .resume-education-cards>div::after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:0;right:0;bottom:0;
+  width:37%;
+  pointer-events:none;
+  background-repeat:no-repeat;
+  background-position:right center;
+  background-size:contain;
+  opacity:.32;
+  mix-blend-mode:multiply;
+}
+.portfolio-subpage .resume-skills article:nth-child(1)::after{background-image:url("assets/resume-skill-research.svg")}
+.portfolio-subpage .resume-skills article:nth-child(2)::after{background-image:url("assets/resume-skill-model.svg")}
+.portfolio-subpage .resume-skills article:nth-child(3)::after{background-image:url("assets/resume-skill-ai.svg")}
+.portfolio-subpage .resume-skills article:nth-child(4)::after{background-image:url("assets/resume-skill-build.svg")}
+.portfolio-subpage .resume-skills article:nth-child(5)::after{background-image:url("assets/resume-skill-eval.svg")}
+.portfolio-subpage .resume-project-scrm::after{background-image:url("assets/project-bg-medical.svg")}
+.portfolio-subpage .resume-project-ees::after{background-image:url("assets/project-bg-hospitality.svg")}
+.portfolio-subpage .resume-project-cafe::after{background-image:url("assets/project-bg-coffee.svg")}
+.portfolio-subpage .resume-project-research::after{background-image:url("assets/project-bg-industry.svg")}
+.portfolio-subpage .resume-entry-consumer::after{background-image:url("assets/experience-consumer.svg")}
+.portfolio-subpage .resume-entry-waterdrop::after{background-image:url("assets/experience-wd.svg")}
+.portfolio-subpage .resume-entry-enterprise::after{background-image:url("assets/experience-enterprise.svg")}
+.portfolio-subpage .resume-education-cards>div:nth-child(1)::after{background-image:url("assets/education-postgraduate.svg")}
+.portfolio-subpage .resume-education-cards>div:nth-child(2)::after{background-image:url("assets/education-undergraduate.svg")}
+.portfolio-subpage .resume-skills article>*,
+.portfolio-subpage .resume-project-grid>.resume-project>*,
+.portfolio-subpage .resume-entry>*,
+.portfolio-subpage .resume-education-cards>div>*{
+  position:relative!important;
+  z-index:1!important;
+}
+.portfolio-subpage .resume-skills article:nth-child(1){background:linear-gradient(110deg,#fff 48%,#f0f4f8)!important}
+.portfolio-subpage .resume-skills article:nth-child(2){background:linear-gradient(110deg,#fff 48%,#f3f1f8)!important}
+.portfolio-subpage .resume-skills article:nth-child(3){background:linear-gradient(110deg,#fff 48%,#eff3fa)!important}
+.portfolio-subpage .resume-skills article:nth-child(4){background:linear-gradient(110deg,#fff 48%,#f1f5f8)!important}
+.portfolio-subpage .resume-skills article:nth-child(5){background:linear-gradient(110deg,#fff 48%,#f3f1f8)!important}
+.portfolio-subpage .resume-project-grid>.resume-project{background:linear-gradient(110deg,#fff 50%,#f1f5fa)!important}
+.portfolio-subpage .resume-entry{
+  padding:17px 16px!important;
+  border:1px solid rgba(74,83,139,.16)!important;
+  background:linear-gradient(110deg,#fff 53%,#f2f5f8)!important;
+}
+.portfolio-subpage .resume-entry-consumer{background:linear-gradient(110deg,#fff 53%,#f7f3ec)!important}
+.portfolio-subpage .resume-entry-waterdrop{background:linear-gradient(110deg,#fff 53%,#eff5f8)!important}
+.portfolio-subpage .resume-entry-enterprise{background:linear-gradient(110deg,#fff 53%,#f2f2f8)!important}
+.portfolio-subpage .resume-education-cards>div:nth-child(1){background:linear-gradient(110deg,#fff 50%,#f2eff8)!important}
+.portfolio-subpage .resume-education-cards>div:nth-child(2){background:linear-gradient(110deg,#fff 50%,#f7f3ec)!important}
+.portfolio-subpage .resume-skills article:hover,
+.portfolio-subpage .resume-project-grid>.resume-project:hover,
+.portfolio-subpage .resume-entry:hover,
+.portfolio-subpage .resume-education-cards>div:hover{
+  transform:translateY(-2px)!important;
+  border-color:rgba(81,64,200,.38)!important;
+  box-shadow:0 13px 29px rgba(67,62,166,.105)!important;
+}
+.portfolio-subpage .resume-skills article:hover::after,
+.portfolio-subpage .resume-project-grid>.resume-project:hover::after,
+.portfolio-subpage .resume-entry:hover::after,
+.portfolio-subpage .resume-education-cards>div:hover::after{opacity:.39}
+@media(max-width:760px){
+ .portfolio-subpage .resume-skills article::after,
+ .portfolio-subpage .resume-project-grid>.resume-project::after,
+ .portfolio-subpage .resume-entry::after,
+ .portfolio-subpage .resume-education-cards>div::after{width:32%;opacity:.23}
+ .portfolio-subpage .resume-entry{padding:15px 13px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .portfolio-subpage .resume-skills article,
+ .portfolio-subpage .resume-project-grid>.resume-project,
+ .portfolio-subpage .resume-entry,
+ .portfolio-subpage .resume-education-cards>div{transition:none!important}
+ .portfolio-subpage .resume-skills article:hover,
+ .portfolio-subpage .resume-project-grid>.resume-project:hover,
+ .portfolio-subpage .resume-entry:hover,
+ .portfolio-subpage .resume-education-cards>div:hover{transform:none!important}
+}
