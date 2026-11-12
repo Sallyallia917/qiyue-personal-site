@@ -2121,3 +2121,52 @@ body.portfolio-v2 #skills > .quality-proof > div + div{
     border-top:1px solid rgba(72,75,151,.22)!important;
   }
 }
+
+
+/* 2026-11-12 — Option A: subtle thematic image layers for homepage project cards */
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background-color:#102238!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  opacity:.96;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center right;
+  transition:opacity .2s ease,transform .35s ease;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(1)::after{
+  background-image:linear-gradient(90deg,rgba(11,25,41,.94) 0%,rgba(11,25,41,.88) 48%,rgba(11,25,41,.68) 100%),url("assets/project-bg-medical.svg");
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(2)::after{
+  background-image:linear-gradient(90deg,rgba(11,25,41,.94) 0%,rgba(11,25,41,.88) 48%,rgba(11,25,41,.68) 100%),url("assets/project-bg-hospitality.svg");
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(3)::after{
+  background-image:linear-gradient(90deg,rgba(11,25,41,.94) 0%,rgba(11,25,41,.87) 48%,rgba(11,25,41,.65) 100%),url("assets/project-bg-coffee.svg");
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(4)::after{
+  background-image:linear-gradient(90deg,rgba(11,25,41,.94) 0%,rgba(11,25,41,.88) 48%,rgba(11,25,41,.67) 100%),url("assets/project-bg-industry.svg");
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::before{
+  z-index:1;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card>*{
+  position:relative;
+  z-index:2;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:hover::after{
+  opacity:1;
+  transform:scale(1.015);
+}
+@media(max-width:800px){
+  body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::after{
+    background-position:68% center;
+  }
+}
