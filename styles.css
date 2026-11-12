@@ -2170,3 +2170,82 @@ body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:hover::after{
     background-position:68% center;
   }
 }
+
+
+/* 2026-11-12 — Refine project card artwork: light editorial palette, content first */
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card{
+  background-color:#f7f8fc!important;
+  border:1px solid rgba(91,94,151,.14)!important;
+  box-shadow:0 4px 18px rgba(43,53,91,.035);
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(1){background-color:#f1f7fa!important}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(2){background-color:#f5f4f1!important}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(3){background-color:#faf6ef!important}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(4){background-color:#f5f3fa!important}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::after{
+  opacity:.34!important;
+  background-size:72% 100%!important;
+  background-position:right center!important;
+  background-repeat:no-repeat!important;
+  mix-blend-mode:multiply;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(1)::after{
+  background-image:url("assets/project-bg-medical.svg")!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(2)::after{
+  background-image:url("assets/project-bg-hospitality.svg")!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(3)::after{
+  background-image:url("assets/project-bg-coffee.svg")!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(4)::after{
+  background-image:url("assets/project-bg-industry.svg")!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::before{
+  width:2px!important;
+  background:linear-gradient(180deg,#a8b6d9,#c4bddf)!important;
+  opacity:.72!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card-top,
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card h3,
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card>p,
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-tags,
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-foot{
+  position:relative;
+  z-index:2;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-type{
+  color:#777d94!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-index{
+  color:#7772aa!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card h3 a{
+  color:#202541!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card>p:not(.project-problem){
+  color:#5e667b!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-foot{
+  border-top-color:rgba(91,94,151,.15)!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-foot>span{
+  color:#69718a!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-foot a{
+  color:#514b91!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:hover{
+  box-shadow:0 8px 22px rgba(43,53,91,.07);
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:hover::after{
+  opacity:.42!important;
+  transform:scale(1.01);
+}
+@media(max-width:800px){
+  body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::after{
+    background-size:78% 100%!important;
+    background-position:right center!important;
+    opacity:.27!important;
+  }
+}
