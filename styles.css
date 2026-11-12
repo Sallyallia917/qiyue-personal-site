@@ -2249,3 +2249,67 @@ body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:hover::after{
     opacity:.27!important;
   }
 }
+
+
+/* 2026-11-12 — Editorial artwork for research, experience and education cards */
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article,
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article,
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  border:1px solid rgba(91,94,151,.13)!important;
+  box-shadow:0 4px 18px rgba(43,53,91,.025)!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article::after,
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article::after,
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div::after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:0;
+  right:0;
+  bottom:0;
+  width:48%;
+  pointer-events:none;
+  background-repeat:no-repeat;
+  background-position:right center;
+  background-size:contain;
+  opacity:.25;
+  mix-blend-mode:multiply;
+}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(1){background:#f1f5f8!important}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(1)::after{background-image:url("assets/interest-history.svg");opacity:.25}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(2){background:#f5f2f8!important}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(2)::after{background-image:url("assets/interest-dance.svg");opacity:.27}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(3){background:#f1f5f9!important}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(3)::after{background-image:url("assets/interest-ai.svg");opacity:.24}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(1){background:#f7f4ee!important}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(1)::after{background-image:url("assets/experience-consumer.svg");opacity:.23}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(2){background:#f0f5f8!important}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(2)::after{background-image:url("assets/experience-wd.svg");opacity:.22}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(3){background:#f3f3f8!important}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(3)::after{background-image:url("assets/experience-enterprise.svg");opacity:.23}
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:nth-child(1){background:#f4f1f8!important}
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:nth-child(1)::after{background-image:url("assets/education-postgraduate.svg");opacity:.22}
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:nth-child(2){background:#f7f4ee!important}
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:nth-child(2)::after{background-image:url("assets/education-undergraduate.svg");opacity:.22}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article > *,
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article > *,
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div > *{
+  position:relative!important;
+  z-index:1!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:hover,
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:hover,
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:hover{
+  box-shadow:0 7px 20px rgba(43,53,91,.055)!important;
+}
+@media(max-width:760px){
+  body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article::after,
+  body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article::after,
+  body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div::after{
+    width:42%;
+    opacity:.17!important;
+  }
+}
