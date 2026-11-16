@@ -75,3 +75,17 @@ python3 -m http.server 8000
 - 确认咖啡服务行动引擎的实际运行模块，补充真实演示 / 代码链接与评测结果。
 - 当前 `resume.html` 是结构草稿，不是已核实的最终投递简历。
 # qiyue-personal-site
+
+
+## V1.1 内容与主题维护
+- 新增 `content.js`：集中维护首页、简历与项目页的重点标题、摘要及共享侧栏文案。日常优先编辑该文件，不需要修改 HTML。
+- 新增 `theme.css`：集中维护网站基础色彩与字体变量，当前变量值沿用既有视觉风格；后续可低成本调整主题色与基础视觉参数。
+- 所有页面保留原 HTML 结构与 `styles.css` 布局样式，内容层和主题层分开加载；本次不改页面布局、不替换视觉风格。
+- 说明：V1.1 先抽离高频重点文案与共享内容，并非所有正文都已迁移。未纳入 `content.js` 的长正文仍在对应 HTML 页面中；后续可按页面逐步抽离，避免一次性重构风险。
+
+### 日常修改入口
+1. 打开 GitHub 在线编辑器：`https://github.dev/Sallyallia917/qiyue-personal-site`。
+2. 切换到分支 `feat/content-managed-site`。
+3. 修改 `content.js` 中对应页面的文字，或修改 `theme.css` 中的主题变量。
+4. 保存后在 Source Control 提交并 Push；不要直接修改 `main`。
+5. 修改完成先通过 Pull Request 预览和检查，再决定是否合并发布。
