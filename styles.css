@@ -2733,3 +2733,33 @@ body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:hov
   .portfolio-v2 .portfolio-nav{margin-top:22px!important}
   .portfolio-v2 .sidebar-bottom{margin-top:25px!important;padding-top:16px!important}
 }
+
+
+/* Homepage sidebar: restore left-aligned navigation and compact one-line profile heading */
+body[data-page="home"].portfolio-v2 .portfolio-nav{
+  align-items:flex-start!important;
+  text-align:left!important;
+}
+body[data-page="home"].portfolio-v2 .portfolio-nav a{
+  justify-content:flex-start!important;
+  text-align:left!important;
+  width:100%;
+}
+body[data-page="home"].portfolio-v2 .sidebar-intro h2{
+  width:100%!important;
+  text-align:left!important;
+  white-space:nowrap!important;
+  font-size:16px!important;
+  line-height:1.45!important;
+  letter-spacing:-.025em;
+  margin-top:20px!important;
+}
+body[data-page="home"].portfolio-v2 .sidebar-summary{
+  max-width:320px!important;
+  width:100%!important;
+  margin:13px 0 0!important;
+  text-align:left!important;
+  font-size:12px!important;
+  line-height:1.8!important;
+}
+body[data-page="home"].portfolio-v2 .sidebar-detail{display:none!important}
