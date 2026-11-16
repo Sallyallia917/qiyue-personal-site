@@ -2648,3 +2648,88 @@ body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:hov
   .portfolio-v2 .portfolio-nav{margin-top:22px!important}
   .portfolio-v2 .sidebar-bottom{margin-top:25px!important;padding-top:16px!important}
 }
+
+
+/* Sidebar presentation: centered identity, modest portrait and clear role hierarchy */
+@media(min-width:761px){
+  .portfolio-v2 .portfolio-sidebar{
+    position:sticky!important;top:0!important;
+    height:100vh!important;max-height:100vh!important;min-height:0!important;
+    overflow-y:auto!important;overflow-x:hidden!important;
+    overscroll-behavior-y:contain;
+    scrollbar-width:thin;
+    scrollbar-color:rgba(145,164,187,.32) transparent;
+  }
+  .portfolio-v2 .portfolio-sidebar::-webkit-scrollbar{width:5px}
+  .portfolio-v2 .portfolio-sidebar::-webkit-scrollbar-thumb{
+    background:rgba(145,164,187,.3);border-radius:8px;
+  }
+}
+.portfolio-v2 .portfolio-sidebar{
+  text-align:center!important;
+  align-items:center!important;
+}
+.portfolio-v2 .portfolio-brand{
+  display:block;width:100%;text-align:center;
+}
+.portfolio-v2 .sidebar-intro{
+  width:100%;margin-top:40px!important;
+  display:flex;flex-direction:column;align-items:center;
+}
+.portfolio-v2 .sidebar-kicker{text-align:center}
+.portfolio-v2 .sidebar-avatar{
+  width:58px!important;height:58px!important;flex:0 0 58px!important;
+  display:block!important;margin:16px auto 15px!important;
+  border-radius:50%!important;object-fit:cover!important;
+}
+.portfolio-v2 .sidebar-profile-row{
+  display:flex!important;justify-content:center!important;
+  width:100%;text-align:center;
+}
+.portfolio-v2 .sidebar-intro h1{
+  display:flex!important;align-items:baseline!important;
+  justify-content:center!important;gap:11px;
+  width:100%;text-align:center;margin-top:0!important;
+}
+.portfolio-v2 .sidebar-intro h1 span{
+  display:inline!important;margin:0!important;
+  font-size:12px!important;white-space:nowrap;
+}
+.portfolio-v2 .sidebar-contact-inline{
+  justify-content:center!important;
+  width:100%;margin-top:12px!important;
+  font-size:9px!important;opacity:.68;
+}
+.portfolio-v2 .sidebar-intro h2{
+  width:100%;text-align:center;margin-top:22px!important;
+}
+.portfolio-v2 .sidebar-summary{
+  max-width:320px;width:100%;margin:13px auto 0!important;
+  text-align:center!important;font-size:12px!important;line-height:1.85!important;
+}
+.portfolio-v2 .portfolio-nav{
+  width:100%;max-width:none!important;
+  display:flex!important;flex-direction:column!important;
+  align-items:center!important;margin-top:30px!important;
+}
+.portfolio-v2 .portfolio-nav a{
+  justify-content:center!important;text-align:center;
+}
+.portfolio-v2 .sidebar-bottom{
+  width:100%;margin-top:auto!important;padding-top:28px!important;
+}
+.portfolio-v2 .sidebar-links{justify-content:center!important}
+@media(max-width:760px){
+  .portfolio-v2 .portfolio-sidebar{
+    position:relative!important;top:auto!important;
+    height:auto!important;max-height:none!important;min-height:0!important;
+    overflow:visible!important;padding:26px 22px!important;
+  }
+  .portfolio-v2 .sidebar-intro{margin-top:25px!important}
+  .portfolio-v2 .sidebar-avatar{
+    width:54px!important;height:54px!important;flex-basis:54px!important;
+    margin:13px auto!important;
+  }
+  .portfolio-v2 .portfolio-nav{margin-top:22px!important}
+  .portfolio-v2 .sidebar-bottom{margin-top:25px!important;padding-top:16px!important}
+}
