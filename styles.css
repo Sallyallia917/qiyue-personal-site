@@ -2735,19 +2735,19 @@ body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:hov
 }
 
 
-/* Homepage sidebar: restore left-aligned navigation and compact one-line profile heading */
+/* Homepage sidebar: centered title/navigation, left-aligned single-paragraph bio */
 body[data-page="home"].portfolio-v2 .portfolio-nav{
-  align-items:flex-start!important;
-  text-align:left!important;
+  align-items:center!important;
+  text-align:center!important;
 }
 body[data-page="home"].portfolio-v2 .portfolio-nav a{
-  justify-content:flex-start!important;
-  text-align:left!important;
+  justify-content:center!important;
+  text-align:center!important;
   width:100%;
 }
 body[data-page="home"].portfolio-v2 .sidebar-intro h2{
   width:100%!important;
-  text-align:left!important;
+  text-align:center!important;
   white-space:nowrap!important;
   font-size:16px!important;
   line-height:1.45!important;
