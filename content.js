@@ -6,19 +6,20 @@
 (() => {
   const SITE_CONTENT = {
     shared: {
-      ".sidebar-kicker": "AI PRODUCT · BUSINESS SYSTEMS",
+      ".sidebar-kicker": "PEOPLE · BUSINESS · TECHNOLOGY",
       ".sidebar-intro h1": "李七月 <span>Sally</span>",
-      ".sidebar-intro h2": "AI 产品经理<br><em>企业级 AI 应用与业务流程智能化</em>",
-      ".sidebar-intro .sidebar-summary": "具备 CRM 实施、B 端产品、软件测试与 AI 产品运营经历。聚焦企业服务、客户运营及业务流程场景，擅长业务梳理、AI 产品规划、规则 / 模型 / 工具协同设计，以及原型验证与质量评测。",
+      ".sidebar-intro h2": "商业 · 组织 · 技术<br><em>系统与人的协作</em>",
+      ".sidebar-intro > p:not(.sidebar-kicker)": "长期关注商业、组织与技术如何共同塑造人的工作方式。",
+      ".sidebar-intro .sidebar-detail": "从 CRM、B 端产品与测试经验出发，持续探索企业系统与 AI 应用的结合。",
     },
     home: {
-      "#about .section-title": "从业务问题出发，<br><em>设计可验证的 AI 产品方案。</em>",
-      "#about .intro-copy p:nth-child(1)": "具备 CRM 实施、软件测试、B 端产品与 AI 产品运营经历，并通过独立原型持续验证 AI 应用设计。能够从业务调研与流程建模出发，梳理角色、数据、规则和异常路径，形成可实现、可测试的产品方案。",
-      "#about .intro-copy p:nth-child(2)": "重点能力：企业业务抽象、规则 / LLM / RAG 分层设计、上下文与工作流管理、人工接管机制、评测与缺陷闭环。目标岗位：AI 应用产品经理、企业服务 / 客户运营 AI 产品经理、业务流程 Agent 产品经理。"
+      "#about .section-title": "连接业务、系统与 AI，<br><em>让产品方案经得起真实场景检验。</em>",
+      "#about .intro-copy p:nth-child(1)": "我的经历横跨 CRM 实施、软件测试、B 端产品与 AI 产品运营。这些经历让我习惯同时观察业务流程、系统规则、产品体验与质量边界，并通过独立原型把想法转化为可运行、可检验的产品方案。",
+      "#about .intro-copy p:nth-child(2)": "我关注的不是简单叠加大模型，而是判断任务应由规则处理、模型理解还是工具执行，何时需要上下文协同与人工接管，再通过测试集、场景验收和缺陷回归验证系统行为。目标方向：AI 应用产品经理、企业服务 / 客户运营 AI 产品经理、业务流程 Agent 产品经理。"
     },
     resume: {
       ".resume-hero h1": "李七月 <em>｜AI 产品经理</em>",
-      ".resume-summary": "计算机科学与技术本科、工商管理硕士，具备 CRM 实施、软件测试、B 端产品与 AI 产品运营经历。擅长复杂业务建模、AI 应用产品规划、规则 / LLM / RAG 协同设计、工作流与状态管理、原型验证及质量评测；能够将业务目标转化为技术可实现、风险可控、结果可验收的产品方案。",
+      ".resume-summary": "计算机科学与技术本科、工商管理硕士，具备 CRM 实施、软件测试、B 端产品及 AI 产品运营经历。能够从业务流程与组织需求出发，完成复杂业务建模、AI 应用方案设计、原型验证与质量评测；具备规则 / LLM / RAG 分层协作、上下文与工作流管理、人工接管及异常治理等实践经验。",
       ".resume-contact": "目标岗位：AI 应用产品经理｜企业服务 · 客户运营 · 业务流程 Agent"
     },
     ees: {
