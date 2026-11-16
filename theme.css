@@ -1,26 +1,28 @@
 /*
  * 视觉主题集中配置（V1）
- * 当前值沿用现有视觉。未来调整品牌色、底色、字体时优先修改这里。
- * 本文件在 styles.css 之后加载，不改变 HTML 结构。
+ * 当前值沿用原站视觉。未来想调整整体色彩时，优先修改下面的变量。
+ * 本文件在 styles.css 之后加载；不改变页面结构和布局。
  */
 :root {
-  --site-paper: #f7f4ee;
-  --site-ink: #292630;
-  --site-accent: #65527d;
-  --site-accent-deep: #554775;
-  --site-muted: #77747a;
-  --site-line: #d8d2c9;
-  --site-lavender: #efebf3;
-  --site-bluewash: #edf0f5;
+  --paper: #f7f4ee;
+  --ink: #292630;
+  --accent: #65527d;
+  --muted: #77747a;
+  --line: #d8d2c9;
+  --lavender: #efebf3;
+  --bluewash: #edf0f5;
   --site-font-cn: "Noto Serif SC", serif;
   --site-font-ui: Inter, "Noto Serif SC", sans-serif;
 }
 body.portfolio-v2 {
-  background-color: var(--site-paper);
-  color: var(--site-ink);
+  background-color: var(--paper);
+  color: var(--ink);
   font-family: var(--site-font-ui);
 }
 .portfolio-v2 .sidebar-intro h2 em,
 .portfolio-v2 .section-title em,
-.portfolio-v2 .case-hero h1 em { color: var(--site-accent-deep); }
-.portfolio-v2 a:hover { color: var(--site-accent); }
+.portfolio-v2 .case-hero h1 em,
+.portfolio-v2 .solid-link {
+  color: var(--accent);
+}
+.portfolio-v2 a:hover { color: var(--accent); }
