@@ -2549,74 +2549,41 @@ body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:hov
 }
 
 
-/* 2026-11-16 — Sidebar height resilience, profile slot and contact details */
+/* Sidebar additions: preserve original spacing and visual hierarchy */
 .portfolio-v2 .portfolio-sidebar{
-  position:sticky!important;
-  top:0!important;
-  height:100vh!important;
-  max-height:100vh!important;
   min-height:0!important;
   overflow-y:auto!important;
   overflow-x:hidden!important;
   overscroll-behavior-y:contain;
   scrollbar-width:thin;
-  scrollbar-color:rgba(73,56,189,.35) transparent;
-  padding-top:clamp(22px,5vh,66px)!important;
-  padding-bottom:clamp(18px,3vh,30px)!important;
+  scrollbar-color:rgba(73,56,189,.28) transparent;
 }
 .portfolio-v2 .portfolio-sidebar::-webkit-scrollbar{width:5px}
 .portfolio-v2 .portfolio-sidebar::-webkit-scrollbar-thumb{
-  background:rgba(73,56,189,.28);border-radius:8px
+  background:rgba(73,56,189,.24);border-radius:8px;
 }
+.portfolio-v2 .sidebar-profile-row{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.portfolio-v2 .sidebar-profile-row h1{min-width:0}
 .portfolio-v2 .sidebar-avatar{
-  display:flex;align-items:center;gap:11px;margin-top:22px;
-  color:#526184;font:400 10px/1.5 "Noto Serif SC",serif;
+  display:block;flex:0 0 68px;width:68px;height:68px;
+  object-fit:cover;border:1px solid rgba(73,56,189,.2);
+  border-radius:12px;background:rgba(255,255,255,.5);
 }
-.portfolio-v2 .sidebar-avatar img{
-  display:block;width:66px;height:66px;object-fit:cover;
-  border:1px solid rgba(73,56,189,.2);border-radius:14px;
-  background:rgba(255,255,255,.5);
-}
-.portfolio-v2 .sidebar-intro{margin-top:24px!important}
-.portfolio-v2 .sidebar-intro h1{margin-top:12px!important}
-.portfolio-v2 .sidebar-intro h2{margin-top:15px!important}
-.portfolio-v2 .sidebar-intro>p:not(.sidebar-kicker){margin-top:11px!important}
-.portfolio-v2 .portfolio-nav{margin-top:24px!important}
-.portfolio-v2 .portfolio-nav a{padding:7px 0!important}
 .portfolio-v2 .sidebar-contact{
-  margin-bottom:15px;padding:11px 12px;
-  border:1px solid rgba(73,56,189,.15);border-radius:9px;
-  background:rgba(255,255,255,.28);
+  margin:0 0 18px;padding:0;
+  border:0;background:transparent;
 }
 .portfolio-v2 .sidebar-contact-label{
-  display:block;margin-bottom:6px;color:#4938bd;
+  display:block;margin-bottom:8px;color:#4938bd;
   font:500 9px "DM Mono",monospace;letter-spacing:.09em;
 }
 .portfolio-v2 .sidebar-contact p{
-  margin-top:4px;color:#526184;font:400 10px/1.6 "Noto Serif SC",serif;
+  margin-top:5px;color:#526184;font:400 10px/1.6 "Noto Serif SC",serif;
 }
 .portfolio-v2 .sidebar-contact strong{font-weight:600;color:#344366}
-@media(max-height:820px) and (min-width:801px){
-  .portfolio-v2 .portfolio-sidebar{padding-top:20px!important;padding-bottom:16px!important}
-  .portfolio-v2 .sidebar-avatar{margin-top:12px}
-  .portfolio-v2 .sidebar-avatar img{width:54px;height:54px}
-  .portfolio-v2 .sidebar-intro{margin-top:14px!important}
-  .portfolio-v2 .sidebar-intro h1{font-size:30px!important;margin-top:8px!important}
-  .portfolio-v2 .sidebar-intro h2{font-size:17px!important;line-height:1.5!important;margin-top:10px!important}
-  .portfolio-v2 .sidebar-intro>p:not(.sidebar-kicker){font-size:11px!important;line-height:1.65!important;margin-top:7px!important}
-  .portfolio-v2 .portfolio-nav{margin-top:14px!important}
-  .portfolio-v2 .portfolio-nav a{padding:5px 0!important;font-size:9px!important}
-  .portfolio-v2 .sidebar-contact{margin-bottom:9px;padding:8px 10px}
-  .portfolio-v2 .sidebar-bottom>p{margin-top:9px!important}
-}
-@media(max-width:800px){
-  .portfolio-v2 .portfolio-sidebar{
-    position:relative!important;top:auto!important;
-    height:auto!important;max-height:none!important;min-height:0!important;
-    overflow:visible!important;padding:25px 22px!important;
-  }
-  .portfolio-v2 .sidebar-avatar{margin-top:16px}
-  .portfolio-v2 .sidebar-intro{margin-top:16px!important}
-  .portfolio-v2 .portfolio-nav{margin-top:18px!important}
-  .portfolio-v2 .sidebar-bottom{margin-top:20px!important}
+@media(max-width:760px){
+  .portfolio-v2 .sidebar-profile-row{justify-content:flex-start}
+  .portfolio-v2 .sidebar-avatar{width:60px;height:60px;flex-basis:60px}
 }
