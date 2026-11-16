@@ -2494,3 +2494,56 @@ body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:hov
     gap:12px 18px!important;
   }
 }
+
+/* 2026-11-16 — Philosophy cards: restrained visual cues for framework, detail and fit */
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list{
+  border-top:0!important;
+  display:grid!important;
+  gap:14px!important;
+  margin-top:25px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  display:grid!important;
+  grid-template-columns:120px minmax(0,1fr)!important;
+  gap:20px!important;
+  padding:24px 22px!important;
+  border:1px solid rgba(82,82,164,.15)!important;
+  border-radius:10px!important;
+  background:linear-gradient(105deg,rgba(255,255,255,.82) 0%,rgba(244,243,255,.78) 65%,rgba(230,237,255,.7) 100%)!important;
+  box-shadow:0 6px 20px rgba(58,65,135,.045)!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article::after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:0;right:0;bottom:0;
+  width:42%;
+  pointer-events:none;
+  background-repeat:no-repeat;
+  background-position:right center;
+  background-size:contain;
+  opacity:.42;
+  mix-blend-mode:multiply;
+}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article:nth-child(1)::after{background-image:url("assets/philosophy-framework.svg")}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article:nth-child(2)::after{background-image:url("assets/philosophy-detail.svg")}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article:nth-child(3)::after{background-image:url("assets/philosophy-whole.svg")}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article>*{position:relative!important;z-index:1!important}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article:hover{
+  border-color:rgba(81,64,200,.3)!important;
+  box-shadow:0 10px 26px rgba(58,65,135,.075)!important;
+}
+@media(max-width:760px){
+  .portfolio-v2:not(.portfolio-subpage) .philosophy-list article{
+    grid-template-columns:1fr!important;
+    gap:8px!important;
+    padding:19px 16px!important;
+  }
+  .portfolio-v2:not(.portfolio-subpage) .philosophy-list article::after{
+    width:38%;
+    opacity:.28;
+  }
+}
