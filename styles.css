@@ -2735,31 +2735,34 @@ body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:hov
 }
 
 
-/* Homepage sidebar: centered title/navigation, left-aligned single-paragraph bio */
-body[data-page="home"].portfolio-v2 .portfolio-nav{
-  align-items:center!important;
-  text-align:center!important;
-}
-body[data-page="home"].portfolio-v2 .portfolio-nav a{
-  justify-content:center!important;
-  text-align:center!important;
-  width:100%;
-}
+/* Homepage sidebar: balanced vertical rhythm */
 body[data-page="home"].portfolio-v2 .sidebar-intro h2{
-  width:100%!important;
-  text-align:center!important;
-  white-space:nowrap!important;
-  font-size:16px!important;
-  line-height:1.45!important;
-  letter-spacing:-.025em;
-  margin-top:20px!important;
+  margin-bottom:0!important;
 }
 body[data-page="home"].portfolio-v2 .sidebar-summary{
   max-width:320px!important;
   width:100%!important;
-  margin:13px 0 0!important;
+  margin:23px 0 0!important;
   text-align:left!important;
   font-size:12px!important;
   line-height:1.8!important;
 }
-body[data-page="home"].portfolio-v2 .sidebar-detail{display:none!important}
+body[data-page="home"].portfolio-v2 .portfolio-nav{
+  margin-top:38px!important;
+}
+body[data-page="home"].portfolio-v2 .sidebar-bottom{
+  margin-top:28px!important;
+  padding-top:14px!important;
+}
+@media(max-width:760px){
+  body[data-page="home"].portfolio-v2 .sidebar-summary{
+    margin-top:18px!important;
+  }
+  body[data-page="home"].portfolio-v2 .portfolio-nav{
+    margin-top:23px!important;
+  }
+  body[data-page="home"].portfolio-v2 .sidebar-bottom{
+    margin-top:25px!important;
+    padding-top:16px!important;
+  }
+}
