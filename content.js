@@ -7,11 +7,9 @@
   const SITE_CONTENT = {
     shared: {
       ".sidebar-kicker": "AI PRODUCT · BUSINESS SYSTEMS",
-      ".sidebar-intro h1": "李七月 <span>Qiyue Li</span>",
+      ".sidebar-intro h1": "李七月 <span>Sally</span>",
       ".sidebar-intro h2": "AI 产品经理<br><em>企业级 AI 应用与业务流程智能化</em>",
-      ".sidebar-intro > p:not(.sidebar-kicker):not(.sidebar-detail)": "从业务问题出发，完成 AI 产品规划、应用架构设计与质量验证。",
-      ".sidebar-intro .sidebar-detail": "结合 B 端产品经验，设计规则、模型、工具与人的协作边界。",
-      ".sidebar-bottom > p": "工作作品集 · 2026"
+      ".sidebar-intro .sidebar-summary": "具备 CRM、B 端产品及 AI 产品运营经验，擅长业务流程建模、AI 应用设计与质量评测.",
     },
     home: {
       "#about .section-title": "从业务问题出发，<br><em>设计可验证的 AI 产品方案。</em>",
