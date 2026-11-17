@@ -2766,3 +2766,49 @@ body[data-page="home"].portfolio-v2 .sidebar-bottom{
     padding-top:16px!important;
   }
 }
+
+
+/* Resume heading: keep the role on the name line without competing with the name */
+.resume-name-line{
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:10px 14px;
+}
+.resume-name-line em{
+  font-size:.42em!important;
+  line-height:1.5;
+  font-style:normal;
+  font-weight:500;
+  color:var(--muted,#77747a);
+  letter-spacing:0;
+}
+@media(max-width:640px){
+  .resume-name-line em{font-size:.48em!important}
+}
+
+
+/* Homepage calls to action: use the site's muted lavender palette, not mint-green borders */
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a,
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a:not(.solid-link){
+  display:inline-flex;
+  align-items:center;
+  padding:10px 14px;
+  border:1px solid rgba(166,154,184,.52)!important;
+  border-radius:3px;
+  background:transparent!important;
+  color:var(--pc-accent)!important;
+  text-decoration:none!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a:hover{
+  border-color:rgba(166,154,184,.9)!important;
+  background:rgba(166,154,184,.09)!important;
+}
+
+
+/* Resume work-history metadata column: centered alignment */
+.portfolio-subpage .resume-experience-section .resume-entry-meta{
+  text-align:center!important;
+  padding-left:6px!important;
+  padding-right:6px!important;
+}
