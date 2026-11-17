@@ -2766,3 +2766,23 @@ body[data-page="home"].portfolio-v2 .sidebar-bottom{
     padding-top:16px!important;
   }
 }
+
+
+/* Resume heading: keep the role on the name line without competing with the name */
+.resume-name-line{
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:10px 14px;
+}
+.resume-name-line em{
+  font-size:.42em!important;
+  line-height:1.5;
+  font-style:normal;
+  font-weight:500;
+  color:var(--muted,#77747a);
+  letter-spacing:0;
+}
+@media(max-width:640px){
+  .resume-name-line em{font-size:.48em!important}
+}
