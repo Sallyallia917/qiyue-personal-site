@@ -6,7 +6,6 @@
 (() => {
   const SITE_CONTENT = {
     shared: {
-      ".sidebar-kicker": "关注领域",
       ".sidebar-intro h1": "李七月 <span>Sally</span>",
       ".sidebar-intro h2": "商业 · 组织 · 技术　<em>系统与人的协作</em>",
       ".sidebar-intro > p:not(.sidebar-kicker)": "长期关注商业、组织与技术如何共同塑造人的工作方式，并从 CRM、B 端产品与测试经验出发，持续探索企业系统与 AI 应用的结合。",
@@ -18,9 +17,9 @@
       "#about .intro-copy p:nth-child(2)": "产品设计不止于叠加大模型，更需要判断任务应由规则处理、模型理解还是工具执行，明确上下文协同与人工接管的条件，并通过测试集、场景验收和缺陷回归验证系统行为。目标方向：AI 应用产品经理、企业服务 / 客户运营 AI 产品经理、业务流程 Agent 产品经理。"
     },
     resume: {
-      ".resume-hero h1": "李七月 <em>｜AI 产品经理</em>",
+      ".resume-hero h1": "李七月 <em>AI 应用产品经理｜企业服务 · 营销服务 · 业务流程 Agent</em>",
       ".resume-summary": "计算机科学与技术本科、工商管理硕士，具备 CRM 实施、软件测试、B 端产品及 AI 产品运营经历。能够从业务流程与组织需求出发，完成复杂业务建模、AI 应用方案设计、原型验证与质量评测；具备规则 / LLM / RAG 分层协作、上下文与工作流管理、人工接管及异常治理等实践经验。",
-      ".resume-contact": "目标岗位：AI 应用产品经理｜企业服务 · 客户运营 · 业务流程 Agent"
+      ".resume-contact": ""
     },
     ees: {
       ".case-hero h1": "EES 酒店与民宿<br><em>AI 智能服务工作流</em>",
