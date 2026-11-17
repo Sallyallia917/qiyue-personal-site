@@ -33,10 +33,10 @@
 <div class="portfolio-main"><main class="case-page-v2"><section class="case-hero"><a class="back" href="index.html#projects">← 返回项目</a><div class="case-hero-grid"><div><div class="case-no">02 / 独立原型 · 营销决策</div><h1>Coffee Growth<br><em>Engine</em></h1></div><div><p class="case-summary">把消费者研究转成可以执行、可以测试的会员营销决策。规则负责商业约束，大模型负责适合生成式 AI 的语言任务——先让系统可控，再逐步扩展。</p><div class="case-meta"><div><span>业务场景</span><strong>精品咖啡会员复购</strong></div><div><span>研究基础</span><strong>消费者满意度研究</strong></div><div><span>当前重点</span><strong>规则模块与质量评估</strong></div><div><span>项目性质</span><strong>独立原型 / 非生产系统</strong></div></div></div></div></section>
 <div class="case-body">
 <section class="case-section star-section"><div class="case-label">项目概览</div><div class="case-copy"><h2>把消费者研究转化为受业务规则约束的营销决策流程。</h2><div class="star-grid">
-<article class="star-card"><span>S · 情境</span><h3>业务情境</h3><p>精品咖啡会员运营需要同时考虑会员状态、营销授权、商品偏好、库存、优惠门槛、预算与折后毛利；仅靠生成式文案无法保证活动方案可执行。</p></article>
-<article class="star-card"><span>T · 任务</span><h3>产品任务</h3><p>构建一个从活动目标与预算出发，能够筛选受众、推荐商品、校验优惠规则，并在约束通过后生成营销方案的可运行原型。</p></article>
-<article class="star-card"><span>A · 行动</span><h3>关键行动</h3><p>将分群、推荐、优惠券预算和商品适配规则封装为确定性服务；再将结构化结果交给 DeepSeek 生成文案，并对输出结构、商品 / 优惠 ID 和不受支持的数字声明进行校验。</p></article>
-<article class="star-card"><span>R · 结果</span><h3>阶段结果</h3><p>形成 Streamlit 活动决策原型与离线评测套件；8 个合成评测案例全部按预期识别通过 / 失败。该结果验证的是评测器与规则约束，不代表真实复购、转化或 ROI 提升。</p></article>
+<article class="star-card"><span>情境</span><h3>业务情境</h3><p>精品咖啡会员运营需要同时考虑会员状态、营销授权、商品偏好、库存、优惠门槛、预算与折后毛利；仅靠生成式文案无法保证活动方案可执行。</p></article>
+<article class="star-card"><span>任务</span><h3>产品任务</h3><p>构建一个从活动目标与预算出发，能够筛选受众、推荐商品、校验优惠规则，并在约束通过后生成营销方案的可运行原型。</p></article>
+<article class="star-card"><span>行动</span><h3>关键行动</h3><p>将分群、推荐、优惠券预算和商品适配规则封装为确定性服务；再将结构化结果交给 DeepSeek 生成文案，并对输出结构、商品 / 优惠 ID 和不受支持的数字声明进行校验。</p></article>
+<article class="star-card"><span>结果</span><h3>阶段结果</h3><p>形成 Streamlit 活动决策原型与离线评测套件；8 个合成评测案例全部按预期识别通过 / 失败。该结果验证的是评测器与规则约束，不代表真实复购、转化或 ROI 提升。</p></article>
 </div></div></section>
 <section class="case-section"><div class="case-label">01 / 业务建模</div><div class="case-copy"><h2>营销决策必须同时满足用户适配与商业约束。</h2><ul class="case-list"><li><strong>会员分群：</strong>基于会员偏好、最近购买间隔、订单数和营销授权筛选目标人群；未授权用户排除在营销触达之外。</li><li><strong>商品推荐：</strong>结合品类偏好、价格、成本和库存形成候选商品。</li><li><strong>优惠校验：</strong>计算目标受众与预期核销率下的优惠成本，检查活动预算、券预算、最低消费门槛及折后毛利。</li><li><strong>生成约束：</strong>模型只接收已经过规则筛选的结构化上下文；不能自行添加未授权商品、无效优惠券或无依据的数字承诺。</li></ul></div></section>
 <section class="case-section"><div class="case-label">02 / 技术架构</div><div class="case-copy"><h2>规则先形成可信业务上下文，LLM 再完成语言生成。</h2><div class="architecture-stack">
