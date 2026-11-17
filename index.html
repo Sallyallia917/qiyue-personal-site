@@ -8,18 +8,23 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20261112-3">
+<link rel="stylesheet" href="styles.css?v=20261112-3"><link rel="stylesheet" href="theme.css">
 </head>
-<body class="portfolio-v2">
+<body data-page="home" class="portfolio-v2">
 <div class="portfolio-shell">
   <aside class="portfolio-sidebar">
     <a class="portfolio-brand" href="#top">七月 <span>· 幽微处见</span></a>
     <div class="sidebar-intro">
-      <p class="sidebar-kicker">AI PRODUCT · BUSINESS SYSTEMS</p>
-      <h1>李七月 <span>Qiyue Li</span></h1>
-      <h2>AI 产品经理<br><em>企业级 AI 应用与业务流程智能化</em></h2>
-      <p>从业务问题出发，完成 AI 产品规划、应用架构设计与质量验证。</p>
-      <p class="sidebar-detail">理解业务流程与技术边界，设计规则、模型、工具和人的协作方式。</p>
+      <p class="sidebar-kicker">PEOPLE · BUSINESS · TECHNOLOGY</p>
+      <img class="sidebar-avatar" src="assets/profile-photo-placeholder.svg" alt="个人照片位置">
+      <div class="sidebar-profile-row">
+        <h1>李七月 <span>Sally</span></h1>
+      </div>
+      <div class="sidebar-contact sidebar-contact-inline" aria-label="联系方式">
+        <span>电话：待补充</span><span>邮箱：待补充</span>
+      </div>
+      <h2>商业 · 组织 · 技术　<em>系统与人的协作</em></h2>
+      <p class="sidebar-summary">长期关注商业、组织与技术如何共同塑造人的工作方式，并从 CRM、B 端产品与测试经验出发，持续探索企业系统与 AI 应用的结合。</p>
     </div>
     <nav class="portfolio-nav" aria-label="页面导航">
       <a href="#about"><span></span>个人介绍</a>
@@ -35,17 +40,16 @@
         <a href="https://github.com/Sallyallia917" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
         
       </div>
-      <p>工作作品集 · 2026</p>
     </div>
   </aside>
 
   <main class="portfolio-main" id="top">
     <section class="portfolio-section intro-section" id="about">
       <div class="section-overline"><span>01 / ABOUT</span><span>业务 · 技术 · 人</span></div>
-      <h2 class="section-title">从业务问题出发，<br><em>设计可验证的 AI 产品方案。</em></h2>
+      <h2 class="section-title">连接业务、系统与 AI，<br><em>让产品方案经得起真实场景检验。</em></h2>
       <div class="intro-copy">
-        <p>具备 CRM 实施、软件测试、B 端产品与 AI 产品运营经历，并通过独立原型持续验证 AI 应用设计。能够从业务调研与流程建模出发，梳理角色、数据、规则和异常路径，形成可实现、可测试的产品方案。</p>
-        <p>重点能力：企业业务抽象、规则 / LLM / RAG 分层设计、上下文与工作流管理、人工接管机制、评测与缺陷闭环。目标岗位：AI 应用产品经理、企业服务 / 客户运营 AI 产品经理、业务流程 Agent 产品经理。</p>
+        <p>我的经历横跨 CRM 实施、软件测试、B 端产品与 AI 产品运营。这些经历让我习惯同时观察业务流程、系统规则、产品体验与质量边界，并通过独立原型把想法转化为可运行、可检验的产品方案。</p>
+        <p>我关注的不是简单叠加大模型，而是判断任务应由规则处理、模型理解还是工具执行，何时需要上下文协同与人工接管，再通过测试集、场景验收和缺陷回归验证系统行为。目标方向：AI 应用产品经理、企业服务 / 客户运营 AI 产品经理、业务流程 Agent 产品经理。</p>
       </div>
       <div class="intro-proof">
         <div><span>业务实践</span><strong>AI 医患沟通</strong><small>场景评估 · 样本测试 · 风险分流</small></div>
@@ -177,5 +181,5 @@
 </footer>
   </main>
 </div>
-</body>
+<script src="content.js"></script></body>
 </html>
