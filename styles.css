@@ -2804,3 +2804,11 @@ body[data-page="home"].portfolio-v2 .sidebar-bottom{
   border-color:rgba(166,154,184,.9)!important;
   background:rgba(166,154,184,.09)!important;
 }
+
+
+/* Resume work-history metadata column: centered alignment */
+.portfolio-subpage .resume-experience-section .resume-entry-meta{
+  text-align:center!important;
+  padding-left:6px!important;
+  padding-right:6px!important;
+}
