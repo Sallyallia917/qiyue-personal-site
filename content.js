@@ -6,7 +6,7 @@
 (() => {
   const SITE_CONTENT = {
     shared: {
-      ".sidebar-kicker": "PEOPLE · BUSINESS · TECHNOLOGY",
+      ".sidebar-kicker": "关注领域",
       ".sidebar-intro h1": "李七月 <span>Sally</span>",
       ".sidebar-intro h2": "商业 · 组织 · 技术　<em>系统与人的协作</em>",
       ".sidebar-intro > p:not(.sidebar-kicker)": "长期关注商业、组织与技术如何共同塑造人的工作方式，并从 CRM、B 端产品与测试经验出发，持续探索企业系统与 AI 应用的结合。",
@@ -14,8 +14,8 @@
     },
     home: {
       "#about .section-title": "连接业务、系统与 AI，<br><em>让产品方案经得起真实场景检验。</em>",
-      "#about .intro-copy p:nth-child(1)": "我的经历横跨 CRM 实施、软件测试、B 端产品与 AI 产品运营。这些经历让我习惯同时观察业务流程、系统规则、产品体验与质量边界，并通过独立原型把想法转化为可运行、可检验的产品方案。",
-      "#about .intro-copy p:nth-child(2)": "我关注的不是简单叠加大模型，而是判断任务应由规则处理、模型理解还是工具执行，何时需要上下文协同与人工接管，再通过测试集、场景验收和缺陷回归验证系统行为。目标方向：AI 应用产品经理、企业服务 / 客户运营 AI 产品经理、业务流程 Agent 产品经理。"
+      "#about .intro-copy p:nth-child(1)": "经历涵盖 CRM 实施、软件测试、B 端产品与 AI 产品运营，形成了同时观察业务流程、系统规则、产品体验与质量边界的工作视角，并通过独立原型将产品构想转化为可运行、可检验的方案。",
+      "#about .intro-copy p:nth-child(2)": "产品设计不止于叠加大模型，更需要判断任务应由规则处理、模型理解还是工具执行，明确上下文协同与人工接管的条件，并通过测试集、场景验收和缺陷回归验证系统行为。目标方向：AI 应用产品经理、企业服务 / 客户运营 AI 产品经理、业务流程 Agent 产品经理。"
     },
     resume: {
       ".resume-hero h1": "李七月 <em>｜AI 产品经理</em>",
