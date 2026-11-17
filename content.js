@@ -6,7 +6,7 @@
 (() => {
   const SITE_CONTENT = {
     shared: {
-      ".sidebar-intro h1": "李七月 <span>Sally</span>",
+      ".sidebar-intro h1": "李七月",
       ".sidebar-intro h2": "商业 · 组织 · 技术　<em>系统与人的协作</em>",
       ".sidebar-intro > p:not(.sidebar-kicker)": "长期关注商业、组织与技术如何共同塑造人的工作方式，并从 CRM、B 端产品与测试经验出发，持续探索企业系统与 AI 应用的结合。",
       ".sidebar-intro .sidebar-detail": "",
