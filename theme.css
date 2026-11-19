@@ -57,3 +57,24 @@ body.portfolio-v2 {
  .resume-archive-cta{display:none!important}
  a{color:inherit!important;text-decoration:none!important}
 }
+
+/* V4: compact, readable A4 resume output */
+.resume-page-v2 .resume-section-title .portfolio-icon{display:none!important}
+@media print{
+ @page{size:A4;margin:11mm 12mm}
+ html,body{background:#fff!important}
+ .resume-page-v2{font-size:8.8pt!important;line-height:1.42!important}
+ .resume-page-v2 .resume-hero{margin-bottom:8px!important}
+ .resume-page-v2 .resume-name-line{font-size:20pt!important}
+ .resume-page-v2 .resume-section{margin-top:9px!important}
+ .resume-page-v2 .resume-section-title{margin-bottom:6px!important}
+ .resume-page-v2 .resume-skills,.resume-page-v2 .resume-project-grid{gap:6px!important}
+ .resume-page-v2 .resume-project,.resume-page-v2 .resume-skills article,.resume-page-v2 .resume-entry{padding:8px 10px!important}
+ .resume-page-v2 p,.resume-page-v2 li{line-height:1.42!important}
+ .resume-page-v2 .resume-experience-list{gap:7px!important}
+ .resume-page-v2 .resume-entry-layout{gap:10px!important}
+ .resume-page-v2 .resume-entry-meta{min-width:28%!important}
+ .resume-page-v2 .resume-bottom-note{font-size:8pt!important}
+ .resume-page-v2 .resume-project,.resume-page-v2 .resume-entry,.resume-page-v2 .education-block>div{break-inside:avoid;page-break-inside:avoid}
+ .resume-page-v2 a{text-decoration:none!important}
+}
