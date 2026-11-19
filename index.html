@@ -78,16 +78,16 @@
       <p class="section-lead">以独立 AI 产品原型证明设计与验证能力，以真实业务实践证明场景判断与质量迭代经验。</p>
       <div class="project-list"><article class="project-card">
           <div class="project-card-top"><span class="project-type">独立应用原型 · 酒旅服务</span><span class="project-index">01</span></div>
-          <h3><a href="ees-agent.html">EES 酒旅服务 Agent <span>↗</span></a></h3>
-          <p class="project-problem"><b>核心问题</b> 酒旅服务涉及公共知识、个人订单、动态信息与现场任务，AI 必须识别任务、核验数据、遵循规则并在必要时转人工。</p>
-          <p>迭代至 2.0.5：构建规则 + LLM 混合路由、RAG、订单只读校验、上下文管理及工单领域服务；覆盖用户确认、幂等去重、状态流转与风险路由。</p>
+          <h3><a href="ees-agent.html">EES 民宿客服知识助手 <span>↗</span></a></h3>
+          <p class="project-problem"><b>核心问题</b> 住客问题涉及通用服务知识、订单专属信息、动态房态与安全风险，AI 需要判断哪些能答、哪些必须核实或转人工。</p>
+          <p>迭代至 2.0.5：构建规则 + LLM 混合意图识别、RAG 知识问答、订单只读校验、上下文管理及 SQLite 工单领域能力；覆盖状态查询、幂等去重、状态流转、发票申请与安全事件路由。</p>
           <div class="project-tags"><span>RAG / Hybrid Routing</span><span>Context Manager</span><span>Booking Service</span><span>Ticket Workflow</span></div>
           <div class="project-foot"><span>2.0.5 原型 · 288 项自动化评测通过；10 项 UI 验收仍有缺陷 · 未接真实 PMS / OTA / CRM</span><a href="ees-agent.html">查看案例细节 ↗</a></div>
         </article><article class="project-card">
           <div class="project-card-top"><span class="project-type">真实业务经历 · AI 医疗服务</span><span class="project-index">02</span></div>
           <h3><a href="ai-scrm.html">AI 医患沟通自动化 <span>↗</span></a></h3>
           <p class="project-problem"><b>核心问题</b> 高并发、非结构化的医患沟通中，怎样平衡自动回复效率、回答质量与风险边界。</p>
-          <p>参与真实业务场景评估、样本分析、Prompt 与规则优化、输出质量分析及风险分流，关注自动化适用范围与人工接管条件。</p>
+          <p>参与场景自动化评估、人工样本测试、Prompt 与规则优化、输出质量分析及风险分流。重点是判断什么场景适合自动化、什么情况需要人工接管。</p>
           <div class="project-tags"><span>场景拆解</span><span>样本评测</span><span>Prompt / 规则</span><span>人机协作</span></div>
           <div class="project-foot"><span>实践重点：质量闭环与自动化边界</span><a href="ai-scrm.html">查看案例细节 ↗</a></div>
         </article><article class="project-card">
@@ -104,7 +104,66 @@
           <p>形成“需求—供给—产业结构—资源与权力—商业模式—产品机会”的研究路径，并用于衣食住行需求分析、民宿与连锁酒店服务系统比较等主题。</p>
           <div class="project-tags"><span>需求洞察</span><span>产业链分析</span><span>商业模式</span><span>机会识别</span></div>
           <div class="project-foot"><span>实践重点：从行业认知转化为产品问题</span><a href="industry-research.html">查看研究方法 ↗</a></div>
-        </article></div>    </section>
+        </article></div>
+    </section>
+
+tion philosophy-section" id="philosophy">
+      <div class="section-overline"><span>04 / 方法论与产品哲学</span><span>结构 · 细节 · 合一</span></div>
+      <h2 class="section-heading">业务建模、技术取舍与产品质量的一致性。</h2>
+      <p class="section-lead">以系统化方法组织复杂业务，以真实场景检验关键细节，以业务价值决定技术方案。</p>
+      <div class="philosophy-list">
+        <article><span class="philosophy-mark">01 / FRAME</span><div><h3>框架要漂亮：先让复杂性有秩序</h3><p>像故事结构与舞蹈编排一样，系统需要明确的目标、边界、节奏与职责。落到产品上，就是业务建模、任务拆解、数据与控制流、模块职责，以及规则、模型和人的分工。</p><small>业务架构 · 技术架构 · 工作流设计</small></div></article>
+        <article><span class="philosophy-mark">02 / DETAIL</span><div><h3>细节要动人：让系统在关键处表现出判断力</h3><p>一个追问、一条反馈、一次失败后的恢复、一个恰当的人工接管，都可能决定产品是否可靠、是否好用。细节不是装饰，而是系统面对真实情境时的行为。</p><small>交互设计 · 异常处理 · 体验与可靠性</small></div></article>
+        <article><span class="philosophy-mark">03 / FIT</span><div><h3>整体要合一：让技术与业务真正契合</h3><p>音乐不能脱离身体，技术也不能脱离业务。先理解用户要完成什么、组织有哪些约束、风险与成本在哪里，再决定使用规则、模型、检索、工具还是人工，而不是追逐技术名词。</p><small>业务适配 · 技术取舍 · 效果验证</small></div></article>
+      </div>
+      
+    </section>
+
+    <section class="portfolio-section" id="interests">
+      <div class="section-overline"><span>05 / 研究与兴趣</span><span>持续研究方向</span></div>
+      <h2 class="section-heading">研究与兴趣</h2>
+      <div class="interest-grid">
+        <article><span class="interest-code">A / PEOPLE & SYSTEMS</span><h3>历史、文学与故事</h3><p>历史、文学与组织研究：关注人物决策、制度约束与组织行为。</p></article>
+        <article><span class="interest-code">B / BODY & EXPRESSION</span><h3>舞蹈与身体表达</h3><p>舞蹈与身体表达：关注节奏、空间、力度及结构与表达的关系。</p></article>
+        <article><span class="interest-code">C / AI & MAKING</span><h3>AI 应用与独立创造</h3><p>AI 应用实践：通过咖啡营销与酒旅服务项目验证业务建模、规则设计和质量评测。</p></article>
+      </div>
+      
+    </section>
+
+    <section class="portfolio-section experience-section" id="experience">
+      <div class="section-overline"><span>06 / 经历与教育</span><span>职业履历</span></div>
+      <h2 class="section-heading">经历与教育</h2>
+      <div class="experience-list">
+        <article>
+          <div class="experience-main"><h3>消费品实践与创业探索</h3><span class="experience-date">2025.01—至今</span></div>
+          <p class="experience-role">烘焙学习与创业 / 门店经营 / 消费者研究</p>
+          <div class="experience-content">
+            <p>开展烘焙学习与创业实践，结合精品咖啡门店及民宿酒店服务体验，观察产品定位、消费决策与服务流程；运用问卷和 SPSS 开展消费者满意度研究。</p>
+            <span class="experience-kind">能力沉淀：消费者洞察 · 用户研究 · 产品营销 · 服务体验分析</span>
+          </div>
+        </article>
+        <article>
+          <div class="experience-main"><h3>水滴</h3><span class="experience-date">2024.10—2024.12</span></div>
+          <p class="experience-role">AI 产品运营</p>
+          <div class="experience-content">
+            <p>参与医患沟通与健康管理场景自动化评估，整理约 300 条人工样本，分析场景适配与回复问题；参与模型 / 方案比较、提示词、场景分类、回复规则及 AI + 人工协作 SOP 迭代。不将样本量表述为业务准确率或效果提升。</p>
+            <span class="experience-kind">能力沉淀：AI 场景拆解 · 样本评测 · Prompt 迭代 · 风险控制</span>
+          </div>
+        </article>
+        <article>
+          <div class="experience-main"><h3>企业产品与业务系统</h3><span class="experience-date">2014.07—2022.08</span></div>
+          <p class="experience-role">CRM 实施顾问 / 测试工程师 / B 端产品经理</p>
+          <div class="experience-content">
+            <p>参与 CRM、商品中台、合同订单、渠道经销与供应链系统建设，覆盖需求调研、业务流程设计、跨系统协同、版本推进与上线验收。</p>
+            <span class="experience-kind">能力沉淀：需求洞察 · 业务建模 · B 端产品规划 · 项目交付</span>
+          </div>
+        </article>
+      </div>
+      <div class="education-block">
+        <div><span class="education-label">硕士研究生</span><div class="education-heading"><h3>北京航空航天大学</h3><time>2022.09-2024.06</time></div><p>工商管理 · 营销与数字化管理 · CMAU 市场研究员</p></div>
+        <div><span class="education-label">本科</span><div class="education-heading"><h3>河北大学工商学院</h3><time>2010.09—2014.06</time></div><p>计算机科学与技术 · 英语六级</p></div>
+      </div>
+    </section>
 
     <footer class="portfolio-footer">
   <small class="footer-brand">幽微处见</small>
