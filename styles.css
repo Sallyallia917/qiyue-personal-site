@@ -1,0 +1,2814 @@
+:root{--line:#d8d2c9;--accent:#65527d;--muted:#77747a;--mono:"DM Mono",monospace;--paper:#f7f4ee;--lavender:#efebf3;--bluewash:#edf0f5;--ink:#292630}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Noto Serif SC",sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}p,h1,h2,h3{margin:0}.topbar{height:72px;max-width:1240px;margin:auto;padding:0 38px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #d8d4cb}.brand{font:500 12px "DM Mono",monospace;letter-spacing:.12em;color:#55505e}.topbar nav{display:flex;gap:28px;font:400 11px "DM Mono",monospace;letter-spacing:.05em;color:#706c72}.topbar nav a:hover{color:#4d416b}.hero,.section,.statement,.storyos,.now,footer{max-width:1240px;margin:auto;padding-left:38px;padding-right:38px}.hero{padding-top:92px;padding-bottom:46px}.eyebrow,.section-label,.section-note{font:500 10px "DM Mono",monospace;letter-spacing:.12em;color:#706b75}.eyebrow{display:flex;gap:12px;align-items:center}.eyebrow i{display:block;width:24px;height:1px;background:#b7b1bb}.hero-grid{display:grid;grid-template-columns:1.5fr .7fr;gap:80px;margin-top:38px;align-items:end}.hero h1{font:500 clamp(48px,6vw,82px)/1.12 "Noto Serif SC",serif;letter-spacing:-.045em}.hero h1 em,.storyos h2 em,.about-intro h2 em{font-style:normal;color:#554775}.hero-side{padding-bottom:6px;max-width:350px}.lead{font:500 21px/1.65 "Noto Serif SC",serif;letter-spacing:.01em;margin-bottom:22px}.muted{font-size:13px;line-height:2;color:#77747a}.hero-foot{display:flex;justify-content:space-between;border-top:1px solid #d8d4cb;margin-top:74px;padding-top:14px;font:400 9px "DM Mono",monospace;color:#8a858c;letter-spacing:.1em}.statement{display:grid;grid-template-columns:190px 1fr;gap:60px;padding-top:66px;padding-bottom:82px;border-top:1px solid #d8d4cb}.statement-body{max-width:780px}.quote{font:400 clamp(21px,2.5vw,30px)/1.75 "Noto Serif SC",serif;letter-spacing:-.015em;color:#37343b}.statement-meta{display:flex;gap:30px;margin-top:30px;font:400 9px "DM Mono",monospace;letter-spacing:.1em;color:#8a858c}.section{padding-top:72px;padding-bottom:88px}.section-head{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:18px;border-bottom:1px solid #bdb8b0}.work-list{border-top:0}.work-item{display:grid;grid-template-columns:64px 1fr 35px;gap:22px;padding:29px 0 31px;border-bottom:1px solid #ddd9d1;transition:padding .2s ease}.work-item:hover{padding-left:8px;padding-right:8px}.work-item.featured{background:rgba(79,65,111,.035)}.work-index{font:500 10px "DM Mono",monospace;color:#8c8790;padding-top:6px}.work-top{display:flex;justify-content:space-between;align-items:baseline;gap:20px}.work-top h2{font:500 22px/1.35 "Noto Serif SC",serif;letter-spacing:-.02em}.work-top span{font:400 9px "DM Mono",monospace;color:#77717e;letter-spacing:.08em;white-space:nowrap}.work-main>p{max-width:720px;margin-top:9px;font-size:12px;line-height:1.9;color:#706d73}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.tags span{border:1px solid #d4cfd0;padding:4px 8px;font:400 8px "DM Mono",monospace;color:#7b7480;letter-spacing:.03em}.work-arrow{font-size:18px;color:#5a4a75;padding-top:2px}.thinking{padding-top:64px}.thinking-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:0}.thinking-grid article{padding:31px 30px 24px 0;margin-right:30px;border-bottom:1px solid #d8d4cb}.thinking-grid article+article{border-left:1px solid #d8d4cb;padding-left:30px}.number{font:500 10px "DM Mono",monospace;color:#5a4a75}.thinking h3{font:500 20px "Noto Serif SC",serif;margin:23px 0 9px}.thinking p{font-size:12px;line-height:1.9;color:#77747a}.storyos{margin-top:20px;background:#eeeae4;padding-top:72px;padding-bottom:60px;border-top:1px solid #d3cec5;border-bottom:1px solid #d3cec5}.storyos-label{font:500 10px "DM Mono",monospace;letter-spacing:.12em;color:#5d5370}.storyos-content{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;margin-top:30px;align-items:center}.storyos h2{font:500 clamp(40px,4.8vw,66px)/1.22 "Noto Serif SC",serif;letter-spacing:-.045em}.storyos-content p{margin-top:25px;max-width:540px;font-size:12px;line-height:2;color:#706d73}.formula{display:flex;flex-wrap:wrap;gap:11px 12px;align-items:center;font:500 12px "Noto Serif SC",serif;color:#49424e}.formula b{font:400 13px "DM Mono",monospace;color:#847a8e}.storyos-bottom{margin-top:55px;padding-top:14px;border-top:1px solid #d1cbc4;font:400 9px "DM Mono",monospace;letter-spacing:.1em;color:#8a838d}.about{padding-top:78px}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:100px;padding-top:34px}.about-intro h2{font:500 42px/1.3 "Noto Serif SC",serif;letter-spacing:-.035em}.about-intro p{margin-top:22px;max-width:470px;font-size:12px;line-height:2;color:#706d73}.timeline{border-top:1px solid #d8d4cb}.timeline div{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:19px 0;border-bottom:1px solid #ddd9d1}.timeline span{font:400 10px "DM Mono",monospace;color:#756f79}.timeline p{font:400 13px "Noto Serif SC",serif}.now{padding-top:70px;padding-bottom:74px;border-top:1px solid #d8d4cb;margin-top:70px}.now-grid{display:grid;grid-template-columns:190px 1fr;gap:60px;padding-top:30px}.now-grid>div{font:500 12px "DM Mono",monospace;color:#4c4750}.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#65507e;margin-right:9px;vertical-align:1px}.now ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 40px}.now li{font:400 13px "Noto Serif SC",serif;padding-bottom:11px;border-bottom:1px solid #e0dcd4}footer{border-top:1px solid #bdb8b0;padding-top:16px;padding-bottom:25px;display:flex;justify-content:space-between;font:400 9px "DM Mono",monospace;letter-spacing:.08em;color:#89838b}@media(max-width:800px){.topbar{padding:0 20px}.topbar nav{gap:12px}.hero,.section,.statement,.storyos,.now,footer{padding-left:20px;padding-right:20px}.hero{padding-top:65px}.hero-grid,.statement,.storyos-content,.about-grid,.now-grid{grid-template-columns:1fr;gap:34px}.hero h1{font-size:48px}.hero-side{max-width:none}.hero-foot{margin-top:50px}.statement{padding-top:48px;padding-bottom:58px}.statement-meta{flex-direction:column;gap:7px}.section{padding-top:52px;padding-bottom:60px}.work-item{grid-template-columns:34px 1fr 20px;gap:10px}.work-top{display:block}.work-top span{display:block;margin-top:7px}.thinking-grid{grid-template-columns:1fr}.thinking-grid article,.thinking-grid article+article{border-left:0;padding-left:0;margin-right:0}.storyos{margin-top:0;padding-top:52px}.about-intro h2{font-size:36px}.now{margin-top:45px}.now ul{grid-template-columns:1fr}.now-grid{gap:24px}footer{gap:15px;flex-wrap:wrap}}
+
+.case-hero,.case-body,.case-footer{max-width:1240px;margin:auto;padding-left:38px;padding-right:38px}
+.case-hero{padding-top:78px;padding-bottom:54px;border-bottom:1px solid #bdb8b0}
+.case-hero .back,.case-no,.case-label{font:500 9px "DM Mono",monospace;letter-spacing:.11em;color:#6c6375}
+.case-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:90px;margin-top:40px;align-items:end}
+.case-hero h1{font:500 clamp(46px,6vw,76px)/1.12 "Noto Serif SC",serif;letter-spacing:-.045em;margin-top:20px}
+.case-hero h1 em{font-style:normal;color:#554775}
+.case-summary{font:400 18px/1.75 "Noto Serif SC",serif;color:#47424a}
+.case-meta{display:grid;grid-template-columns:1fr 1fr;margin-top:25px;border-top:1px solid #d6d1c9}
+.case-meta div{padding:13px 0;border-bottom:1px solid #ddd9d1}
+.case-meta span{display:block;font:400 8px "DM Mono",monospace;color:#89838b;letter-spacing:.1em;margin-bottom:6px}
+.case-meta strong{font:400 12px "Noto Serif SC",serif}
+.case-body{padding-top:52px;padding-bottom:80px}
+.case-section{display:grid;grid-template-columns:190px 1fr;gap:60px;padding:42px 0;border-bottom:1px solid #d8d4cb}
+.case-section:first-child{padding-top:0}
+.case-copy{max-width:800px}
+.case-copy h2{font:500 27px/1.45 "Noto Serif SC",serif;letter-spacing:-.025em;margin:0 0 18px}
+.case-list{list-style:none;padding:0;margin:0}
+.case-list li{padding:10px 0 10px 18px;border-top:1px solid #e1ddd5;font-size:12px;line-height:1.85;color:#67636a;position:relative}
+.case-list li:before{content:"";position:absolute;left:0;top:21px;width:5px;height:1px;background:#65527d}
+.takeaway{padding:22px 25px;background:#eeebe5;border-left:2px solid #65527d}
+.takeaway b{display:block;font:500 8px "DM Mono",monospace;letter-spacing:.1em;color:#65527d;margin-bottom:9px}
+.takeaway p{margin:0;font-size:13px;line-height:2;color:#4e4851}
+.case-footer{padding-bottom:55px}
+.next-case{border-top:1px solid #bdb8b0;padding-top:17px;display:flex;justify-content:space-between}
+.next-case span{font:400 9px "DM Mono",monospace;color:#89838b;letter-spacing:.1em}
+.next-case a{font:500 15px "Noto Serif SC",serif;color:#514269}
+.work-top h2 a:hover{color:#5a4a75}
+@media(max-width:800px){.case-hero,.case-body,.case-footer{padding-left:20px;padding-right:20px}.case-hero{padding-top:55px}.case-hero-grid,.case-section{grid-template-columns:1fr;gap:26px}.case-hero h1{font-size:47px}.case-section{padding:34px 0}}
+
+/* V0.5 evidence layer */
+.evidence{margin-top:32px;padding:24px 0 4px;border-top:1px solid var(--line)}
+.evidence-head{display:flex;justify-content:space-between;gap:24px;align-items:baseline;margin-bottom:18px}
+.evidence-kicker{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
+.evidence-note{max-width:520px;color:var(--muted);font-size:13px;line-height:1.7}
+.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid var(--line);background:rgba(255,255,255,.24)}
+.flow-step{min-height:84px;padding:14px 12px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--line)}
+.flow-step:last-child{border-right:0}
+.flow-step small{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--accent);margin-bottom:6px}
+.flow-step strong{font-size:14px;font-weight:500;line-height:1.45}
+.flow-step span{color:var(--muted);font-size:11px;line-height:1.5;margin-top:4px}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.metric{padding:18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.metric b{display:block;font-family:var(--mono);font-size:25px;font-weight:500;color:var(--accent);margin-bottom:6px}
+.metric span{color:var(--muted);font-size:12px;line-height:1.6}
+.arch{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.arch-box{border:1px solid var(--line);padding:14px;min-height:68px;background:rgba(255,255,255,.18)}
+.arch-box small{display:block;font-family:var(--mono);color:var(--accent);font-size:10px;margin-bottom:6px}
+.arch-box strong{font-size:13px;font-weight:500}
+.evidence-caption{margin-top:10px;color:var(--muted);font-size:11px;line-height:1.6}
+@media(max-width:800px){.flow{grid-template-columns:1fr 1fr}.flow-step:nth-child(2n){border-right:0}.flow-step{border-bottom:1px solid var(--line)}.metric-grid{grid-template-columns:1fr}.arch{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.flow{grid-template-columns:1fr}.flow-step,.flow-step:nth-child(2n){border-right:0;border-bottom:1px solid var(--line)}.flow-step:last-child{border-bottom:0}.arch{grid-template-columns:1fr}.evidence-head{display:block}.evidence-note{margin-top:8px}}
+
+
+/* V0.6 capability map and understated personal consulting note */
+.capability-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #d8d4cb;border-left:1px solid #d8d4cb}
+.capability-grid article{padding:25px 26px 23px;border-right:1px solid #d8d4cb;border-bottom:1px solid #d8d4cb;min-height:205px}
+.capability-grid h3{font:500 20px "Noto Serif SC",serif;margin:17px 0 9px}
+.capability-grid p{font-size:12px;line-height:1.95;color:#77747a;max-width:490px}
+.capability-grid .tags{margin-top:13px}
+.capability-footnote{margin-top:13px;font-size:10px;line-height:1.8;color:#89838b}
+.beyond-work{max-width:1240px;margin:0 auto;padding:12px 38px 48px;color:#77727b}
+.beyond-rule{border-top:1px solid #d8d4cb;margin-bottom:25px}
+.beyond-grid{display:grid;grid-template-columns:190px 1fr;gap:60px}
+.beyond-label{font:400 9px "DM Mono",monospace;letter-spacing:.12em;color:#918995;padding-top:5px}
+.beyond-lead{font:400 16px/1.8 "Noto Serif SC",serif;color:#514b56;max-width:760px}
+.beyond-copy{font-size:11px;line-height:2;color:#89838b;max-width:800px;margin-top:10px}
+@media(max-width:800px){.capability-grid{grid-template-columns:1fr}.capability-grid article{min-height:0;padding:22px 18px}.beyond-work{padding:10px 20px 35px}.beyond-grid{grid-template-columns:1fr;gap:14px}.beyond-lead{font-size:15px}}
+
+/* V0.7 personal practice links and responsive refinements */
+.personal-links{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px;max-width:780px}
+.personal-links>a,.personal-link-static{display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:15px 16px;border:1px solid #d8d4cb;background:rgba(255,255,255,.22);transition:border-color .2s ease,background .2s ease}
+.personal-links>a:hover{border-color:#8a7ba0;background:rgba(90,74,117,.045)}
+.personal-links span{font:400 9px "DM Mono",monospace;letter-spacing:.08em;color:#89838b}
+.personal-links strong{font:500 15px "Noto Serif SC",serif;color:#514269}
+.personal-links small{font-size:11px;line-height:1.7;color:#89838b}
+.beyond-footnote{margin-top:13px;font-size:10px;line-height:1.8;color:#96909a}
+footer a{color:#65527d}
+@media(max-width:800px){.personal-links{grid-template-columns:1fr}.topbar nav{overflow-x:auto;max-width:72%;white-space:nowrap;scrollbar-width:none}.topbar nav::-webkit-scrollbar{display:none}}
+
+.collab-preview{margin-top:34px;padding-top:20px;border-top:1px solid #d8d4cb}
+.collab-heading{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:4px}
+.collab-heading span,.collab-grid article>span{font:400 9px "DM Mono",monospace;letter-spacing:.1em;color:#65527d}
+.collab-heading small{font-size:10px;color:#96909a}
+.collab-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.collab-grid article{padding:20px 18px 18px 0;border-bottom:1px solid #d8d4cb}
+.collab-grid h3{font:500 17px "Noto Serif SC",serif;margin:12px 0 9px;color:#45404a}
+.collab-grid p{font-size:11px;line-height:1.9;color:#77747a}
+.collab-note{font-size:10px;line-height:1.8;color:#96909a;margin-top:13px}
+@media(max-width:800px){.collab-grid{grid-template-columns:1fr;gap:0}.collab-grid article{padding:17px 0}.collab-heading{align-items:flex-start;flex-direction:column;gap:6px}}
+
+
+/* V0.8：中文优先、内容收束、模块分区与个人气质 */
+.brand{font-family:"Noto Serif SC",serif;letter-spacing:.04em;font-size:13px;color:#514269}
+.brand span{font-weight:600}.brand i{font-style:normal;color:#9a8daa;margin:0 4px}
+.topbar nav{font-family:"Noto Serif SC",serif;font-size:12px;letter-spacing:.02em;gap:24px}
+.hero{padding-top:76px;padding-bottom:36px}
+.hero-grid{margin-top:28px;gap:58px}
+.hero-foot{margin-top:52px;font-family:"Noto Serif SC",serif;letter-spacing:.04em;font-size:10px}
+.statement{padding-top:48px;padding-bottom:54px;gap:46px;background:linear-gradient(90deg,rgba(101,82,125,.055),rgba(101,82,125,0) 72%)}
+.statement-meta{font-family:"Noto Serif SC",serif;font-size:10px;letter-spacing:.04em}
+.section{padding-top:54px;padding-bottom:58px}
+.section-head{padding-bottom:13px}
+.section-label{font-family:"Noto Serif SC",serif;font-size:12px;letter-spacing:.05em;color:#554775}
+.section-note{font-family:"Noto Serif SC",serif;font-size:10px;letter-spacing:.03em;color:#89818e}
+.work-item{padding:21px 18px 22px;grid-template-columns:42px 1fr 22px;gap:16px}
+.work-item:nth-child(odd){background:rgba(255,255,255,.28)}
+.work-item.featured{background:#efebf3;border-left:2px solid #78648f;padding-left:16px}
+.work-top h2{font-size:20px}
+.work-top span{font-family:"Noto Serif SC",serif;font-size:10px;letter-spacing:0;white-space:normal}
+.work-main>p{margin-top:6px;line-height:1.75}
+.tags{gap:6px;margin-top:10px}
+.tags span{font-family:"Noto Serif SC",serif;font-size:10px;letter-spacing:0;padding:3px 7px;background:rgba(255,255,255,.28)}
+.thinking{background:var(--lavender);border-top:1px solid #e0d9e7;border-bottom:1px solid #e0d9e7}
+.thinking-grid article{padding-top:23px;padding-bottom:18px;margin-right:22px}
+.thinking-grid article+article{padding-left:22px}
+.thinking h3{font-size:18px;margin:15px 0 7px}
+.thinking p,.capability-grid p{line-height:1.8}
+.capabilities{background:rgba(237,240,245,.62);border-top:1px solid #e0e3e8;border-bottom:1px solid #e0e3e8}
+.capability-grid article{padding:20px 22px 18px;min-height:0;background:rgba(255,255,255,.34)}
+.capability-grid h3{font-size:18px;margin:12px 0 7px}
+.capability-footnote{font-size:10px;margin-top:10px}
+.collab-preview{margin-top:26px;padding:17px 18px 13px;background:rgba(255,255,255,.45);border:1px solid #d9dce4}
+.collab-heading span,.collab-grid article>span{font-family:"Noto Serif SC",serif;font-size:10px;letter-spacing:.02em}
+.collab-grid{gap:18px}
+.collab-grid article{padding:15px 12px 13px 0}
+.collab-grid h3{font-size:16px;margin:9px 0 6px}
+.collab-grid p{font-size:11px;line-height:1.75}
+.collab-note{font-size:10px;line-height:1.7;margin-top:9px}
+.storyos{margin-top:0;background:#e9e4ee;border-top:1px solid #d6ccdf;border-bottom:1px solid #d6ccdf;padding-top:54px;padding-bottom:42px;position:relative;overflow:hidden}
+.storyos:after{content:"幽微处见";position:absolute;right:42px;top:28px;font:500 12px "Noto Serif SC",serif;letter-spacing:.22em;color:rgba(85,71,117,.28);writing-mode:vertical-rl}
+.storyos-content{margin-top:22px;gap:54px}
+.storyos h2{font-size:clamp(38px,4.2vw,58px)}
+.storyos-content p{margin-top:15px;line-height:1.85}
+.storyos-bottom{margin-top:34px;font-family:"Noto Serif SC",serif;font-size:10px;letter-spacing:.05em}
+.about{padding-top:56px;padding-bottom:56px}
+.about-grid{gap:64px;padding-top:24px}
+.about-intro h2{font-size:36px}
+.about-intro p{margin-top:13px;line-height:1.85;font-size:12px}
+.timeline div{padding:14px 0;gap:15px}
+.timeline span{font-family:"Noto Serif SC",serif;font-size:11px}
+.timeline p{font-size:12px;line-height:1.8}
+.now{padding-top:44px;padding-bottom:48px;margin-top:0;background:#f0eee8;border-top:1px solid #ddd7cd;border-bottom:1px solid #ddd7cd}
+.now-grid{padding-top:20px;gap:40px}
+.now-grid>div{font-family:"Noto Serif SC",serif;font-size:12px}
+.now ul{gap:8px 28px}
+.now li{font-size:12px;padding-bottom:8px}
+.beyond-work{padding-top:22px;padding-bottom:34px}
+.beyond-rule{border-color:#cfc7d6;margin-bottom:18px}
+.beyond-grid{gap:46px}
+.beyond-label{font-family:"Noto Serif SC",serif;letter-spacing:.05em;color:#786a88}
+.beyond-lead{font-size:15px;line-height:1.7}
+.beyond-copy{font-size:11px;line-height:1.8;margin-top:7px}
+.personal-links{margin-top:14px;gap:9px}
+.personal-links>a,.personal-link-static{padding:11px 13px;gap:5px;background:rgba(239,235,243,.45)}
+.personal-links span{font-family:"Noto Serif SC",serif;font-size:10px;letter-spacing:.02em}
+.personal-links small{font-size:10px;line-height:1.55}
+.beyond-footnote{margin-top:8px}
+footer{font-family:"Noto Serif SC",serif;letter-spacing:.04em;font-size:10px;padding-top:13px}
+.case-hero .back,.case-no,.case-label{font-family:"Noto Serif SC",serif;font-size:11px;letter-spacing:.03em}
+.case-hero{padding-top:58px;padding-bottom:40px}
+.case-hero-grid{gap:56px;margin-top:28px}
+.case-summary{font-size:16px;line-height:1.7}
+.case-body{padding-top:36px;padding-bottom:54px}
+.case-section{padding:28px 0;gap:42px}
+.case-copy h2{font-size:23px;margin-bottom:12px}
+.case-list li{padding:8px 0 8px 16px;line-height:1.75}
+.takeaway{padding:17px 20px}
+.takeaway b{font-family:"Noto Serif SC",serif;font-size:10px;letter-spacing:.02em}
+.evidence{margin-top:20px;padding-top:18px}
+.evidence-kicker{font-family:"Noto Serif SC",serif;font-size:11px;letter-spacing:.03em;text-transform:none}
+.evidence-note{font-size:12px;line-height:1.65}
+.flow-step{padding:11px 10px;min-height:76px}
+.flow-step small,.arch-box small{font-family:"Noto Serif SC",serif;font-size:10px;letter-spacing:0}
+.flow-step strong{font-size:13px}
+.flow-step span{font-size:10px}
+.metric{padding:14px}
+.metric b{font-size:22px}
+.metric span{font-size:11px}
+.arch-box{padding:12px;min-height:60px}
+.arch-box strong{font-size:12px}
+.evidence-caption{font-size:10px}
+.next-case span{font-family:"Noto Serif SC",serif;letter-spacing:0}
+@media(max-width:800px){
+ .hero{padding-top:54px;padding-bottom:28px}.hero-grid{gap:24px;margin-top:23px}.hero-foot{margin-top:35px;gap:12px;flex-wrap:wrap}
+ .statement{padding-top:34px;padding-bottom:38px;gap:18px}.quote{font-size:21px;line-height:1.65}
+ .section{padding-top:38px;padding-bottom:40px}.work-item{padding:17px 10px;grid-template-columns:25px 1fr 16px;gap:8px}.work-top h2{font-size:18px}.work-main>p{font-size:12px}
+ .thinking-grid article{padding-top:18px;padding-bottom:16px}.thinking-grid article+article{padding-left:0}.thinking h3{margin-top:10px}
+ .storyos{padding-top:38px;padding-bottom:32px}.storyos:after{right:20px;top:18px;font-size:10px}.storyos-content{gap:20px;margin-top:18px}.storyos-content p{max-width:none}
+ .about{padding-top:38px;padding-bottom:38px}.about-grid{gap:25px;padding-top:20px}.about-intro p{max-width:none}
+ .now{padding-top:32px;padding-bottom:34px}.now-grid{padding-top:16px;gap:17px}
+ .collab-preview{padding:14px 13px}.collab-grid{gap:0}
+ .case-hero{padding-top:42px;padding-bottom:30px}.case-hero-grid{gap:23px;margin-top:23px}.case-body{padding-top:28px;padding-bottom:38px}.case-section{padding:24px 0;gap:13px}.case-copy h2{font-size:21px}
+}
+
+/* V0.9 求职证据版：定位与简历页 */
+.job-focus{margin-top:28px;padding:20px 22px 17px;border:1px solid #d9d2dd;background:rgba(239,235,243,.55)}
+.job-focus-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid #d7cfdd}
+.job-focus-head>span{font:400 10px "Noto Serif SC",serif;color:#756981}
+.job-focus-head strong{font:500 16px "Noto Serif SC",serif;color:#3e3748}
+.job-focus-head>a{margin-left:auto;font:400 11px "Noto Serif SC",serif;color:#65517f;border-bottom:1px solid #b9acc8;padding-bottom:2px}
+.proof-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:15px}
+.proof-strip article{padding:3px 18px 2px 0}
+.proof-strip article+article{border-left:1px solid #d7cfdd;padding-left:18px}
+.proof-strip span,.proof-strip small{display:block;font:400 10px "Noto Serif SC",serif;color:#817888}
+.proof-strip strong{display:block;margin:7px 0 5px;font:500 14px "Noto Serif SC",serif;color:#45404b}
+.job-focus-note{margin-top:14px;padding-top:12px;border-top:1px solid #e0d9e3;font:400 11px/1.8 "Noto Serif SC",serif;color:#7a747d}
+.resume-page{max-width:960px;margin:0 auto;padding:45px 38px 75px}
+.resume-topline{display:flex;justify-content:space-between;font:400 11px "Noto Serif SC",serif;color:#817888;padding-bottom:14px;border-bottom:1px solid #d8d4cb}
+.resume-hero{padding:38px 0 30px;border-bottom:1px solid #bdb8b0}
+.resume-hero h1{font:500 clamp(32px,4vw,48px)/1.3 "Noto Serif SC",serif;letter-spacing:-.03em;margin-top:18px}
+.resume-hero h1 em{font-style:normal;color:#554775}
+.resume-hero>p:first-of-type{margin-top:13px;font:500 15px "Noto Serif SC",serif;color:#4c4555}
+.resume-summary{max-width:760px;margin-top:18px;font:400 13px/2 "Noto Serif SC",serif;color:#706d73}
+.resume-contact{margin-top:19px;font:400 11px "Noto Serif SC",serif;color:#827b86}
+.resume-section{display:grid;grid-template-columns:155px 1fr;gap:30px;padding:29px 0;border-bottom:1px solid #d8d4cb}
+.resume-section-title{display:flex;gap:12px;align-items:baseline}
+.resume-section-title>span{font:400 10px "DM Mono",monospace;color:#7d6b92}
+.resume-section-title h2{font:500 18px "Noto Serif SC",serif}
+.resume-skills{display:grid;grid-template-columns:1fr 1fr;gap:18px 25px}
+.resume-skills article{border-top:1px solid #d8d4cb;padding-top:10px}
+.resume-skills h3,.resume-entry h3,.resume-project h3{font:500 14px "Noto Serif SC",serif;margin-bottom:7px}
+.resume-skills p,.resume-project p,.resume-closing{font:400 12px/1.9 "Noto Serif SC",serif;color:#706d73}
+.resume-entry+.resume-entry,.resume-project+.resume-project{margin-top:23px;padding-top:20px;border-top:1px solid #e0dcd4}
+.resume-entry-head,.resume-project-head{display:flex;justify-content:space-between;align-items:baseline;gap:15px;flex-wrap:wrap}
+.resume-entry-head span{font:400 10px "Noto Serif SC",serif;color:#817888}
+.resume-entry ul{margin:8px 0 0;padding-left:18px;color:#706d73;font:400 12px/1.9 "Noto Serif SC",serif}
+.resume-project p{margin-top:5px}
+.resume-project p b{color:#4d4653;font-weight:500}
+.resume-tag{border:1px solid #d7cfdd;padding:3px 8px;color:#756681;font:400 10px "Noto Serif SC",serif;white-space:nowrap}
+.resume-warning{margin-top:10px;padding:9px 12px;border-left:2px solid #b8a8c8;background:rgba(239,235,243,.45);font:400 11px/1.8 "Noto Serif SC",serif;color:#776c80}
+.resume-education p{font:400 12px/2 "Noto Serif SC",serif;color:#706d73}
+.resume-education strong{font-weight:500;color:#4c4555}
+.resume-closing{max-width:680px}
+.resume-closing a{color:#5c4a76;border-bottom:1px solid #c2b5cf}
+.resume-bottom-note{margin-top:24px;color:#867e89;font:400 10px/1.8 "Noto Serif SC",serif}
+@media(max-width:700px){.proof-strip{grid-template-columns:1fr}.proof-strip article,.proof-strip article+article{padding:12px 0;border-left:0;border-top:1px solid #d7cfdd}.proof-strip article:first-child{border-top:0}.job-focus-head{align-items:flex-start;flex-direction:column;gap:8px}.job-focus-head>a{margin-left:0}.resume-page{padding:30px 20px 50px}.resume-section{grid-template-columns:1fr;gap:15px}.resume-skills{grid-template-columns:1fr}.resume-topline{gap:15px}.resume-hero{padding-top:28px}}
+
+
+/* V1.0 求职转化与可维护性补充 */
+.hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:16px}
+.hero-actions a{display:inline-flex;align-items:center;gap:12px;font:500 11px "Noto Serif SC",serif;transition:background .18s ease,color .18s ease,border-color .18s ease}
+.primary-action{padding:10px 14px;background:#51436c;color:#fff;border:1px solid #51436c}
+.primary-action:hover{background:#403452;border-color:#403452}
+.secondary-action{padding:9px 0;border-bottom:1px solid #c9bfce;color:#5d4d75}
+.secondary-action:hover{color:#352847;border-color:#7b668f}
+a:focus-visible{outline:2px solid #7b668f;outline-offset:4px}
+.resume-project h3 a{color:#4d4264;border-bottom:1px solid #d4c9dd}
+.resume-project h3 a:hover{color:#2f2540;border-color:#85729a}
+@media(max-width:700px){.hero-actions{gap:14px}.hero-actions a{font-size:11px}.primary-action{padding:10px 12px}}
+
+
+/* V1.1 — product positioning and evidence-led portfolio */
+.hero .eyebrow{letter-spacing:.08em}
+.hero .hero-grid h1{max-width:10em}
+.hero .hero-side .lead{max-width:15em}
+.job-focus-note,.work-main p,.resume-summary,.case-summary{max-width:760px}
+.capability-grid article p{max-width:38em}
+.case-copy h2{max-width:25em}
+@media(max-width:700px){
+ .hero .hero-grid h1,.hero .hero-side .lead,.job-focus-note,.work-main p,.resume-summary,.case-summary,.case-copy h2{max-width:100%}
+}
+
+
+/* V1.2 — portfolio narrative: structure, detail, harmony */
+.signature-method{padding-top:24px;padding-bottom:72px}
+.signature-method .section-head{margin-bottom:0}
+.method-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--line)}
+.method-grid article{padding:27px 28px 25px 0;min-height:245px}
+.method-grid article+article{border-left:1px solid var(--line);padding-left:28px}
+.method-index{font:400 9px var(--mono);letter-spacing:.1em;color:#82758f}
+.method-grid h2{margin-top:26px;font:500 23px/1.4 "Noto Serif SC",serif;letter-spacing:-.025em;color:#38323f}
+.method-grid p{max-width:32em;margin-top:12px;font:400 12px/2 "Noto Serif SC",serif;color:#706d73}
+.method-grid small{display:block;margin-top:20px;padding-top:11px;border-top:1px solid #e0dcd4;font:400 9px/1.8 "Noto Serif SC",serif;letter-spacing:.02em;color:#827b86}
+.method-note{max-width:850px;margin-top:19px;font:400 11px/2 "Noto Serif SC",serif;color:#817a84}
+.portfolio-intro{max-width:700px;margin:18px 0 5px;font:400 12px/1.9 "Noto Serif SC",serif;color:#77717a}
+@media(max-width:800px){
+ .signature-method{padding-top:15px;padding-bottom:42px}
+ .method-grid{grid-template-columns:1fr}
+ .method-grid article{min-height:0;padding:22px 0}
+ .method-grid article+article{border-left:0;border-top:1px solid var(--line);padding-left:0}
+ .method-grid h2{margin-top:13px;font-size:21px}
+ .method-grid small{margin-top:13px}
+ .portfolio-intro{margin-top:13px}
+}
+
+
+/* V1.3 — scannable project portfolio cards */
+@media(min-width:1000px){
+ .work-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:17px}
+ .work-item{grid-template-columns:28px minmax(0,1fr) 18px;gap:13px;align-content:start;min-height:245px;padding:23px 20px;border:1px solid #ded9d2;background:rgba(255,255,255,.22)}
+ .work-item:hover{padding:23px 20px;border-color:#bcb0c9;background:rgba(239,235,243,.48)}
+ .work-item.featured{background:rgba(239,235,243,.5);border-color:#d6cddd}
+ .work-top{display:block}
+ .work-top span{display:block;margin-top:7px;white-space:normal;line-height:1.6}
+ .work-top h2{font-size:20px}
+ .work-main>p{margin-top:13px}
+ .work-arrow{justify-self:end}
+}
+@media(min-width:1000px){
+ .hero{padding-top:80px}
+ .hero-grid{grid-template-columns:1.25fr .75fr;gap:70px}
+ .job-focus{margin-top:26px}
+}
+
+
+/* V2.0 — Brittany Chiang-inspired editorial portfolio layout */
+.portfolio-v2{--pc-bg:#0b1929;--pc-panel:#102238;--pc-ink:#dce7f4;--pc-muted:#91a4bb;--pc-accent:#79e2c4;--pc-line:rgba(145,164,187,.17);background:var(--pc-bg);color:var(--pc-ink);font-family:Inter,"Noto Serif SC",sans-serif}
+.portfolio-v2 a{color:inherit}
+.portfolio-shell{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:390px minmax(0,760px);gap:70px;padding:0 72px}
+.portfolio-sidebar{position:sticky;top:0;height:100vh;min-height:720px;padding:86px 0 38px;display:flex;flex-direction:column}
+.portfolio-brand{font:500 12px "DM Mono",monospace;letter-spacing:.1em;color:var(--pc-ink);text-decoration:none!important}
+.portfolio-brand span{color:var(--pc-muted)}
+.sidebar-intro{margin-top:65px}
+.sidebar-kicker,.section-overline,.skill-number,.project-index,.project-type,.philosophy-mark,.interest-code,.education-label,.experience-date,.experience-kind,.footer-kicker{font:500 10px "DM Mono",monospace;letter-spacing:.08em}
+.sidebar-kicker{color:var(--pc-accent)}
+.sidebar-intro h1{margin-top:20px;font:600 39px/1.2 "Noto Serif SC",serif;letter-spacing:-.035em}
+.sidebar-intro h1 span{display:block;margin-top:8px;font:400 12px "DM Mono",monospace;letter-spacing:.04em;color:var(--pc-muted)}
+.sidebar-intro h2{margin-top:24px;font:500 21px/1.65 "Noto Serif SC",serif;color:var(--pc-ink)}
+.sidebar-intro h2 em{font-style:normal;color:var(--pc-accent)}
+.sidebar-intro>p:not(.sidebar-kicker){max-width:320px;margin-top:17px;font-size:13px;line-height:1.9;color:#bdcada}
+.sidebar-intro .sidebar-detail{font-size:12px!important;color:var(--pc-muted)!important}
+.portfolio-nav{display:grid;gap:0;margin-top:44px;max-width:290px}
+.portfolio-nav a{display:flex;align-items:center;gap:13px;padding:10px 0;color:#8ea1b7;font:500 10px "DM Mono",monospace;letter-spacing:.035em;transition:color .18s ease;text-decoration:none!important}
+.portfolio-nav a span{display:block;width:25px;height:1px;background:#52657a;transition:width .18s ease,background .18s ease}
+.portfolio-nav a:hover,.portfolio-nav a:focus-visible{color:var(--pc-accent)}
+.portfolio-nav a:hover span,.portfolio-nav a:focus-visible span{width:42px;background:var(--pc-accent)}
+.sidebar-bottom{margin-top:auto}
+.sidebar-links{display:flex;gap:20px;flex-wrap:wrap}
+.sidebar-links a{font:500 10px "DM Mono",monospace;color:#a7b6c8;text-decoration:none!important}
+.sidebar-links a span{color:var(--pc-accent)}
+.sidebar-links a:hover{color:var(--pc-accent)}
+.sidebar-bottom>p{margin-top:19px;color:#667c94;font:400 9px "DM Mono",monospace;letter-spacing:.08em}
+.portfolio-main{min-width:0;padding-top:92px}
+.portfolio-section{padding:0 0 86px;scroll-margin-top:36px}
+.section-overline{display:flex;justify-content:space-between;align-items:baseline;gap:18px;color:var(--pc-accent);padding-bottom:14px;border-bottom:1px solid var(--pc-line)}
+.section-overline span+span{color:#7489a1;font-size:9px;text-align:right}
+.section-title{margin-top:31px;font:500 clamp(28px,3.2vw,39px)/1.65 "Noto Serif SC",serif;letter-spacing:-.035em}
+.section-title em,.philosophy-section .section-heading em{font-style:normal;color:var(--pc-accent)}
+.intro-copy{margin-top:26px;max-width:690px}
+.intro-copy p{font-size:13px;line-height:2.05;color:#aebdd0;margin-top:15px}
+.intro-copy p:first-child{margin-top:0}
+.intro-copy strong{font-weight:600;color:#e0e9f3}
+.intro-proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:30px;border-top:1px solid var(--pc-line);border-bottom:1px solid var(--pc-line)}
+.intro-proof>div{padding:17px 12px 17px 0;min-width:0}
+.intro-proof>div+div{padding-left:15px;border-left:1px solid var(--pc-line)}
+.intro-proof span,.intro-proof small{display:block;color:#7f93aa;font:400 9px/1.8 "Noto Serif SC",serif}
+.intro-proof strong{display:block;margin:8px 0 5px;font:500 12px/1.6 "Noto Serif SC",serif;color:#dce7f4}
+.inline-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-top:23px}
+.inline-links a,.footer-actions a{font:500 10px "DM Mono",monospace;color:var(--pc-accent);text-decoration:none!important}
+.inline-links>a:not(.solid-link){border-bottom:1px solid rgba(121,226,196,.38);padding-bottom:4px}
+.solid-link{display:inline-flex;padding:11px 14px;border:1px solid rgba(121,226,196,.55);border-radius:3px;background:rgba(121,226,196,.07)}
+.solid-link:hover{background:rgba(121,226,196,.14)}
+.section-heading{font:500 27px/1.5 "Noto Serif SC",serif;letter-spacing:-.025em;margin-top:22px}
+.section-lead{margin-top:12px;font:400 12px/2 "Noto Serif SC",serif;color:var(--pc-muted);max-width:680px}
+.skill-list{margin-top:25px;border-top:1px solid var(--pc-line)}
+.skill-row{display:grid;grid-template-columns:35px minmax(0,1fr);gap:14px;padding:23px 0;border-bottom:1px solid var(--pc-line)}
+.skill-number{color:var(--pc-accent);padding-top:4px}
+.skill-row h3{font:500 16px/1.6 "Noto Serif SC",serif;color:#e0e9f3}
+.skill-row p{margin-top:7px;font-size:12px;line-height:1.95;color:#a0b1c5}
+.skill-tags,.project-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.skill-tags span,.project-tags span{font:400 9px "DM Mono",monospace;color:#8fa4ba;padding:5px 8px;border:1px solid rgba(145,164,187,.2);border-radius:2px}
+.scope-note{margin-top:17px;padding-left:12px;border-left:2px solid rgba(121,226,196,.45);font-size:10px;line-height:1.9;color:#758ba2}
+.project-list{margin-top:26px;display:grid;gap:13px}
+.project-card{padding:22px 22px 17px;border:1px solid transparent;border-radius:4px;background:rgba(16,34,56,.63);transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.project-card:hover{transform:translateY(-2px);border-color:rgba(121,226,196,.25);background:#11263d}
+.project-card-muted{background:rgba(16,34,56,.32)}
+.project-card-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.project-type{color:#8196ad;font-size:9px}
+.project-index{color:var(--pc-accent)}
+.project-card h3{margin-top:14px;font:500 19px/1.5 "Noto Serif SC",serif}
+.project-card h3 a{text-decoration:none!important;color:#e1eaf4}
+.project-card h3 a span{display:inline-block;color:var(--pc-accent);font:400 14px "DM Mono",monospace;transition:transform .18s ease}
+.project-card h3 a:hover{color:var(--pc-accent)}
+.project-card h3 a:hover span{transform:translate(3px,-3px)}
+.project-problem{margin-top:12px;font-size:12px;line-height:1.9;color:#c1cedc}
+.project-problem b{font-weight:600;color:var(--pc-accent)}
+.project-card>p:not(.project-problem){margin-top:7px;font-size:12px;line-height:1.95;color:#91a5bb}
+.project-foot{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:17px;padding-top:12px;border-top:1px solid var(--pc-line);font-size:9px;line-height:1.8;color:#7389a0}
+.project-foot a{color:#9fe8d2;text-decoration:none!important;white-space:nowrap}
+.project-foot a:hover{color:#d5fff2}
+.philosophy-section{padding-top:3px}
+.philosophy-section .section-heading{font-size:clamp(27px,3.4vw,39px);line-height:1.65}
+.philosophy-section .section-lead{margin-top:17px}
+.philosophy-list{margin-top:24px;border-top:1px solid var(--pc-line)}
+.philosophy-list article{display:grid;grid-template-columns:120px minmax(0,1fr);gap:20px;padding:22px 0;border-bottom:1px solid var(--pc-line)}
+.philosophy-mark{color:var(--pc-accent);font-size:9px;line-height:1.8}
+.philosophy-list h3{font:500 14px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.philosophy-list p{margin-top:7px;font-size:12px;line-height:2;color:#9aadc1}
+.philosophy-list small{display:block;margin-top:10px;color:#7489a1;font:400 9px "DM Mono",monospace}
+.philosophy-quote{margin-top:25px;padding:19px 20px;border-left:2px solid var(--pc-accent);background:rgba(121,226,196,.055);font:400 14px/2 "Noto Serif SC",serif;color:#c4d4e3}
+.interest-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:25px}
+.interest-grid article{padding:17px 14px;border:1px solid var(--pc-line);border-radius:3px}
+.interest-code{color:var(--pc-accent);font-size:8px;line-height:1.8}
+.interest-grid h3{margin-top:15px;font:500 13px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.interest-grid p{margin-top:8px;font-size:11px;line-height:1.95;color:#93a8bd}
+.interest-links{display:grid;gap:0;margin-top:18px;border-top:1px solid var(--pc-line)}
+.interest-links>a,.interest-links>div{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid var(--pc-line);font:500 11px "Noto Serif SC",serif;color:#c7d5e3;text-decoration:none!important}
+.interest-links span{font:400 9px/1.8 "Noto Serif SC",serif;color:#7f93aa;text-align:right}
+.experience-list{margin-top:24px;border-top:1px solid var(--pc-line)}
+.experience-list article{display:grid;grid-template-columns:140px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid var(--pc-line)}
+.experience-date{font-size:9px;line-height:1.9;color:var(--pc-accent)}
+.experience-list h3{font:500 14px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.experience-list p{margin-top:6px;font-size:12px;line-height:1.95;color:#9aadc1}
+.experience-kind{display:inline-block;margin-top:9px;color:#7389a0;font-size:8px}
+.education-block{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+.education-block>div{padding:15px;border:1px solid var(--pc-line)}
+.education-label{color:var(--pc-accent);font-size:8px}
+.education-block h3{margin-top:11px;font:500 13px/1.7 "Noto Serif SC",serif}
+.education-block p{margin-top:4px;font-size:11px;color:#8fa3b8}
+.portfolio-footer{padding:28px 0 30px;border-top:1px solid rgba(145,164,187,.25)}
+.footer-kicker{color:var(--pc-accent);font-size:9px}
+.portfolio-footer h2{margin-top:16px;font:500 25px/1.5 "Noto Serif SC",serif}
+.portfolio-footer>p:not(.footer-kicker){margin-top:8px;font-size:12px;line-height:1.9;color:#91a4bb}
+.footer-actions{display:flex;gap:20px;flex-wrap:wrap;margin-top:18px}
+.portfolio-footer>small{display:block;margin-top:25px;color:#647a91;font:400 9px "DM Mono",monospace;letter-spacing:.06em}
+.portfolio-v2 ::selection{background:rgba(121,226,196,.25);color:#f0fff9}
+.portfolio-v2 a:focus-visible{outline:2px solid var(--pc-accent);outline-offset:4px}
+@media(max-width:1100px){
+ .portfolio-shell{grid-template-columns:310px minmax(0,1fr);gap:45px;padding:0 42px}
+ .portfolio-sidebar{padding-top:65px}
+ .sidebar-intro{margin-top:50px}
+ .sidebar-intro h1{font-size:34px}
+ .portfolio-main{padding-top:70px}
+ .portfolio-nav{margin-top:34px}
+ .interest-grid{grid-template-columns:1fr}
+ .interest-grid article{padding:16px}
+}
+@media(max-width:760px){
+ .portfolio-shell{display:block;padding:0 22px}
+ .portfolio-sidebar{position:relative;height:auto;min-height:0;padding:28px 0 24px;border-bottom:1px solid var(--pc-line)}
+ .portfolio-brand{font-size:11px}
+ .sidebar-intro{margin-top:35px}
+ .sidebar-intro h1{font-size:32px}
+ .sidebar-intro h2{margin-top:18px;font-size:19px}
+ .sidebar-intro>p:not(.sidebar-kicker){max-width:none}
+ .portfolio-nav{display:flex;flex-wrap:wrap;gap:8px 17px;max-width:none;margin-top:23px}
+ .portfolio-nav a{padding:3px 0;font-size:9px}
+ .portfolio-nav a span{display:none}
+ .sidebar-bottom{margin-top:23px}
+ .sidebar-links{gap:16px}
+ .sidebar-bottom>p{margin-top:12px}
+ .portfolio-main{padding-top:38px}
+ .portfolio-section{padding-bottom:55px;scroll-margin-top:20px}
+ .section-overline{font-size:9px}
+ .section-overline span+span{font-size:8px}
+ .section-title{font-size:26px;line-height:1.65}
+ .intro-copy p{font-size:12px}
+ .intro-proof{grid-template-columns:1fr}
+ .intro-proof>div,.intro-proof>div+div{padding:12px 0;border-left:0}
+ .intro-proof>div+div{border-top:1px solid var(--pc-line)}
+ .intro-proof strong{margin:4px 0}
+ .section-heading{font-size:24px}
+ .skill-row{grid-template-columns:25px minmax(0,1fr);gap:10px;padding:19px 0}
+ .skill-row h3{font-size:14px}
+ .project-card{padding:17px 15px 14px}
+ .project-card h3{font-size:17px}
+ .project-foot{align-items:flex-start;flex-direction:column}
+ .philosophy-section .section-heading{font-size:26px}
+ .philosophy-list article{grid-template-columns:1fr;gap:8px;padding:18px 0}
+ .interest-grid{grid-template-columns:1fr}
+ .interest-links>a,.interest-links>div{align-items:flex-start;flex-direction:column;gap:4px}
+ .interest-links span{text-align:left}
+ .experience-list article{grid-template-columns:1fr;gap:6px;padding:17px 0}
+ .education-block{grid-template-columns:1fr}
+ .portfolio-footer h2{font-size:22px}
+}
+@media(prefers-reduced-motion:reduce){.portfolio-v2 *{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* V2.1 — shared subpage shell, case studies and resume */
+.portfolio-subpage .portfolio-main{padding-top:68px;padding-bottom:30px}
+.portfolio-subpage .portfolio-section{scroll-margin-top:28px}
+.portfolio-subpage .case-page-v2{min-width:0}
+.portfolio-subpage .case-hero{background:transparent!important;border:0!important;padding:0 0 34px!important;margin:0 0 32px!important}
+.portfolio-subpage .case-hero .back,.portfolio-subpage .resume-topline>a{display:inline-block;color:var(--pc-accent)!important;font:400 10px "DM Mono",monospace;text-decoration:none!important;margin-bottom:26px}
+.portfolio-subpage .case-hero-grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:30px;align-items:start}
+.portfolio-subpage .case-no{font:500 10px "DM Mono",monospace;letter-spacing:.08em;color:var(--pc-accent)!important}
+.portfolio-subpage .case-hero h1{margin-top:17px;font:500 clamp(27px,3.2vw,37px)/1.55 "Noto Serif SC",serif;color:var(--pc-ink)!important;letter-spacing:-.03em}
+.portfolio-subpage .case-hero h1 em{font-style:normal;color:var(--pc-accent)!important}
+.portfolio-subpage .case-summary{font-size:13px!important;line-height:2!important;color:#aebdd0!important}
+.portfolio-subpage .case-meta{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:22px;border-top:1px solid var(--pc-line);border-left:1px solid var(--pc-line)}
+.portfolio-subpage .case-meta>div{padding:11px 12px;border-right:1px solid var(--pc-line);border-bottom:1px solid var(--pc-line)}
+.portfolio-subpage .case-meta span{display:block;color:#7f93aa!important;font:400 9px "DM Mono",monospace}
+.portfolio-subpage .case-meta strong{display:block;margin-top:7px;color:#d5e0eb!important;font:500 11px/1.7 "Noto Serif SC",serif}
+.portfolio-subpage .case-body{max-width:none!important;margin:0!important;padding:0!important}
+.portfolio-subpage .case-section{display:grid;grid-template-columns:130px minmax(0,1fr);gap:22px;padding:24px 0!important;border-top:1px solid var(--pc-line)!important;margin:0!important}
+.portfolio-subpage .case-label{font:500 9px/1.9 "DM Mono",monospace!important;color:var(--pc-accent)!important;letter-spacing:.04em}
+.portfolio-subpage .case-copy h2{font:500 16px/1.8 "Noto Serif SC",serif!important;color:#dce7f4!important;margin:0 0 12px!important}
+.portfolio-subpage .case-copy p,.portfolio-subpage .case-copy li{font-size:12px!important;line-height:2!important;color:#9aadc1!important}
+.portfolio-subpage .case-list{padding-left:18px!important;margin:10px 0 0!important}
+.portfolio-subpage .case-list li{padding-left:2px;margin:7px 0}
+.portfolio-subpage .case-copy strong,.portfolio-subpage .case-copy b{color:#dce7f4!important}
+.portfolio-subpage .takeaway{margin-top:17px;padding:15px 17px!important;background:rgba(121,226,196,.055)!important;border-left:2px solid var(--pc-accent)!important;border-radius:0!important}
+.portfolio-subpage .takeaway b{font:500 10px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .takeaway p{margin-top:7px!important}
+.portfolio-subpage .evidence{margin:24px 0 0!important;padding:21px!important;background:rgba(16,34,56,.6)!important;border:1px solid var(--pc-line)!important;border-radius:4px!important}
+.portfolio-subpage .evidence-head{display:flex;justify-content:space-between;gap:18px;align-items:baseline;padding-bottom:15px;border-bottom:1px solid var(--pc-line)}
+.portfolio-subpage .evidence-kicker{font:500 10px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .evidence-note,.portfolio-subpage .evidence-caption{font-size:10px!important;line-height:1.9!important;color:#758ba2!important}
+.portfolio-subpage .flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin-top:18px}
+.portfolio-subpage .flow-step{padding:11px 9px!important;background:#0b1929!important;border:1px solid var(--pc-line)!important;border-radius:3px!important;min-width:0}
+.portfolio-subpage .flow-step small{font:400 8px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .flow-step strong{display:block;margin-top:7px;font:500 10px/1.7 "Noto Serif SC",serif;color:#dce7f4!important}
+.portfolio-subpage .flow-step span{display:block;margin-top:5px;font-size:9px;line-height:1.7;color:#7f93aa!important}
+.portfolio-subpage .arch{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.portfolio-subpage .arch-box{padding:12px!important;background:#0b1929!important;border:1px solid var(--pc-line)!important;border-radius:3px!important}
+.portfolio-subpage .arch-box small{display:block;font:400 8px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .arch-box strong{display:block;margin-top:7px;font:500 10px/1.7 "Noto Serif SC",serif;color:#dce7f4!important}
+.portfolio-subpage .metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:17px}
+.portfolio-subpage .metric{padding:14px;background:#0b1929!important;border:1px solid var(--pc-line)!important}
+.portfolio-subpage .metric b{display:block;color:var(--pc-accent)!important;font:500 23px "DM Mono",monospace}
+.portfolio-subpage .metric span{display:block;margin-top:7px;font-size:10px;line-height:1.7;color:#91a5bb!important}
+.portfolio-subpage .case-footer{display:flex;justify-content:space-between;gap:18px;margin:30px 0 0!important;padding:18px 0!important;border-top:1px solid var(--pc-line)!important;border-bottom:1px solid var(--pc-line)!important}
+.portfolio-subpage .next-case{display:grid;gap:7px}
+.portfolio-subpage .next-case span{font:400 9px "DM Mono",monospace;color:#7489a1!important}
+.portfolio-subpage .next-case a{font:500 12px "Noto Serif SC",serif;color:var(--pc-accent)!important;text-decoration:none!important}
+.portfolio-subpage>footer,.portfolio-subpage .subpage-footer{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-top:28px;padding:18px 0!important;border-top:1px solid var(--pc-line)!important;color:#7389a0!important;font:400 9px "DM Mono",monospace!important}
+.portfolio-subpage footer a{color:var(--pc-accent)!important;text-decoration:none!important}
+.portfolio-subpage .resume-page{max-width:none!important;width:100%;margin:0!important;padding:0!important;background:transparent!important;color:var(--pc-ink)!important}
+.portfolio-subpage .resume-topline{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:30px;color:#7489a1;font:400 9px "DM Mono",monospace}
+.portfolio-subpage .resume-topline>a{margin:0}
+.portfolio-subpage .resume-hero{padding:0 0 30px!important;border-bottom:1px solid var(--pc-line)!important;background:transparent!important}
+.portfolio-subpage .resume-hero .section-label{font:500 10px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .resume-hero h1{margin-top:18px;font:500 clamp(27px,3.4vw,37px)/1.5 "Noto Serif SC",serif!important;color:var(--pc-ink)!important}
+.portfolio-subpage .resume-hero h1 em{font-style:normal;color:var(--pc-accent)!important}
+.portfolio-subpage .resume-hero>p{margin-top:9px;font-size:12px;line-height:1.9;color:#aebdd0!important}
+.portfolio-subpage .resume-hero .resume-summary{margin-top:22px;max-width:680px;font-size:13px;line-height:2;color:#b7c5d5!important}
+.portfolio-subpage .resume-contact{margin-top:18px;font:400 10px/1.9 "DM Mono",monospace;color:#8095aa!important}
+.portfolio-subpage .resume-section{padding:28px 0!important;border-bottom:1px solid var(--pc-line)!important}
+.portfolio-subpage .resume-section-title{display:flex;align-items:center;gap:14px;margin-bottom:19px}
+.portfolio-subpage .resume-section-title>span{font:500 10px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .resume-section-title h2{font:500 20px "Noto Serif SC",serif;color:#dce7f4!important}
+.portfolio-subpage .resume-skills{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.portfolio-subpage .resume-skills article,.portfolio-subpage .resume-project{padding:16px!important;border:1px solid var(--pc-line)!important;background:rgba(16,34,56,.45)!important;border-radius:3px}
+.portfolio-subpage .resume-skills h3,.portfolio-subpage .resume-entry h3,.portfolio-subpage .resume-project h3{font:500 13px/1.7 "Noto Serif SC",serif;color:#dce7f4!important}
+.portfolio-subpage .resume-skills p,.portfolio-subpage .resume-entry li,.portfolio-subpage .resume-project p,.portfolio-subpage .resume-education p,.portfolio-subpage .resume-closing{margin-top:7px;font-size:11px;line-height:1.95;color:#9aadc1!important}
+.portfolio-subpage .resume-entry{padding:17px 0;border-bottom:1px solid var(--pc-line)}
+.portfolio-subpage .resume-entry-head,.portfolio-subpage .resume-project-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.portfolio-subpage .resume-entry-head>span,.portfolio-subpage .resume-tag{font:400 9px "DM Mono",monospace;color:var(--pc-accent)!important}
+.portfolio-subpage .resume-entry ul{padding-left:18px;margin-top:10px}
+.portfolio-subpage .resume-entry li{margin:5px 0}
+.portfolio-subpage .resume-project{margin-top:10px}
+.portfolio-subpage .resume-project h3 a{color:var(--pc-accent)!important;text-decoration:none!important}
+.portfolio-subpage .resume-project p b,.portfolio-subpage .resume-education strong{color:#dce7f4!important}
+.portfolio-subpage .resume-education{padding:14px 0}
+.portfolio-subpage .resume-closing a{color:var(--pc-accent)!important}
+.portfolio-subpage .resume-bottom-note{margin-top:20px;padding:13px;border-left:2px solid var(--pc-accent);background:rgba(121,226,196,.05);font-size:10px;line-height:1.9;color:#7f93aa}
+@media(max-width:760px){
+ .portfolio-subpage .portfolio-main{padding-top:34px}
+ .portfolio-subpage .case-hero-grid{grid-template-columns:1fr;gap:19px}
+ .portfolio-subpage .case-hero h1{font-size:29px}
+ .portfolio-subpage .case-section{grid-template-columns:1fr;gap:8px;padding:20px 0!important}
+ .portfolio-subpage .flow{grid-template-columns:1fr 1fr}
+ .portfolio-subpage .arch{grid-template-columns:1fr 1fr}
+ .portfolio-subpage .metric-grid{grid-template-columns:1fr}
+ .portfolio-subpage .evidence{padding:15px!important}
+ .portfolio-subpage .evidence-head{display:block}
+ .portfolio-subpage .evidence-note{margin-top:8px}
+ .portfolio-subpage .resume-skills{grid-template-columns:1fr}
+ .portfolio-subpage .resume-entry-head,.portfolio-subpage .resume-project-head{align-items:flex-start;flex-direction:column;gap:5px}
+ .portfolio-subpage>footer,.portfolio-subpage .subpage-footer{align-items:flex-start;flex-direction:column}
+}
+
+
+/* Resume consistency pass — scoped, single source of layout rules */
+.portfolio-subpage .resume-page{width:100%;max-width:960px;margin:0 auto;padding:45px 38px 75px;box-sizing:border-box;min-width:0;overflow-wrap:anywhere}
+.portfolio-subpage .resume-page *{box-sizing:border-box;min-width:0}
+.portfolio-subpage .resume-section{display:block!important;margin:0;padding:27px 0;border-bottom:1px solid var(--pc-line)}
+.portfolio-subpage .resume-section-title{display:flex;align-items:baseline;gap:12px;margin:0 0 16px}
+.portfolio-subpage .resume-section-title>span{font:400 10px "DM Mono",monospace;color:var(--pc-accent)}
+.portfolio-subpage .resume-section-title h2{font:500 20px/1.5 "Noto Serif SC",serif;color:#dce7f4;margin:0}
+.portfolio-subpage .resume-hero{padding:38px 0 30px;border-bottom:1px solid var(--pc-line)}
+.portfolio-subpage .resume-hero h1{font:500 clamp(30px,4vw,44px)/1.35 "Noto Serif SC",serif;letter-spacing:-.02em;margin:18px 0 0;color:#e0e9f3;overflow-wrap:anywhere}
+.portfolio-subpage .resume-hero h1 em{font-style:normal;color:var(--pc-accent)}
+.portfolio-subpage .resume-hero>p:first-of-type{margin:13px 0 0;font:500 14px/1.8 "Noto Serif SC",serif;color:#dce7f4}
+.portfolio-subpage .resume-summary{max-width:760px;margin:15px 0 0;font:400 12px/1.95 "Noto Serif SC",serif;color:#a0b1c5}
+.portfolio-subpage .resume-contact{margin-top:13px;font:400 10px/1.8 "DM Mono",monospace;color:var(--pc-accent)}
+.portfolio-subpage .resume-skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.portfolio-subpage .resume-skills article{padding:13px 14px!important;border:1px solid var(--pc-line)!important;border-radius:3px;background:rgba(16,34,56,.35)!important}
+.portfolio-subpage .resume-skills h3,.portfolio-subpage .resume-entry h3,.portfolio-subpage .resume-project h3{margin:0 0 7px;font:500 13px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.portfolio-subpage .resume-skills p,.portfolio-subpage .resume-project p,.portfolio-subpage .resume-closing{margin:0;font:400 11px/1.9 "Noto Serif SC",serif;color:#9aadc1}
+.portfolio-subpage .resume-experience-list{display:flex;flex-direction:column;gap:0}
+.portfolio-subpage .resume-experience-section .resume-entry{display:block!important;margin:0!important;padding:17px 0!important;border:0!important;border-top:1px solid var(--pc-line)!important;border-radius:0!important;background:transparent!important}
+.portfolio-subpage .resume-entry-layout{display:grid;grid-template-columns:minmax(145px,24%) minmax(0,1fr);column-gap:24px;align-items:start}
+.portfolio-subpage .resume-entry-meta{padding:2px 8px 0 0}
+.portfolio-subpage .resume-entry-meta h3{margin:0 0 4px;font:500 15px/1.65 "Noto Serif SC",serif;color:#e0e9f3}
+.portfolio-subpage .resume-entry-meta p{margin:0;font:400 11px/1.8 "Noto Serif SC",serif;color:#a0b1c5}
+.portfolio-subpage .resume-entry-date{display:block;margin-top:8px;font:400 9px/1.6 "DM Mono",monospace;color:var(--pc-accent)}
+.portfolio-subpage .resume-entry-content{min-width:0}
+.portfolio-subpage .resume-entry-content ul{margin:0;padding-left:17px;color:#9aadc1;font:400 11px/1.9 "Noto Serif SC",serif}
+.portfolio-subpage .resume-entry-content li{margin:0 0 5px;font:inherit;line-height:inherit}
+.portfolio-subpage .resume-entry-content li b{font-weight:500;color:#dce7f4}
+.portfolio-subpage .resume-core-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.portfolio-subpage .resume-core-tags span{display:inline-block;padding:3px 7px;border:1px solid rgba(121,226,196,.25);border-radius:2px;color:#79e2c4;font:400 9px/1.5 "Noto Serif SC",serif}
+.portfolio-subpage .resume-evidence-note{margin:9px 0 0;font:400 10px/1.8 "Noto Serif SC",serif;color:#8196ad}
+.portfolio-subpage .resume-detail-link{display:inline-block;margin-top:9px;font:400 10px/1.7 "DM Mono",monospace;color:var(--pc-accent);text-decoration:none;border-bottom:1px solid rgba(121,226,196,.3);padding-bottom:2px}
+.portfolio-subpage .resume-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.portfolio-subpage .resume-project-grid>.resume-project{display:flex;flex-direction:column;margin:0!important;padding:15px!important;border:1px solid var(--pc-line)!important;border-radius:3px;background:rgba(16,34,56,.35)!important;min-width:0;height:100%}
+.portfolio-subpage .resume-project-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap;margin-bottom:7px}
+.portfolio-subpage .resume-project h3{margin:0;font:500 13px/1.7 "Noto Serif SC",serif}
+.portfolio-subpage .resume-project h3 a{color:var(--pc-accent);text-decoration:none}
+.portfolio-subpage .resume-project p{margin:5px 0 0;font:400 11px/1.9 "Noto Serif SC",serif;color:#9aadc1}
+.portfolio-subpage .resume-project p b{font-weight:500;color:#dce7f4}
+.portfolio-subpage .resume-tag{padding:3px 7px;border:1px solid rgba(121,226,196,.25);color:var(--pc-accent);font:400 9px/1.5 "DM Mono",monospace;white-space:normal}
+.portfolio-subpage .resume-education{padding:0}
+.portfolio-subpage .resume-education p{margin:5px 0;font:400 11px/1.9 "Noto Serif SC",serif;color:#9aadc1}
+.portfolio-subpage .resume-education strong{font-weight:500;color:#dce7f4}
+.portfolio-subpage .resume-bottom-note{margin-top:18px;padding:12px;border-left:2px solid var(--pc-accent);background:rgba(121,226,196,.05);font:400 10px/1.8 "Noto Serif SC",serif;color:#8196ad}
+.portfolio-subpage .subpage-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 38px}
+.portfolio-subpage .subpage-footer span{font:400 10px/1.7 "Noto Serif SC",serif;color:#8196ad}
+.portfolio-subpage .subpage-footer a{color:var(--pc-accent);text-decoration:none}
+@media(max-width:760px){
+ .portfolio-subpage .resume-page{padding:30px 20px 48px}
+ .portfolio-subpage .resume-skills,.portfolio-subpage .resume-project-grid{grid-template-columns:1fr}
+ .portfolio-subpage .resume-entry-layout{grid-template-columns:1fr;row-gap:9px}
+ .portfolio-subpage .resume-entry-meta{padding:0}
+ .portfolio-subpage .resume-entry-date{margin-top:3px}
+ .portfolio-subpage .resume-project-head{align-items:flex-start}
+ .portfolio-subpage .subpage-footer{align-items:flex-start;flex-direction:column;padding:15px 20px}
+}
+@media(min-width:761px){.portfolio-subpage .resume-project-grid>.resume-project:last-child:nth-child(odd){grid-column:1/-1}}
+
+/* Resume projects: one full-width project per row */
+.portfolio-subpage .resume-projects-section .resume-project-grid{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:stretch!important;
+  gap:14px!important;
+  width:100%;
+}
+.portfolio-subpage .resume-projects-section .resume-project-grid>.resume-project{
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  height:auto!important;
+  margin:0!important;
+  padding:17px 19px!important;
+  box-sizing:border-box!important;
+  overflow-wrap:anywhere;
+}
+.portfolio-subpage .resume-projects-section .resume-project-head{
+  display:flex!important;
+  align-items:flex-start!important;
+  justify-content:space-between!important;
+  gap:10px!important;
+  flex-wrap:wrap!important;
+  margin:0 0 8px!important;
+}
+.portfolio-subpage .resume-projects-section .resume-project p{
+  display:block!important;
+  position:static!important;
+  width:auto!important;
+  height:auto!important;
+  margin:5px 0 0!important;
+  overflow:visible!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+}
+@media(max-width:760px){
+  .portfolio-subpage .resume-projects-section .resume-project-grid{gap:10px!important}
+  .portfolio-subpage .resume-projects-section .resume-project-grid>.resume-project{padding:14px!important}
+}
+
+/* Case studies: stronger hierarchy, larger reading type, STAR and architecture blocks */
+.portfolio-subpage .case-summary{font-size:14px!important;line-height:2.05!important}
+.portfolio-subpage .case-section{padding:28px 0!important}
+.portfolio-subpage .case-label{font-size:10px!important;line-height:1.9!important}
+.portfolio-subpage .case-copy h2{font-size:19px!important;line-height:1.75!important;margin-bottom:15px!important}
+.portfolio-subpage .case-copy p,.portfolio-subpage .case-copy li{font-size:13px!important;line-height:2.05!important}
+.portfolio-subpage .case-copy li{margin:8px 0!important}
+.portfolio-subpage .case-copy strong,.portfolio-subpage .case-copy b{font-weight:600!important}
+.portfolio-subpage .case-meta strong{font-size:12px!important}
+.portfolio-subpage .flow-step strong{font-size:12px!important}
+.portfolio-subpage .flow-step span{font-size:10px!important}
+.portfolio-subpage .evidence-caption{font-size:11px!important;line-height:1.95!important}
+.star-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.star-card{padding:16px 17px;border:1px solid var(--pc-line);background:rgba(16,34,56,.38);min-width:0}
+.star-card>span,.roadmap-card>span{display:block;font:500 9px/1.7 "DM Mono",monospace;color:var(--pc-accent);letter-spacing:.06em;margin-bottom:7px}
+.star-card h3,.roadmap-card h3{margin:0 0 8px;font:500 15px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.star-card p,.roadmap-card p{margin:0!important;font:400 12px/2 "Noto Serif SC",serif!important;color:#9aadc1!important}
+.architecture-stack{display:flex;flex-direction:column;gap:0;margin:18px 0}
+.architecture-layer{display:grid;grid-template-columns:170px minmax(0,1fr);gap:16px;align-items:center;padding:14px 16px;border:1px solid var(--pc-line);background:rgba(16,34,56,.38)}
+.architecture-layer>span{font:500 9px/1.7 "DM Mono",monospace;color:var(--pc-accent);letter-spacing:.04em}
+.architecture-layer strong{display:block;font:500 14px/1.7 "Noto Serif SC",serif;color:#e0e9f3}
+.architecture-layer small,.architecture-node small{display:block;margin-top:3px;font:400 11px/1.8 "Noto Serif SC",serif;color:#8ea3ba}
+.architecture-arrow{text-align:center;color:var(--pc-accent);font:500 14px/1.7 "DM Mono",monospace;padding:3px}
+.architecture-split{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.architecture-node{padding:13px 14px;border:1px solid var(--pc-line);background:#0b1929;min-width:0}
+.architecture-node b{display:block;font:500 12px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.architecture-layer-final{border-color:rgba(121,226,196,.35);background:rgba(121,226,196,.055)}
+.version-timeline{display:flex;flex-direction:column;margin-top:17px;border-top:1px solid var(--pc-line)}
+.version-item{display:grid;grid-template-columns:112px minmax(0,1fr);gap:17px;padding:15px 0;border-bottom:1px solid var(--pc-line)}
+.version-id{font:500 10px/1.8 "DM Mono",monospace;color:#8ea3ba}
+.version-item h3{margin:0 0 5px;font:500 14px/1.7 "Noto Serif SC",serif;color:#dce7f4}
+.version-item p{margin:0!important;font:400 12px/1.95 "Noto Serif SC",serif!important;color:#9aadc1!important}
+.version-item small{display:block;margin-top:7px;font:400 10px/1.8 "Noto Serif SC",serif;color:#8196ad}
+.version-current{background:rgba(121,226,196,.045)}
+.version-current .version-id,.version-current small{color:var(--pc-accent)}
+.version-planned{opacity:.82}
+.roadmap-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}
+.roadmap-card{padding:15px 15px;border:1px solid var(--pc-line);background:rgba(16,34,56,.32);min-width:0}
+.roadmap-card h3{font-size:13px}
+.roadmap-card p{font-size:11px!important}
+@media(max-width:760px){
+ .star-grid{grid-template-columns:1fr}
+ .architecture-layer{grid-template-columns:1fr;gap:5px}
+ .architecture-split,.roadmap-grid{grid-template-columns:1fr}
+ .version-item{grid-template-columns:82px minmax(0,1fr);gap:10px}
+ .star-card{padding:14px}
+ .portfolio-subpage .case-copy h2{font-size:18px!important}
+ .portfolio-subpage .case-copy p,.portfolio-subpage .case-copy li{font-size:12px!important}
+}
+
+/* Minimal, consistent page endings */
+.portfolio-footer,.portfolio-subpage .portfolio-footer{border-top:0!important;padding:18px 0 14px!important;margin-top:12px!important}
+.portfolio-footer h2,.portfolio-footer .footer-kicker,.portfolio-footer>p:not(.footer-kicker){display:none!important}
+.portfolio-footer>small{margin-top:12px!important;font-size:9px!important}
+.portfolio-footer .footer-actions{margin-top:0!important;padding-top:0!important;border-top:0!important}
+.portfolio-footer.subpage-footer{display:flex!important;justify-content:space-between!important;align-items:center!important;gap:16px!important}
+.portfolio-footer.subpage-footer>a{font:400 10px/1.7 "Noto Serif SC",serif!important;color:#91a4bb!important;text-decoration:none!important}
+.case-footer,.portfolio-subpage .case-footer{display:flex!important;justify-content:flex-end!important;align-items:center!important;flex-wrap:wrap!important;gap:18px!important;margin:18px auto 0!important;padding:12px 38px 10px!important;border:0!important}
+.case-footer>a{font:400 11px/1.8 "Noto Serif SC",serif!important;color:var(--pc-accent)!important;text-decoration:none!important}
+.portfolio-subpage .case-footer .next-case{border:0!important;padding:0!important}
+.portfolio-subpage .case-footer .next-case span{display:none!important}
+body>footer, .portfolio-main>footer, footer{border:0!important;border-top:0!important;border-bottom:0!important;padding:10px 38px 18px!important;margin-top:0!important;color:#7489a1!important;font-size:9px!important;line-height:1.7!important}
+footer span:nth-child(n+2){display:none!important}
+@media(max-width:760px){
+ .case-footer,.portfolio-subpage .case-footer{padding:10px 20px 8px!important;justify-content:flex-start!important;gap:12px!important}
+ .portfolio-footer.subpage-footer{align-items:flex-start!important;flex-direction:column!important;gap:5px!important}
+ footer{padding-left:20px!important;padding-right:20px!important}
+}
+
+
+/* V2.2 — Ice blue / mist lavender / indigo global palette
+   Color-only theme layer. Layout, content and interaction behavior remain unchanged. */
+.portfolio-v2{
+  --pc-bg:#edf4ff;
+  --pc-panel:#f8faff;
+  --pc-ink:#17183f;
+  --pc-muted:#59668b;
+  --pc-accent:#6250d8;
+  --pc-line:rgba(67,82,157,.19);
+  background:
+    radial-gradient(ellipse at 76% 7%,rgba(189,178,255,.42),transparent 34%),
+    radial-gradient(ellipse at 22% 30%,rgba(170,218,255,.48),transparent 38%),
+    linear-gradient(135deg,#edf5ff 0%,#e7efff 48%,#f1edff 100%);
+  color:var(--pc-ink);
+}
+.portfolio-v2 .portfolio-sidebar{
+  background:linear-gradient(155deg,rgba(211,229,255,.88) 0%,rgba(231,226,255,.82) 58%,rgba(222,240,255,.86) 100%);
+  border-right:1px solid rgba(82,91,174,.14);
+  padding-left:26px;padding-right:26px;
+}
+.portfolio-v2 .portfolio-brand{color:#17183f}
+.portfolio-v2 .portfolio-brand span{color:#625b9c}
+.portfolio-v2 .sidebar-kicker,.portfolio-v2 .section-overline,
+.portfolio-v2 .skill-number,.portfolio-v2 .project-index,
+.portfolio-v2 .philosophy-mark,.portfolio-v2 .interest-code,
+.portfolio-v2 .education-label,.portfolio-v2 .experience-date,
+.portfolio-v2 .footer-kicker{color:#6250d8}
+.portfolio-v2 .sidebar-intro h1,.portfolio-v2 .sidebar-intro h2{color:#17183f}
+.portfolio-v2 .sidebar-intro h1 span{color:#657098}
+.portfolio-v2 .sidebar-intro h2 em{color:#6250d8}
+.portfolio-v2 .sidebar-intro>p:not(.sidebar-kicker){color:#4f5b83}
+.portfolio-v2 .sidebar-intro .sidebar-detail{color:#657098!important}
+.portfolio-v2 .portfolio-nav a{color:#4e587f}
+.portfolio-v2 .portfolio-nav a span{background:#9aa8d0}
+.portfolio-v2 .portfolio-nav a:hover,.portfolio-v2 .portfolio-nav a:focus-visible,
+.portfolio-v2 .sidebar-links a:hover{color:#5140c5}
+.portfolio-v2 .portfolio-nav a:hover span,.portfolio-v2 .portfolio-nav a:focus-visible span{background:#6250d8}
+.portfolio-v2 .sidebar-links a{color:#4e587f}
+.portfolio-v2 .sidebar-links a span{color:#6250d8}
+.portfolio-v2 .sidebar-bottom>p{color:#7883a8}
+.portfolio-v2 .section-overline span+span{color:#7b83a7}
+.portfolio-v2 .section-title,.portfolio-v2 .section-heading,
+.portfolio-v2 .skill-row h3,.portfolio-v2 .project-card h3 a,
+.portfolio-v2 .philosophy-list h3,.portfolio-v2 .interest-grid h3,
+.portfolio-v2 .experience-list h3,.portfolio-v2 .education-block h3,
+.portfolio-v2 .portfolio-footer h2{color:#1b1c48}
+.portfolio-v2 .section-title em,.portfolio-v2 .section-heading em,
+.portfolio-v2 .philosophy-section .section-heading em{color:#6250d8}
+.portfolio-v2 .intro-copy p,.portfolio-v2 .skill-row p,
+.portfolio-v2 .project-problem,.portfolio-v2 .project-card>p:not(.project-problem),
+.portfolio-v2 .philosophy-list p,.portfolio-v2 .interest-grid p,
+.portfolio-v2 .experience-list p,.portfolio-v2 .section-lead,
+.portfolio-v2 .portfolio-footer>p:not(.footer-kicker){color:#596487}
+.portfolio-v2 .intro-copy strong,.portfolio-v2 .project-problem b{color:#28265f}
+.portfolio-v2 .intro-proof span,.portfolio-v2 .intro-proof small,
+.portfolio-v2 .project-type,.portfolio-v2 .project-foot,
+.portfolio-v2 .philosophy-list small,.portfolio-v2 .interest-links span,
+.portfolio-v2 .experience-kind,.portfolio-v2 .education-block p,
+.portfolio-v2 .portfolio-footer>small{color:#7883a8}
+.portfolio-v2 .intro-proof strong,.portfolio-v2 .interest-links>a,
+.portfolio-v2 .interest-links>div{color:#292858}
+.portfolio-v2 .skill-tags span,.portfolio-v2 .project-tags span{
+  color:#5e5c91;border-color:rgba(91,91,169,.23);background:rgba(255,255,255,.38)
+}
+.portfolio-v2 .scope-note{color:#657098;border-left-color:rgba(98,80,216,.5)}
+.portfolio-v2 .project-card,.portfolio-v2 .project-card-muted{
+  background:rgba(250,252,255,.78);border-color:rgba(83,98,175,.17);
+  box-shadow:0 8px 28px rgba(72,91,157,.055)
+}
+.portfolio-v2 .project-card:hover{background:#fff;border-color:rgba(98,80,216,.35)}
+.portfolio-v2 .project-card h3 a span,.portfolio-v2 .project-foot a{color:#6250d8}
+.portfolio-v2 .project-foot{border-top-color:var(--pc-line)}
+.portfolio-v2 .philosophy-quote{
+  color:#3c3b70;background:rgba(199,190,255,.22);border-left-color:#6250d8
+}
+.portfolio-v2 .interest-grid article,.portfolio-v2 .education-block>div{
+  background:rgba(255,255,255,.48);border-color:var(--pc-line)
+}
+.portfolio-v2 .portfolio-footer{border-top-color:var(--pc-line)}
+.portfolio-v2 .portfolio-v2 ::selection{background:rgba(98,80,216,.2);color:#17183f}
+.portfolio-v2 ::selection{background:rgba(98,80,216,.2);color:#17183f}
+.portfolio-v2 a:focus-visible{outline-color:#6250d8}
+
+/* Shared project detail pages */
+.portfolio-subpage .case-hero .back,.portfolio-subpage .resume-topline>a,
+.portfolio-subpage .case-no,.portfolio-subpage .case-label,
+.portfolio-subpage .case-hero h1 em{color:#6250d8!important}
+.portfolio-subpage .case-hero h1,.portfolio-subpage .case-copy h2,
+.portfolio-subpage .case-copy strong,.portfolio-subpage .case-copy b,
+.portfolio-subpage .case-meta strong{color:#20204d!important}
+.portfolio-subpage .case-summary,.portfolio-subpage .case-copy p,
+.portfolio-subpage .case-copy li{color:#586487!important}
+.portfolio-subpage .case-meta span,.portfolio-subpage .next-case span,
+.portfolio-subpage .evidence-note,.portfolio-subpage .evidence-caption{color:#7782a7!important}
+.portfolio-subpage .case-section,.portfolio-subpage .case-meta,
+.portfolio-subpage .case-footer,.portfolio-subpage .version-timeline{border-color:var(--pc-line)!important}
+.portfolio-subpage .takeaway{
+  background:rgba(205,197,255,.25)!important;border-left-color:#6250d8!important
+}
+.portfolio-subpage .takeaway b,.portfolio-subpage .case-footer>a,
+.portfolio-subpage .next-case a,.portfolio-subpage footer a{color:#6250d8!important}
+.portfolio-subpage .takeaway p{color:#4e5680!important}
+.portfolio-subpage .evidence{
+  background:rgba(255,255,255,.55)!important;border-color:var(--pc-line)!important;
+  box-shadow:0 8px 28px rgba(72,91,157,.045)
+}
+.portfolio-subpage .flow-step,.portfolio-subpage .arch-box,
+.portfolio-subpage .metric,.star-card,.roadmap-card,
+.architecture-layer,.architecture-node{
+  background:rgba(248,250,255,.88)!important;border-color:var(--pc-line)!important
+}
+.portfolio-subpage .flow-step strong,.portfolio-subpage .arch-box strong,
+.star-card h3,.roadmap-card h3,.architecture-layer strong,
+.architecture-node b,.version-item h3{color:#242451!important}
+.portfolio-subpage .flow-step span,.portfolio-subpage .metric span,
+.star-card p,.roadmap-card p,.architecture-layer small,
+.architecture-node small,.version-item p{color:#5f6a91!important}
+.portfolio-subpage .flow-step small,.portfolio-subpage .arch-box small,
+.portfolio-subpage .metric b,.star-card>span,.roadmap-card>span,
+.architecture-layer>span,.architecture-arrow,.version-id,
+.version-current .version-id,.version-current small{color:#6250d8!important}
+.portfolio-subpage .metric-grid{border-color:var(--pc-line)}
+.portfolio-subpage .version-current{background:rgba(202,194,255,.2)}
+.portfolio-subpage .architecture-layer-final{border-color:rgba(98,80,216,.35)!important;background:rgba(205,197,255,.22)!important}
+
+/* Resume page */
+.portfolio-subpage .resume-hero h1,.portfolio-subpage .resume-section-title h2,
+.portfolio-subpage .resume-skills h3,.portfolio-subpage .resume-entry h3,
+.portfolio-subpage .resume-project h3,.portfolio-subpage .resume-education strong{color:#20204d!important}
+.portfolio-subpage .resume-hero>p,.portfolio-subpage .resume-hero .resume-summary,
+.portfolio-subpage .resume-skills p,.portfolio-subpage .resume-entry li,
+.portfolio-subpage .resume-project p,.portfolio-subpage .resume-education p,
+.portfolio-subpage .resume-closing{color:#586487!important}
+.portfolio-subpage .resume-hero h1 em,.portfolio-subpage .resume-hero .section-label,
+.portfolio-subpage .resume-section-title>span,.portfolio-subpage .resume-contact,
+.portfolio-subpage .resume-entry-head>span,.portfolio-subpage .resume-tag,
+.portfolio-subpage .resume-project h3 a,.portfolio-subpage .resume-closing a,
+.portfolio-subpage .resume-detail-link{color:#6250d8!important}
+.portfolio-subpage .resume-skills article,.portfolio-subpage .resume-project,
+.portfolio-subpage .resume-project-grid>.resume-project{
+  background:rgba(250,252,255,.82)!important;border-color:var(--pc-line)!important;
+  box-shadow:0 6px 20px rgba(72,91,157,.04)
+}
+.portfolio-subpage .resume-core-tags span,.portfolio-subpage .resume-tag{
+  border-color:rgba(98,80,216,.25)!important
+}
+.portfolio-subpage .resume-evidence-note,.portfolio-subpage .resume-bottom-note,
+.portfolio-subpage .subpage-footer span{color:#7782a7!important}
+.portfolio-subpage .resume-bottom-note{
+  background:rgba(205,197,255,.2)!important;border-left-color:#6250d8!important
+}
+.portfolio-subpage .subpage-footer{border-color:var(--pc-line)!important}
+.portfolio-subpage .subpage-footer a{color:#6250d8!important}
+
+/* Footer and global reading surfaces */
+.portfolio-v2 footer,.portfolio-v2 body>footer,
+.portfolio-v2 .case-footer,.portfolio-v2 .portfolio-footer{border-color:var(--pc-line)!important}
+.portfolio-v2 footer{color:#7782a7!important}
+@media(max-width:800px){
+  .portfolio-v2 .portfolio-sidebar{border-right:0;border-bottom:1px solid var(--pc-line)}
+}
+
+
+/* Final contrast corrections for legacy component accents */
+.portfolio-subpage .resume-core-tags span{color:#5144bd!important;border-color:rgba(98,80,216,.28)!important}
+.portfolio-subpage .resume-detail-link{border-bottom-color:rgba(98,80,216,.32)!important}
+.portfolio-subpage .resume-tag{border-color:rgba(98,80,216,.25)!important}
+.portfolio-subpage .resume-entry-content ul{color:#586487!important}
+.portfolio-subpage .resume-evidence-note{color:#7782a7!important}
+
+
+/* V2.3 — stronger text contrast and clearer content hierarchy */
+.portfolio-v2{
+  --pc-bg:#eaf2ff;
+  --pc-panel:#fbfcff;
+  --pc-ink:#101638;
+  --pc-muted:#465579;
+  --pc-accent:#5140c8;
+  --pc-line:rgba(49,64,130,.24);
+  color:#101638;
+  background:
+    radial-gradient(ellipse at 78% 8%,rgba(174,157,255,.42),transparent 34%),
+    radial-gradient(ellipse at 18% 24%,rgba(137,202,255,.43),transparent 38%),
+    linear-gradient(135deg,#eaf3ff 0%,#e5edff 48%,#eee9ff 100%);
+}
+.portfolio-v2 .portfolio-sidebar{
+  background:linear-gradient(155deg,rgba(195,218,255,.96) 0%,rgba(218,211,255,.94) 56%,rgba(201,229,255,.96) 100%);
+  border-right-color:rgba(55,66,143,.22);
+}
+.portfolio-v2 .portfolio-brand,.portfolio-v2 .sidebar-intro h1,
+.portfolio-v2 .sidebar-intro h2,.portfolio-v2 .section-title,
+.portfolio-v2 .section-heading,.portfolio-v2 .skill-row h3,
+.portfolio-v2 .project-card h3 a,.portfolio-v2 .philosophy-list h3,
+.portfolio-v2 .interest-grid h3,.portfolio-v2 .experience-list h3,
+.portfolio-v2 .education-block h3,.portfolio-v2 .portfolio-footer h2{
+  color:#101638!important;
+}
+.portfolio-v2 .intro-copy p,.portfolio-v2 .skill-row p,
+.portfolio-v2 .project-problem,.portfolio-v2 .project-card>p:not(.project-problem),
+.portfolio-v2 .philosophy-list p,.portfolio-v2 .interest-grid p,
+.portfolio-v2 .experience-list p,.portfolio-v2 .section-lead,
+.portfolio-v2 .portfolio-footer>p:not(.footer-kicker),
+.portfolio-v2 .sidebar-intro>p:not(.sidebar-kicker),
+.portfolio-v2 .portfolio-nav a,.portfolio-v2 .sidebar-links a{
+  color:#344366!important;
+}
+.portfolio-v2 .sidebar-detail,.portfolio-v2 .project-type,
+.portfolio-v2 .project-foot,.portfolio-v2 .intro-proof small,
+.portfolio-v2 .philosophy-list small,.portfolio-v2 .experience-kind,
+.portfolio-v2 .education-block p,.portfolio-v2 .portfolio-footer>small,
+.portfolio-v2 .sidebar-bottom>p{
+  color:#526184!important;
+}
+.portfolio-v2 .section-overline,.portfolio-v2 .skill-number,
+.portfolio-v2 .project-index,.portfolio-v2 .philosophy-mark,
+.portfolio-v2 .interest-code,.portfolio-v2 .education-label,
+.portfolio-v2 .experience-date,.portfolio-v2 .footer-kicker,
+.portfolio-v2 .section-title em,.portfolio-v2 .section-heading em,
+.portfolio-v2 .project-card h3 a span,.portfolio-v2 .project-foot a,
+.portfolio-v2 .sidebar-links a span{
+  color:#4938bd!important;
+}
+.portfolio-v2 .intro-proof{
+  background:linear-gradient(110deg,rgba(255,255,255,.86),rgba(231,229,255,.78))!important;
+  border:1px solid rgba(80,68,177,.22)!important;
+  box-shadow:0 12px 34px rgba(60,72,145,.09);
+  border-radius:18px;
+}
+.portfolio-v2 .intro-proof>div+div{border-left-color:rgba(72,75,151,.22)!important}
+.portfolio-v2 .intro-proof span{color:#5140c8!important}
+.portfolio-v2 .intro-proof strong{color:#171844!important}
+.portfolio-v2 .project-card,.portfolio-v2 .project-card-muted{
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(244,247,255,.94))!important;
+  border:1px solid rgba(63,78,153,.23)!important;
+  box-shadow:0 10px 30px rgba(49,67,139,.085)!important;
+}
+.portfolio-v2 .project-card:hover{
+  background:#fff!important;border-color:rgba(81,64,200,.52)!important;
+  box-shadow:0 16px 36px rgba(67,62,166,.14)!important;
+}
+.portfolio-v2 .skill-tags span,.portfolio-v2 .project-tags span{
+  color:#403b91!important;background:rgba(220,222,255,.55)!important;
+  border-color:rgba(79,68,180,.28)!important;
+}
+.portfolio-v2 .scope-note{
+  color:#465579!important;background:rgba(224,230,255,.46);
+  border-left-color:#5140c8!important;
+}
+.portfolio-v2 .philosophy-quote{
+  color:#28265f!important;background:linear-gradient(100deg,rgba(207,199,255,.42),rgba(203,228,255,.42))!important;
+  border-left-color:#5140c8!important;
+}
+.portfolio-v2 .interest-grid article,.portfolio-v2 .education-block>div{
+  background:rgba(255,255,255,.72)!important;border-color:rgba(63,78,153,.2)!important;
+}
+.portfolio-subpage .case-hero h1,.portfolio-subpage .case-copy h2,
+.portfolio-subpage .case-copy strong,.portfolio-subpage .case-copy b,
+.portfolio-subpage .case-meta strong,.portfolio-subpage .resume-hero h1,
+.portfolio-subpage .resume-section-title h2,.portfolio-subpage .resume-skills h3,
+.portfolio-subpage .resume-entry h3,.portfolio-subpage .resume-project h3,
+.portfolio-subpage .resume-education strong{
+  color:#101638!important;
+}
+.portfolio-subpage .case-summary,.portfolio-subpage .case-copy p,
+.portfolio-subpage .case-copy li,.portfolio-subpage .resume-hero>p,
+.portfolio-subpage .resume-hero .resume-summary,.portfolio-subpage .resume-skills p,
+.portfolio-subpage .resume-entry li,.portfolio-subpage .resume-project p,
+.portfolio-subpage .resume-education p{
+  color:#344366!important;
+}
+.portfolio-subpage .case-meta span,.portfolio-subpage .evidence-note,
+.portfolio-subpage .evidence-caption,.portfolio-subpage .resume-evidence-note,
+.portfolio-subpage .resume-bottom-note,.portfolio-subpage .subpage-footer span{
+  color:#526184!important;
+}
+.portfolio-subpage .case-label,.portfolio-subpage .case-no,
+.portfolio-subpage .resume-hero h1 em,.portfolio-subpage .resume-section-title>span,
+.portfolio-subpage .resume-contact,.portfolio-subpage .resume-entry-head>span,
+.portfolio-subpage .resume-tag,.portfolio-subpage .resume-project h3 a,
+.portfolio-subpage .resume-detail-link,.portfolio-subpage .case-hero h1 em{
+  color:#4938bd!important;
+}
+.portfolio-subpage .case-section{border-color:rgba(49,64,130,.23)!important}
+.portfolio-subpage .evidence,.portfolio-subpage .resume-skills article,
+.portfolio-subpage .resume-project,.portfolio-subpage .resume-project-grid>.resume-project{
+  background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(242,246,255,.96))!important;
+  border-color:rgba(63,78,153,.23)!important;
+  box-shadow:0 10px 28px rgba(49,67,139,.075)!important;
+}
+.portfolio-subpage .metric{
+  background:linear-gradient(145deg,#f4f5ff,#e5eaff)!important;
+  border:1px solid rgba(81,64,200,.25)!important;
+}
+.portfolio-subpage .metric b{color:#4032ae!important}
+.portfolio-subpage .metric span{color:#3e4c70!important}
+.portfolio-subpage .takeaway,.portfolio-subpage .resume-bottom-note{
+  background:linear-gradient(105deg,rgba(205,197,255,.48),rgba(194,224,255,.48))!important;
+  border-left-color:#5140c8!important;
+}
+.portfolio-subpage .architecture-layer-final{
+  background:linear-gradient(105deg,rgba(210,202,255,.58),rgba(205,231,255,.58))!important;
+  border-color:rgba(81,64,200,.42)!important;
+}
+.portfolio-subpage .star-card,.portfolio-subpage .roadmap-card,
+.portfolio-subpage .architecture-layer,.portfolio-subpage .architecture-node,
+.portfolio-subpage .flow-step,.portfolio-subpage .arch-box{
+  background:rgba(250,252,255,.96)!important;
+  border-color:rgba(63,78,153,.22)!important;
+}
+.portfolio-subpage .star-card h3,.portfolio-subpage .roadmap-card h3,
+.portfolio-subpage .architecture-layer strong,.portfolio-subpage .architecture-node b,
+.portfolio-subpage .flow-step strong,.portfolio-subpage .arch-box strong{
+  color:#171844!important;
+}
+.portfolio-subpage .star-card p,.portfolio-subpage .roadmap-card p,
+.portfolio-subpage .architecture-layer small,.portfolio-subpage .architecture-node small,
+.portfolio-subpage .flow-step span,.portfolio-subpage .flow-step small{
+  color:#405075!important;
+}
+.portfolio-subpage .case-footer a,.portfolio-subpage .next-case a,
+.portfolio-subpage .subpage-footer a,.portfolio-subpage .takeaway b{
+  color:#4938bd!important;
+}
+
+
+/* Resume polish: clear labels, homepage-matched hover, education card alignment */
+.portfolio-subpage .resume-project p b{
+  color:#4938bd!important;
+  font-weight:700!important;
+  background:rgba(225,222,255,.58);
+  border-radius:3px;
+  padding:1px 4px;
+}
+.portfolio-subpage .resume-project-grid>.resume-project{
+  transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(244,247,255,.94))!important;
+  border:1px solid rgba(63,78,153,.23)!important;
+  box-shadow:0 10px 30px rgba(49,67,139,.085)!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project:hover{
+  transform:translateY(-2px);
+  background:#fff!important;
+  border-color:rgba(81,64,200,.52)!important;
+  box-shadow:0 16px 36px rgba(67,62,166,.14)!important;
+}
+.portfolio-subpage .resume-project h3 a{color:#4938bd!important}
+.portfolio-subpage .resume-project h3 a:hover{color:#30239e!important}
+.portfolio-subpage .resume-education-cards{margin-top:18px}
+.portfolio-subpage .resume-education-cards>div{
+  padding:17px 16px!important;
+  border:1px solid rgba(63,78,153,.23)!important;
+  border-radius:4px;
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(244,247,255,.94))!important;
+  box-shadow:0 8px 24px rgba(49,67,139,.065);
+}
+.portfolio-subpage .resume-education-heading,.portfolio-v2 .education-heading{
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;
+  margin-top:10px;
+}
+.portfolio-subpage .resume-education-heading h3,.portfolio-v2 .education-heading h3{margin:0!important}
+.portfolio-subpage .resume-education-heading time,.portfolio-v2 .education-heading time{
+  color:#526184;font:500 10px/1.7 "DM Mono",monospace;white-space:nowrap;
+}
+.portfolio-subpage .resume-education-cards p{margin-top:7px!important;color:#344366!important}
+.portfolio-v2 .education-block>div{
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(244,247,255,.94))!important;
+  border:1px solid rgba(63,78,153,.23)!important;
+  border-radius:4px;
+  box-shadow:0 8px 24px rgba(49,67,139,.065);
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+}
+.portfolio-v2 .education-block>div:hover{
+  transform:translateY(-2px);border-color:rgba(81,64,200,.48)!important;
+  box-shadow:0 14px 30px rgba(67,62,166,.12);
+}
+.portfolio-v2 .education-heading h3{margin-top:0!important}
+@media(max-width:760px){
+ .portfolio-subpage .resume-education-heading,.portfolio-v2 .education-heading{align-items:flex-start;flex-direction:column;gap:2px}
+}
+
+
+/* V2.4 — restrained line icons for portfolio navigation and content groups */
+.portfolio-icon{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:30px;height:30px;border:1px solid rgba(121,226,196,.25);border-radius:8px;color:#8edfc9;background:rgba(121,226,196,.07)}
+.portfolio-icon svg{display:block;width:16px;height:16px}
+.project-card-top{display:flex;align-items:center;gap:10px}
+.project-card-top .project-type{margin-right:auto}
+.project-card-top .project-index{margin-left:auto}
+.experience-list article{align-items:start}
+.experience-list article>.portfolio-icon{margin-top:1px}
+.experience-list article{grid-template-columns:30px 120px minmax(0,1fr)}
+.experience-list article>.experience-date{grid-column:2}
+.experience-list article>div:not(.experience-date){grid-column:3}
+.education-block>div{position:relative;padding:16px 16px 15px 58px;background:rgba(121,226,196,.025);transition:border-color .2s ease,background .2s ease,transform .2s ease}
+.education-block>div:hover{border-color:rgba(121,226,196,.42);background:rgba(121,226,196,.07);transform:translateY(-2px)}
+.education-block>div>.portfolio-icon{position:absolute;left:15px;top:17px;width:32px;height:32px}
+.education-block .education-label{display:block}
+.resume-section-title{align-items:center}
+.resume-section-title .portfolio-icon{width:25px;height:25px;border-radius:7px;margin-right:1px}
+.resume-project-head{align-items:center}
+.resume-project-head .portfolio-icon{width:26px;height:26px;border-radius:7px}
+.resume-entry-meta{position:relative;padding-left:38px}
+.resume-entry-meta>.portfolio-icon{position:absolute;left:0;top:0;width:27px;height:27px}
+.resume-education-cards>div{position:relative;padding-left:55px}
+.resume-education-cards>div>.portfolio-icon{position:absolute;left:14px;top:16px;width:29px;height:29px}
+@media(max-width:800px){
+ .experience-list article{grid-template-columns:25px minmax(0,1fr);gap:8px 12px}
+ .experience-list article>.portfolio-icon{grid-column:1;grid-row:1}
+ .experience-list article>.experience-date{grid-column:2;grid-row:1}
+ .experience-list article>div:not(.experience-date){grid-column:2;grid-row:2}
+}
+@media(prefers-reduced-motion:reduce){.education-block>div{transition:none}}
+
+
+/* V2.5 — highlight AI Product Manager role-fit capabilities without changing copy or layout */
+.portfolio-v2 .skill-row{
+  position:relative;
+  padding:20px 22px 19px 24px;
+  margin:0 0 12px;
+  border:1px solid rgba(74,78,169,.17);
+  border-left:3px solid rgba(81,64,200,.48);
+  border-radius:12px;
+  background:linear-gradient(105deg,rgba(255,255,255,.78),rgba(235,239,255,.54));
+  box-shadow:0 6px 20px rgba(54,68,139,.045);
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease;
+}
+.portfolio-v2 .skill-row:hover{
+  transform:translateY(-2px);
+  border-color:rgba(81,64,200,.36);
+  border-left-color:#5140c8;
+  background:linear-gradient(105deg,#fff,rgba(229,230,255,.78));
+  box-shadow:0 12px 26px rgba(54,68,139,.09);
+}
+.portfolio-v2 .skill-row h3{
+  display:inline;
+  color:#171844!important;
+  font-weight:750;
+  background:linear-gradient(transparent 61%,rgba(179,170,255,.42) 61%);
+  padding:0 3px 2px 0;
+  box-decoration-break:clone;
+}
+.portfolio-v2 .skill-row p{margin-top:10px;color:#344366!important}
+.portfolio-v2 .skill-tags{margin-top:12px}
+.portfolio-v2 .skill-tags span{
+  color:#302b88!important;
+  background:linear-gradient(135deg,rgba(221,222,255,.9),rgba(222,239,255,.88))!important;
+  border:1px solid rgba(81,64,200,.24)!important;
+  font-weight:600;
+}
+.portfolio-v2 .project-card{
+  position:relative;
+  overflow:hidden;
+}
+.portfolio-v2 .project-card:before{
+  content:"";
+  position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,#5140c8,#8abce9);
+  opacity:.72;
+}
+.portfolio-v2 .project-card h3 a{
+  font-weight:750;
+  text-decoration-color:rgba(81,64,200,.28);
+  text-decoration-thickness:1px;
+  text-underline-offset:4px;
+}
+.portfolio-v2 .project-problem{
+  background:rgba(225,229,255,.52);
+  border-left:2px solid rgba(81,64,200,.56);
+  border-radius:0 7px 7px 0;
+  padding:9px 12px;
+  color:#26345f!important;
+}
+.portfolio-v2 .project-problem b{
+  color:#382aa7!important;
+  font-weight:750;
+  background:rgba(196,190,255,.5);
+  border-radius:4px;padding:2px 5px;margin-right:4px;
+}
+.portfolio-v2 .project-tags span{
+  color:#302b88!important;
+  background:rgba(220,224,255,.78)!important;
+  border-color:rgba(81,64,200,.27)!important;
+  font-weight:600;
+}
+.portfolio-v2 .project-foot>span{
+  color:#3f4c72!important;font-weight:600;
+}
+.portfolio-v2 .experience-list article{
+  position:relative;
+  padding:16px 18px;
+  margin-bottom:10px;
+  border:1px solid rgba(74,78,169,.17);
+  border-radius:10px;
+  background:rgba(255,255,255,.63);
+}
+.portfolio-v2 .experience-list h3{
+  display:inline-block;
+  color:#171844!important;
+  font-weight:750;
+  background:linear-gradient(transparent 66%,rgba(179,170,255,.38) 66%);
+}
+.portfolio-v2 .experience-kind{
+  display:inline-block;
+  margin-top:8px;
+  padding:4px 9px;
+  border:1px solid rgba(81,64,200,.2);
+  border-radius:5px;
+  background:rgba(224,225,255,.7);
+  color:#382f9c!important;
+  font-weight:650;
+}
+.portfolio-v2 .experience-date{
+  color:#4032ae!important;
+  font-weight:700;
+}
+.portfolio-subpage .resume-skills article{
+  position:relative;
+  border-left:3px solid rgba(81,64,200,.52)!important;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease!important;
+}
+.portfolio-subpage .resume-skills article:hover{
+  transform:translateY(-2px);
+  border-left-color:#5140c8!important;
+  box-shadow:0 12px 26px rgba(54,68,139,.1)!important;
+}
+.portfolio-subpage .resume-skills h3{
+  display:inline;
+  color:#171844!important;
+  font-weight:750;
+  background:linear-gradient(transparent 62%,rgba(179,170,255,.42) 62%);
+  padding-right:3px;
+}
+.portfolio-subpage .resume-skills p{color:#344366!important}
+.portfolio-subpage .resume-project{
+  position:relative;
+  overflow:hidden;
+}
+.portfolio-subpage .resume-project:before{
+  content:"";
+  position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,#5140c8,#8abce9);
+  opacity:.72;
+}
+.portfolio-subpage .resume-project p b{
+  display:inline-block;
+  color:#382aa7!important;
+  font-weight:750!important;
+  background:rgba(216,213,255,.72)!important;
+  border:1px solid rgba(81,64,200,.13);
+  border-radius:4px;
+  padding:2px 6px;
+  margin-right:3px;
+}
+.portfolio-subpage .resume-project .resume-tag{
+  color:#302b88!important;
+  background:rgba(220,224,255,.78)!important;
+  border:1px solid rgba(81,64,200,.24)!important;
+  font-weight:650;
+}
+.portfolio-subpage .resume-core-tags span{
+  color:#302b88!important;
+  background:linear-gradient(135deg,rgba(221,222,255,.9),rgba(222,239,255,.88))!important;
+  border:1px solid rgba(81,64,200,.25)!important;
+  font-weight:650;
+}
+.portfolio-subpage .resume-entry-meta h3{
+  color:#171844!important;
+  font-weight:750;
+}
+.portfolio-subpage .resume-entry-content li b{
+  color:#382aa7!important;
+  background:linear-gradient(transparent 60%,rgba(179,170,255,.38) 60%);
+  padding:0 2px;
+}
+.portfolio-subpage .resume-entry-date{
+  color:#4032ae!important;font-weight:700;
+}
+@media(max-width:760px){
+ .portfolio-v2 .skill-row{padding:17px 15px}
+ .portfolio-v2 .experience-list article{padding:14px}
+}
+@media(prefers-reduced-motion:reduce){
+ .portfolio-v2 .skill-row,.portfolio-v2 .experience-list article,
+ .portfolio-subpage .resume-skills article{transition:none!important}
+ .portfolio-v2 .skill-row:hover,.portfolio-subpage .resume-skills article:hover{transform:none}
+}
+
+
+/* V2.6 — resume alignment, icon spacing and experience contrast */
+.portfolio-subpage .resume-project-head{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:12px!important;
+  text-align:left!important;
+}
+.portfolio-subpage .resume-project-head>.portfolio-icon{
+  position:static!important;
+  flex:0 0 28px!important;
+  margin:0!important;
+}
+.portfolio-subpage .resume-project-head h3{
+  flex:0 1 auto!important;
+  min-width:0!important;
+  margin:0!important;
+  text-align:left!important;
+}
+.portfolio-subpage .resume-project-head h3 a{
+  display:inline-block!important;
+  text-align:left!important;
+}
+.portfolio-subpage .resume-project-head .resume-tag{
+  margin-left:auto!important;
+  flex:0 0 auto!important;
+}
+.portfolio-subpage .resume-entry-layout{
+  display:grid!important;
+  grid-template-columns:minmax(190px,230px) minmax(0,1fr)!important;
+  gap:24px!important;
+  align-items:start!important;
+}
+.portfolio-subpage .resume-entry-meta{
+  position:relative!important;
+  min-width:0!important;
+  padding:0 0 0 42px!important;
+}
+.portfolio-subpage .resume-entry-meta>.portfolio-icon{
+  position:absolute!important;
+  left:0!important;
+  top:2px!important;
+  width:29px!important;height:29px!important;
+}
+.portfolio-subpage .resume-entry-meta h3{
+  display:block!important;
+  margin:0 0 7px!important;
+  color:#101638!important;
+  font-size:17px!important;
+  line-height:1.5!important;
+  font-weight:750!important;
+  overflow-wrap:anywhere;
+}
+.portfolio-subpage .resume-entry-meta>p{
+  margin:0 0 8px!important;
+  color:#26365e!important;
+  font-weight:600!important;
+  line-height:1.7!important;
+}
+.portfolio-subpage .resume-entry-date{
+  display:inline-block!important;
+  color:#30239e!important;
+  background:rgba(221,222,255,.72)!important;
+  border:1px solid rgba(81,64,200,.22)!important;
+  border-radius:5px!important;
+  padding:4px 8px!important;
+  font-weight:700!important;
+  line-height:1.5!important;
+}
+.portfolio-subpage .resume-entry-content{
+  min-width:0!important;
+}
+.portfolio-subpage .resume-entry-content li{
+  color:#263653!important;
+}
+@media(max-width:760px){
+ .portfolio-subpage .resume-entry-layout{grid-template-columns:1fr!important;gap:14px!important}
+ .portfolio-subpage .resume-entry-meta{padding-left:40px!important}
+ .portfolio-subpage .resume-project-head{flex-wrap:wrap!important}
+ .portfolio-subpage .resume-project-head .resume-tag{margin-left:40px!important}
+}
+
+
+/* V2.7 — integrate line icons with the glacier-blue / mist-purple theme */
+.portfolio-icon{
+  color:#5140c8!important;
+  border:1px solid rgba(81,64,200,.18)!important;
+  background:linear-gradient(135deg,rgba(229,235,255,.92),rgba(238,231,255,.86))!important;
+  box-shadow:0 2px 8px rgba(65,72,150,.045);
+  transition:color .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease;
+}
+.portfolio-icon svg{stroke:currentColor!important}
+.project-card:hover .portfolio-icon,
+.resume-project:hover .portfolio-icon,
+.education-block>div:hover>.portfolio-icon,
+.resume-entry-layout:hover .portfolio-icon{
+  color:#382aa7!important;
+  border-color:rgba(81,64,200,.34)!important;
+  background:linear-gradient(135deg,#e1e6ff,#e9ddff)!important;
+  box-shadow:0 4px 12px rgba(81,64,200,.10);
+}
+.portfolio-v2 .experience-list article>.portfolio-icon,
+.portfolio-subpage .resume-entry-meta>.portfolio-icon{
+  color:#5140c8!important;
+  background:rgba(229,235,255,.88)!important;
+  border-color:rgba(81,64,200,.18)!important;
+}
+@media(prefers-reduced-motion:reduce){.portfolio-icon{transition:none}}
+
+
+/* V2.8 — keep icons at section level; remove decorative icons from individual cards */
+.portfolio-v2 .project-card-top>.portfolio-icon,
+.portfolio-v2 .experience-list article>.portfolio-icon,
+.portfolio-v2 .education-block>div>.portfolio-icon,
+.portfolio-subpage .resume-project-head>.portfolio-icon,
+.portfolio-subpage .resume-entry-meta>.portfolio-icon,
+.portfolio-subpage .resume-education-cards>div>.portfolio-icon{
+  display:none!important;
+}
+/* Preserve section-heading icons as the sole visual markers */
+.portfolio-subpage .resume-section-title>.portfolio-icon{
+  display:inline-flex!important;
+}
+
+
+/* V2.9 — homepage section icons; card-level resume icons intentionally removed */
+.section-heading{
+  display:flex!important;
+  align-items:center!important;
+  gap:11px!important;
+}
+.section-heading-icon{
+  display:inline-flex!important;
+  width:30px!important;height:30px!important;
+  border-radius:9px!important;
+  vertical-align:middle;
+}
+.section-heading-icon svg{width:16px!important;height:16px!important}
+@media(max-width:760px){
+ .section-heading{gap:9px!important}
+ .section-heading-icon{width:27px!important;height:27px!important}
+}
+
+/* V3.0 — resume layout restored; homepage section icons retained */
+
+
+/* V3.1 — clean, isolated resume layout layer. All rules scoped to resume page. */
+.portfolio-subpage .resume-page{
+  width:100%!important;max-width:960px!important;margin:0 auto!important;
+  padding:34px 38px 64px!important;min-width:0!important;
+  color:#202744!important;overflow-wrap:anywhere;
+}
+.portfolio-subpage .resume-page *{box-sizing:border-box;min-width:0}
+.portfolio-subpage .resume-topline{
+  display:flex!important;justify-content:space-between!important;align-items:center!important;
+  gap:16px!important;margin:0 0 22px!important;padding:0 0 12px!important;
+  border-bottom:1px solid rgba(74,83,139,.18)!important;
+  color:#5b6382!important;font-size:11px!important;
+}
+.portfolio-subpage .resume-topline a{color:#4938bd!important;font-weight:600!important}
+.portfolio-subpage .resume-hero{
+  padding:12px 0 28px!important;border-bottom:1px solid rgba(74,83,139,.2)!important;
+  background:transparent!important;
+}
+.portfolio-subpage .resume-hero .section-label{
+  color:#5140c8!important;font:600 10px "DM Mono",monospace!important;letter-spacing:.12em;
+}
+.portfolio-subpage .resume-hero h1{
+  margin:13px 0 0!important;color:#171b3c!important;
+  font:600 clamp(29px,3.6vw,42px)/1.35 "Noto Serif SC",serif!important;letter-spacing:-.02em;
+}
+.portfolio-subpage .resume-hero h1 em{color:#5140c8!important;font-style:normal}
+.portfolio-subpage .resume-hero>p:first-of-type{
+  margin:10px 0 0!important;color:#302d65!important;font-size:14px!important;font-weight:650!important;
+}
+.portfolio-subpage .resume-hero .resume-summary{
+  max-width:760px!important;margin:17px 0 0!important;color:#3d4868!important;
+  font-size:13px!important;line-height:2!important;
+}
+.portfolio-subpage .resume-contact{
+  display:inline-block!important;margin-top:15px!important;padding:7px 11px!important;
+  border:1px solid rgba(81,64,200,.18)!important;border-radius:6px!important;
+  background:rgba(229,231,255,.58)!important;color:#352b91!important;
+  font-size:11px!important;font-weight:650!important;
+}
+.portfolio-subpage .resume-section{
+  display:block!important;margin:0!important;padding:27px 0!important;
+  border-bottom:1px solid rgba(74,83,139,.18)!important;
+}
+.portfolio-subpage .resume-section-title{
+  display:flex!important;align-items:center!important;justify-content:flex-start!important;
+  gap:11px!important;margin:0 0 16px!important;text-align:left!important;
+}
+.portfolio-subpage .resume-section-title>.resume-section-number{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  width:26px!important;height:26px!important;flex:0 0 26px!important;
+  border-radius:7px!important;background:rgba(225,229,255,.72)!important;
+  color:#5140c8!important;font:600 10px "DM Mono",monospace!important;
+}
+.portfolio-subpage .resume-section-title>.resume-heading-icon{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  width:28px!important;height:28px!important;flex:0 0 28px!important;
+  border-radius:8px!important;border:1px solid rgba(81,64,200,.16)!important;
+  background:linear-gradient(135deg,#e7edff,#eee8ff)!important;color:#5140c8!important;
+}
+.portfolio-subpage .resume-heading-icon svg{width:16px!important;height:16px!important;display:block}
+.portfolio-subpage .resume-section-title h2{
+  margin:0!important;color:#171b3c!important;font:650 19px/1.45 "Noto Serif SC",serif!important;
+  text-align:left!important;
+}
+.portfolio-subpage .resume-skills{
+  display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:12px!important;
+}
+.portfolio-subpage .resume-skills article{
+  display:block!important;margin:0!important;padding:15px 16px!important;
+  border:1px solid rgba(74,83,139,.18)!important;border-left:3px solid rgba(81,64,200,.52)!important;
+  border-radius:9px!important;background:linear-gradient(145deg,#fff,#f2f5ff)!important;
+  box-shadow:0 5px 18px rgba(49,67,139,.045)!important;
+}
+.portfolio-subpage .resume-skills h3{
+  margin:0 0 7px!important;color:#201d59!important;font:700 14px/1.6 "Noto Serif SC",serif!important;
+  background:linear-gradient(transparent 65%,rgba(179,170,255,.35) 65%)!important;
+}
+.portfolio-subpage .resume-skills p{
+  margin:0!important;color:#3d4868!important;font:400 12px/1.85 "Noto Serif SC",serif!important;
+}
+.portfolio-subpage .resume-skills .resume-evidence-note{margin-top:7px!important;color:#67708a!important;font-size:10px!important}
+.portfolio-subpage .resume-project-grid{
+  display:flex!important;flex-direction:column!important;align-items:stretch!important;
+  gap:12px!important;width:100%!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project{
+  display:block!important;position:relative!important;width:100%!important;max-width:none!important;
+  height:auto!important;margin:0!important;padding:16px 19px!important;overflow:visible!important;
+  border:1px solid rgba(74,83,139,.19)!important;border-radius:9px!important;
+  background:linear-gradient(145deg,#fff,#f3f6ff)!important;
+  box-shadow:0 6px 20px rgba(49,67,139,.055)!important;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project:before{content:none!important}
+.portfolio-subpage .resume-project-grid>.resume-project:hover{
+  transform:translateY(-2px)!important;border-color:rgba(81,64,200,.42)!important;
+  background:#fff!important;box-shadow:0 12px 26px rgba(67,62,166,.1)!important;
+}
+.portfolio-subpage .resume-project-head{
+  display:flex!important;align-items:center!important;justify-content:flex-start!important;
+  flex-direction:row!important;flex-wrap:wrap!important;gap:9px 14px!important;margin:0 0 8px!important;
+  text-align:left!important;
+}
+.portfolio-subpage .resume-project-head>.portfolio-icon{display:none!important}
+.portfolio-subpage .resume-project-head h3{
+  display:block!important;flex:0 1 auto!important;margin:0!important;text-align:left!important;
+  color:#171b3c!important;font:700 15px/1.6 "Noto Serif SC",serif!important;
+}
+.portfolio-subpage .resume-project-head h3 a{
+  color:#28236e!important;text-align:left!important;text-decoration:none!important;
+  text-decoration-color:rgba(81,64,200,.3)!important;text-underline-offset:4px;
+}
+.portfolio-subpage .resume-project-head h3 a:hover{color:#5140c8!important;text-decoration:underline!important}
+.portfolio-subpage .resume-project-head .resume-tag{
+  display:inline-block!important;margin:0 0 0 auto!important;padding:4px 8px!important;
+  border:1px solid rgba(81,64,200,.17)!important;border-radius:5px!important;
+  background:rgba(229,231,255,.62)!important;color:#40349d!important;
+  font:600 10px/1.5 Inter,sans-serif!important;
+}
+.portfolio-subpage .resume-project p{
+  display:block!important;position:static!important;width:auto!important;height:auto!important;
+  margin:5px 0 0!important;overflow:visible!important;white-space:normal!important;
+  color:#3d4868!important;font:400 12px/1.85 "Noto Serif SC",serif!important;overflow-wrap:anywhere!important;
+}
+.portfolio-subpage .resume-project p b{
+  display:inline!important;margin:0 3px 0 0!important;padding:1px 5px!important;
+  border:0!important;border-radius:3px!important;background:rgba(221,222,255,.62)!important;
+  color:#40349d!important;font-weight:700!important;
+}
+.portfolio-subpage .resume-experience-list{
+  display:flex!important;flex-direction:column!important;gap:12px!important;
+}
+.portfolio-subpage .resume-entry{
+  display:block!important;margin:0!important;padding:17px 19px!important;
+  border:1px solid rgba(74,83,139,.19)!important;border-radius:9px!important;
+  background:linear-gradient(145deg,#fff,#f3f6ff)!important;
+  box-shadow:0 6px 20px rgba(49,67,139,.045)!important;
+}
+.portfolio-subpage .resume-entry-layout{
+  display:grid!important;grid-template-columns:minmax(190px,230px) minmax(0,1fr)!important;
+  gap:22px!important;align-items:start!important;
+}
+.portfolio-subpage .resume-entry-meta{
+  display:flex!important;flex-direction:column!important;align-items:flex-start!important;
+  gap:5px!important;margin:0!important;padding:0!important;
+}
+.portfolio-subpage .resume-entry-meta>.portfolio-icon{display:none!important}
+.portfolio-subpage .resume-entry-meta h3{
+  display:block!important;margin:0!important;color:#171b3c!important;
+  font:700 16px/1.55 "Noto Serif SC",serif!important;
+}
+.portfolio-subpage .resume-entry-meta>p{
+  margin:0!important;color:#46516f!important;font:600 11px/1.7 "Noto Serif SC",serif!important;
+}
+.portfolio-subpage .resume-entry-date{
+  display:inline-block!important;margin-top:4px!important;padding:4px 8px!important;
+  border:1px solid rgba(81,64,200,.16)!important;border-radius:5px!important;
+  background:rgba(229,231,255,.62)!important;color:#40349d!important;
+  font:650 10px/1.5 Inter,sans-serif!important;
+}
+.portfolio-subpage .resume-entry-content{min-width:0!important}
+.portfolio-subpage .resume-entry-content ul{
+  margin:0!important;padding:0 0 0 17px!important;color:#3d4868!important;
+  font:400 12px/1.9 "Noto Serif SC",serif!important;
+}
+.portfolio-subpage .resume-entry-content li{margin:0 0 5px!important;color:#3d4868!important}
+.portfolio-subpage .resume-entry-content li b{
+  color:#40349d!important;font-weight:700!important;
+  background:linear-gradient(transparent 62%,rgba(179,170,255,.32) 62%)!important;
+}
+.portfolio-subpage .resume-core-tags{
+  display:flex!important;flex-wrap:wrap!important;gap:6px!important;margin-top:10px!important;
+}
+.portfolio-subpage .resume-core-tags span{
+  display:inline-block!important;padding:4px 8px!important;border-radius:5px!important;
+  border:1px solid rgba(81,64,200,.16)!important;background:rgba(229,231,255,.62)!important;
+  color:#40349d!important;font:600 10px/1.4 Inter,sans-serif!important;
+}
+.portfolio-subpage .resume-evidence-note{
+  margin:8px 0 0!important;color:#68718a!important;font-size:10px!important;line-height:1.7!important;
+}
+.portfolio-subpage .resume-detail-link{display:inline-block!important;margin-top:8px!important;color:#40349d!important;font-size:11px!important;font-weight:650!important}
+.portfolio-subpage .resume-education-cards{
+  display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:12px!important;margin-top:0!important;
+}
+.portfolio-subpage .resume-education-cards>div{
+  position:static!important;display:block!important;margin:0!important;padding:16px 17px!important;
+  border:1px solid rgba(74,83,139,.19)!important;border-radius:9px!important;
+  background:linear-gradient(145deg,#fff,#f3f6ff)!important;
+  box-shadow:0 6px 20px rgba(49,67,139,.045)!important;
+}
+.portfolio-subpage .resume-education-cards>div>.portfolio-icon{display:none!important}
+.portfolio-subpage .resume-education-cards .education-label{
+  display:block!important;margin:0 0 8px!important;color:#5140c8!important;
+  font:600 9px "DM Mono",monospace!important;letter-spacing:.1em;
+}
+.portfolio-subpage .resume-education-heading{
+  display:flex!important;justify-content:space-between!important;align-items:baseline!important;
+  flex-wrap:wrap!important;gap:6px 12px!important;
+}
+.portfolio-subpage .resume-education-heading h3{margin:0!important;color:#171b3c!important;font:700 14px/1.6 "Noto Serif SC",serif!important}
+.portfolio-subpage .resume-education-heading time{color:#40349d!important;font:650 10px/1.5 Inter,sans-serif!important}
+.portfolio-subpage .resume-education-cards p{margin:7px 0 0!important;color:#46516f!important;font-size:11px!important;line-height:1.7!important}
+@media(max-width:760px){
+ .portfolio-subpage .resume-page{padding:25px 18px 42px!important}
+ .portfolio-subpage .resume-skills{grid-template-columns:1fr!important}
+ .portfolio-subpage .resume-entry-layout{grid-template-columns:1fr!important;gap:10px!important}
+ .portfolio-subpage .resume-entry-meta{padding:0!important}
+ .portfolio-subpage .resume-project-grid>.resume-project{padding:14px!important}
+ .portfolio-subpage .resume-education-cards{grid-template-columns:1fr!important}
+ .portfolio-subpage .resume-project-head .resume-tag{margin-left:0!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .portfolio-subpage .resume-project-grid>.resume-project{transition:none!important}
+ .portfolio-subpage .resume-project-grid>.resume-project:hover{transform:none!important}
+}
+
+
+/* Homepage icon removal — preserve text alignment after removing icon elements. */
+.portfolio-v2 .portfolio-icon{display:none!important}
+.portfolio-v2 .section-heading{display:block!important;gap:0!important}
+.portfolio-v2 .experience-list article{
+  grid-template-columns:120px minmax(0,1fr)!important;
+  gap:8px 18px!important;
+}
+.portfolio-v2 .experience-list article>.experience-date{
+  grid-column:1!important;grid-row:1!important;
+}
+.portfolio-v2 .experience-list article>div:not(.experience-date){
+  grid-column:2!important;grid-row:1!important;
+}
+.portfolio-v2 .education-block>div{
+  padding:16px!important;
+}
+@media(max-width:800px){
+ .portfolio-v2 .experience-list article{grid-template-columns:1fr!important;gap:6px!important}
+ .portfolio-v2 .experience-list article>.experience-date,
+ .portfolio-v2 .experience-list article>div:not(.experience-date){
+   grid-column:1!important;grid-row:auto!important;
+ }
+}
+
+
+/* EES 02A — match decision table typography to the surrounding case modules. */
+.portfolio-subpage .decision-record-section .table-wrap{
+  width:100%!important;
+  max-width:100%!important;
+  overflow-x:auto!important;
+  -webkit-overflow-scrolling:touch;
+}
+.portfolio-subpage .decision-record-section .case-table{
+  width:100%!important;
+  min-width:680px;
+  margin:0!important;
+  border-collapse:collapse!important;
+  table-layout:fixed!important;
+  font-family:"Noto Serif SC",serif!important;
+  font-size:13px!important;
+  line-height:2.05!important;
+}
+.portfolio-subpage .decision-record-section .case-table th,
+.portfolio-subpage .decision-record-section .case-table td{
+  padding:11px 12px!important;
+  border-bottom:1px solid rgba(74,83,139,.18)!important;
+  text-align:left!important;
+  vertical-align:top!important;
+  font-family:"Noto Serif SC",serif!important;
+  font-size:13px!important;
+  font-weight:400!important;
+  line-height:2.05!important;
+  color:#344366!important;
+  overflow-wrap:anywhere!important;
+}
+.portfolio-subpage .decision-record-section .case-table th{
+  font-weight:600!important;
+  color:#20204d!important;
+  background:rgba(229,231,255,.42)!important;
+}
+.portfolio-subpage .decision-record-section .case-table td:nth-child(1){width:22%}
+.portfolio-subpage .decision-record-section .case-table td:nth-child(2){width:28%}
+.portfolio-subpage .decision-record-section .case-table td:nth-child(3){width:50%}
+.portfolio-subpage .decision-record-section .case-table th:nth-child(1){width:22%}
+.portfolio-subpage .decision-record-section .case-table th:nth-child(2){width:28%}
+.portfolio-subpage .decision-record-section .case-table th:nth-child(3){width:50%}
+
+
+/* Shared footer system — identical alignment and typography on every page. */
+body.portfolio-v2 > footer.portfolio-footer{
+  box-sizing:border-box!important;
+  display:flex!important;
+  flex-direction:row!important;
+  justify-content:space-between!important;
+  align-items:center!important;
+  flex-wrap:wrap!important;
+  gap:12px 24px!important;
+  width:100%!important;
+  max-width:1240px!important;
+  margin:28px auto 0!important;
+  padding:18px 38px 24px!important;
+  border:0!important;
+  border-top:1px solid rgba(145,164,187,.25)!important;
+  color:#526184!important;
+  font-family:"Noto Serif SC",serif!important;
+  font-size:10px!important;
+  line-height:1.7!important;
+  letter-spacing:.04em!important;
+}
+body.portfolio-v2 > footer.portfolio-footer .footer-brand{
+  display:block!important;
+  order:0!important;
+  margin:0!important;
+  color:#526184!important;
+  font:400 10px/1.7 "Noto Serif SC",serif!important;
+  letter-spacing:.04em!important;
+  white-space:nowrap!important;
+}
+body.portfolio-v2 > footer.portfolio-footer .footer-actions{
+  display:flex!important;
+  order:1!important;
+  justify-content:flex-end!important;
+  align-items:center!important;
+  flex-direction:row!important;
+  flex-wrap:wrap!important;
+  gap:20px!important;
+  margin:0 0 0 auto!important;
+  padding:0!important;
+  border:0!important;
+}
+body.portfolio-v2 > footer.portfolio-footer .footer-actions a{
+  display:inline-block!important;
+  margin:0!important;
+  color:#4938bd!important;
+  font:500 10px/1.7 "DM Mono",monospace!important;
+  letter-spacing:.04em!important;
+  text-decoration:none!important;
+  white-space:nowrap!important;
+}
+body.portfolio-v2 > footer.portfolio-footer .footer-actions a:hover{
+  color:#6250d8!important;
+  text-decoration:underline!important;
+  text-underline-offset:4px!important;
+}
+@media(max-width:800px){
+  body.portfolio-v2 > footer.portfolio-footer{
+    flex-direction:row!important;
+    align-items:center!important;
+    gap:10px 16px!important;
+    padding:16px 20px 22px!important;
+  }
+  body.portfolio-v2 > footer.portfolio-footer .footer-actions{
+    margin-left:auto!important;
+    gap:14px!important;
+  }
+}
+
+
+/* Homepage experience cards: role/title left, subdued date aligned right. */
+.portfolio-v2 .experience-list article{
+  display:block!important;
+  padding:18px 18px!important;
+}
+.portfolio-v2 .experience-list .experience-main{
+  display:flex!important;
+  flex-direction:row!important;
+  justify-content:space-between!important;
+  align-items:baseline!important;
+  gap:16px!important;
+  width:100%!important;
+  min-width:0!important;
+}
+.portfolio-v2 .experience-list .experience-main h3{
+  display:block!important;
+  flex:1 1 auto!important;
+  min-width:0!important;
+  margin:0!important;
+}
+.portfolio-v2 .experience-list .experience-main .experience-date{
+  flex:0 0 auto!important;
+  margin:0!important;
+  color:#929bb1!important;
+  font-family:"DM Mono",monospace!important;
+  font-size:9px!important;
+  font-weight:400!important;
+  line-height:1.6!important;
+  letter-spacing:.035em!important;
+  text-align:right!important;
+  white-space:nowrap!important;
+}
+.portfolio-v2 .experience-list .experience-content{
+  margin-top:7px!important;
+}
+@media(max-width:560px){
+  .portfolio-v2 .experience-list .experience-main{
+    align-items:flex-start!important;
+    gap:8px!important;
+  }
+  .portfolio-v2 .experience-list .experience-main .experience-date{
+    font-size:8px!important;
+  }
+}
+
+
+/* 2026-11 layout refinement: compact spacing, aligned capability indices and centered proof panels. */
+.portfolio-v2:not(.portfolio-subpage) .portfolio-main{
+  padding-top:68px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .portfolio-section{
+  padding-bottom:62px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .section-title{
+  margin-top:24px!important;
+  line-height:1.5!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-copy{
+  margin-top:19px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-copy p{
+  margin-top:10px!important;
+  line-height:1.9!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-proof{
+  margin-top:22px!important;
+  width:100%!important;
+  max-width:760px!important;
+  table-layout:fixed!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-proof>div,
+.portfolio-v2:not(.portfolio-subpage) .quality-proof>div{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  align-items:center!important;
+  min-width:0!important;
+  min-height:104px!important;
+  padding:13px 12px!important;
+  text-align:center!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-proof>div+div,
+.portfolio-v2:not(.portfolio-subpage) .quality-proof>div+div{
+  border-left:1px solid var(--pc-line)!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-proof span,
+.portfolio-v2:not(.portfolio-subpage) .intro-proof strong,
+.portfolio-v2:not(.portfolio-subpage) .intro-proof small,
+.portfolio-v2:not(.portfolio-subpage) .quality-proof span,
+.portfolio-v2:not(.portfolio-subpage) .quality-proof strong,
+.portfolio-v2:not(.portfolio-subpage) .quality-proof small{
+  width:100%!important;
+  text-align:center!important;
+  overflow-wrap:anywhere!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-proof strong,
+.portfolio-v2:not(.portfolio-subpage) .quality-proof strong{
+  margin:5px 0!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .inline-links{
+  margin-top:17px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .section-heading{
+  margin-top:17px!important;
+  line-height:1.45!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .section-lead{
+  margin-top:8px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .skill-list{
+  margin-top:18px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .skill-row{
+  position:relative!important;
+  display:block!important;
+  padding:17px 42px 17px 0!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .skill-row>.skill-number{
+  position:absolute!important;
+  top:17px!important;
+  right:2px!important;
+  padding:0!important;
+  color:#8996b1!important;
+  font:400 10px/1.5 "DM Mono",monospace!important;
+  letter-spacing:.06em!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .skill-row>div:last-child{
+  min-width:0!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .skill-row h3{
+  margin:0!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .skill-row p{
+  margin-top:5px!important;
+  line-height:1.85!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .skill-tags{
+  margin-top:9px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .quality-proof{
+  width:100%!important;
+  max-width:760px!important;
+  margin-top:20px!important;
+  table-layout:fixed!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .project-list{
+  margin-top:19px!important;
+  gap:10px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .project-card{
+  padding:18px 19px 14px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .project-card h3{
+  margin-top:10px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .project-problem{
+  margin-top:8px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .project-foot{
+  margin-top:12px!important;
+  padding-top:9px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-section .section-heading{
+  white-space:normal!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list{
+  margin-top:18px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article{
+  padding-top:16px!important;
+  padding-bottom:16px!important;
+}
+.portfolio-v2.portfolio-subpage .portfolio-main{
+  padding-top:62px!important;
+}
+.portfolio-v2.portfolio-subpage .resume-page{
+  padding-top:24px!important;
+  padding-bottom:38px!important;
+}
+.portfolio-v2.portfolio-subpage .resume-page>section{
+  margin-bottom:25px!important;
+}
+.portfolio-v2.portfolio-subpage .resume-entry-date{
+  color:#929bb1!important;
+  font:400 9px/1.6 "DM Mono",monospace!important;
+  letter-spacing:.035em!important;
+}
+.portfolio-v2.portfolio-subpage .resume-hero h1 em{
+  font-style:normal!important;
+}
+@media(max-width:800px){
+  .portfolio-v2:not(.portfolio-subpage) .portfolio-main{padding-top:40px!important}
+  .portfolio-v2:not(.portfolio-subpage) .portfolio-section{padding-bottom:48px!important}
+  .portfolio-v2:not(.portfolio-subpage) .intro-proof,
+  .portfolio-v2:not(.portfolio-subpage) .quality-proof{
+    grid-template-columns:1fr!important;
+  }
+  .portfolio-v2:not(.portfolio-subpage) .intro-proof>div+div,
+  .portfolio-v2:not(.portfolio-subpage) .quality-proof>div+div{
+    border-left:0!important;
+    border-top:1px solid var(--pc-line)!important;
+  }
+  .portfolio-v2:not(.portfolio-subpage) .intro-proof>div,
+  .portfolio-v2:not(.portfolio-subpage) .quality-proof>div{
+    min-height:84px!important;
+  }
+  .portfolio-v2:not(.portfolio-subpage) .skill-row{padding-right:34px!important}
+}
+@media(max-width:520px){
+  .portfolio-v2.portfolio-subpage .resume-page>section{margin-bottom:20px!important}
+}
+
+
+/* Verified homepage-only correction: skill indices and the six proof tiles. */
+body.portfolio-v2 #skills .skill-list > .skill-row{
+  position:relative!important;
+  display:block!important;
+  box-sizing:border-box!important;
+  padding:20px 58px 19px 24px!important;
+}
+body.portfolio-v2 #skills .skill-list > .skill-row > .skill-number{
+  position:absolute!important;
+  display:block!important;
+  top:18px!important;
+  right:18px!important;
+  left:auto!important;
+  bottom:auto!important;
+  width:auto!important;
+  height:auto!important;
+  margin:0!important;
+  padding:0!important;
+  transform:none!important;
+  color:#8996b1!important;
+  font-family:"DM Mono",monospace!important;
+  font-size:10px!important;
+  font-weight:400!important;
+  line-height:1.5!important;
+  letter-spacing:.06em!important;
+  text-align:right!important;
+  z-index:2!important;
+}
+body.portfolio-v2 #skills .skill-list > .skill-row > div:last-child{
+  width:100%!important;
+  min-width:0!important;
+}
+body.portfolio-v2 #about > .intro-proof,
+body.portfolio-v2 #skills > .quality-proof{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  width:100%!important;
+  max-width:840px!important;
+  margin:22px auto 0!important;
+  box-sizing:border-box!important;
+}
+body.portfolio-v2 #about > .intro-proof > div,
+body.portfolio-v2 #skills > .quality-proof > div{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  align-items:center!important;
+  box-sizing:border-box!important;
+  min-width:0!important;
+  min-height:112px!important;
+  padding:16px 14px!important;
+  text-align:center!important;
+}
+body.portfolio-v2 #about > .intro-proof > div > *,
+body.portfolio-v2 #skills > .quality-proof > div > *{
+  display:block!important;
+  width:100%!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+  overflow-wrap:anywhere!important;
+}
+body.portfolio-v2 #about > .intro-proof > div + div,
+body.portfolio-v2 #skills > .quality-proof > div + div{
+  border-left:1px solid rgba(72,75,151,.22)!important;
+}
+@media(max-width:760px){
+  body.portfolio-v2 #about > .intro-proof,
+  body.portfolio-v2 #skills > .quality-proof{
+    grid-template-columns:1fr!important;
+    max-width:560px!important;
+  }
+  body.portfolio-v2 #about > .intro-proof > div,
+  body.portfolio-v2 #skills > .quality-proof > div{
+    min-height:88px!important;
+  }
+  body.portfolio-v2 #about > .intro-proof > div + div,
+  body.portfolio-v2 #skills > .quality-proof > div + div{
+    border-left:0!important;
+    border-top:1px solid rgba(72,75,151,.22)!important;
+  }
+}
+
+
+/* 2026-11-12 — Option A: subtle thematic image layers for homepage project cards */
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background-color:#102238!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  opacity:.96;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center right;
+  transition:opacity .2s ease,transform .35s ease;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(1)::after{
+  background-image:linear-gradient(90deg,rgba(11,25,41,.94) 0%,rgba(11,25,41,.88) 48%,rgba(11,25,41,.68) 100%),url("assets/project-bg-medical.svg");
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(2)::after{
+  background-image:linear-gradient(90deg,rgba(11,25,41,.94) 0%,rgba(11,25,41,.88) 48%,rgba(11,25,41,.68) 100%),url("assets/project-bg-hospitality.svg");
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(3)::after{
+  background-image:linear-gradient(90deg,rgba(11,25,41,.94) 0%,rgba(11,25,41,.87) 48%,rgba(11,25,41,.65) 100%),url("assets/project-bg-coffee.svg");
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(4)::after{
+  background-image:linear-gradient(90deg,rgba(11,25,41,.94) 0%,rgba(11,25,41,.88) 48%,rgba(11,25,41,.67) 100%),url("assets/project-bg-industry.svg");
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::before{
+  z-index:1;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card>*{
+  position:relative;
+  z-index:2;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:hover::after{
+  opacity:1;
+  transform:scale(1.015);
+}
+@media(max-width:800px){
+  body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::after{
+    background-position:68% center;
+  }
+}
+
+
+/* 2026-11-12 — Refine project card artwork: light editorial palette, content first */
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card{
+  background-color:#f7f8fc!important;
+  border:1px solid rgba(91,94,151,.14)!important;
+  box-shadow:0 4px 18px rgba(43,53,91,.035);
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(1){background-color:#f1f7fa!important}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(2){background-color:#f5f4f1!important}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(3){background-color:#faf6ef!important}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(4){background-color:#f5f3fa!important}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::after{
+  opacity:.34!important;
+  background-size:72% 100%!important;
+  background-position:right center!important;
+  background-repeat:no-repeat!important;
+  mix-blend-mode:multiply;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(1)::after{
+  background-image:url("assets/project-bg-medical.svg")!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(2)::after{
+  background-image:url("assets/project-bg-hospitality.svg")!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(3)::after{
+  background-image:url("assets/project-bg-coffee.svg")!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:nth-child(4)::after{
+  background-image:url("assets/project-bg-industry.svg")!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::before{
+  width:2px!important;
+  background:linear-gradient(180deg,#a8b6d9,#c4bddf)!important;
+  opacity:.72!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card-top,
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card h3,
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card>p,
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-tags,
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-foot{
+  position:relative;
+  z-index:2;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-type{
+  color:#777d94!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-index{
+  color:#7772aa!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card h3 a{
+  color:#202541!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card>p:not(.project-problem){
+  color:#5e667b!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-foot{
+  border-top-color:rgba(91,94,151,.15)!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-foot>span{
+  color:#69718a!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card .project-foot a{
+  color:#514b91!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:hover{
+  box-shadow:0 8px 22px rgba(43,53,91,.07);
+}
+body.portfolio-v2:not(.portfolio-subpage) #projects .project-card:hover::after{
+  opacity:.42!important;
+  transform:scale(1.01);
+}
+@media(max-width:800px){
+  body.portfolio-v2:not(.portfolio-subpage) #projects .project-card::after{
+    background-size:78% 100%!important;
+    background-position:right center!important;
+    opacity:.27!important;
+  }
+}
+
+
+/* 2026-11-12 — Editorial artwork for research, experience and education cards */
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article,
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article,
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  border:1px solid rgba(91,94,151,.13)!important;
+  box-shadow:0 4px 18px rgba(43,53,91,.025)!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article::after,
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article::after,
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div::after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:0;
+  right:0;
+  bottom:0;
+  width:48%;
+  pointer-events:none;
+  background-repeat:no-repeat;
+  background-position:right center;
+  background-size:contain;
+  opacity:.25;
+  mix-blend-mode:multiply;
+}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(1){background:#f1f5f8!important}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(1)::after{background-image:url("assets/interest-history.svg");opacity:.31}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(2){background:#f5f2f8!important}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(2)::after{background-image:url("assets/interest-dance.svg");opacity:.33}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(3){background:#f1f5f9!important}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:nth-child(3)::after{background-image:url("assets/interest-ai.svg");opacity:.30}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(1){background:#f7f4ee!important}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(1)::after{background-image:url("assets/experience-consumer.svg");opacity:.29}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(2){background:#f0f5f8!important}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(2)::after{background-image:url("assets/experience-wd.svg");opacity:.28}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(3){background:#f3f3f8!important}
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:nth-child(3)::after{background-image:url("assets/experience-enterprise.svg");opacity:.29}
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:nth-child(1){background:#f4f1f8!important}
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:nth-child(1)::after{background-image:url("assets/education-postgraduate.svg");opacity:.28}
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:nth-child(2){background:#f7f4ee!important}
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:nth-child(2)::after{background-image:url("assets/education-undergraduate.svg");opacity:.28}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article > *,
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article > *,
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div > *{
+  position:relative!important;
+  z-index:1!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article:hover,
+body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article:hover,
+body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div:hover{
+  box-shadow:0 7px 20px rgba(43,53,91,.055)!important;
+}
+@media(max-width:760px){
+  body.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid > article::after,
+  body.portfolio-v2:not(.portfolio-subpage) #experience .experience-list > article::after,
+  body.portfolio-v2:not(.portfolio-subpage) #experience .education-block > div::after{
+    width:42%;
+    opacity:.21!important;
+  }
+}
+
+
+/* 2026-11-12 — Resume card artwork: consistent light editorial layers */
+.portfolio-subpage .resume-skills article,
+.portfolio-subpage .resume-project-grid>.resume-project,
+.portfolio-subpage .resume-entry,
+.portfolio-subpage .resume-education-cards>div{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  border-radius:9px!important;
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease,background-color .2s ease!important;
+}
+.portfolio-subpage .resume-skills article::after,
+.portfolio-subpage .resume-project-grid>.resume-project::after,
+.portfolio-subpage .resume-entry::after,
+.portfolio-subpage .resume-education-cards>div::after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:0;right:0;bottom:0;
+  width:37%;
+  pointer-events:none;
+  background-repeat:no-repeat;
+  background-position:right center;
+  background-size:contain;
+  opacity:.32;
+  mix-blend-mode:multiply;
+}
+.portfolio-subpage .resume-skills article:nth-child(1)::after{background-image:url("assets/resume-skill-research.svg")}
+.portfolio-subpage .resume-skills article:nth-child(2)::after{background-image:url("assets/resume-skill-model.svg")}
+.portfolio-subpage .resume-skills article:nth-child(3)::after{background-image:url("assets/resume-skill-ai.svg")}
+.portfolio-subpage .resume-skills article:nth-child(4)::after{background-image:url("assets/resume-skill-build.svg")}
+.portfolio-subpage .resume-skills article:nth-child(5)::after{background-image:url("assets/resume-skill-eval.svg")}
+.portfolio-subpage .resume-project-scrm::after{background-image:url("assets/project-bg-medical.svg")}
+.portfolio-subpage .resume-project-ees::after{background-image:url("assets/project-bg-hospitality.svg")}
+.portfolio-subpage .resume-project-cafe::after{background-image:url("assets/project-bg-coffee.svg")}
+.portfolio-subpage .resume-project-research::after{background-image:url("assets/project-bg-industry.svg")}
+.portfolio-subpage .resume-entry-consumer::after{background-image:url("assets/experience-consumer.svg")}
+.portfolio-subpage .resume-entry-waterdrop::after{background-image:url("assets/experience-wd.svg")}
+.portfolio-subpage .resume-entry-enterprise::after{background-image:url("assets/experience-enterprise.svg")}
+.portfolio-subpage .resume-education-cards>div:nth-child(1)::after{background-image:url("assets/education-postgraduate.svg")}
+.portfolio-subpage .resume-education-cards>div:nth-child(2)::after{background-image:url("assets/education-undergraduate.svg")}
+.portfolio-subpage .resume-skills article>*,
+.portfolio-subpage .resume-project-grid>.resume-project>*,
+.portfolio-subpage .resume-entry>*,
+.portfolio-subpage .resume-education-cards>div>*{
+  position:relative!important;
+  z-index:1!important;
+}
+.portfolio-subpage .resume-skills article:nth-child(1){background:linear-gradient(110deg,#fff 48%,#f0f4f8)!important}
+.portfolio-subpage .resume-skills article:nth-child(2){background:linear-gradient(110deg,#fff 48%,#f3f1f8)!important}
+.portfolio-subpage .resume-skills article:nth-child(3){background:linear-gradient(110deg,#fff 48%,#eff3fa)!important}
+.portfolio-subpage .resume-skills article:nth-child(4){background:linear-gradient(110deg,#fff 48%,#f1f5f8)!important}
+.portfolio-subpage .resume-skills article:nth-child(5){background:linear-gradient(110deg,#fff 48%,#f3f1f8)!important}
+.portfolio-subpage .resume-project-grid>.resume-project{background:linear-gradient(110deg,#fff 50%,#f1f5fa)!important}
+.portfolio-subpage .resume-entry{
+  padding:17px 16px!important;
+  border:1px solid rgba(74,83,139,.16)!important;
+  background:linear-gradient(110deg,#fff 53%,#f2f5f8)!important;
+}
+.portfolio-subpage .resume-entry-consumer{background:linear-gradient(110deg,#fff 53%,#f7f3ec)!important}
+.portfolio-subpage .resume-entry-waterdrop{background:linear-gradient(110deg,#fff 53%,#eff5f8)!important}
+.portfolio-subpage .resume-entry-enterprise{background:linear-gradient(110deg,#fff 53%,#f2f2f8)!important}
+.portfolio-subpage .resume-education-cards>div:nth-child(1){background:linear-gradient(110deg,#fff 50%,#f2eff8)!important}
+.portfolio-subpage .resume-education-cards>div:nth-child(2){background:linear-gradient(110deg,#fff 50%,#f7f3ec)!important}
+.portfolio-subpage .resume-skills article:hover,
+.portfolio-subpage .resume-project-grid>.resume-project:hover,
+.portfolio-subpage .resume-entry:hover,
+.portfolio-subpage .resume-education-cards>div:hover{
+  transform:translateY(-2px)!important;
+  border-color:rgba(81,64,200,.38)!important;
+  box-shadow:0 13px 29px rgba(67,62,166,.105)!important;
+}
+.portfolio-subpage .resume-skills article:hover::after,
+.portfolio-subpage .resume-project-grid>.resume-project:hover::after,
+.portfolio-subpage .resume-entry:hover::after,
+.portfolio-subpage .resume-education-cards>div:hover::after{opacity:.39}
+@media(max-width:760px){
+ .portfolio-subpage .resume-skills article::after,
+ .portfolio-subpage .resume-project-grid>.resume-project::after,
+ .portfolio-subpage .resume-entry::after,
+ .portfolio-subpage .resume-education-cards>div::after{width:32%;opacity:.23}
+ .portfolio-subpage .resume-entry{padding:15px 13px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .portfolio-subpage .resume-skills article,
+ .portfolio-subpage .resume-project-grid>.resume-project,
+ .portfolio-subpage .resume-entry,
+ .portfolio-subpage .resume-education-cards>div{transition:none!important}
+ .portfolio-subpage .resume-skills article:hover,
+ .portfolio-subpage .resume-project-grid>.resume-project:hover,
+ .portfolio-subpage .resume-entry:hover,
+ .portfolio-subpage .resume-education-cards>div:hover{transform:none!important}
+}
+
+
+/* Align resume project hover feedback with homepage project cards; avoid pseudo-layer flashing. */
+.portfolio-subpage .resume-project-grid>.resume-project{
+  transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project::after{
+  transition:opacity .18s ease,transform .18s ease!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project:hover{
+  transform:translateY(-2px)!important;
+  background:#fff!important;
+  border-color:rgba(81,64,200,.52)!important;
+  box-shadow:0 16px 36px rgba(67,62,166,.14)!important;
+}
+.portfolio-subpage .resume-project-grid>.resume-project:hover::after{
+  opacity:.39!important;
+  transform:scale(1.01);
+}
+
+
+/* 2026-11-12 — Resume artwork refinement: clearer resting linework, text-safe composition */
+.portfolio-subpage .resume-skills article::after,
+.portfolio-subpage .resume-project-grid>.resume-project::after,
+.portfolio-subpage .resume-entry::after,
+.portfolio-subpage .resume-education-cards>div::after{
+  opacity:.41!important;
+  background-position:right center!important;
+  background-repeat:no-repeat!important;
+  mix-blend-mode:multiply!important;
+  transition:opacity .2s ease,transform .25s ease!important;
+}
+.portfolio-subpage .resume-skills article::after{width:43%!important}
+.portfolio-subpage .resume-project-grid>.resume-project::after{width:49%!important}
+.portfolio-subpage .resume-entry::after{width:42%!important}
+.portfolio-subpage .resume-education-cards>div::after{width:45%!important}
+.portfolio-subpage .resume-skills article:hover::after,
+.portfolio-subpage .resume-project-grid>.resume-project:hover::after,
+.portfolio-subpage .resume-entry:hover::after,
+.portfolio-subpage .resume-education-cards>div:hover::after{
+  opacity:.47!important;
+  transform:scale(1.012);
+}
+@media(max-width:760px){
+  .portfolio-subpage .resume-skills article::after,
+  .portfolio-subpage .resume-project-grid>.resume-project::after,
+  .portfolio-subpage .resume-entry::after,
+  .portfolio-subpage .resume-education-cards>div::after{
+    width:36%!important;
+    opacity:.29!important;
+  }
+  .portfolio-subpage .resume-skills article:hover::after,
+  .portfolio-subpage .resume-project-grid>.resume-project:hover::after,
+  .portfolio-subpage .resume-entry:hover::after,
+  .portfolio-subpage .resume-education-cards>div:hover::after{opacity:.34!important}
+}
+
+/* 2026-11-16 — Mobile sidebar: keep navigation compact and expose sidebar footer */
+@media(max-width:760px){
+  .portfolio-v2 .portfolio-sidebar{
+    padding-bottom:22px!important;
+  }
+  .portfolio-v2 .portfolio-nav{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    column-gap:18px!important;
+    row-gap:9px!important;
+    margin-top:22px!important;
+    width:100%!important;
+  }
+  .portfolio-v2 .portfolio-nav a{
+    min-width:0!important;
+    padding:5px 0!important;
+    line-height:1.5!important;
+    white-space:normal!important;
+  }
+  .portfolio-v2 .sidebar-bottom{
+    display:block!important;
+    margin-top:20px!important;
+    padding-top:14px!important;
+    border-top:1px solid var(--pc-line)!important;
+  }
+  .portfolio-v2 .sidebar-links{
+    gap:12px 18px!important;
+  }
+}
+
+/* 2026-11-16 — Philosophy cards: restrained visual cues for framework, detail and fit */
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list{
+  border-top:0!important;
+  display:grid!important;
+  gap:14px!important;
+  margin-top:25px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  display:grid!important;
+  grid-template-columns:120px minmax(0,1fr)!important;
+  gap:20px!important;
+  padding:24px 22px!important;
+  border:1px solid rgba(82,82,164,.15)!important;
+  border-radius:10px!important;
+  background:linear-gradient(105deg,rgba(255,255,255,.82) 0%,rgba(244,243,255,.78) 65%,rgba(230,237,255,.7) 100%)!important;
+  box-shadow:0 6px 20px rgba(58,65,135,.045)!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article::after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:0;right:0;bottom:0;
+  width:42%;
+  pointer-events:none;
+  background-repeat:no-repeat;
+  background-position:right center;
+  background-size:contain;
+  opacity:.42;
+  mix-blend-mode:multiply;
+}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article:nth-child(1)::after{background-image:url("assets/philosophy-framework.svg")}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article:nth-child(2)::after{background-image:url("assets/philosophy-detail.svg")}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article:nth-child(3)::after{background-image:url("assets/philosophy-whole.svg")}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article>*{position:relative!important;z-index:1!important}
+.portfolio-v2:not(.portfolio-subpage) .philosophy-list article:hover{
+  border-color:rgba(81,64,200,.3)!important;
+  box-shadow:0 10px 26px rgba(58,65,135,.075)!important;
+}
+@media(max-width:760px){
+  .portfolio-v2:not(.portfolio-subpage) .philosophy-list article{
+    grid-template-columns:1fr!important;
+    gap:8px!important;
+    padding:19px 16px!important;
+  }
+  .portfolio-v2:not(.portfolio-subpage) .philosophy-list article::after{
+    width:38%;
+    opacity:.28;
+  }
+}
+
+
+/* Sidebar refinement: current positioning, quiet contacts and footer breathing room */
+.portfolio-v2 .sidebar-contact-inline{
+  display:flex;flex-wrap:wrap;gap:4px 13px;
+  margin:13px 0 0!important;
+  color:#7883a8;font:400 9px/1.5 "Noto Serif SC",serif!important;
+}
+.portfolio-v2 .sidebar-intro h2{
+  margin-top:20px!important;
+  line-height:1.55!important;
+}
+.portfolio-v2 .sidebar-summary{
+  max-width:320px;margin-top:14px!important;
+  font-size:12px!important;line-height:1.85!important;
+  color:#4f5b83!important;
+}
+.portfolio-v2 .sidebar-bottom{
+  margin-top:auto!important;
+  padding-top:30px!important;
+}
+.portfolio-v2 .sidebar-links{
+  gap:20px!important;
+}
+.portfolio-v2 .sidebar-links a{
+  font-size:9px!important;
+  color:#8992ad!important;
+  opacity:.82;
+}
+.portfolio-v2 .sidebar-links a span{opacity:.72}
+@media(max-width:760px){
+  .portfolio-v2 .sidebar-contact-inline{font-size:9px!important}
+  .portfolio-v2 .sidebar-bottom{margin-top:25px!important;padding-top:16px!important}
+}
+
+
+/* Final sidebar correction: small centered avatar and reliable independent scrolling */
+.portfolio-v2 .portfolio-sidebar{
+  position:sticky!important;
+  top:0!important;
+  height:100vh!important;
+  min-height:0!important;
+  max-height:100vh!important;
+  overflow-y:auto!important;
+  overflow-x:hidden!important;
+  overscroll-behavior-y:contain;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(145,164,187,.35) transparent;
+  padding-top:clamp(28px,5vh,58px)!important;
+  padding-bottom:28px!important;
+}
+.portfolio-v2 .portfolio-sidebar::-webkit-scrollbar{width:5px}
+.portfolio-v2 .portfolio-sidebar::-webkit-scrollbar-thumb{
+  background:rgba(145,164,187,.3);border-radius:8px;
+}
+.portfolio-v2 .sidebar-intro{margin-top:44px!important}
+.portfolio-v2 .sidebar-avatar{
+  display:block!important;
+  width:42px!important;height:42px!important;
+  margin:16px auto 17px!important;
+  object-fit:cover!important;
+  border:1px solid rgba(145,164,187,.28)!important;
+  border-radius:50%!important;
+  background:#102238!important;
+}
+.portfolio-v2 .sidebar-profile-row{
+  display:block!important;
+}
+.portfolio-v2 .sidebar-profile-row h1{
+  margin-top:0!important;
+}
+.portfolio-v2 .sidebar-intro h2{margin-top:20px!important}
+.portfolio-v2 .sidebar-contact-inline{
+  margin-top:10px!important;
+  font-size:9px!important;
+  opacity:.72;
+}
+.portfolio-v2 .sidebar-summary{
+  margin-top:13px!important;
+  font-size:12px!important;
+  line-height:1.85!important;
+}
+.portfolio-v2 .portfolio-nav{margin-top:34px!important}
+.portfolio-v2 .sidebar-bottom{
+  margin-top:auto!important;
+  padding-top:28px!important;
+}
+@media(max-width:760px){
+  .portfolio-v2 .portfolio-sidebar{
+    position:relative!important;top:auto!important;
+    height:auto!important;min-height:0!important;max-height:none!important;
+    overflow:visible!important;padding:26px 22px!important;
+  }
+  .portfolio-v2 .sidebar-intro{margin-top:24px!important}
+  .portfolio-v2 .sidebar-avatar{
+    width:38px!important;height:38px!important;
+    margin:12px auto 13px!important;
+  }
+  .portfolio-v2 .portfolio-nav{margin-top:22px!important}
+  .portfolio-v2 .sidebar-bottom{margin-top:25px!important;padding-top:16px!important}
+}
+
+
+/* Sidebar presentation: centered identity, modest portrait and clear role hierarchy */
+@media(min-width:761px){
+  .portfolio-v2 .portfolio-sidebar{
+    position:sticky!important;top:0!important;
+    height:100vh!important;max-height:100vh!important;min-height:0!important;
+    overflow-y:auto!important;overflow-x:hidden!important;
+    overscroll-behavior-y:contain;
+    scrollbar-width:thin;
+    scrollbar-color:rgba(145,164,187,.32) transparent;
+  }
+  .portfolio-v2 .portfolio-sidebar::-webkit-scrollbar{width:5px}
+  .portfolio-v2 .portfolio-sidebar::-webkit-scrollbar-thumb{
+    background:rgba(145,164,187,.3);border-radius:8px;
+  }
+}
+.portfolio-v2 .portfolio-sidebar{
+  text-align:center!important;
+  align-items:center!important;
+}
+.portfolio-v2 .portfolio-brand{
+  display:block;width:100%;text-align:center;
+}
+.portfolio-v2 .sidebar-intro{
+  width:100%;margin-top:40px!important;
+  display:flex;flex-direction:column;align-items:center;
+}
+.portfolio-v2 .sidebar-kicker{text-align:center}
+.portfolio-v2 .sidebar-avatar{
+  width:58px!important;height:58px!important;flex:0 0 58px!important;
+  display:block!important;margin:16px auto 15px!important;
+  border-radius:50%!important;object-fit:cover!important;
+}
+.portfolio-v2 .sidebar-profile-row{
+  display:flex!important;justify-content:center!important;
+  width:100%;text-align:center;
+}
+.portfolio-v2 .sidebar-intro h1{
+  display:flex!important;align-items:baseline!important;
+  justify-content:center!important;gap:11px;
+  width:100%;text-align:center;margin-top:0!important;
+}
+.portfolio-v2 .sidebar-intro h1 span{
+  display:inline!important;margin:0!important;
+  font-size:12px!important;white-space:nowrap;
+}
+.portfolio-v2 .sidebar-contact-inline{
+  justify-content:center!important;
+  width:100%;margin-top:12px!important;
+  font-size:9px!important;opacity:.68;
+}
+.portfolio-v2 .sidebar-intro h2{
+  width:100%;text-align:center;margin-top:22px!important;
+}
+.portfolio-v2 .sidebar-summary{
+  max-width:320px;width:100%;margin:13px auto 0!important;
+  text-align:center!important;font-size:12px!important;line-height:1.85!important;
+}
+.portfolio-v2 .portfolio-nav{
+  width:100%;max-width:none!important;
+  display:flex!important;flex-direction:column!important;
+  align-items:center!important;margin-top:30px!important;
+}
+.portfolio-v2 .portfolio-nav a{
+  justify-content:center!important;text-align:center;
+}
+.portfolio-v2 .sidebar-bottom{
+  width:100%;margin-top:auto!important;padding-top:28px!important;
+}
+.portfolio-v2 .sidebar-links{justify-content:center!important}
+@media(max-width:760px){
+  .portfolio-v2 .portfolio-sidebar{
+    position:relative!important;top:auto!important;
+    height:auto!important;max-height:none!important;min-height:0!important;
+    overflow:visible!important;padding:26px 22px!important;
+  }
+  .portfolio-v2 .sidebar-intro{margin-top:25px!important}
+  .portfolio-v2 .sidebar-avatar{
+    width:54px!important;height:54px!important;flex-basis:54px!important;
+    margin:13px auto!important;
+  }
+  .portfolio-v2 .portfolio-nav{margin-top:22px!important}
+  .portfolio-v2 .sidebar-bottom{margin-top:25px!important;padding-top:16px!important}
+}
+
+
+/* Homepage sidebar: balanced vertical rhythm */
+body[data-page="home"].portfolio-v2 .sidebar-intro h2{
+  margin-bottom:0!important;
+}
+body[data-page="home"].portfolio-v2 .sidebar-summary{
+  max-width:320px!important;
+  width:100%!important;
+  margin:23px 0 0!important;
+  text-align:left!important;
+  font-size:12px!important;
+  line-height:1.8!important;
+}
+body[data-page="home"].portfolio-v2 .portfolio-nav{
+  margin-top:38px!important;
+}
+body[data-page="home"].portfolio-v2 .sidebar-bottom{
+  margin-top:28px!important;
+  padding-top:14px!important;
+}
+@media(max-width:760px){
+  body[data-page="home"].portfolio-v2 .sidebar-summary{
+    margin-top:18px!important;
+  }
+  body[data-page="home"].portfolio-v2 .portfolio-nav{
+    margin-top:23px!important;
+  }
+  body[data-page="home"].portfolio-v2 .sidebar-bottom{
+    margin-top:25px!important;
+    padding-top:16px!important;
+  }
+}
+
+
+/* Resume heading: keep the role on the name line without competing with the name */
+.resume-name-line{
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:10px 14px;
+}
+.resume-name-line em{
+  font-size:.42em!important;
+  line-height:1.5;
+  font-style:normal;
+  font-weight:500;
+  color:var(--muted,#77747a);
+  letter-spacing:0;
+}
+@media(max-width:640px){
+  .resume-name-line em{font-size:.48em!important}
+}
+
+
+/* Homepage calls to action: use the site's muted lavender palette, not mint-green borders */
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a,
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a:not(.solid-link){
+  display:inline-flex;
+  align-items:center;
+  padding:10px 14px;
+  border:1px solid rgba(166,154,184,.52)!important;
+  border-radius:3px;
+  background:transparent!important;
+  color:var(--pc-accent)!important;
+  text-decoration:none!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a:hover{
+  border-color:rgba(166,154,184,.9)!important;
+  background:rgba(166,154,184,.09)!important;
+}
+
+
+/* Resume work-history metadata column: centered alignment */
+.portfolio-subpage .resume-experience-section .resume-entry-meta{
+  text-align:center!important;
+  padding-left:6px!important;
+  padding-right:6px!important;
+}
