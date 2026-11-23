@@ -78,3 +78,21 @@ body.portfolio-v2 {
  .resume-page-v2 .resume-project,.resume-page-v2 .resume-entry,.resume-page-v2 .education-block>div{break-inside:avoid;page-break-inside:avoid}
  .resume-page-v2 a{text-decoration:none!important}
 }
+
+
+/* Resume print refinement: denser layout, fewer decorative rules */
+@media print{
+ .resume-page-v2 .resume-section{margin-top:7px!important}
+ .resume-page-v2 .resume-section-title{padding-bottom:3px!important;margin-bottom:5px!important;border-bottom:0!important}
+ .resume-page-v2 .resume-section-title h2{margin:0!important}
+ .resume-page-v2 .resume-hero{padding-bottom:5px!important;border-bottom:0!important}
+ .resume-page-v2 .resume-summary{margin-top:4px!important}
+ .resume-page-v2 .resume-skills,.resume-page-v2 .resume-project-grid{gap:4px!important}
+ .resume-page-v2 .resume-project,.resume-page-v2 .resume-skills article,.resume-page-v2 .resume-entry{padding:6px 8px!important;border:0!important;border-bottom:1px solid #e7e4e9!important;box-shadow:none!important}
+ .resume-page-v2 .resume-entry-layout{gap:8px!important}
+ .resume-page-v2 .resume-entry-content ul{margin:3px 0!important;padding-left:15px!important}
+ .resume-page-v2 .resume-entry-content li{margin:1px 0!important}
+ .resume-page-v2 .resume-core-tags{margin-top:3px!important}
+ .resume-page-v2 .education-block>div{padding:5px 0!important;border:0!important;border-bottom:1px solid #e7e4e9!important}
+ .resume-page-v2 .resume-detail-link{display:none!important}
+}
