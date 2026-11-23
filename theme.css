@@ -33,66 +33,38 @@ body.portfolio-v2 {
 .resume-archive-cta strong{font-family:var(--serif);font-size:1.08rem;font-weight:600}
 .resume-archive-cta p,.project-archive-link p{margin:6px 0 0;color:var(--muted);font-size:.9rem}
 .project-archive-link{margin-top:28px}
-.project-archive-link>a,.resume-download-button{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border:1px solid rgba(166,154,184,.62);border-radius:3px;background:transparent;color:var(--pc-accent);text-decoration:none;font:inherit;cursor:pointer}
-.resume-download-button{padding:7px 12px;font-size:.86rem;white-space:nowrap}
+.project-archive-link>a,.resume-download-button{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border:1px solid rgba(166,154,184,.62);border-radius:3px;background:transparent;color:var(--pc-accent);text-decoration:none;font:inherit;cursor:pointer;transition:background-color .18s ease,border-color .18s ease,color .18s ease,opacity .18s ease}
+.resume-download-button{padding:5px 9px;border-color:rgba(166,154,184,.28);color:var(--muted);font-size:.76rem;opacity:.62;white-space:nowrap}
+.resume-download-button:hover{background:rgba(166,154,184,.12);border-color:rgba(166,154,184,.7);color:var(--pc-accent);opacity:1}
+.resume-download-button:focus-visible{outline:2px solid var(--pc-accent);outline-offset:3px;opacity:1}
 .history-project-card{padding:26px 28px;border:1px solid rgba(166,154,184,.36);background:rgba(255,255,255,.48)}
 .history-project-card h3{margin:10px 0 18px;font:500 14px "Noto Serif SC",serif}
 .history-project-card p{margin:10px 0;font:400 12px/1.9 "Noto Serif SC",serif;color:#706d73}
 .history-project-meta{display:flex;justify-content:space-between;gap:16px;color:var(--muted);font:400 10px "Noto Serif SC",serif}
 .history-skills{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:720px){.resume-archive-cta,.project-archive-link,.history-project-meta{align-items:flex-start;flex-direction:column}.history-skills{grid-template-columns:1fr}}
+/* Unified resume print rules */
 @media print{
- @page{size:A4;margin:13mm 14mm}
- body,body.portfolio-v2{background:#fff!important;color:#17151a!important}
- .portfolio-sidebar,.resume-topline>a,.resume-topline>span,.resume-download-button,.portfolio-footer,.sidebar-bottom{display:none!important}
+ @page{size:A4;margin:10mm 11mm}
+ html,body,body.portfolio-v2{background:#fff!important;color:#17151a!important}
+ .portfolio-sidebar,.resume-topline,.resume-download-button,.portfolio-footer,.sidebar-bottom{display:none!important}
  .portfolio-shell,.portfolio-main,.resume-page,.resume-page-v2{display:block!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;box-shadow:none!important}
- .resume-topline{display:none!important}
- .resume-page{font-size:9.5pt!important}
- .resume-hero,.resume-section,.resume-entry,.resume-project{break-inside:avoid;page-break-inside:avoid}
- .resume-section{margin-top:14px!important}
- .resume-name-line{font-size:23pt!important}
- .resume-summary{font-size:9.5pt!important;line-height:1.55!important}
- .resume-skills,.resume-project-grid{gap:8px!important}
- .resume-project,.resume-skills article,.resume-entry{background:#fff!important;border-color:#ddd!important}
- .resume-archive-cta{display:none!important}
- a{color:inherit!important;text-decoration:none!important}
-}
-
-/* V4: compact, readable A4 resume output */
-.resume-page-v2 .resume-section-title .portfolio-icon{display:none!important}
-@media print{
- @page{size:A4;margin:11mm 12mm}
- html,body{background:#fff!important}
- .resume-page-v2{font-size:8.8pt!important;line-height:1.42!important}
- .resume-page-v2 .resume-hero{margin-bottom:8px!important}
+ .resume-page-v2{font-size:8.6pt!important;line-height:1.34!important}
  .resume-page-v2 .resume-name-line{font-size:20pt!important}
- .resume-page-v2 .resume-section{margin-top:9px!important}
- .resume-page-v2 .resume-section-title{margin-bottom:6px!important}
- .resume-page-v2 .resume-skills,.resume-page-v2 .resume-project-grid{gap:6px!important}
- .resume-page-v2 .resume-project,.resume-page-v2 .resume-skills article,.resume-page-v2 .resume-entry{padding:8px 10px!important}
- .resume-page-v2 p,.resume-page-v2 li{line-height:1.42!important}
- .resume-page-v2 .resume-experience-list{gap:7px!important}
- .resume-page-v2 .resume-entry-layout{gap:10px!important}
- .resume-page-v2 .resume-entry-meta{min-width:28%!important}
- .resume-page-v2 .resume-bottom-note{font-size:8pt!important}
+ .resume-page-v2 .resume-hero{margin:0 0 5px!important;padding:0 0 4px!important;border:0!important}
+ .resume-page-v2 .resume-summary{margin:3px 0!important;font-size:8.6pt!important;line-height:1.38!important}
+ .resume-page-v2 .resume-section{margin-top:6px!important}
+ .resume-page-v2 .resume-section-title{margin:0 0 4px!important;padding:0!important;border:0!important}
+ .resume-page-v2 .resume-section-title .portfolio-icon{display:none!important}
+ .resume-page-v2 .resume-skills,.resume-page-v2 .resume-project-grid,.resume-page-v2 .resume-experience-list{gap:4px!important}
+ .resume-page-v2 .resume-project,.resume-page-v2 .resume-skills article,.resume-page-v2 .resume-entry{margin:0!important;padding:5px 7px!important;border:0!important;border-bottom:1px solid #e5e2e8!important;border-radius:0!important;box-shadow:none!important;background:#fff!important}
+ .resume-page-v2 .resume-entry-layout{gap:7px!important}
+ .resume-page-v2 .resume-entry-meta{min-width:26%!important}
+ .resume-page-v2 .resume-entry-content ul{margin:2px 0!important;padding-left:14px!important}
+ .resume-page-v2 .resume-entry-content li{margin:0!important;line-height:1.34!important}
+ .resume-page-v2 .resume-core-tags{margin-top:2px!important}
+ .resume-page-v2 .education-block>div{margin:0!important;padding:4px 0!important;border:0!important;border-bottom:1px solid #e5e2e8!important}
+ .resume-page-v2 .resume-detail-link,.resume-page-v2 .resume-bottom-note,.resume-archive-cta{display:none!important}
+ .resume-page-v2 a{color:inherit!important;text-decoration:none!important}
  .resume-page-v2 .resume-project,.resume-page-v2 .resume-entry,.resume-page-v2 .education-block>div{break-inside:avoid;page-break-inside:avoid}
- .resume-page-v2 a{text-decoration:none!important}
-}
-
-
-/* Resume print refinement: denser layout, fewer decorative rules */
-@media print{
- .resume-page-v2 .resume-section{margin-top:7px!important}
- .resume-page-v2 .resume-section-title{padding-bottom:3px!important;margin-bottom:5px!important;border-bottom:0!important}
- .resume-page-v2 .resume-section-title h2{margin:0!important}
- .resume-page-v2 .resume-hero{padding-bottom:5px!important;border-bottom:0!important}
- .resume-page-v2 .resume-summary{margin-top:4px!important}
- .resume-page-v2 .resume-skills,.resume-page-v2 .resume-project-grid{gap:4px!important}
- .resume-page-v2 .resume-project,.resume-page-v2 .resume-skills article,.resume-page-v2 .resume-entry{padding:6px 8px!important;border:0!important;border-bottom:1px solid #e7e4e9!important;box-shadow:none!important}
- .resume-page-v2 .resume-entry-layout{gap:8px!important}
- .resume-page-v2 .resume-entry-content ul{margin:3px 0!important;padding-left:15px!important}
- .resume-page-v2 .resume-entry-content li{margin:1px 0!important}
- .resume-page-v2 .resume-core-tags{margin-top:3px!important}
- .resume-page-v2 .education-block>div{padding:5px 0!important;border:0!important;border-bottom:1px solid #e7e4e9!important}
- .resume-page-v2 .resume-detail-link{display:none!important}
 }
