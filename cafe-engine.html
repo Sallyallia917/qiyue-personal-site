@@ -30,7 +30,7 @@
     </div>
   </aside>
 <div class="portfolio-main"><main class="case-page-v2"><section class="case-hero"><a class="back" href="index.html#projects">← 返回项目</a><div class="case-hero-grid"><div><div class="case-no">03 / 研究驱动 · AI 营销决策</div><h1>Coffee Growth<br><em>Engine</em></h1></div><div><p class="case-summary">从消费者满意度研究出发，追问研究洞察如何进入会员营销决策。通过业务问题拆解、规则建模与 LLM 辅助生成，构建一个可解释、可校验、可迭代的 AI 营销决策原型。</p><div class="case-meta"><div><span>业务场景</span><strong>精品咖啡会员复购</strong></div><div><span>研究基础</span><strong>消费者满意度研究</strong></div><div><span>产品思考</span><strong>研究洞察到营销行动</strong></div><div><span>项目性质</span><strong>独立原型 / 非生产系统</strong></div></div></div></div></section>
-<section class="case-section evidence-strip"><div class="section-overline"><span>能力证据</span><span>研究到产品的转化</span></div><div class="intro-proof"><div><span>研究基础</span><strong>226 份有效问卷</strong><small>MBA 消费者满意度研究</small></div><div><span>产品设计</span><strong>规则 + LLM 分层</strong><small>授权、受众、优惠与毛利约束</small></div><div><span>离线验证</span><strong>8 个合成案例</strong><small>验证评测器行为，不代表营销增长</small></div></div><p class="scope-note">将消费者研究洞察转化为会员营销决策流程，并通过独立的模拟会员、商品与优惠数据检验规则设计和方案生成逻辑。</p></section>
+<section class="case-section evidence-strip"><div class="section-overline"><span>能力证据</span><span>研究到产品的转化</span></div><div class="intro-proof"><div><span>研究基础</span><strong>226 份有效问卷</strong><small>MBA 消费者满意度研究</small></div><div><span>产品设计</span><strong>规则 + LLM 分层</strong><small>授权、受众、优惠与毛利约束</small></div><div><span>离线验证</span><strong>8 个合成案例</strong><small>离线测试 · 规则约束校验</small></div></div><p class="scope-note">将消费者研究洞察转化为会员营销决策流程，并通过独立的模拟会员、商品与优惠数据检验规则设计和方案生成逻辑。</p></section>
 
 <div class="case-body">
 <section class="case-section star-section"><div class="case-label">项目概览</div><div class="case-copy"><h2>把研究中对消费者的理解，转化为业务能够采取的营销行动。</h2><div class="star-grid">
@@ -70,7 +70,7 @@
 <div class="architecture-layer"><span>04 · AI ASSIST</span><div><strong>LLM 辅助生成营销方案</strong><small>基于已校验的业务上下文生成策略表达、营销文案与渠道建议</small></div></div><div class="architecture-arrow">↓</div>
 <div class="architecture-layer architecture-layer-final"><span>05 · VALIDATION</span><div><strong>结构与业务约束校验</strong><small>检查字段、商品 / 优惠 ID、组合关系及不受支持的数字声明</small></div></div>
 </div>
-<p class="evidence-caption">这条链路描述的是产品方案与当前原型的核心设计。论文研究用于提出问题和形成产品假设；原型中的业务规则使用独立的合成数据执行，不代表已经接入真实会员运营系统。</p>
+<p class="evidence-caption">产品链路：论文研究提出问题与业务假设，原型以模拟会员数据验证规则约束、商品优惠匹配及营销方案生成流程。</p>
 </div></section>
 <section class="case-section"><div class="case-label">04 / 业务建模</div><div class="case-copy"><h2>营销决策必须同时满足用户适配与商业约束。</h2><ul class="case-list"><li><strong>会员分群：</strong>基于会员偏好、最近购买间隔、订单数和营销授权筛选目标人群；未授权用户排除在营销触达之外。</li><li><strong>商品推荐：</strong>结合品类偏好、价格、成本和库存形成候选商品。</li><li><strong>优惠校验：</strong>计算目标受众与预期核销率下的优惠成本，检查活动预算、券预算、最低消费门槛及折后毛利。</li><li><strong>生成约束：</strong>模型只接收已经过规则筛选的结构化上下文；不能自行添加未授权商品、无效优惠券或无依据的数字承诺。</li></ul></div></section>
 <section class="case-section"><div class="case-label">05 / AI 产品与技术设计</div><div class="case-copy"><h2>规则先形成可信业务上下文，LLM 再完成语言生成。</h2><div class="architecture-stack">
