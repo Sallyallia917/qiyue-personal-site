@@ -261,3 +261,71 @@ body.portfolio-v2 {
    white-space:normal!important;overflow:visible!important;text-overflow:clip!important;
  }
 }
+
+
+/* Resume PDF: preserve the site's matte lavender / warm-paper background */
+@media print{
+  html,body,body.portfolio-v2{
+    background:#f1eff7!important;
+    color:#252333!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .portfolio-main{
+    background:#f1eff7!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .resume-page-v2{
+    background:#faf8fd!important;
+    color:#252333!important;
+    padding:8mm 8mm 7mm!important;
+    border:1px solid #e5dfef!important;
+    border-radius:3mm!important;
+    box-shadow:none!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .resume-page-v2 .resume-hero{
+    background:#f0edf8!important;
+    border:1px solid #e2dced!important;
+    border-radius:2mm!important;
+    padding:5mm 6mm!important;
+    margin-bottom:4mm!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .resume-page-v2 .resume-section{
+    background:#fdfcff!important;
+    border:1px solid #ebe6f1!important;
+    border-radius:2mm!important;
+    padding:3mm 4mm!important;
+    margin-top:3mm!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .resume-page-v2 .resume-section-title h2{
+    color:#443b70!important;
+  }
+  .resume-page-v2 .resume-project,
+  .resume-page-v2 .resume-skills article,
+  .resume-page-v2 .resume-entry,
+  .resume-page-v2 .education-block>div{
+    background:#f7f5fb!important;
+    border:1px solid #e8e2f0!important;
+    border-radius:1.5mm!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .resume-page-v2 .resume-tag,
+  .resume-page-v2 .resume-core-tags span{
+    background:#ebe7f5!important;
+    color:#514775!important;
+    border-color:#ddd5eb!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .resume-page-v2 .resume-name-line em{
+    color:#5b4b8a!important;
+  }
+}
