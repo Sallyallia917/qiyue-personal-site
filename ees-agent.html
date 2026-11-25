@@ -10,7 +10,7 @@
         <span>电话：待补充</span><span>邮箱：待补充</span>
       </div>
       <h2>商业 · 组织 · 技术　<em>系统与人的协作</em></h2>
-      <p class="sidebar-summary">长期关注商业、组织与技术如何共同塑造人的工作方式，并从 CRM、B 端产品与测试经验出发，持续探索企业系统与 AI 应用的结合。</p>
+      <p class="sidebar-summary">从企业业务流程与系统建设出发，关注 AI 如何进入真实任务：明确数据、权限与规则边界，设计人机协作流程，并用测试验证产品行为。</p>
     </div>
     <nav class="portfolio-nav" aria-label="页面导航">
 <a href="index.html#about"><span></span>个人介绍</a>
@@ -32,11 +32,11 @@
 <section class="case-section evidence-strip"><div class="section-overline"><span>能力证据</span><span>原型范围与验证结果</span></div><div class="intro-proof"><div><span>业务建模</span><strong>订单 / 知识 / 工单</strong><small>区分事实、规则、服务与风险</small></div><div><span>AI 产品设计</span><strong>RAG + 混合路由</strong><small>规则、模型、上下文与人工接管</small></div><div><span>质量验证</span><strong>288 项自动化评测通过</strong><small>另有 10 项 UI 验收仍存在缺陷</small></div></div><p class="scope-note">围绕酒旅服务场景搭建本地可运行原型，使用模拟订单、住客与服务数据验证知识检索、混合路由、订单查询、上下文管理及工单流转。</p></section>
 
 <div class="case-body">
-<section class="case-section star-section"><div class="case-label">项目概览</div><div class="case-copy"><h2>把“能回答问题”升级为“能安全推进服务任务”。</h2><div class="star-grid">
+<section class="case-section star-section"><div class="case-label">项目概览</div><div class="case-copy"><h2>从知识问答走向可核验、可确认、可追踪的服务任务处理。</h2><div class="star-grid">
 <article class="star-card"><span>情境</span><h3>业务情境</h3><p>民宿 / 酒店线上客服大量依赖人工文字回复。问题表面相似，背后可能涉及门店政策、个人订单、实时房态、现场服务、投诉或退款；不同问题需要不同数据来源、权限和处理路径。</p></article>
 <article class="star-card"><span>任务</span><h3>产品任务</h3><p>设计一个具备业务判断能力的服务助手：回答有依据，个人订单先认证，跨轮对话不丢失任务状态，需人工处理的事项能够在住客确认后形成可追踪工单。</p></article>
 <article class="star-card"><span>行动</span><h3>关键行动</h3><p>逐步构建 RAG、规则与可选 LLM 混合路由、演示身份与订单只读服务、多订单上下文管理、对话式建单、工单分类与状态流转，并用合成场景和自动化测试迭代。</p></article>
-<article class="star-card"><span>结果</span><h3>阶段结果</h3><p>当前开发版本为 MVP 2.0.5：在混合路由、RAG、订单只读与工单生命周期基础上，强化工单状态查询、问题分类、幂等去重、安全事件识别、发票流程与交易意图边界。自动化评测 288 项通过；10 项 UI 场景验收仍暴露流程缺陷。尚未接入真实 PMS / OTA / CRM。</p></article>
+<article class="star-card"><span>结果</span><h3>阶段结果</h3><p>当前开发版本为 MVP 2.0.5：在混合路由、RAG、订单只读与工单生命周期基础上，补充工单状态查询、分类、幂等去重、安全事件识别及交易意图边界。自动化评测 288 项通过；另有 10 项 UI 场景验收，仍暴露提交链路、上下文承接等缺陷。尚未接入真实 PMS / OTA / CRM。</p></article>
 </div></div></section>
 <section class="case-section"><div class="case-label">01 / 产品判断</div><div class="case-copy"><h2>先确定信息从哪里来、谁有权处理，再决定是否调用模型。</h2><p>项目的核心不是把所有问题交给 LLM，而是先识别任务性质和数据权限。相同的“房间”问题，可能是公共设施咨询、个人订单权益查询、现场维修请求，或对卫生状况的投诉。</p><ul class="case-list"><li><strong>公共知识：</strong>入住政策、早餐、停车、设施等，从当前门店有效知识中检索。</li><li><strong>个人订单：</strong>房型、日期、权益和订单异常，必须经过演示身份认证并由 BookingService 校验订单归属。</li><li><strong>动态数据：</strong>实时房态、库存和车位不能由静态 FAQ 推断；当前原型提示人工核实。</li><li><strong>服务执行：</strong>维修、清洁、投诉、退款申请和发票需求，先补齐信息并复述确认，再创建本地演示工单。</li><li><strong>风险事项：</strong>安全事件优先级高于普通服务流程，触发专门安全指引与人工升级。</li></ul><div class="takeaway"><b>PRODUCT PRINCIPLE</b><p>模型负责理解与表达，确定性规则负责权限、业务边界和状态迁移；没有证据不猜测，没有确认不建单，没有外部系统就不声称已经执行。</p></div></div></section>
 <section class="case-section"><div class="case-label">02 / 技术架构</div><div class="case-copy"><h2>以对话编排为入口，按业务职责拆分服务与状态。</h2><div class="architecture-stack">
