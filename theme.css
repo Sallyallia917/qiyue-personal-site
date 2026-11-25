@@ -233,3 +233,31 @@ body.portfolio-v2 {
  .portfolio-subpage .resume-education-heading h3,.portfolio-subpage .resume-education-heading time{white-space:nowrap!important}
  .portfolio-subpage a[href^="https://sallyallia917.github.io/qiyue-personal-site/"]{text-decoration:underline!important}
 }
+
+
+/* Resume experience header spans the card so company, role and dates fit on one line */
+.portfolio-subpage .resume-experience-section .resume-entry-layout{
+  grid-template-columns:minmax(0,1fr)!important;
+  gap:9px!important;
+}
+.portfolio-subpage .resume-experience-section .resume-entry-meta{
+  width:100%!important;
+  grid-template-columns:max-content minmax(0,1fr) max-content!important;
+  gap:5px 14px!important;
+}
+.portfolio-subpage .resume-experience-section .resume-entry-meta>p{
+  white-space:normal!important;overflow:visible!important;text-overflow:clip!important;
+  overflow-wrap:anywhere!important;
+}
+@media print{
+ .portfolio-subpage .resume-experience-section .resume-entry-layout{
+   grid-template-columns:minmax(0,1fr)!important;gap:5px!important;
+ }
+ .portfolio-subpage .resume-experience-section .resume-entry-meta{
+   grid-template-columns:max-content minmax(0,1fr) max-content!important;
+   gap:4px 10px!important;
+ }
+ .portfolio-subpage .resume-experience-section .resume-entry-meta>p{
+   white-space:normal!important;overflow:visible!important;text-overflow:clip!important;
+ }
+}
