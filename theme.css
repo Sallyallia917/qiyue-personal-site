@@ -130,3 +130,106 @@ body.portfolio-v2 {
  .portfolio-v2.sidebar-collapsed .sidebar-toggle-icon{transform:rotate(180deg);}
 }
 @media(prefers-reduced-motion:no-preference){.portfolio-v2 .portfolio-shell{transition:grid-template-columns .22s ease,gap .22s ease;}}
+
+
+/* 2026-11-25 resume export and identity refinements */
+.portfolio-v2 .sidebar-intro .sidebar-research{
+  width:100%;max-width:320px;margin:12px auto 0!important;
+  color:#7883a8!important;font:400 10px/1.8 "Noto Serif SC",serif!important;
+  text-align:center!important;letter-spacing:.015em;
+}
+.portfolio-v2:not(.portfolio-subpage) .sidebar-summary{
+  margin-top:18px!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .sidebar-research{
+  margin-top:10px!important;
+}
+.portfolio-subpage .resume-download-button{
+  padding:4px 8px!important;font-size:10px!important;line-height:1.35!important;
+  min-height:26px!important;opacity:.72!important;
+}
+.portfolio-subpage .resume-experience-section .resume-entry-meta{
+  display:grid!important;
+  grid-template-columns:max-content minmax(0,1fr) max-content!important;
+  align-items:baseline!important;
+  justify-content:initial!important;
+  gap:4px 12px!important;
+  text-align:left!important;
+  padding:0!important;
+}
+.portfolio-subpage .resume-experience-section .resume-entry-meta h3{
+  grid-column:1!important;grid-row:1!important;
+  white-space:nowrap!important;font-size:14px!important;
+}
+.portfolio-subpage .resume-experience-section .resume-entry-meta>p{
+  grid-column:2!important;grid-row:1!important;
+  min-width:0!important;margin:0!important;
+  white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
+  font-size:10px!important;
+}
+.portfolio-subpage .resume-experience-section .resume-entry-date{
+  grid-column:3!important;grid-row:1!important;
+  display:inline-block!important;margin:0!important;padding:0!important;
+  border:0!important;background:transparent!important;
+  white-space:nowrap!important;font-size:9px!important;
+}
+.portfolio-subpage .resume-education-heading{
+  display:flex!important;align-items:baseline!important;justify-content:space-between!important;
+  flex-wrap:nowrap!important;gap:8px!important;
+}
+.portfolio-subpage .resume-education-heading h3{
+  min-width:0!important;white-space:nowrap!important;
+}
+.portfolio-subpage .resume-education-heading time{
+  flex:0 0 auto!important;white-space:nowrap!important;
+}
+.portfolio-subpage .resume-public-links{
+  margin:8px 0 0!important;font-size:10px!important;line-height:1.6!important;
+  color:#68718a!important;
+}
+.portfolio-subpage .resume-public-links a{
+  color:#40349d!important;text-decoration:underline!important;text-underline-offset:2px!important;
+}
+@media(max-width:900px){
+ .portfolio-subpage .resume-experience-section .resume-entry-meta{
+   grid-template-columns:minmax(0,1fr) max-content!important;
+   gap:3px 10px!important;
+ }
+ .portfolio-subpage .resume-experience-section .resume-entry-meta h3{grid-column:1!important;grid-row:1!important}
+ .portfolio-subpage .resume-experience-section .resume-entry-meta>p{
+   grid-column:1!important;grid-row:2!important;white-space:normal!important;overflow:visible!important;
+ }
+ .portfolio-subpage .resume-experience-section .resume-entry-date{grid-column:2!important;grid-row:1!important}
+}
+@media(max-width:520px){
+ .portfolio-subpage .resume-education-heading{flex-wrap:wrap!important}
+ .portfolio-subpage .resume-education-heading h3,.portfolio-subpage .resume-education-heading time{white-space:normal!important}
+}
+@media print{
+ .portfolio-subpage .resume-download-button,
+ .portfolio-subpage .resume-topline,
+ .portfolio-subpage .portfolio-sidebar,
+ .portfolio-subpage .portfolio-footer{display:none!important}
+ .portfolio-subpage .resume-detail-link{
+   display:inline!important;visibility:visible!important;
+   color:#40349d!important;text-decoration:underline!important;
+   font-size:7.5pt!important;font-weight:600!important;
+ }
+ .portfolio-subpage .resume-public-links{display:block!important}
+ .portfolio-subpage .resume-public-links a,
+ .portfolio-subpage .resume-detail-link,
+ .portfolio-subpage .resume-project h3 a{
+   color:#222!important;text-decoration:underline!important;
+   -webkit-print-color-adjust:exact;print-color-adjust:exact;
+ }
+ .portfolio-subpage .resume-experience-section .resume-entry-meta{
+   display:grid!important;grid-template-columns:max-content minmax(0,1fr) max-content!important;
+   gap:3px 8px!important;align-items:baseline!important;
+ }
+ .portfolio-subpage .resume-experience-section .resume-entry-meta h3{grid-column:1!important;grid-row:1!important;white-space:nowrap!important}
+ .portfolio-subpage .resume-experience-section .resume-entry-meta>p{grid-column:2!important;grid-row:1!important;white-space:nowrap!important;overflow:visible!important}
+ .portfolio-subpage .resume-experience-section .resume-entry-date{grid-column:3!important;grid-row:1!important;white-space:nowrap!important}
+ .portfolio-subpage .resume-education-heading{display:flex!important;flex-wrap:nowrap!important;justify-content:space-between!important;align-items:baseline!important}
+ .portfolio-subpage .resume-education-heading h3,.portfolio-subpage .resume-education-heading time{white-space:nowrap!important}
+ .portfolio-subpage a[href^="https://sallyallia917.github.io/qiyue-personal-site/"]{text-decoration:underline!important}
+}
