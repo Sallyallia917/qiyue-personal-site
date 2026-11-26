@@ -397,3 +397,31 @@ body.portfolio-v2 {
  .portfolio-subpage .resume-education-heading p{font-size:7.8pt!important;}
  .portfolio-subpage .resume-education-heading time{font-size:7.5pt!important;}
 }
+
+
+/* Online resume education cards mirror the homepage; keep PDF layout unchanged */
+@media screen{
+ .portfolio-subpage .resume-education-cards>div{
+   padding:15px!important;
+   border:1px solid rgba(63,78,153,.23)!important;
+   border-radius:4px!important;
+   background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(244,247,255,.94))!important;
+   box-shadow:0 8px 24px rgba(49,67,139,.065)!important;
+ }
+ .portfolio-subpage .resume-education-cards .education-label{
+   display:inline-block!important;color:var(--pc-accent)!important;font-size:8px!important;
+ }
+ .portfolio-subpage .resume-education-cards .education-heading{
+   display:flex!important;justify-content:space-between!important;align-items:baseline!important;
+   flex-wrap:wrap!important;gap:12px!important;margin-top:10px!important;
+ }
+ .portfolio-subpage .resume-education-cards .education-heading h3{
+   margin:0!important;font:500 13px/1.7 "Noto Serif SC",serif!important;white-space:normal!important;
+ }
+ .portfolio-subpage .resume-education-cards .education-heading time{
+   color:#526184!important;font:500 10px/1.7 "DM Mono",monospace!important;white-space:nowrap!important;
+ }
+ .portfolio-subpage .resume-education-cards>div>p{
+   margin-top:7px!important;color:#344366!important;font-size:11px!important;
+ }
+}
