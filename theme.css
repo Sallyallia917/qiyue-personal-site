@@ -329,3 +329,71 @@ body.portfolio-v2 {
     color:#5b4b8a!important;
   }
 }
+
+
+/* 2026-11-26 homepage CTA and resume education / header refinements */
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a,
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a:not(.solid-link){
+  border:0!important;
+  border-radius:4px!important;
+  background:rgba(112,96,145,.11)!important;
+  color:#51456f!important;
+  box-shadow:none!important;
+  transition:background-color .18s ease,color .18s ease,transform .18s ease!important;
+  cursor:pointer;
+}
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a.solid-link{
+  background:rgba(101,82,125,.16)!important;
+  color:#493b66!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a:hover,
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a:not(.solid-link):hover{
+  border:0!important;
+  background:rgba(101,82,125,.25)!important;
+  color:#332847!important;
+  transform:translateY(-1px);
+}
+.portfolio-subpage .resume-hero{position:relative!important;}
+.portfolio-subpage .resume-hero-kicker{
+  display:flex;justify-content:flex-end;align-items:center;
+  margin:0 0 3px;color:#898493;font-size:9px;letter-spacing:.12em;
+  opacity:.68;font-weight:400;
+}
+.portfolio-subpage .resume-education-heading{
+  display:grid!important;
+  grid-template-columns:max-content minmax(0,1fr) max-content!important;
+  align-items:baseline!important;justify-content:initial!important;
+  gap:5px 12px!important;width:100%!important;
+}
+.portfolio-subpage .resume-education-heading h3{
+  min-width:0!important;white-space:nowrap!important;margin:0!important;
+}
+.portfolio-subpage .resume-education-heading p{
+  min-width:0!important;margin:0!important;white-space:normal!important;
+  overflow-wrap:anywhere!important;font-size:10px!important;line-height:1.5!important;
+}
+.portfolio-subpage .resume-education-heading time{
+  flex:0 0 auto!important;white-space:nowrap!important;font-size:9px!important;
+}
+@media(max-width:760px){
+ .portfolio-subpage .resume-education-heading{
+   grid-template-columns:minmax(0,1fr) max-content!important;
+   gap:3px 8px!important;
+ }
+ .portfolio-subpage .resume-education-heading h3{grid-column:1!important;grid-row:1!important}
+ .portfolio-subpage .resume-education-heading time{grid-column:2!important;grid-row:1!important}
+ .portfolio-subpage .resume-education-heading p{grid-column:1/-1!important;grid-row:2!important}
+}
+@media print{
+ .portfolio-subpage .resume-hero-kicker{margin-bottom:2px!important;font-size:8pt!important;}
+ .portfolio-subpage .resume-education-heading{
+   display:grid!important;grid-template-columns:max-content minmax(0,1fr) max-content!important;
+   gap:3px 8px!important;align-items:baseline!important;
+ }
+ .portfolio-subpage .resume-education-heading h3,
+ .portfolio-subpage .resume-education-heading p,
+ .portfolio-subpage .resume-education-heading time{white-space:nowrap!important;}
+ .portfolio-subpage .resume-education-heading h3{font-size:8.5pt!important;}
+ .portfolio-subpage .resume-education-heading p{font-size:7.8pt!important;}
+ .portfolio-subpage .resume-education-heading time{font-size:7.5pt!important;}
+}
