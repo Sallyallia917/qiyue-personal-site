@@ -762,3 +762,59 @@ body.portfolio-v2 {
     color:var(--pc-accent)!important;
   }
 }
+
+
+/* Refined resume card palette: subtle, light, and consistent by section. */
+@media screen{
+  .portfolio-subpage .resume-projects-section .resume-project,
+  .portfolio-subpage .resume-projects-section .resume-project-history{
+    background:#f3f1f8!important;
+    border:1px solid rgba(112,96,145,.22)!important;
+    border-radius:5px!important;
+    box-shadow:0 2px 8px rgba(74,62,104,.035)!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry{
+    background:#f7f5f0!important;
+    border:1px solid rgba(145,132,111,.24)!important;
+    border-radius:5px!important;
+    box-shadow:0 2px 8px rgba(91,80,61,.035)!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-meta h3{
+    color:#302d38!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-meta p,
+  .portfolio-subpage .resume-experience-section .resume-entry-content li{
+    color:#615d66!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-date{
+    color:#71628f!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-core-tags span{
+    color:#51456f!important;
+  }
+}
+@media print{
+  .portfolio-subpage .resume-projects-section .resume-project,
+  .portfolio-subpage .resume-projects-section .resume-project-history{
+    background:#f3f1f8!important;
+    border:1px solid rgba(112,96,145,.28)!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry{
+    background:#f7f5f0!important;
+    border:1px solid rgba(145,132,111,.30)!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-meta h3{
+    color:#302d38!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-meta p,
+  .portfolio-subpage .resume-experience-section .resume-entry-content li{
+    color:#615d66!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-date{
+    color:#71628f!important;
+  }
+}
