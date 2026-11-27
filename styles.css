@@ -2978,3 +2978,28 @@ body.portfolio-subpage .resume-hero-kicker .resume-download-button:active{
     gap:18px!important;
   }
 }
+
+
+/* Align homepage CTA row with the first headline line; keep both links horizontal. */
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-title-row{
+  align-items:flex-start!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-title-row .intro-header-actions{
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:20px!important;
+  margin-top:0!important;
+  padding-top:clamp(5px,1vw,10px)!important;
+  white-space:nowrap!important;
+}
+@media(max-width:760px){
+  .portfolio-v2:not(.portfolio-subpage) .intro-section .intro-title-row{
+    align-items:flex-start!important;
+  }
+  .portfolio-v2:not(.portfolio-subpage) .intro-section .intro-title-row .intro-header-actions{
+    flex-direction:row!important;
+    margin-top:0!important;
+    padding-top:0!important;
+  }
+}
