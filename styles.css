@@ -3037,3 +3037,37 @@ body.portfolio-subpage .resume-hero-kicker .resume-download-button:active{
   color:#30239e!important;
   transform:translateY(-1px)!important;
 }
+
+
+/* Unified sidebar hierarchy across all portfolio pages. */
+.portfolio-v2 .portfolio-sidebar{display:flex;flex-direction:column}
+.portfolio-v2 .sidebar-top-links{
+  display:flex!important;
+  align-items:center!important;
+  gap:20px!important;
+  margin:0 0 30px!important;
+  padding:0!important;
+}
+.portfolio-v2 .sidebar-top-links a{
+  color:var(--pc-accent)!important;
+  font:500 10px/1.7 "DM Mono",monospace!important;
+  text-decoration:none!important;
+  border:0!important;
+}
+.portfolio-v2 .sidebar-top-links a:hover{color:#30239e!important}
+.portfolio-v2 .sidebar-bottom{
+  margin-top:auto!important;
+  padding-top:22px!important;
+}
+.portfolio-v2 .portfolio-brand-bottom{
+  display:inline-block!important;
+  color:var(--pc-muted)!important;
+  opacity:.58!important;
+  font:400 10px/1.6 "Noto Serif SC",serif!important;
+  letter-spacing:.14em!important;
+  text-decoration:none!important;
+}
+.portfolio-v2 .portfolio-brand-bottom:hover{opacity:.78!important}
+@media(max-width:760px){
+  .portfolio-v2 .sidebar-top-links{margin-bottom:22px!important;gap:16px!important}
+}
