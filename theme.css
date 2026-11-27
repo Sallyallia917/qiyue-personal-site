@@ -696,3 +696,16 @@ body.portfolio-v2 {
     page-break-inside:avoid!important;
   }
 }
+
+
+/* Show the personal-site link only in exported/printed resumes. */
+@media screen{
+  .portfolio-subpage .resume-hero-kicker .resume-public-link{
+    display:none!important;
+  }
+}
+@media print{
+  .portfolio-subpage .resume-hero-kicker .resume-public-link{
+    display:inline-block!important;
+  }
+}
