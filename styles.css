@@ -2845,3 +2845,36 @@ body[data-page="home"].portfolio-v2 .sidebar-bottom{
   text-decoration:none!important;
   transform:translateY(-1px)!important;
 }
+
+
+/* Final CTA correction: remove all residual button and underline treatments. */
+body.portfolio-v2:not(.portfolio-subpage) .intro-section .inline-links a,
+body.portfolio-v2:not(.portfolio-subpage) .intro-section .inline-links a:link,
+body.portfolio-v2:not(.portfolio-subpage) .intro-section .inline-links a:visited,
+body.portfolio-v2:not(.portfolio-subpage) .intro-section .inline-links a:hover,
+body.portfolio-v2:not(.portfolio-subpage) .intro-section .inline-links a:focus,
+body.portfolio-v2:not(.portfolio-subpage) .intro-section .inline-links a:active{
+  border:0!important;
+  border-bottom:0!important;
+  outline:0!important;
+  background:none!important;
+  box-shadow:none!important;
+  text-decoration:none!important;
+  text-decoration-line:none!important;
+  padding:0!important;
+  border-radius:0!important;
+}
+body.portfolio-subpage .resume-hero-kicker .resume-download-button,
+body.portfolio-subpage .resume-hero-kicker .resume-download-button:hover,
+body.portfolio-subpage .resume-hero-kicker .resume-download-button:focus,
+body.portfolio-subpage .resume-hero-kicker .resume-download-button:active{
+  border:0!important;
+  border-bottom:0!important;
+  outline:0!important;
+  background:none!important;
+  box-shadow:none!important;
+  text-decoration:none!important;
+  text-decoration-line:none!important;
+  padding:0!important;
+  border-radius:0!important;
+}
