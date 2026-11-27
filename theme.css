@@ -924,3 +924,23 @@ body.portfolio-v2 {
     margin:0 auto!important;
   }
 }
+
+
+/* 2026-11-27: elegant FangSong typography for the complete resume content. */
+body.portfolio-subpage .portfolio-main .resume-page,
+body.portfolio-subpage .portfolio-main .resume-page-v2,
+body.portfolio-subpage .portfolio-main .resume-page-v2 *{
+  font-family:"FangSong","仿宋","STFangsong","FangSong_GB2312",serif!important;
+  font-synthesis:none;
+}
+body.portfolio-subpage .portfolio-main .resume-page-v2{
+  color:#393640!important;
+}
+body.portfolio-subpage .portfolio-main .resume-page-v2 .resume-summary,
+body.portfolio-subpage .portfolio-main .resume-page-v2 .resume-entry-content,
+body.portfolio-subpage .portfolio-main .resume-page-v2 .resume-project,
+body.portfolio-subpage .portfolio-main .resume-page-v2 .resume-skills,
+body.portfolio-subpage .portfolio-main .resume-page-v2 .education-block{
+  font-weight:400!important;
+  letter-spacing:.015em!important;
+}
