@@ -3652,3 +3652,119 @@ body.portfolio-v2 .portfolio-sidebar .sidebar-bottom .portfolio-brand-bottom{
     scrollbar-width:thin!important;
   }
 }
+
+
+/* Refined sidebar rhythm: lower the central profile block and separate its sections. */
+@media(min-width:761px){
+  body.portfolio-v2 .portfolio-sidebar{
+    padding-top:clamp(22px,4vh,40px)!important;
+    padding-bottom:clamp(16px,2.8vh,28px)!important;
+  }
+  /* Keep the top links and bottom signature quiet; let the middle carry the content. */
+  body.portfolio-v2 .portfolio-sidebar .sidebar-top-links{
+    margin-bottom:clamp(24px,4vh,38px)!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-intro{
+    margin-top:clamp(20px,3.4vh,32px)!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-avatar{
+    margin-top:clamp(12px,2vh,18px)!important;
+    margin-bottom:clamp(12px,2vh,18px)!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-profile-row{
+    margin-bottom:0!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-contact-inline{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:4px!important;
+    margin-top:clamp(12px,1.9vh,17px)!important;
+    line-height:1.55!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-contact-inline span{
+    display:block!important;
+    width:100%!important;
+    text-align:center!important;
+  }
+  /* Deliberate breathing room between identity/contact and the two narrative paragraphs. */
+  body.portfolio-v2 .portfolio-sidebar .sidebar-summary{
+    margin-top:clamp(23px,3.4vh,32px)!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-research{
+    margin-top:clamp(17px,2.5vh,23px)!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .portfolio-nav{
+    margin-top:clamp(28px,4.4vh,42px)!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .portfolio-nav a{
+    padding:clamp(7px,1.1vh,10px) 0!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .portfolio-brand-bottom{
+    font-size:8px!important;
+    opacity:.32!important;
+    letter-spacing:.18em!important;
+  }
+}
+/* Shorter desktop windows: preserve the same hierarchy with measured compression. */
+@media(min-width:761px) and (max-height:760px){
+  body.portfolio-v2 .portfolio-sidebar{
+    padding-top:14px!important;
+    padding-bottom:12px!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-top-links{
+    margin-bottom:15px!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-intro{
+    margin-top:12px!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-avatar{
+    width:40px!important;height:40px!important;flex-basis:40px!important;
+    margin:6px auto!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-contact-inline{
+    margin-top:7px!important;
+    gap:2px!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-summary{
+    margin-top:14px!important;
+    font-size:11px!important;
+    line-height:1.5!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-research{
+    margin-top:10px!important;
+    font-size:11px!important;
+    line-height:1.5!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .portfolio-nav{
+    margin-top:17px!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .portfolio-nav a{
+    padding:4px 0!important;
+  }
+}
+@media(max-width:760px){
+  body.portfolio-v2 .portfolio-sidebar .sidebar-contact-inline{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    gap:4px!important;
+    margin-top:10px!important;
+    line-height:1.5!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-contact-inline span{
+    display:block!important;
+    width:100%!important;
+    text-align:center!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-summary{
+    margin-top:18px!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-research{
+    margin-top:14px!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .portfolio-nav{
+    margin-top:25px!important;
+  }
+}
