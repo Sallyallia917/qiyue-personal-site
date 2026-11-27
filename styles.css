@@ -4233,3 +4233,38 @@ body.portfolio-v2 .portfolio-main .job-focus-head{
   body.portfolio-v2 .portfolio-main .case-hero{padding-bottom:20px!important;margin-bottom:20px!important}
   body.portfolio-v2 .portfolio-main .resume-hero{padding-bottom:18px!important}
 }
+
+
+/* 2026-11-27: consistent compact vertical rhythm between modules on every page. */
+body.portfolio-v2 .portfolio-main .portfolio-section,
+body.portfolio-v2 .portfolio-main .case-section,
+body.portfolio-v2 .portfolio-main .resume-section{
+  margin-top:0!important;
+  margin-bottom:0!important;
+  padding-top:20px!important;
+  padding-bottom:20px!important;
+}
+body.portfolio-v2 .portfolio-main .portfolio-section + .portfolio-section,
+body.portfolio-v2 .portfolio-main .case-section + .case-section,
+body.portfolio-v2 .portfolio-main .resume-section + .resume-section,
+body.portfolio-v2 .portfolio-main .portfolio-section + .case-section,
+body.portfolio-v2 .portfolio-main .case-section + .portfolio-section,
+body.portfolio-v2 .portfolio-main .resume-section + .portfolio-section,
+body.portfolio-v2 .portfolio-main .portfolio-section + .resume-section,
+body.portfolio-v2 .portfolio-main .case-section + .resume-section,
+body.portfolio-v2 .portfolio-main .resume-section + .case-section{
+  margin-top:0!important;
+}
+body.portfolio-v2 .portfolio-main .portfolio-section > .section-overline,
+body.portfolio-v2 .portfolio-main .case-section > .section-overline,
+body.portfolio-v2 .portfolio-main .resume-section > .resume-section-title{
+  margin-top:0!important;
+}
+@media(max-width:760px){
+  body.portfolio-v2 .portfolio-main .portfolio-section,
+  body.portfolio-v2 .portfolio-main .case-section,
+  body.portfolio-v2 .portfolio-main .resume-section{
+    padding-top:17px!important;
+    padding-bottom:17px!important;
+  }
+}
