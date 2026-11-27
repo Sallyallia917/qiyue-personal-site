@@ -3071,3 +3071,46 @@ body.portfolio-subpage .resume-hero-kicker .resume-download-button:active{
 @media(max-width:760px){
   .portfolio-v2 .sidebar-top-links{margin-bottom:22px!important;gap:16px!important}
 }
+
+
+/* Corrected sidebar: preserve original navigation list; quick links sit beneath it. */
+.portfolio-v2 .sidebar-top-links{display:none!important}
+.portfolio-v2 .portfolio-sidebar .sidebar-action-links{
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:20px!important;
+  margin:18px 0 0!important;
+  padding:0!important;
+  width:100%!important;
+}
+.portfolio-v2 .portfolio-sidebar .sidebar-action-links a{
+  color:var(--pc-accent)!important;
+  font:500 10px/1.7 "DM Mono",monospace!important;
+  text-decoration:none!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  padding:0!important;
+  white-space:nowrap!important;
+}
+.portfolio-v2 .portfolio-sidebar .sidebar-action-links a:hover{color:#30239e!important}
+.portfolio-v2 .portfolio-sidebar .sidebar-bottom{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  margin-top:auto!important;
+  padding:22px 0 0!important;
+  width:100%!important;
+}
+.portfolio-v2 .portfolio-sidebar .portfolio-brand-bottom{
+  display:block!important;
+  margin:0 auto!important;
+  text-align:center!important;
+  color:var(--pc-muted)!important;
+  opacity:.52!important;
+  font:400 10px/1.6 "Noto Serif SC",serif!important;
+  letter-spacing:.14em!important;
+}
