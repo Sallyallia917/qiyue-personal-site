@@ -2927,3 +2927,54 @@ body.portfolio-subpage .resume-hero-kicker .resume-download-button:active{
   }
   .portfolio-v2:not(.portfolio-subpage) .intro-section .intro-header-actions{gap:14px!important}
 }
+
+
+/* Position homepage actions beside the main introduction headline, not in the overline. */
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-title-row{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:28px!important;
+  width:100%!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-title-row .section-title{
+  flex:1 1 auto!important;
+  min-width:0!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-title-row .intro-header-actions{
+  flex:0 0 auto!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-end!important;
+  justify-content:center!important;
+  gap:12px!important;
+  margin-top:31px!important;
+  white-space:nowrap!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-title-row .intro-header-actions a{
+  color:var(--pc-accent)!important;
+  border:0!important;
+  border-bottom:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  padding:0!important;
+  text-decoration:none!important;
+  font:500 10px/1.7 "DM Mono",monospace!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-title-row .intro-header-actions a:hover{
+  color:#30239e!important;
+  transform:translateY(-1px)!important;
+}
+@media(max-width:760px){
+  .portfolio-v2:not(.portfolio-subpage) .intro-section .intro-title-row{
+    align-items:flex-start!important;
+    flex-direction:column!important;
+    gap:12px!important;
+  }
+  .portfolio-v2:not(.portfolio-subpage) .intro-section .intro-title-row .intro-header-actions{
+    flex-direction:row!important;
+    align-items:center!important;
+    margin-top:0!important;
+    gap:18px!important;
+  }
+}
