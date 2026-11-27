@@ -4180,3 +4180,31 @@ body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .interest-grid>article
     padding:16px 15px!important;
   }
 }
+
+
+/* 2026-11-27: further reduce vertical gaps between homepage sections. */
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .portfolio-section{
+  padding-top:24px!important;
+  padding-bottom:27px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .portfolio-section + .portfolio-section{
+  margin-top:0!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .section-overline{
+  margin-bottom:9px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .section-title,
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .section-heading{
+  margin-top:0!important;
+  margin-bottom:9px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .section-lead{
+  margin-top:0!important;
+  margin-bottom:13px!important;
+}
+@media(max-width:760px){
+  body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .portfolio-section{
+    padding-top:22px!important;
+    padding-bottom:24px!important;
+  }
+}
