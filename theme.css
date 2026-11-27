@@ -709,3 +709,56 @@ body.portfolio-v2 {
     display:inline-block!important;
   }
 }
+
+
+/* Resume card background hierarchy:
+   keep all project cards visually consistent and move the former project-card
+   surface treatment to work/practice experience cards. */
+@media screen{
+  .portfolio-subpage .resume-projects-section .resume-project,
+  .portfolio-subpage .resume-projects-section .resume-project-history{
+    background:rgba(16,34,56,.45)!important;
+    border:1px solid var(--pc-line)!important;
+    border-radius:3px!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry{
+    background:rgba(16,34,56,.45)!important;
+    border:1px solid var(--pc-line)!important;
+    border-radius:3px!important;
+    box-shadow:none!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-meta h3,
+  .portfolio-subpage .resume-experience-section .resume-entry-meta p,
+  .portfolio-subpage .resume-experience-section .resume-entry-content li{
+    color:#dce7f4!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-date{
+    color:var(--pc-accent)!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-core-tags span{
+    color:#40349d!important;
+  }
+}
+@media print{
+  .portfolio-subpage .resume-projects-section .resume-project,
+  .portfolio-subpage .resume-projects-section .resume-project-history{
+    background:rgba(16,34,56,.45)!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry{
+    background:rgba(16,34,56,.45)!important;
+    border:1px solid var(--pc-line)!important;
+    border-radius:5px!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-meta h3,
+  .portfolio-subpage .resume-experience-section .resume-entry-meta p,
+  .portfolio-subpage .resume-experience-section .resume-entry-content li{
+    color:#dce7f4!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-date{
+    color:var(--pc-accent)!important;
+  }
+}
