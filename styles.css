@@ -3158,3 +3158,82 @@ body.portfolio-subpage .resume-hero-kicker .resume-download-button:active{
   font:400 10px/1.6 "Noto Serif SC",serif!important;
   letter-spacing:.14em!important;
 }
+
+
+/* Final alignment pass across every page: center sidebar utilities and both brand marks. */
+.portfolio-v2 .portfolio-sidebar .sidebar-top-links{
+  justify-content:center!important;
+  text-align:center!important;
+  width:100%!important;
+}
+.portfolio-v2 .portfolio-sidebar .sidebar-top-links a{
+  justify-content:center!important;
+  text-align:center!important;
+}
+.portfolio-v2 .portfolio-sidebar .sidebar-bottom{
+  justify-content:center!important;
+  align-items:center!important;
+  text-align:center!important;
+}
+.portfolio-v2 .portfolio-sidebar .portfolio-brand-bottom{
+  width:100%!important;
+  text-align:center!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+/* Center the brand in the right content footer without moving footer actions. */
+body.portfolio-v2 > .portfolio-layout .portfolio-main .portfolio-footer,
+body.portfolio-v2 .portfolio-main > .portfolio-footer,
+body.portfolio-v2 .portfolio-main footer.portfolio-footer{
+  position:relative!important;
+}
+body.portfolio-v2 .portfolio-main .portfolio-footer .footer-brand{
+  position:absolute!important;
+  left:50%!important;
+  top:50%!important;
+  transform:translate(-50%,-50%)!important;
+  margin:0!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+}
+body.portfolio-v2 .portfolio-main .portfolio-footer.subpage-footer{
+  display:grid!important;
+  grid-template-columns:1fr auto 1fr!important;
+  align-items:center!important;
+  text-align:center!important;
+}
+body.portfolio-v2 .portfolio-main .portfolio-footer.subpage-footer > span:first-child{
+  grid-column:2!important;
+  justify-self:center!important;
+  text-align:center!important;
+}
+body.portfolio-v2 .portfolio-main .portfolio-footer.subpage-footer > span:nth-child(2){
+  grid-column:1!important;
+  grid-row:1!important;
+  justify-self:start!important;
+  text-align:left!important;
+}
+body.portfolio-v2 .portfolio-main .portfolio-footer.subpage-footer > span:nth-child(3){
+  grid-column:3!important;
+  grid-row:1!important;
+  justify-self:end!important;
+  text-align:right!important;
+}
+@media(max-width:760px){
+  body.portfolio-v2 .portfolio-main .portfolio-footer .footer-brand{
+    position:static!important;
+    transform:none!important;
+    width:100%!important;
+    text-align:center!important;
+  }
+  body.portfolio-v2 .portfolio-main .portfolio-footer.subpage-footer{
+    grid-template-columns:1fr!important;
+    justify-items:center!important;
+  }
+  body.portfolio-v2 .portfolio-main .portfolio-footer.subpage-footer > span{
+    grid-column:1!important;
+    justify-self:center!important;
+    text-align:center!important;
+  }
+}
