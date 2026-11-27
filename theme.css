@@ -514,3 +514,142 @@ body.portfolio-v2 {
  .portfolio-subpage .resume-education-heading h3,
  .portfolio-subpage .resume-education-heading time{white-space:nowrap!important;}
 }
+
+
+/* 2026-11-27 — Resume card spacing and screen/print detail-link parity */
+@media screen{
+  .portfolio-subpage .resume-projects-section .resume-project-grid>.resume-project{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+  }
+  .portfolio-subpage .resume-projects-section .resume-project>.resume-detail-link{
+    display:inline-block!important;
+    align-self:flex-end!important;
+    width:max-content!important;
+    max-width:100%!important;
+    margin:10px 0 0 auto!important;
+    padding:0 0 2px!important;
+    border-bottom:1px solid rgba(98,80,216,.32)!important;
+    text-align:right!important;
+  }
+  .portfolio-subpage .resume-project-history>.resume-detail-link{
+    display:inline-block!important;
+    align-self:flex-end!important;
+    width:max-content!important;
+    max-width:100%!important;
+    margin:10px 0 0 auto!important;
+    padding:0 0 2px!important;
+    border-bottom:1px solid rgba(98,80,216,.32)!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry{
+    padding:17px 19px!important;
+    box-sizing:border-box!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry-content{
+    min-width:0!important;
+    padding:0!important;
+  }
+}
+@media print{
+  .portfolio-subpage .resume-hero-kicker{
+    display:flex!important;
+    justify-content:flex-end!important;
+    align-items:center!important;
+    gap:10px!important;
+    margin:0 0 2mm!important;
+    opacity:1!important;
+  }
+  .portfolio-subpage .resume-hero-kicker::before{
+    content:"求职简历";
+    display:inline-block!important;
+    color:#77747a!important;
+    font-size:8pt!important;
+    letter-spacing:.08em!important;
+    font-weight:400!important;
+    margin-right:auto!important;
+  }
+  .portfolio-subpage .resume-public-link{
+    display:inline-block!important;
+    color:#40349d!important;
+    font-size:8pt!important;
+    text-decoration:underline!important;
+    white-space:nowrap!important;
+  }
+  .portfolio-subpage .resume-download-button{display:none!important;}
+
+  /* Keep the online card hierarchy and anchor placement in the exported PDF. */
+  .portfolio-subpage .resume-projects-section .resume-project-grid>.resume-project,
+  .portfolio-subpage .resume-project-history,
+  .portfolio-subpage .resume-experience-section .resume-entry{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    box-sizing:border-box!important;
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+  }
+  .portfolio-subpage .resume-projects-section .resume-project-grid>.resume-project{
+    padding:8px 10px!important;
+    border:1px solid #d9ddea!important;
+    border-radius:5px!important;
+    background:#fff!important;
+  }
+  .portfolio-subpage .resume-projects-section .resume-project>.resume-detail-link,
+  .portfolio-subpage .resume-project-history>.resume-detail-link,
+  .portfolio-subpage .resume-entry-content>.resume-detail-link,
+  .portfolio-subpage .resume-entry-content>.resume-detail-links{
+    display:flex!important;
+    align-self:flex-end!important;
+    justify-content:flex-end!important;
+    width:max-content!important;
+    max-width:100%!important;
+    margin:5px 0 0 auto!important;
+    text-align:right!important;
+  }
+  .portfolio-subpage .resume-projects-section .resume-project>.resume-detail-link,
+  .portfolio-subpage .resume-project-history>.resume-detail-link,
+  .portfolio-subpage .resume-entry-content>.resume-detail-link,
+  .portfolio-subpage .resume-detail-links .resume-detail-link{
+    display:inline-block!important;
+    width:max-content!important;
+    max-width:100%!important;
+    margin:0!important;
+    padding:0 0 1px!important;
+    border-bottom:1px solid #7770bd!important;
+    color:#40349d!important;
+    font-size:7.5pt!important;
+    line-height:1.5!important;
+    text-decoration:none!important;
+    white-space:nowrap!important;
+  }
+  .portfolio-subpage .resume-entry-content{
+    display:flex!important;
+    flex-direction:column!important;
+    min-width:0!important;
+    padding:0!important;
+  }
+  .portfolio-subpage .resume-experience-section .resume-entry{
+    padding:8px 10px!important;
+    border:1px solid #d9ddea!important;
+    border-radius:5px!important;
+    background:#fff!important;
+  }
+  .portfolio-subpage .resume-entry-layout{
+    gap:9px!important;
+  }
+  .portfolio-subpage .resume-education-heading{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    justify-content:space-between!important;
+    align-items:baseline!important;
+    gap:10px!important;
+    width:100%!important;
+  }
+  .portfolio-subpage .resume-education-heading h3,
+  .portfolio-subpage .resume-education-heading time{
+    display:inline-block!important;
+    white-space:nowrap!important;
+    flex:0 0 auto!important;
+  }
+}
