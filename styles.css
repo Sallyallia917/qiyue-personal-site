@@ -3003,3 +3003,37 @@ body.portfolio-subpage .resume-hero-kicker .resume-download-button:active{
     padding-top:0!important;
   }
 }
+
+
+/* Homepage actions restored below section 01 introduction, in one horizontal row. */
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-links-below{
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:22px!important;
+  width:100%!important;
+  margin:22px 0 0!important;
+  padding:0!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-links-below a,
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-links-below a:link,
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-links-below a:visited{
+  display:inline!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-bottom:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:var(--pc-accent)!important;
+  font:500 10px/1.7 "DM Mono",monospace!important;
+  text-decoration:none!important;
+  text-decoration-line:none!important;
+  white-space:nowrap!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-links-below a:hover{
+  color:#30239e!important;
+  transform:translateY(-1px)!important;
+}
