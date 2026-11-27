@@ -425,3 +425,92 @@ body.portfolio-v2 {
    margin-top:7px!important;color:#344366!important;font-size:11px!important;
  }
 }
+
+
+/* 2026-11-27 homepage hierarchy and resume link alignment */
+.portfolio-v2:not(.portfolio-subpage) #interests .interest-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+.portfolio-subpage .resume-topline{
+  display:flex!important;justify-content:space-between!important;align-items:center!important;
+}
+.portfolio-subpage .resume-topline-label{
+  margin-left:auto;color:#898493!important;font-size:9px!important;
+  letter-spacing:.1em;opacity:.72;
+}
+.portfolio-subpage .resume-hero-kicker{
+  display:flex!important;justify-content:flex-end!important;align-items:center!important;
+  gap:14px!important;margin:0 0 3px!important;
+}
+.portfolio-subpage .resume-public-link{
+  color:#5140a0!important;text-decoration:none!important;font-size:10px!important;
+  font-weight:600!important;white-space:nowrap!important;
+}
+.portfolio-subpage .resume-public-link:hover{text-decoration:underline!important;text-underline-offset:3px;}
+.portfolio-subpage .resume-download-button{
+  border:0!important;border-radius:4px!important;padding:4px 9px!important;
+  background:rgba(101,82,125,.13)!important;color:#51456f!important;
+  font-size:10px!important;line-height:1.35!important;min-height:25px!important;
+  cursor:pointer!important;
+}
+.portfolio-subpage .resume-project,
+.portfolio-subpage .resume-project-history,
+.portfolio-subpage .resume-entry{
+  display:flex!important;flex-direction:column!important;min-width:0!important;
+}
+.portfolio-subpage .resume-project>.resume-detail-link,
+.portfolio-subpage .resume-project-history>.resume-detail-link{
+  display:block!important;align-self:flex-end!important;margin:10px 0 0 auto!important;
+  text-align:right!important;white-space:nowrap!important;
+}
+.portfolio-subpage .resume-entry-content{
+  display:flex!important;flex-direction:column!important;min-width:0!important;
+}
+.portfolio-subpage .resume-entry-content>.resume-detail-link{
+  display:block!important;align-self:flex-end!important;margin:10px 0 0 auto!important;
+  text-align:right!important;white-space:nowrap!important;
+}
+.portfolio-subpage .resume-detail-links{
+  display:flex!important;justify-content:flex-end!important;align-items:center!important;
+  flex-wrap:wrap!important;gap:4px 16px!important;margin-top:10px!important;
+}
+.portfolio-subpage .resume-detail-links .resume-detail-link{
+  display:inline-block!important;margin:0!important;white-space:nowrap!important;
+}
+@media print{
+ .portfolio-subpage .resume-topline{display:none!important;}
+ .portfolio-subpage .resume-hero-kicker{
+   display:flex!important;justify-content:flex-end!important;align-items:center!important;
+   margin:0 0 2mm!important;
+ }
+ .portfolio-subpage .resume-public-link{
+   display:inline!important;color:#40349d!important;text-decoration:underline!important;
+   font-size:8pt!important;
+ }
+ .portfolio-subpage .resume-download-button{display:none!important;}
+ .portfolio-subpage .resume-project,
+ .portfolio-subpage .resume-project-history,
+ .portfolio-subpage .resume-entry{
+   display:flex!important;flex-direction:column!important;
+ }
+ .portfolio-subpage .resume-project>.resume-detail-link,
+ .portfolio-subpage .resume-project-history>.resume-detail-link,
+ .portfolio-subpage .resume-entry-content>.resume-detail-link{
+   display:block!important;align-self:flex-end!important;margin:5px 0 0 auto!important;
+   text-align:right!important;color:#40349d!important;text-decoration:underline!important;
+   white-space:nowrap!important;
+ }
+ .portfolio-subpage .resume-detail-links{
+   display:flex!important;justify-content:flex-end!important;gap:4px 12px!important;
+   margin-top:5px!important;
+ }
+ .portfolio-subpage .resume-detail-links .resume-detail-link{
+   display:inline-block!important;margin:0!important;white-space:nowrap!important;
+ }
+ .portfolio-subpage .resume-education-heading{
+   display:flex!important;flex-wrap:nowrap!important;justify-content:space-between!important;
+   align-items:baseline!important;gap:8px!important;
+ }
+ .portfolio-subpage .resume-education-heading h3,
+ .portfolio-subpage .resume-education-heading time{white-space:nowrap!important;}
+}
