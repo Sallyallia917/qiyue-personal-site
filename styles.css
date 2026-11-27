@@ -4021,3 +4021,39 @@ body.portfolio-v2 .portfolio-sidebar .sidebar-bottom .portfolio-brand-bottom{
     margin-top:38px!important;
   }
 }
+
+
+/* 2026-11-27: unify sidebar summary and ongoing-research typography in near-black. */
+body.portfolio-v2 .portfolio-sidebar .sidebar-summary,
+body.portfolio-v2 .portfolio-sidebar .sidebar-research{
+  color:#25232b!important;
+  font-family:inherit!important;
+  font-size:18px!important;
+  font-weight:400!important;
+  line-height:1.72!important;
+  letter-spacing:0!important;
+  text-align:left!important;
+  max-width:340px!important;
+  width:100%!important;
+}
+body.portfolio-v2 .portfolio-sidebar .sidebar-summary{
+  margin:18px auto 0!important;
+}
+body.portfolio-v2 .portfolio-sidebar .sidebar-research{
+  margin:18px auto 0!important;
+  opacity:1!important;
+}
+@media(max-width:760px){
+  body.portfolio-v2 .portfolio-sidebar .sidebar-summary,
+  body.portfolio-v2 .portfolio-sidebar .sidebar-research{
+    font-size:16px!important;
+    line-height:1.75!important;
+  }
+}
+@media(min-width:761px) and (max-height:760px){
+  body.portfolio-v2 .portfolio-sidebar .sidebar-summary,
+  body.portfolio-v2 .portfolio-sidebar .sidebar-research{
+    font-size:15px!important;
+    line-height:1.6!important;
+  }
+}
