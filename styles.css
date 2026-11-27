@@ -3455,3 +3455,95 @@ body.portfolio-v2 .portfolio-sidebar .sidebar-bottom .portfolio-brand-bottom{
     text-align:center!important;
   }
 }
+
+
+/* Sidebar viewport fit: keep the complete left column visible on common desktop heights. */
+@media(min-width:761px){
+  body.portfolio-v2 .portfolio-sidebar{
+    box-sizing:border-box!important;
+    height:100vh!important;
+    min-height:0!important;
+    max-height:100vh!important;
+    overflow-x:hidden!important;
+    overflow-y:hidden!important;
+    padding-top:clamp(14px,3.2vh,30px)!important;
+    padding-bottom:clamp(12px,2.4vh,22px)!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-top-links{
+    flex:0 0 auto!important;
+    margin-bottom:clamp(8px,1.6vh,15px)!important;
+    gap:clamp(12px,1.4vw,18px)!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-intro{
+    flex:0 0 auto!important;
+    margin-top:clamp(8px,1.8vh,18px)!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-avatar{
+    width:clamp(34px,5.4vh,48px)!important;
+    height:clamp(34px,5.4vh,48px)!important;
+    flex-basis:clamp(34px,5.4vh,48px)!important;
+    margin:clamp(6px,1.2vh,11px) auto!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-intro h1{
+    font-size:clamp(25px,3.8vh,32px)!important;
+    line-height:1.15!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-contact-inline{
+    margin-top:clamp(5px,.9vh,9px)!important;
+    font-size:clamp(8px,1.15vh,9px)!important;
+    line-height:1.4!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-summary,
+  body.portfolio-v2 .portfolio-sidebar .sidebar-research{
+    max-width:300px!important;
+    margin-top:clamp(7px,1.2vh,11px)!important;
+    font-size:clamp(10px,1.45vh,11.5px)!important;
+    line-height:1.58!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .portfolio-nav{
+    flex:0 0 auto!important;
+    margin-top:clamp(12px,2.2vh,21px)!important;
+    gap:0!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .portfolio-nav a{
+    min-height:0!important;
+    padding:clamp(4px,.85vh,7px) 0!important;
+    line-height:1.35!important;
+    font-size:clamp(9px,1.25vh,10px)!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-bottom{
+    flex:0 0 auto!important;
+    margin-top:auto!important;
+    padding-top:clamp(8px,1.4vh,13px)!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .portfolio-brand-bottom{
+    font-size:clamp(9px,1.25vh,10px)!important;
+  }
+}
+/* Extra compact spacing for shorter laptop and browser windows. */
+@media(min-width:761px) and (max-height:760px){
+  body.portfolio-v2 .portfolio-sidebar{
+    padding-top:12px!important;
+    padding-bottom:10px!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-top-links{margin-bottom:6px!important}
+  body.portfolio-v2 .portfolio-sidebar .sidebar-intro{margin-top:5px!important}
+  body.portfolio-v2 .portfolio-sidebar .sidebar-avatar{
+    width:32px!important;height:32px!important;flex-basis:32px!important;
+    margin:4px auto!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .sidebar-intro h1{font-size:24px!important}
+  body.portfolio-v2 .portfolio-sidebar .sidebar-summary,
+  body.portfolio-v2 .portfolio-sidebar .sidebar-research{
+    margin-top:6px!important;
+    font-size:10px!important;
+    line-height:1.45!important;
+  }
+  body.portfolio-v2 .portfolio-sidebar .portfolio-nav{margin-top:9px!important}
+  body.portfolio-v2 .portfolio-sidebar .portfolio-nav a{padding:3px 0!important}
+  body.portfolio-v2 .portfolio-sidebar .sidebar-bottom{padding-top:6px!important}
+}
+/* Very short viewports retain access to content rather than clipping it. */
+@media(min-width:761px) and (max-height:620px){
+  body.portfolio-v2 .portfolio-sidebar{overflow-y:auto!important}
+}
