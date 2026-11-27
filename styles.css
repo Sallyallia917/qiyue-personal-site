@@ -4112,3 +4112,71 @@ body.portfolio-v2 .portfolio-sidebar .sidebar-research{
   body.portfolio-v2 .portfolio-sidebar .sidebar-summary{font-size:15.5px!important;line-height:1.78!important}
   body.portfolio-v2 .portfolio-sidebar .sidebar-research{font-size:14.5px!important;line-height:1.75!important}
 }
+
+
+/* 2026-11-27: modestly tighten homepage content rhythm without changing the sidebar or subpages. */
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .portfolio-section{
+  padding-top:clamp(34px,4.2vw,48px)!important;
+  padding-bottom:clamp(36px,4.4vw,50px)!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .intro-section{
+  padding-top:clamp(30px,3.6vw,42px)!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .section-title,
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .section-heading{
+  margin-bottom:12px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .section-lead{
+  margin-bottom:17px!important;
+  line-height:1.72!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .intro-copy{
+  gap:10px!important;
+  margin-top:14px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .intro-copy p{
+  line-height:1.72!important;
+  margin-bottom:7px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .intro-proof{
+  margin-top:18px!important;
+  gap:10px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .intro-proof>div{
+  padding:13px 15px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .skill-row{
+  padding-top:15px!important;
+  padding-bottom:15px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .project-card{
+  padding:19px 21px!important;
+  margin-bottom:13px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .project-card p{
+  line-height:1.72!important;
+  margin-top:7px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .experience-list>article{
+  padding-top:15px!important;
+  padding-bottom:15px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .philosophy-list>article{
+  padding-top:17px!important;
+  padding-bottom:17px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .interest-grid{
+  gap:12px!important;
+}
+body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .interest-grid>article{
+  padding:16px 17px!important;
+}
+@media(max-width:760px){
+  body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .portfolio-section{
+    padding-top:30px!important;
+    padding-bottom:34px!important;
+  }
+  body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .project-card{
+    padding:16px 15px!important;
+  }
+}
