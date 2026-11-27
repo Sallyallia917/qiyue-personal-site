@@ -818,3 +818,79 @@ body.portfolio-v2 {
     color:#71628f!important;
   }
 }
+
+
+/* 2026-11-27 — Match the history project card interaction and project PDF surface. */
+@media screen{
+  .portfolio-subpage .resume-projects-section .resume-project-history{
+    transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease!important;
+    cursor:pointer;
+  }
+  .portfolio-subpage .resume-projects-section .resume-project-history:hover{
+    transform:translateY(-2px)!important;
+    background:#fff!important;
+    border-color:rgba(81,64,200,.42)!important;
+    box-shadow:0 12px 26px rgba(67,62,166,.10)!important;
+  }
+  .portfolio-subpage .resume-projects-section .resume-project-history:hover .resume-project-head h3 a{
+    color:#30239e!important;
+  }
+}
+@media print{
+  .portfolio-subpage .resume-projects-section .resume-project-history{
+    background:#f3f1f8!important;
+    border:1px solid rgba(112,96,145,.28)!important;
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+}
+
+/* Homepage and resume actions become understated text links with an underline/arrow. */
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a,
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a.solid-link{
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:4px!important;
+  padding:0 0 4px!important;
+  border:0!important;
+  border-bottom:1px solid rgba(112,96,145,.48)!important;
+  border-radius:0!important;
+  background:transparent!important;
+  color:var(--pc-accent)!important;
+  box-shadow:none!important;
+  text-decoration:none!important;
+  transition:color .18s ease,border-color .18s ease,transform .18s ease!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .inline-links>a:hover{
+  border-bottom-color:rgba(81,64,200,.9)!important;
+  background:transparent!important;
+  color:#30239e!important;
+  transform:translateY(-1px)!important;
+}
+.portfolio-subpage .resume-hero-kicker .resume-download-button{
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:4px!important;
+  padding:0 0 3px!important;
+  border:0!important;
+  border-bottom:1px solid rgba(112,96,145,.48)!important;
+  border-radius:0!important;
+  background:transparent!important;
+  color:var(--pc-accent)!important;
+  box-shadow:none!important;
+  font:500 10px/1.5 "DM Mono",monospace!important;
+  opacity:1!important;
+  transition:color .18s ease,border-color .18s ease,transform .18s ease!important;
+}
+.portfolio-subpage .resume-hero-kicker .resume-download-button:hover{
+  border-bottom-color:rgba(81,64,200,.9)!important;
+  background:transparent!important;
+  color:#30239e!important;
+  transform:translateY(-1px)!important;
+}
+@media print{
+  .portfolio-v2:not(.portfolio-subpage) .inline-links>a,
+  .portfolio-subpage .resume-hero-kicker .resume-download-button{
+    display:none!important;
+  }
+}
