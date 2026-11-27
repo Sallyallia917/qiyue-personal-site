@@ -894,3 +894,33 @@ body.portfolio-v2 {
     display:none!important;
   }
 }
+
+
+/* 2026-11-27: exported resume is a standalone document without the website sidebar. */
+@media print{
+  body.portfolio-subpage .portfolio-sidebar{
+    display:none!important;
+  }
+  body.portfolio-subpage .portfolio-shell{
+    display:block!important;
+    grid-template-columns:none!important;
+    width:100%!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  body.portfolio-subpage .portfolio-main{
+    display:block!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  body.portfolio-subpage .resume-page,
+  body.portfolio-subpage .resume-page-v2{
+    width:100%!important;
+    max-width:none!important;
+    margin:0 auto!important;
+  }
+}
