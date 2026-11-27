@@ -2878,3 +2878,52 @@ body.portfolio-subpage .resume-hero-kicker .resume-download-button:active{
   padding:0!important;
   border-radius:0!important;
 }
+
+
+/* Homepage top-right navigation actions: match each other's text color and weight. */
+.portfolio-v2:not(.portfolio-subpage) .intro-section .section-overline .intro-overline-right{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:22px!important;
+  min-width:0!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-header-actions{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:20px!important;
+  white-space:nowrap!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-header-actions a,
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-header-actions a:link,
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-header-actions a:visited{
+  display:inline!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-bottom:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:var(--pc-accent)!important;
+  font:500 10px/1.7 "DM Mono",monospace!important;
+  text-decoration:none!important;
+  text-decoration-line:none!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-header-actions a:hover,
+.portfolio-v2:not(.portfolio-subpage) .intro-section .intro-header-actions a:focus{
+  color:#30239e!important;
+  background:transparent!important;
+  border:0!important;
+  text-decoration:none!important;
+  transform:translateY(-1px)!important;
+}
+@media(max-width:640px){
+  .portfolio-v2:not(.portfolio-subpage) .intro-section .section-overline .intro-overline-right{
+    align-items:flex-end!important;
+    flex-direction:column!important;
+    gap:7px!important;
+  }
+  .portfolio-v2:not(.portfolio-subpage) .intro-section .intro-header-actions{gap:14px!important}
+}
