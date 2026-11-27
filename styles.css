@@ -2812,3 +2812,36 @@ body[data-page="home"].portfolio-v2 .sidebar-bottom{
   padding-left:6px!important;
   padding-right:6px!important;
 }
+
+/* 2026-11-27 FINAL: homepage CTA and resume export are plain text-arrow links. */
+.portfolio-v2:not(.portfolio-subpage) .intro-section .inline-links > a,
+.portfolio-v2:not(.portfolio-subpage) .intro-section .inline-links > a.solid-link,
+.portfolio-subpage .resume-hero-kicker .resume-download-button{
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:4px!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-bottom:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:var(--pc-accent)!important;
+  font:500 10px/1.7 "DM Mono",monospace!important;
+  text-decoration:none!important;
+  text-underline-offset:0!important;
+  cursor:pointer!important;
+}
+.portfolio-v2:not(.portfolio-subpage) .intro-section .inline-links > a:hover,
+.portfolio-v2:not(.portfolio-subpage) .intro-section .inline-links > a.solid-link:hover,
+.portfolio-subpage .resume-hero-kicker .resume-download-button:hover{
+  border:0!important;
+  border-bottom:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:#30239e!important;
+  text-decoration:none!important;
+  transform:translateY(-1px)!important;
+}
