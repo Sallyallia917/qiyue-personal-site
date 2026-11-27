@@ -3114,3 +3114,47 @@ body.portfolio-subpage .resume-hero-kicker .resume-download-button:active{
   font:400 10px/1.6 "Noto Serif SC",serif!important;
   letter-spacing:.14em!important;
 }
+
+
+/* Sidebar final hierarchy: resume/GitHub at top; original nav remains untouched; brand centered at bottom. */
+.portfolio-v2 .portfolio-sidebar .sidebar-top-links{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:18px!important;
+  width:100%!important;
+  margin:0 0 24px!important;
+  padding:0!important;
+}
+.portfolio-v2 .portfolio-sidebar .sidebar-top-links a{
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:4px!important;
+  color:var(--pc-accent)!important;
+  font:500 10px/1.7 "DM Mono",monospace!important;
+  text-decoration:none!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  padding:0!important;
+}
+.portfolio-v2 .portfolio-sidebar .sidebar-top-links a:hover{color:#30239e!important}
+.portfolio-v2 .portfolio-sidebar .sidebar-action-links{display:none!important}
+.portfolio-v2 .portfolio-sidebar .sidebar-bottom{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  margin-top:auto!important;
+  padding:22px 0 0!important;
+  width:100%!important;
+}
+.portfolio-v2 .portfolio-sidebar .portfolio-brand-bottom{
+  display:block!important;
+  margin:0 auto!important;
+  text-align:center!important;
+  color:var(--pc-muted)!important;
+  opacity:.52!important;
+  font:400 10px/1.6 "Noto Serif SC",serif!important;
+  letter-spacing:.14em!important;
+}
