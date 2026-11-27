@@ -4208,3 +4208,28 @@ body.portfolio-v2:not(.portfolio-subpage) .portfolio-main .section-lead{
     padding-bottom:24px!important;
   }
 }
+
+
+/* 2026-11-27: bring page-header content closer to its divider across all pages. */
+body.portfolio-v2 .portfolio-main .section-overline{
+  padding-bottom:8px!important;
+}
+body.portfolio-v2 .portfolio-main .case-hero{
+  padding-bottom:25px!important;
+  margin-bottom:24px!important;
+}
+body.portfolio-v2 .portfolio-main .resume-topline{
+  padding-bottom:9px!important;
+}
+body.portfolio-v2 .portfolio-main .resume-hero{
+  padding-bottom:22px!important;
+}
+body.portfolio-v2 .portfolio-main .evidence-head,
+body.portfolio-v2 .portfolio-main .job-focus-head{
+  padding-bottom:9px!important;
+}
+@media(max-width:760px){
+  body.portfolio-v2 .portfolio-main .section-overline{padding-bottom:7px!important}
+  body.portfolio-v2 .portfolio-main .case-hero{padding-bottom:20px!important;margin-bottom:20px!important}
+  body.portfolio-v2 .portfolio-main .resume-hero{padding-bottom:18px!important}
+}
